@@ -1,0 +1,11 @@
+package com.sample.guice;
+
+public class DatabaseTransactionLog implements TransactionLog {
+	
+	public DatabaseTransactionLog() {
+		System.out.println("DatabaseTransactionLog");
+		System.out.println("DatabaseTransactionLog");
+		System.out.println("DatabaseTransactionLog");
+	}
+
+}

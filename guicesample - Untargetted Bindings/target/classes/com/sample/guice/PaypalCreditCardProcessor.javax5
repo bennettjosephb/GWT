@@ -1,0 +1,12 @@
+package com.sample.guice;
+
+public class PaypalCreditCardProcessor implements CreditCardProcessor {
+	
+	public PaypalCreditCardProcessor() {
+		System.out.println("PaypalCreditCardProcessor");
+		System.out.println("PaypalCreditCardProcessor");
+		System.out.println("PaypalCreditCardProcessor");
+		System.out.println("PaypalCreditCardProcessor");
+	}
+
+}

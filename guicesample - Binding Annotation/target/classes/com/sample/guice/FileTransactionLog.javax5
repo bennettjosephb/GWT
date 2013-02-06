@@ -1,0 +1,18 @@
+package com.sample.guice;
+
+import java.util.logging.Logger;
+
+public class FileTransactionLog implements TransactionLog {
+	public FileTransactionLog() {
+		System.out.println("FileTransactionLog");
+		System.out.println("FileTransactionLog");
+		System.out.println("FileTransactionLog");
+	}
+	public FileTransactionLog(Logger logger) {
+		System.out.println("FileTransactionLog" + logger);
+		System.out.println("FileTransactionLog" + logger);
+		System.out.println("FileTransactionLog" + logger);
+	}
+
+
+}

@@ -1,0 +1,47 @@
+package com.sample.guice;
+
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
+
+public class RealBillingService implements BillingService{
+	private  CreditCardProcessor processor;
+	  private  TransactionLog transactionLog;
+	  private String name;
+
+	  @Inject
+	  RealBillingService(CreditCardProcessor processor, @File
+	      TransactionLog transactionLog, @Named("hai")String name) {
+		  System.out.println("RealBillingService");
+		  System.out.println("RealBillingService");
+		  System.out.println("RealBillingService");
+		  System.out.println("RealBillingService");
+	    this.processor = processor;
+	    this.transactionLog = transactionLog;
+	    this.name = name;
+	    System.out.println(""+processor + transactionLog + name);
+	  }
+
+//	  @Inject
+	  RealBillingService(TransactionLog transactionLog) {
+		  System.out.println("RealBillingService TransactionLog ");
+		  System.out.println("RealBillingService TransactionLog ");
+		  System.out.println("RealBillingService TransactionLog ");
+		  System.out.println("RealBillingService TransactionLog ");
+	    this.transactionLog = transactionLog;
+	  }
+
+//	  @Inject
+	  RealBillingService(CreditCardProcessor processor) {
+		  System.out.println("RealBillingService CreditCardProcessor ");
+		  System.out.println("RealBillingService CreditCardProcessor ");
+		  System.out.println("RealBillingService CreditCardProcessor ");
+		  System.out.println("RealBillingService CreditCardProcessor ");
+	    this.processor = processor;
+	  }
+
+//	  @Override
+//	  public Receipt chargeOrder(PizzaOrder order, CreditCard creditCard) {
+//	    ...
+//	  }
+
+}
