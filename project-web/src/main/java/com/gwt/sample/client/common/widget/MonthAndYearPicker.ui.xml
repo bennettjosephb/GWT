@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style field='content' src="../../content/Content.css" />
+
+	<ui:style field='common' src="../css/Common.css" />
+
+	<g:HTMLPanel>
+		<g:HorizontalPanel>
+			<g:ListBox width="70px" styleName="{common.select}"
+				ui:field="month" />
+				<g:Label width="3px" height="31px"/>
+			<g:ListBox width="70px" styleName="{common.select}"
+				ui:field="year" />
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

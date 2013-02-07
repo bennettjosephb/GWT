@@ -1,0 +1,99 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style field='content' src="Content.css" />
+	<ui:style>
+		@external wrapper;
+		.wrapper {
+		min-height: 100%;
+		}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.wrapper}">
+		<g:VerticalPanel>
+			<g:Cell height="60px">
+				<g:HTMLPanel />
+			</g:Cell>
+			<g:HTMLPanel>
+				<div id='cssmenu'>
+					<ul>
+						<li class='active '>
+							<a href='#profile'>
+								<span class="menuItemSpace">Profile</span>
+							</a>
+						</li>
+						<li class='active '>
+							<a href='#currentdetails'>
+								<span class="menuItemSpace">Current Details</span>
+							</a>
+						</li>
+						<li>
+							<a href='#resume'>
+								<span class="menuItemSpace">Manage Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href='#coverletter'>
+								<span class="menuItemSpace">Manage Coverletter</span>
+							</a>
+						</li>
+						<li>
+							<a href='#photo'>
+								<span class="menuItemSpace">Manage Photos</span>
+							</a>
+						</li>
+						<li>
+							<a href='#employer'>
+								<span class="menuItemSpace">Employer</span>
+							</a>
+						</li>
+						<li>
+							<a href='#!skill'>
+								<span class="menuItemSpace">Skill set</span>
+							</a>
+						</li>
+						<li>
+							<a href='#education'>
+								<span class="menuItemSpace">Education</span>
+							</a>
+						</li>
+						<li>
+							<a href='#!project'>
+								<span class="menuItemSpace">Projects</span>
+							</a>
+						</li>
+						<li>
+							<a href='#contactoverview'>
+								<span class="menuItemSpace">Contact Detail</span>
+							</a>
+						</li>
+						<li>
+							<a href='#snapshot'>
+								<span class="menuItemSpace">Snapshot</span>
+							</a>
+						</li>
+						<li>
+							<a href='#summary'>
+								<span class="menuItemSpace">Summary</span>
+							</a>
+						</li>
+						<li>
+							<a href='#visibility'>
+								<span class="menuItemSpace">Visibility Settings</span>
+							</a>
+						</li>
+						<li>
+							<a href='#settings'>
+								<span class="menuItemSpace">Settings</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</g:HTMLPanel>
+		</g:VerticalPanel>
+
+	</g:HTMLPanel>
+</ui:UiBinder>

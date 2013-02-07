@@ -1,0 +1,79 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:c='urn:import:com.gwt.sample.client.common.widget'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.gwtDialogBox {
+			background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+			-moz-box-shadow: 5px 5px 6px -1px #000;
+			-webkit-box-shadow: 5px 5px 6px -1px #000;
+			box-shadow: 5px 5px 6px -1px #000;
+			padding: 4px 4px 4px 8px;
+			cursor: default;
+			background-color: #FFFFFF;
+			border-bottom: 1px solid #bbbbbb;
+		}
+	</ui:style>
+	<ui:style field='content' src="Content.css" />
+		
+	<ui:style field='common' src="../common/css/Common.css" />
+		
+	<g:DialogBox width="" glassEnabled="true" modal="true"
+		ui:field="dialogWindow" styleName="{style.gwtDialogBox}">
+		<g:caption>
+			<ui:msg key="addEmployerDetails" description="Adding New Employer Details">Enter Education
+				Details</ui:msg>
+		</g:caption>
+		<g:HorizontalPanel width="700px" height="100%">
+			<g:VerticalPanel width="200px" spacing="10">
+				<g:Label width="150px" height="31px">
+					<ui:msg key="fromDate" description="Joining Date">Joining Date</ui:msg>
+				</g:Label>
+				<g:Label width="150px" height="31px">
+					<ui:msg key="toDate" description="Passing Date">Passing Date</ui:msg>
+				</g:Label>
+				<g:Label width="150px" height="31px">
+					<ui:msg key="courseName" description="Course Name">Graduation Name</ui:msg>
+				</g:Label>
+				<g:Label width="150px" height="31px">
+					<ui:msg key="type" description="Education Type">Type</ui:msg>
+				</g:Label>
+				<g:Label width="150px" height="31px">
+					<ui:msg key="institute" description="Institute Name">Institute Name</ui:msg>
+				</g:Label>
+				<g:Label width="150px" height="31px">
+					<ui:msg key="specialization" description="Specialization">Specialization</ui:msg>
+				</g:Label>
+			</g:VerticalPanel>
+			<g:VerticalPanel width="500px" spacing="10">
+				<c:DatePicker ui:field="fromDate" />
+				<c:DatePicker ui:field="toDate" />
+				<g:TextBox styleName="{common.input}" ui:field="courseName"
+					width="480px" />
+				<g:ListBox styleName="{common.select}" ui:field="type"
+					width="480px" />
+				<g:TextBox styleName="{common.input}" ui:field="institute"
+					width="480px" />
+				<g:TextBox styleName="{common.input}" ui:field="specialization"
+					width="480px" />
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:HorizontalPanel width="300px">
+						<g:Button width="150px" height="30px" ui:field="save"
+							styleName="{common.dialogSave}">
+							<ui:msg key="addDetails" description="Adding New Employer Details">Save</ui:msg>
+						</g:Button>
+						<g:Label width="10px" />
+						<g:Button width="150px" height="30px" ui:field="cancel"
+							styleName="{common.dialogCancel}">
+							<ui:msg key="cancelEntry" description="Cancelling the Entry">Cancel</ui:msg>
+						</g:Button>
+					</g:HorizontalPanel>
+				</g:Cell>
+			</g:VerticalPanel>
+		</g:HorizontalPanel>
+	</g:DialogBox>
+</ui:UiBinder>

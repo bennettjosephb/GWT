@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style field='content' src="../../content/Content.css" />
+		
+	<ui:style field='currentDetails' src="../../content/CurrentDetails.css" />
+		
+	<ui:style field='common' src="../css/Common.css" />
+		
+	<ui:style>
+		.styled-select:FOCUS { .
+			-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 1px inset;
+			border: 1px solid #4D90FE;
+			box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 1px inset;
+			outline: none;
+			background: transparent;
+			width: 50px;
+			padding: 5px;
+			line-height: 1;
+			border-radius: 0;
+			height: 28px;
+		}
+		
+		.styled-select {
+			border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+			padding: 4px;
+			width: 50px;
+			height: 28px;
+			overflow: hidden;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:HorizontalPanel>
+			<g:ListBox width="70px" styleName="{common.select}"
+				ui:field="month" />
+			<g:Label width="3px" height="31px" />
+			<g:ListBox width="70px" styleName="{common.select}"
+				ui:field="date" />
+			<g:Label width="3px" height="31px" />
+			<g:ListBox width="70px" styleName="{common.select}"
+				ui:field="year" />
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

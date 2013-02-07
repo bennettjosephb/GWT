@@ -1,0 +1,174 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+	<ui:style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		html {
+			height: 100%;
+		}
+		
+		header,nav,section,article,aside,footer {
+			display: block;
+		}
+		
+		body {
+			font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+			height: 100%;
+		}
+		
+		a {
+			color: blue;
+			outline: none;
+			text-decoration: underline;
+		}
+		
+		a:hover {
+			text-decoration: none;
+		}
+		
+		p {
+			margin: 0 0 18px
+		}
+		
+		img {
+			border: none;
+		}
+		
+		input {
+			vertical-align: middle;
+		}
+		
+		#wrapper {
+			width: 100%;
+			min-width: 1000px;
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+		}
+		
+		/* Header
+								-----------------------------------------------------------------------------*/
+		#header {
+			height: 50px;
+			background: #FFE680;
+		}
+		
+		/* Middle
+								-----------------------------------------------------------------------------*/
+		#middle {
+			width: 100%;
+			height: 1%;
+			position: relative;
+		}
+		
+		#middle:after {
+			content: '.';
+			display: block;
+			clear: both;
+			visibility: hidden;
+			height: 0;
+		}
+		
+		#container {
+			width: 100%;
+			float: left;
+			overflow: hidden;
+		}
+		
+		#content {
+			width:1000px;
+			margin: 0 auto;
+		}
+		
+		/* Footer
+								-----------------------------------------------------------------------------*/
+		#footer {
+			margin: -50px auto 0;
+			min-width: 1000px;
+			height: 50px;
+			background: #BFF08E;
+			position: relative;
+		}
+		.styled-select select {
+			background: transparent;
+			width: 50px;
+			padding: 5px;
+			font-size: 16px;
+			line-height: 1;
+			border: 1px solid #F1F1F1;
+			border-radius: 0;
+			height: 30px;
+		}
+		
+		.styled-select {
+			width: 50px;
+			height: 30px;
+			overflow: hidden;
+			border: 1px solid #F1F1F1;
+		}
+	</ui:style>
+
+	<ui:style field='common' src="../../../common/css/Common.css"/>
+		
+	<ui:style field='createAccount' src="../CreateAccount.css"/>
+
+	<g:HTMLPanel>
+		<div id="wrapper">
+
+			<header id="header">
+				<g:HTMLPanel></g:HTMLPanel>
+			</header><!-- #header -->
+
+			<section id="middle">
+
+				<div id="container">
+					<div id="content">
+						<g:HTMLPanel ui:field="contentPanel" >
+							<g:HorizontalPanel width="1000px" height="100%"
+								horizontalAlignment="ALIGN_CENTER">
+								<g:Cell width="600px">
+									<g:HTMLPanel width="600px" height="100%" />
+								</g:Cell>
+								<g:HTMLPanel width="400px" height="100%">
+									<g:HTMLPanel height="60px" />
+									<g:VerticalPanel width="400px" height="100%"
+										spacing="5" styleName="{createAccount.createAccountVerticalPanel}">
+										<g:Cell height="66px">
+											<g:HTMLPanel styleName="createAccountSpacing"
+												height="66px">
+												<g:Label text="New Label" styleName="createAccountLabelSpacing" />
+												<g:HorizontalPanel styleName="createAccountTextBoxSpacing"
+													width="99%" spacing="3">
+													<g:Cell width="50%">
+														<g:TextBox styleName="{common.input}" width="160px" />
+													</g:Cell>
+													<g:Cell width="50%">
+														<g:TextBox styleName="{common.input}" width="170px" />
+													</g:Cell>
+												</g:HorizontalPanel>
+											</g:HTMLPanel>
+										</g:Cell>
+									</g:VerticalPanel>
+									<g:HTMLPanel height="60px"/>
+								</g:HTMLPanel>
+							</g:HorizontalPanel>
+						</g:HTMLPanel>
+					</div><!-- #content -->
+				</div><!-- #container -->
+
+			</section><!-- #middle -->
+
+		</div><!-- #wrapper -->
+
+		<footer id="footer">
+			<g:HTMLPanel></g:HTMLPanel>
+		</footer><!-- #footer -->
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,159 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.styled-select select {
+			-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 2px inset;
+			border: 5px solid #4D90FE;
+			box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 2px inset;
+			outline: none;
+			background: transparent;
+			width: 50px;
+			padding: 5px;
+			font-size: 16px;
+			line-height: 1;
+			border: 5px solid #4D90FE;
+			border-radius: 0;
+			height: 28px;
+		}
+		
+		.styled-select {
+			width: 50px;
+			height: 28px;
+			overflow: hidden;
+			border: 5px solid #FFFFFF;
+		}
+	</ui:style>
+
+	<ui:style field='common' src="../../common/css/Common.css" />
+		
+	<ui:style field='createAccount' src="CreateAccount.css" />
+		
+	<g:HTMLPanel width="1000px" height="100%">
+		<g:HorizontalPanel width="1000px" height="100%"
+			horizontalAlignment="ALIGN_CENTER">
+			<g:Cell width="600px">
+				<g:HTMLPanel width="600px" height="100%">
+				</g:HTMLPanel>
+			</g:Cell>
+			<g:HTMLPanel width="400px" height="100%">
+				<g:HTMLPanel height="60px" />
+				<g:VerticalPanel width="400px" height="620px"
+					spacing="5" styleName="{createAccount.createAccountVerticalPanel}">
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Name" />
+							<g:HorizontalPanel spacing="5" width="380px">
+								<g:Cell width="50%">
+									<g:FlowPanel>
+										<g:TextBox styleName="{common.input}" visibleLength="23"
+											ui:field="firstName" />
+									</g:FlowPanel>
+								</g:Cell>
+								<g:Cell width="100%">
+									<g:FlowPanel>
+										<g:TextBox styleName="{common.input}" visibleLength="23"
+											ui:field="lastName" />
+									</g:FlowPanel>
+								</g:Cell>
+							</g:HorizontalPanel>
+							<g:Label ui:field="nameErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Username" />
+							<g:HorizontalPanel spacing="5">
+								<g:TextBox styleName="{common.input}" visibleLength="54"
+									ui:field="username" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="usernameErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Password" />
+							<g:HorizontalPanel spacing="5">
+								<g:PasswordTextBox styleName="{common.input}"
+									visibleLength="54" ui:field="password" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="passwordErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Confirm Password" />
+							<g:HorizontalPanel spacing="5">
+								<g:PasswordTextBox styleName="{common.input}"
+									visibleLength="54" ui:field="confirmPassword" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="confirmPasswordErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Date Of Birth" />
+							<g:HorizontalPanel spacing="5">
+								<g:ListBox styleName="{style.styled-select}" width="120px"
+									ui:field="monthBD" />
+								<g:IntegerBox styleName="{common.input}" width="115px"
+									ui:field="dateBD" />
+								<g:IntegerBox styleName="{common.input}" width="125px"
+									ui:field="yearBD" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="dateOfBirthErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Gender" />
+							<g:HorizontalPanel spacing="5">
+								<g:ListBox styleName="{style.styled-select}" width="370px"
+									ui:field="gender" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="genderErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Location" />
+							<g:HorizontalPanel spacing="5">
+								<g:SuggestBox styleName="{common.input}" width="370px"
+									ui:field="location" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="locationErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="66px">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label text="Phone Number" />
+							<g:HorizontalPanel spacing="5">
+								<g:TextBox styleName="{common.input}" width="370px"
+									ui:field="phoneNumber" />
+							</g:HorizontalPanel>
+							<g:Label ui:field="phoneNumberErrorLabel" />
+						</g:HTMLPanel>
+					</g:Cell>
+					<g:Cell height="">
+						<g:HTMLPanel styleName="{createAccount.createAccountSpacing}">
+							<g:Label />
+							<g:HorizontalPanel spacing="5">
+								<g:Cell width="30px">
+									<g:SubmitButton width="150px" height="30px"
+										ui:field="submit" text="Submit" styleName="{common.input}" />
+								</g:Cell>
+							</g:HorizontalPanel>
+							<g:Label />
+						</g:HTMLPanel>
+					</g:Cell>
+
+				</g:VerticalPanel>
+				<g:HTMLPanel height="60px" />
+			</g:HTMLPanel>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

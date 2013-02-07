@@ -1,0 +1,68 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+	<ui:style field='login' src="LoginView.css" />
+		
+	<ui:style field='common' src="../common/css/Common.css" />
+		
+	<g:HTMLPanel width="100%" height="100%" styleName="{login.wrapper-parent}">
+		<g:HTMLPanel width="100%" height="71px"
+			styleName="{login.loginscreen-header}">
+			<g:HTMLPanel width="200px" height="40px" styleName="{login.logo-padding}">
+				<g:Image width="150px" height="40px" />
+			</g:HTMLPanel>
+			<g:HTMLPanel width="200px" height="50px" styleName="{login.right}">
+				<g:Hyperlink width="120px" targetHistoryToken="createaccount"
+					styleName="{login.button_example}">CREATE AN ACCOUNT</g:Hyperlink>
+			</g:HTMLPanel>
+		</g:HTMLPanel>
+		<g:HTMLPanel width="" styleName="{login.main}">
+			<g:HTMLPanel styleName="{login.signin-wrapper}">
+				<g:FormPanel width="315px" height="100%" styleName="{login.form-wrapper}">
+					<g:HTMLPanel width="100%" height="100%">
+						<h4 style="padding:10px;">Sign in</h4>
+						<g:HTMLPanel width="295px" height="100%"
+							styleName="{login.username-div}">
+							<g:Label width="285px">Username</g:Label>
+							<g:TextBox width="280px" styleName="{common.input}" ui:field="username"></g:TextBox>
+						</g:HTMLPanel>
+						<g:HTMLPanel width="295px" height="100%"
+							styleName="{login.password-div}">
+							<g:Label width="285px">Password</g:Label>
+							<g:PasswordTextBox ui:field="password" width="285px" styleName="{common.input}"></g:PasswordTextBox>
+						</g:HTMLPanel>
+						<g:HTMLPanel width="295px" height="100%" styleName="{login.button-div}">
+							<g:SubmitButton width="100px" height="35px"
+								styleName="{common.input}" ui:field="submit">Sign in</g:SubmitButton>
+						</g:HTMLPanel>
+					</g:HTMLPanel>
+				</g:FormPanel>
+			</g:HTMLPanel>
+			<g:HTMLPanel width="650px" styleName="{login.loginscreen-container}">
+				<g:HTMLPanel styleName="{login.loginscreen-left}" width="305px"
+					height="">
+					<p>This is sample content added for before picture to test the
+						content getting displayed properly, So, as much to compensate for
+						my own goldfish-like brain as anything else, I'm going to make a
+						note of some of the CSS stuff I've used or found helpful during my
+						mad scramblings to get the LMAX Trader user interface to a) look
+						the way we wanted b) p</p>
+					<g:Image width="305px" height="250px" />
+				</g:HTMLPanel>
+				<g:HTMLPanel styleName="{login.loginscreen-left}" width="305px">
+					<g:Image width="305px" height="250px" />
+					<p>This is sample content added for before picture to test the
+						content getting displayed properly, So, as much to compensate for
+						my own goldfish-like brain as anything else, I'm going to make a
+						note of some of the CSS stuff I've used or found helpful during my
+						mad scramblings to get the LMAX Trader user interface to a) look
+						the way we wanted b) p</p>
+				</g:HTMLPanel>
+			</g:HTMLPanel>
+		</g:HTMLPanel>
+		<g:HTMLPanel width="100%" height="30px" styleName="{common.global-footer}">©Me</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+
+.content {
+	background-color: #0000FF;
+	height: 100%;
+	min-height: 800px;
+}
+
+.mainPanelLeftSpacing{
+	padding-left: 20px;
+}
+
+.menuPanelLeftSpacing{
+	padding-left: 50px;
+}
+
+.contactDetailsLabel {
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	color: #3C3C3C;
+}
+
+.contactDetailsHeadingLabel {
+	font-weight: bold;
+	font-size : 13px;
+	font-family: arial, sans-serif;
+	color: #000000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+}

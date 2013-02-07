@@ -1,0 +1,131 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' 	xmlns:c='urn:import:com.gwt.sample.client.content'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style field='content' src="Content.css" />
+		
+	<ui:style field='currentDetails' src="CurrentDetails.css" />
+		
+	<ui:style field='common' src="../common/css/Common.css" />
+		
+	<g:HTMLPanel width="100%" height="100%">
+		<g:HorizontalPanel width="1000px" height="100%">
+			<g:Cell width="500px">
+				<g:HTMLPanel width="500px" height="100%">
+					<g:VerticalPanel width="500px" height="100%"
+						spacing="10">
+						<g:Cell height="50px">
+							<g:HTMLPanel height="50px" />
+						</g:Cell>
+						<g:Cell width="100%" height="30px">
+							<g:HTMLPanel width="100%" height="100%">
+								<g:Label styleName="{content.contactDetailsHeadingLabel}">
+									<ui:msg key="permanentAddress" description="Permanent Address">Permanent
+										Address</ui:msg>
+								</g:Label>
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell width="100%" height="365px">
+							<c:AddressDetails styleName="{currentDetails.currentDetailsSpacing}" ui:field="permanentAddress"/>
+						</g:Cell>
+						<g:Cell height="20px">
+							<g:HTMLPanel>
+								<g:CheckBox ui:field="copyAddress">
+									<ui:msg key="copyAddress" description="Copy to Temporary Address">Copy to Temporary
+										Address</ui:msg>
+								</g:CheckBox>
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="20px">
+							<g:HTMLPanel height="100%" width="100%">
+							<g:Label styleName="{content.contactDetailsHeadingLabel}">
+								<ui:msg key="phontNumber" description="Phone Number">Phone Number</ui:msg>
+							</g:Label>
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="50px">
+							<g:HTMLPanel styleName="{currentDetails.currentDetailsSpacing}">
+								<g:Label>
+									<ui:msg key="mobileNumber" description="Mobile Number">Mobile</ui:msg>
+								</g:Label>
+								<g:TextBox styleName="{common.input}" width="450px"
+									ui:field="mobileNumber" />
+								<g:Label ui:field="mobileNumberError" />
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="50px">
+							<g:HTMLPanel styleName="{currentDetails.currentDetailsSpacing}">
+								<g:Label>
+									<ui:msg key="workNumber" description="Work Number">Work</ui:msg>
+								</g:Label>
+								<g:TextBox styleName="{common.input}" width="450px"
+									ui:field="workNumber" />
+								<g:Label ui:field="workNumberError" />
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="50px">
+							<g:HTMLPanel styleName="{currentDetails.currentDetailsSpacing}">
+								<g:Label>
+									<ui:msg key="homeNumber" description="Home Number">Home</ui:msg>
+								</g:Label>
+								<g:TextBox styleName="{common.input}" width="450px"
+									ui:field="homeNumber" />
+								<g:Label ui:field="homeNumberError" />
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="50px">
+							<g:HTMLPanel styleName="{currentDetails.currentDetailsSpacing}">
+								<g:Label>
+									<ui:msg key="faxNumber" description="Fax Number">Fax</ui:msg>
+								</g:Label>
+								<g:TextBox styleName="{common.input}" width="450px"
+									ui:field="faxNumber" />
+								<g:Label ui:field="faxNumberError" />
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell height="50px">
+							<g:HTMLPanel styleName="{currentDetails.currentDetailsSpacing}">
+								<g:Label>
+									<ui:msg key="eMailId" description="E-Mail Address">E-Mail</ui:msg>
+								</g:Label>
+								<g:TextBox styleName="{common.input}" width="450px"
+									ui:field="eMailId" />
+								<g:Label ui:field="eMailIdError" />
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:HTMLPanel>
+							<g:SubmitButton styleName="{common.input}" width="150px" ui:field="save">
+								<ui:msg key="save" description="Save Button">Save</ui:msg>
+							</g:SubmitButton>
+						</g:HTMLPanel>
+					</g:VerticalPanel>
+				</g:HTMLPanel>
+			</g:Cell>
+			<g:Cell width="500px">
+				<g:HTMLPanel width="500px" height="100%">
+					<g:VerticalPanel width="100%" height="100%"
+						spacing="10">
+						<g:Cell height="50px">
+							<g:HTMLPanel height="50px" />
+						</g:Cell>
+						<g:Cell width="100%" height="30px">
+							<g:HTMLPanel height="30px">
+								<g:Label styleName="{content.contactDetailsHeadingLabel}">
+									<ui:msg key="temporaryAddress" description="Temporary Address">Temporary
+										Address</ui:msg>
+								</g:Label>
+							</g:HTMLPanel>
+						</g:Cell>
+						<g:Cell width="100%" height="">
+							<c:AddressDetails styleName="{currentDetails.currentDetailsSpacing}" ui:field="temporaryAddress"/>
+						</g:Cell>
+					</g:VerticalPanel>
+				</g:HTMLPanel>
+			</g:Cell>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

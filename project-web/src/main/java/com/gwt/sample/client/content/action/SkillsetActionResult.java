@@ -1,0 +1,22 @@
+package com.gwt.sample.client.content.action;
+
+import com.gwtplatform.dispatch.shared.Result;
+import java.lang.Boolean;
+
+public class SkillsetActionResult implements Result {
+
+	private Boolean commited;
+
+	@SuppressWarnings("unused")
+	private SkillsetActionResult() {
+		// For serialization only
+	}
+
+	public SkillsetActionResult(Boolean commited) {
+		this.commited = commited;
+	}
+
+	public Boolean getCommited() {
+		return commited;
+	}
+}

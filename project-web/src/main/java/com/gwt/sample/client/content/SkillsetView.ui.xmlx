@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style field="common" src="../common/css/Common.css"></ui:style>
+
+	<g:HTMLPanel width="100%" height="100%">
+		<g:VerticalPanel width="100%" height="100%" spacing="10">
+			<g:Cell width="100%" height="50px">
+				<g:HTMLPanel width="100%" height="50px" />
+			</g:Cell>
+			<g:Cell width="100%" height="100%">
+				<g:HTMLPanel>
+					<g:FlowPanel width="100%" height="100%" ui:field="listSkill" />
+				</g:HTMLPanel>
+			</g:Cell>
+			<g:HTMLPanel>
+				<g:Button ui:field="addSkill" styleName="{common.button}">
+					<ui:msg key="addSkillset" description="Adding new Skill Set">Add Skill</ui:msg>
+				</g:Button>
+			</g:HTMLPanel>
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

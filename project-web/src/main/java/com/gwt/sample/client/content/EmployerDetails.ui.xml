@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.gwt.sample.client.common.widget" xmlns:con="urn:import:com.gwt.sample.client.content"
+	xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel width="100%">
+		<con:EmployerDetailsDialog ui:field="employerDetailsDialog"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

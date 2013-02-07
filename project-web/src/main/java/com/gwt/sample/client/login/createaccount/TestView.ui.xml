@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	xmlns:g1='urn:import:com.google.gwt.dom.builder.shared'
+	ui:generateLocales='default'>
+
+
+
+	<ui:style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		html {
+			height: 100%;
+		}
+		
+		body {
+			height: 100%;
+		}
+		
+		#footer {
+			margin: -100px auto 0;
+			min-width: 1000px;
+			height: 100px;
+			background: #BFF08E;
+			position: relative;
+		}
+		
+		.a {
+			background-color: #FF0000;
+		}
+		
+		.b {
+			margin: 0 auto;
+			background-color: #FFFFFF;
+		}
+		
+		.c {
+			background-color: #FF00FF;
+		}
+		
+		.d {
+			min-height: 100%;
+		}
+	</ui:style>
+
+	<g:DockPanel width="100%" height="100%" styleName="{style.d}">
+		<g:Dock direction="NORTH">
+			<g:HTMLPanel width="100%" height="50px" ui:field="headerPanel"
+				styleName="{style.a}" />
+		</g:Dock>
+		<g:Dock direction="CENTER" width="1000px" height="100%">
+			<g:HTMLPanel width="1000px" height="100%" ui:field="contentPanel"
+				styleName="{style.b}"><!-- <g1:HtmlInputBuilder value="text" /> -->
+			</g:HTMLPanel>
+		</g:Dock>
+		<g:Dock direction="SOUTH" width="100%" height="50px">
+			<g:HTMLPanel width="100%" height="50px" ui:field="footerPanel"
+				styleName="{style.c}" />
+		</g:Dock>
+	</g:DockPanel>
+</ui:UiBinder>

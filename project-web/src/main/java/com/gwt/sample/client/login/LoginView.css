@@ -1,0 +1,703 @@
+@CHARSET "ISO-8859-1";
+
+.onMouseOverBorderColor {
+	font-weight: bold;
+	border: 1px solid #3079ED;
+	color: white;
+	border-radius: 2px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #0157e4;
+	background-color: #1a70fe;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a70fe),
+		color-stop(100%, #30599d) );
+	background-image: -webkit-linear-gradient(top, #1a70fe, #30599d);
+	background-image: -moz-linear-gradient(top, #1a70fe, #30599d);
+	background-image: -ms-linear-gradient(top, #1a70fe, #30599d);
+	background-image: -o-linear-gradient(top, #1a70fe, #30599d);
+	background-image: linear-gradient(top, #1a70fe, #30599d);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#1a70fe, endColorstr=#30599d );
+}
+
+.onMouseOutBorderColor {
+	font-weight: bold;
+	border: 1px solid #3079ED;
+	color: white;
+	border-radius: 2px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #156dfe;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: px;
+	font-family: arial, helvetica, sans-serif;
+	padding: 7px 7px 7px 7px;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #4D90FE;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4D90FE),
+		color-stop(100%, #3C6FC4) );
+	background-image: -webkit-linear-gradient(top, #4D90FE, #3C6FC4);
+	background-image: -moz-linear-gradient(top, #4D90FE, #3C6FC4);
+	background-image: -ms-linear-gradient(top, #4D90FE, #3C6FC4);
+	background-image: -o-linear-gradient(top, #4D90FE, #3C6FC4);
+	background-image: linear-gradient(top, #4D90FE, #3C6FC4);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#4D90FE, endColorstr=#3C6FC4 );
+}
+
+.g-button-submit {
+	background-color: #4D90FE;
+	font-weight: bold;
+	border-radius: 2px;
+	background-image: -webkit-linear-gradient(top, #4D90FE, #4787ED);
+	border: 1px solid #3079ED;
+	color: #FFFFFF;
+	text-shadow: rgba(0, 0, 0, 0.0980392) 0 1px;
+}
+
+.g-button-submit : HOVER {
+	-webkit-transition: all 0.218s;
+	-webkit-user-select: none;
+	background-color: #F5F5F5;
+	background-image: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+	border: 1px solid #DCDCDC;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #444444;
+	cursor: default;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	min-width: 46px;
+	padding: 0 8px;
+	text-align: center;
+}
+
+.main {
+	max-width: 1000px;
+	min-width: 650px;
+	width: auto;
+	margin: 0 auto;
+	padding: 23px;
+	overflow: auto;
+}
+
+.content {
+	padding: 0 44px;
+}
+
+.logo {
+	background-color: #F1F1F1;
+}
+
+.lbg {
+	background-color: #F1F1F1;
+}
+
+.css3button:HOVER {
+	font-family: Arial;
+	font-size: 12px;
+	color: #f7f4f7;
+	padding: 12px 20px;
+	background: -moz-linear-gradient(top, #1724e6 0%, #1f2fdb);
+	background: -webkit-gradient(linear, left top, left bottom, from(#1724e6),
+		to(#1f2fdb) );
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 2px;
+	border: 0px solid #949494;
+	-moz-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.2), 0px 1px 0px
+		rgba(255, 255, 255, 1);
+}
+
+.css3button {
+	font-family: Arial;
+	font-size: 12px;
+	color: #000000;
+	padding: 12px 20px;
+	background: -moz-linear-gradient(top, #000000 0%, #000000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000),
+		to(#000000) );
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 2px;
+	border: 0px solid #949494;
+	-moz-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.2), 0px 1px 0px
+		rgba(255, 255, 255, 1);
+	width: 150px;
+}
+
+.css3button:ACTIVE {
+	font-family: Helvetica;
+	font-size: 12px;
+	color: #f7f4f7;
+	background: -moz-linear-gradient(top, #1724e6 0%, #000000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2e609),
+		to(#f2e609) );
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 2px;
+	border: 0px solid #949494;
+	-moz-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.2), 0px 1px 0px
+		rgba(255, 255, 255, 1);
+}
+
+.css3button:VISITED {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #f7f4f7;
+	padding: 12px 20px;
+	background: -moz-linear-gradient(top, #1724e6 0%, #FFFFFF);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+		to(#FFFFFF) );
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 2px;
+	border: 0px solid #949494;
+	-moz-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 1px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.2), 0px 1px 0px
+		rgba(255, 255, 255, 1);
+}
+
+.css3Href a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.css3Href a:ACTIVE {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.css3Href a:HOVER {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.css3Href a:VISITED {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.css3Href {
+	font-family: Arial, bold, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 18px;
+	background: -moz-linear-gradient(top, #b31734 0%, #eb0e33);
+	background: -webkit-gradient(linear, left top, left bottom, from(#b31734),
+		to(#eb0e33) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #eb0e33;
+	-moz-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px
+		1px rgba(235, 14, 51, 1);
+	box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.css3Href:VISITED {
+	font-family: Arial, bold, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 18px;
+	background: -moz-linear-gradient(top, #b31734 0%, #eb0e33);
+	background: -webkit-gradient(linear, left top, left bottom, from(#b31734),
+		to(#eb0e33) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #eb0e33;
+	-moz-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px
+		1px rgba(235, 14, 51, 1);
+	box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.css3Href:HOVER {
+	font-family: Arial, bold, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 18px;
+	background: -moz-linear-gradient(top, #eb0e33 0%, #b31734);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eb0e33),
+		to(#b31734) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #eb0e33;
+	-moz-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px
+		1px rgba(235, 14, 51, 1);
+	box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.css3Href:ACTIVE {
+	font-family: Arial, bold, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 18px;
+	background: -moz-linear-gradient(top, #b31734 0%, #eb0e33);
+	background: -webkit-gradient(linear, left top, left bottom, from(#b31734),
+		to(#eb0e33) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #eb0e33;
+	-moz-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px
+		1px rgba(235, 14, 51, 1);
+	box-shadow: 0px 1px 3px rgba(235, 14, 51, 0.5), inset 0px 0px 1px
+		rgba(235, 14, 51, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.css3Button {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #4D90FE 0%, #4787ED);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4d91fe),
+		to(#b5cdf2) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #4d91fe;
+	-moz-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px
+		2px rgba(77, 145, 254, 1);
+	box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.css3Button:VISITED {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #4D90FE 0%, #4787ED);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4d91fe),
+		to(#b5cdf2) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #4d91fe;
+	-moz-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px
+		2px rgba(77, 145, 254, 1);
+	box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.css3Button:HOVER {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #4787ED 0%, #4D90FE);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4d91fe),
+		to(#b5cdf2) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #4d91fe;
+	-moz-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px
+		2px rgba(77, 145, 254, 1);
+	box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.css3Button:ACTIVE {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #4D90FE 0%, #4787ED);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4d91fe),
+		to(#b5cdf2) );
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0px solid #4d91fe;
+	-moz-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px
+		2px rgba(77, 145, 254, 1);
+	box-shadow: 0px 1px 3px rgba(77, 145, 254, 0.5), inset 0px 0px 2px
+		rgba(77, 145, 254, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.signin-box {
+	background-color: #F1F1F1;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	border: 1px solid #E5E5E5;
+	margin: 12px 0 0;
+	padding: 20px 25px 15px;
+}
+
+#footer {
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20px;
+	visibility: visible;
+	display: block;
+}
+
+.sign-in {
+	float: right;
+	width: 335px;
+	height: 335px;
+}
+
+.label {
+	vertical-align: bottom;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.header {
+	width: 900px;
+	height: 100px;
+}
+
+.navdiv {
+	width: 250px;
+	float: left;
+	height: 100px;
+}
+
+.mainarea {
+	width: 72%;
+	float: left;
+	height: 100%;
+}
+
+.table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.button {
+	background: -webkit-gradient(linear, left top, right top, from(#000FFF),
+		to(#FFF000) );
+	font-family: monospace;
+	color: White;
+}
+
+.label {
+	vertical-align: bottom;
+}
+
+.tb7 {
+	width: 221px;
+	background: transparent url('bg.jpg') no-repeat;
+	color: #747862;
+	height: 20px;
+	border: 0;
+	padding: 4px 8px;
+	margin-bottom: 0px;
+}
+
+.logo-padding {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+}
+
+.sign-in-header-panel {
+	min-width: 1000px;
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.right {
+	float: right;
+	right: 0px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.left {
+	position: absolute;
+	left: 0px;
+	background-color: #b0e0e6;
+}
+
+.footer {
+	border-top-color: #EBEBEB;
+	border-top-style: solid;
+	border-top-width: 1px;
+	bottom: 0;
+	height: 35px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.signin-wrapper {
+	float: right;
+	height: 100%;
+	width: 335px;
+	background-color: #F1F1F1;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	border: 1px solid #E5E5E5;
+}
+
+.signin-container {
+	float: none;
+	width: 1000px;
+	height: 100%;
+}
+
+.button_example a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.button_example a:ACTIVE {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.button_example a:HOVER {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.button_example a:VISITED {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.button_example {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	border: 1px solid #df0909;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: px;
+	font-size: 11px;
+	font-family: arial, helvetica, sans-serif;
+	padding: 7px 7px 7px 7px;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #f62b2b;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f62b2b),
+		color-stop(100%, #d20202) );
+	background-image: -webkit-linear-gradient(top, #f62b2b, #d20202);
+	background-image: -moz-linear-gradient(top, #f62b2b, #d20202);
+	background-image: -ms-linear-gradient(top, #f62b2b, #d20202);
+	background-image: -o-linear-gradient(top, #f62b2b, #d20202);
+	background-image: linear-gradient(top, #f62b2b, #d20202);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#f62b2b, endColorstr=#d20202 );
+}
+
+.button_example:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	border: 1px solid #b30808;
+	background-color: #e40a0a;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e40a0a),
+		color-stop(100%, #9f0202) );
+	background-image: -webkit-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -moz-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: linear-gradient(top, #e40a0a, #9f0202);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#e40a0a, endColorstr=#9f0202 );
+}
+
+.wrapper-parent {
+	min-width: 1000px;
+}
+
+.form-wrapper {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.username-div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.password-div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button-div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.loginscreen-left {
+	float: left;
+	overflow: inherit;
+	padding: 10px;
+}
+
+.loginscreen-container {
+	overflow: auto;
+}
+
+.loginscreen-header {
+	background-color: #F1F1F1;
+	border-bottom-color: #EBEBEB;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.g-button-submit {
+	background-color: #4D90FE;
+	font-weight: bold;
+	border-radius: 2px;
+	background-image: -webkit-linear-gradient(top, #4D90FE, #4787ED);
+	border: 1px solid #3079ED;
+	color: #FFFFFF;
+	text-shadow: rgba(0, 0, 0, 0.0980392) 0 1px;
+}
+
+.g-button-submit : HOVER {
+	-webkit-transition: all 0.218s;
+	-webkit-user-select: none;
+	background-color: #F5F5F5;
+	background-image: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+	border: 1px solid #DCDCDC;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #444444;
+	cursor: default;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	min-width: 46px;
+	padding: 0 8px;
+	text-align: center;
+}
