@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<g:DialogBox width="" glassEnabled="true" animationEnabled="true"
+		modal="true">
+		<g:caption>This is Heading</g:caption>
+		<g:HTMLPanel width="400px" height="200px">
+			<g:VerticalPanel spacing="10" horizontalAlignment="ALIGN_CENTER"
+				width="100%" height="100%" verticalAlignment="ALIGN_MIDDLE">
+				<g:Button width="150px" height="30px" ui:field="close"> Close Me!!!</g:Button>
+			</g:VerticalPanel>
+		</g:HTMLPanel>
+	</g:DialogBox>
+</ui:UiBinder>
