@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.example.datepicker.client.widget;
 
@@ -20,7 +20,7 @@ import com.gwtplatform.dispatch.shared.DispatchAsync;
 
 /**
  * @author SONY
- * 
+ *
  */
 public class DatePicker extends Composite {
 
@@ -79,7 +79,6 @@ public class DatePicker extends Composite {
 		this.dateTimeConstants = dateTimeConstants;
 		com.example.datepicker.client.widget.action.DatePicker datePicker = new com.example.datepicker.client.widget.action.DatePicker();
 		dispatchAsync.execute(datePicker, datePickerResult);
-		Window.alert("Messa`");
 		getMonth().addChangeHandler(new ChangeHandler() {
 			@Override
 			public void onChange(ChangeEvent event) {
