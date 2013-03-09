@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	 xmlns:c='urn:import:com.example.datepicker.client.widget'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<g:DialogBox width="" glassEnabled="true" modal="true"
+		ui:field="dialogWindow">
+		<g:caption>
+			<ui:msg key="addEmployerDetails" description="Adding New Employer Details">Enter Education
+				Details</ui:msg>
+		</g:caption>
+		<g:HorizontalPanel width="400px" height="100%">
+			<c:DatePicker ui:field="chooseDate" />
+			<g:Button ui:field="close"> CLOSE </g:Button>
+		</g:HorizontalPanel>
+	</g:DialogBox>
+</ui:UiBinder>
