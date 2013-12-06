@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+.header{
+	background-color: #FF0000;
+}
+
+.loginscreen-header {
+	background-color: #B5BEFD;
+	border-bottom-color: #EBEBEB;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.logo-padding {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+}
+
+.logout-button {
+	float: right;
+	right: 0px;
+	padding-top: 20px;
+	padding-left: 10px;
+}

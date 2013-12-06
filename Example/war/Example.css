@@ -1,0 +1,22 @@
+/* Add css rules here for your application. */
+.gwt-TextBox:focus {
+	border: 2px solid #6d0019;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	outline: none;
+}
+
+.gwt-TextBox {
+	font-size: medium;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.gwt-TextBox:error {
+	border: 2px solid #FF0000;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	outline: none;
+}

@@ -1,0 +1,34 @@
+@CHARSET "ISO-8859-1";
+
+.createAccountVerticalPanel {
+	background-color: #F1F1F1;
+}
+
+.scrollBarEnable {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.content {
+	min-height: 100%;
+}
+
+.centerAlighment{
+	margin: 0 auto;
+	clear: both;
+}
+
+.centerAlighment1{
+	margin: 0 auto;
+	clear: both;
+	
+}
+
+.createAccountSpacing {
+ overlap: auto;
+	margin: 2px;
+	padding: 2px;
+}
+
