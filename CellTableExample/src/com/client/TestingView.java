@@ -313,8 +313,7 @@ public class TestingView extends ViewImpl implements TestingPresenter.MyView {
 			public void render(Context context, ContactInfo object,
 					SafeHtmlBuilder sb) {
 				sb.appendHtmlConstant("<img src='images/flags/flat/24/"
-						+ object.getFlagLocation()
-						+ ".png' style='cursor: pointer' />");
+						+ object.getFlagLocation() + ".png' style='margin:-3% 40% -6px 40%;'/>");
 			}
 		};
 

@@ -11,13 +11,15 @@ public interface TableRes extends CellTable.Resources {
 		/**
 		 * Applied to every cell.
 		 */
-			 //cellTableCell2
+		// cellTableCell2
 		String cellTableCellLow();
 
 		/**
 		 * Applied to every cell.
 		 */
 		String cellTableCellHigh();
+
+		String imgCrop();
 
 	}
 }
