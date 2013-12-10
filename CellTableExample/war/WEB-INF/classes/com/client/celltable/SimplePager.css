@@ -1,0 +1,20 @@
+.pageDetails {
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.button {
+  padding: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gotoPageNumber{
+  	padding: 4px;
+	font-size: 90%;
+	color: 	#000000;
+}
+
+.disabledButton {
+  cursor: default;   
+}

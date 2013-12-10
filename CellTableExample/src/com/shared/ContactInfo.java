@@ -7,6 +7,15 @@ public class ContactInfo {
 	private Float age;
 	private Float height;
 	private Address address;
+	private String flagLocation;
+
+	public String getFlagLocation() {
+		return flagLocation;
+	}
+
+	public void setFlagLocation(String flagLocation) {
+		this.flagLocation = flagLocation;
+	}
 
 	public String getFirstName() {
 		return firstName;

@@ -162,7 +162,7 @@ public class SimplePager extends AbstractPager {
 		 * Applied to the details text.
 		 */
 		String pageDetails();
-		
+
 		String gotoPageNumber();
 	}
 
@@ -384,11 +384,15 @@ public class SimplePager extends AbstractPager {
 				// Window.alert("" + range.getStart());
 				// Window.alert("" + range.getLength());
 				// Window.alert("" + Integer.parseInt(pageNumber.getValue()));
-				Window.alert(""
-						+ (range.getStart() + (range.getLength() * (Integer
-								.parseInt(pageNumber.getValue()) - 1))));
-				setPageStart((range.getLength() * (Integer.parseInt(pageNumber
-						.getValue()) - 1) + 1));
+				int page = 0;
+
+				try {
+
+					page = Integer.parseInt(pageNumber.getValue());
+					setPageStart((range.getLength() * (page - 1) + 1));
+				} catch (NumberFormatException numberFormatException) {
+
+				}
 			}
 		});
 
@@ -488,7 +492,8 @@ public class SimplePager extends AbstractPager {
 		prevPage.getElement().getParentElement().addClassName(style.button());
 		label.getElement().getParentElement().addClassName(style.pageDetails());
 		nextPage.getElement().getParentElement().addClassName(style.button());
-		pageNumber.getElement().getParentElement().addClassName(style.gotoPageNumber());
+		pageNumber.getElement().getParentElement()
+				.addClassName(style.gotoPageNumber());
 		if (showFastForwardButton) {
 			fastForward.getElement().getParentElement()
 					.addClassName(style.button());

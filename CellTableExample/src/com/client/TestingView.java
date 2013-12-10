@@ -4,6 +4,8 @@ import java.util.Comparator;
 
 import com.google.gwt.cell.client.AbstractCell;
 import com.google.gwt.cell.client.Cell.Context;
+import com.google.gwt.cell.client.ClickableTextCell;
+import com.google.gwt.cell.client.ImageCell;
 import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
 import com.google.gwt.cell.client.TextInputCell;
@@ -149,6 +151,7 @@ public class TestingView extends ViewImpl implements TestingPresenter.MyView {
 			contactInfo.setFirstName("FIRST NAME" + i);
 			contactInfo.setLastName("LAST NAME" + i);
 			contactInfo.setHeight(Float.valueOf(i));
+			contactInfo.setFlagLocation("FLAG" + i);
 
 			dataProvider.getList().add(contactInfo);
 
@@ -161,7 +164,7 @@ public class TestingView extends ViewImpl implements TestingPresenter.MyView {
 
 		pager = new SimplePager(TextLocation.CENTER, pagerResources, false, 0,
 				true);
-		
+
 		pager.setDisplay(cellTable);
 
 		final SingleSelectionModel<ContactInfo> selectionModel = new SingleSelectionModel<ContactInfo>();
@@ -299,6 +302,22 @@ public class TestingView extends ViewImpl implements TestingPresenter.MyView {
 
 		};
 
+		Column<ContactInfo, String> flag = new Column<ContactInfo, String>(
+				new ImageCell()) {
+			@Override
+			public String getValue(ContactInfo object) {
+				return object.getAddress().getStreet2();
+			}
+
+			@Override
+			public void render(Context context, ContactInfo object,
+					SafeHtmlBuilder sb) {
+				sb.appendHtmlConstant("<img src='images/flags/flat/24/"
+						+ object.getFlagLocation()
+						+ ".png' style='cursor: pointer' />");
+			}
+		};
+
 		// cellTable.addDomHandler(new DoubleClickHandler() {
 		//
 		// @Override
@@ -405,6 +424,7 @@ public class TestingView extends ViewImpl implements TestingPresenter.MyView {
 		cellTable.addColumn(houseNoColumn, "HOUSE NO");
 		cellTable.addColumn(street1Column, "STREET 1");
 		cellTable.addColumn(street2Column, "STREET 2");
+		cellTable.addColumn(flag, "FLAG");
 
 		sortHandler.setComparator(firstNameColumn,
 				new Comparator<ContactInfo>() {
