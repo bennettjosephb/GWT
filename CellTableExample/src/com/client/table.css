@@ -74,7 +74,19 @@
 }
 
 .cellTableEvenRow {
-	background: #edb4b4;
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(235,
+		235, 235)), color-stop(1, rgb(255, 255, 255)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(235, 235, 235) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(235, 235, 235) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(235, 235, 235) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(235, 235, 235) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(235, 235, 235) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
 	color: #000000;
 	overflow: hidden;
 }
@@ -84,7 +96,19 @@
 }
 
 .cellTableOddRow {
-	background: #f2dfdf;
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(255,
+		227, 227)), color-stop(1, rgb(255, 255, 255)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(255, 227, 227) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(255, 227, 227) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(255, 227, 227) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(255, 227, 227) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(255, 227, 227) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
 	color: #000000;
 	overflow: hidden;
 }
@@ -94,12 +118,38 @@
 }
 
 .cellTableHoveredRow {
-	background: #800000;
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(107,
+		18, 18)), color-stop(1, rgb(194, 109, 109)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(107, 18, 18) 0%,
+		rgb(194, 109, 109) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(107, 18, 18) 0%,
+		rgb(194, 109, 109) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(107, 18, 18) 0%,
+		rgb(194, 109, 109) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(107, 18, 18) 0%,
+		rgb(194, 109, 109) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(107, 18, 18) 0%,
+		rgb(194, 109, 109) 100%, rgb(255, 255, 255) 100%);
+	/*	background: #800000;*/
 	color: #FFFFFF;
 }
 
 .cellTableHoveredRowCell {
-	background: #800000;
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(191,
+		0, 0)), color-stop(1, rgb(255, 156, 156)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(191, 0, 0) 0%,
+		rgb(255, 156, 156) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(191, 0, 0) 0%,
+		rgb(255, 156, 156) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(191, 0, 0) 0%,
+		rgb(255, 156, 156) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(191, 0, 0) 0%,
+		rgb(255, 156, 156) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(191, 0, 0) 0%,
+		rgb(255, 156, 156) 100%, rgb(255, 255, 255) 100%);
+	/*	background: #800000;*/
 	border: selectionBorderWidth solid #eee;
 }
 
@@ -121,7 +171,6 @@
 
 .imgCrop {
 	overflow: hidden;
-	
 }
 
 .cellTableSelectedRowCell {
