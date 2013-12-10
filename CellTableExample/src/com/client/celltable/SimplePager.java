@@ -162,6 +162,8 @@ public class SimplePager extends AbstractPager {
 		 * Applied to the details text.
 		 */
 		String pageDetails();
+		
+		String gotoPageNumber();
 	}
 
 	/**
@@ -372,7 +374,8 @@ public class SimplePager extends AbstractPager {
 
 		pageNumber = new TextBox();
 		pageNumber.setWidth("15px");
-		pageNumber.setHeight("10px");
+		pageNumber.setHeight("15px");
+		pageNumber.setStyleName(style.gotoPageNumber());
 		pageNumber.addBlurHandler(new BlurHandler() {
 
 			@Override
@@ -485,6 +488,7 @@ public class SimplePager extends AbstractPager {
 		prevPage.getElement().getParentElement().addClassName(style.button());
 		label.getElement().getParentElement().addClassName(style.pageDetails());
 		nextPage.getElement().getParentElement().addClassName(style.button());
+		pageNumber.getElement().getParentElement().addClassName(style.gotoPageNumber());
 		if (showFastForwardButton) {
 			fastForward.getElement().getParentElement()
 					.addClassName(style.button());
