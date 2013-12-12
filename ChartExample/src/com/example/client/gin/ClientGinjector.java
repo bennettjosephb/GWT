@@ -9,6 +9,7 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.google.gwt.inject.client.AsyncProvider;
 import com.example.client.PieChartPresenter;
 import com.example.client.CanvasChartPresenter;
+import com.example.client.ColumnChartPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -20,4 +21,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<PieChartPresenter> getPieChartPresenter();
 
 	AsyncProvider<CanvasChartPresenter> getCanvasChartPresenter();
+
+	AsyncProvider<ColumnChartPresenter> getColumnChartPresenter();
 }

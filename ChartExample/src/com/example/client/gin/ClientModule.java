@@ -9,6 +9,8 @@ import com.example.client.place.DefaultPlace;
 import com.example.client.place.NameTokens;
 import com.example.client.CanvasChartPresenter;
 import com.example.client.CanvasChartView;
+import com.example.client.ColumnChartPresenter;
+import com.example.client.ColumnChartView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -25,5 +27,9 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(CanvasChartPresenter.class,
 				CanvasChartPresenter.MyView.class, CanvasChartView.class,
 				CanvasChartPresenter.MyProxy.class);
+
+		bindPresenter(ColumnChartPresenter.class,
+				ColumnChartPresenter.MyView.class, ColumnChartView.class,
+				ColumnChartPresenter.MyProxy.class);
 	}
 }
