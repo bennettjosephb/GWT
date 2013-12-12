@@ -64,9 +64,11 @@ public class ColumnChartPresenter extends
 				DataTable data = DataTable.create();
 				data.addColumn(ColumnType.STRING, "Task");
 				data.addColumn(ColumnType.NUMBER, "Hours per Day");
+				data.addColumn(ColumnType.NUMBER, "Something");
 				data.addRows(16);
 				data.setValue(0, 0, "Work");
 				data.setValue(0, 1, 14);
+				data.setValue(0, 2, 15);
 				data.setValue(1, 0, "Sleep");
 				data.setValue(1, 1, 10);
 				data.setValue(2, 0, "Sleep1");
@@ -95,16 +97,31 @@ public class ColumnChartPresenter extends
 				data.setValue(13, 1, 10);
 				data.setValue(14, 0, "Sleep1");
 				data.setValue(14, 1, 10);
+				data.setValue(14, 0, "Sleep1");
+				data.setValue(14, 1, 10);
 				data.setValue(15, 0, "Sleep1");
 				data.setValue(15, 1, 10);
 				return data;
 			}
 
+			private Options createOptionsChart() {
+			    Options options = Options.create();
+			    options.set("isStacked", true);
+			    //set some options
+
+			    Options series_options = Options.create();
+			    series_options = Options.create();
+			    series_options.set("color","black");
+			    series_options.set("0",series_options);
+			    options.set("series",series_options);
+			    return options;
+			}
 			private Options createOptions() {
 				Options options = Options.create();
 				options.setWidth(1200);
 				options.setHeight(480);
 				options.setTitle("My Daily Activities");
+				
 				return options;
 
 			}
