@@ -7,6 +7,8 @@ import com.example.client.PieChartPresenter;
 import com.example.client.PieChartView;
 import com.example.client.place.DefaultPlace;
 import com.example.client.place.NameTokens;
+import com.example.client.CanvasChartPresenter;
+import com.example.client.CanvasChartView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -19,5 +21,9 @@ public class ClientModule extends AbstractPresenterModule {
 
 		bindConstant().annotatedWith(DefaultPlace.class)
 				.to(NameTokens.piechart);
+
+		bindPresenter(CanvasChartPresenter.class,
+				CanvasChartPresenter.MyView.class, CanvasChartView.class,
+				CanvasChartPresenter.MyProxy.class);
 	}
 }
