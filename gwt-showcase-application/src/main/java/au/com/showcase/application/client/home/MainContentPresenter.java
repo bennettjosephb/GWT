@@ -2,7 +2,7 @@ package au.com.showcase.application.client.home;
 
 import au.com.showcase.application.client.place.NameTokens;
 
-import com.google.gwt.event.shared.EventBus;
+import com.google.web.bindery.event.shared.EventBus;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;

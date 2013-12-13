@@ -2,7 +2,7 @@ package au.com.showcase.application.client.gin;
 
 import au.com.showcase.application.client.home.MainContentPresenter;
 
-import com.google.gwt.event.shared.EventBus;
+import com.google.web.bindery.event.shared.EventBus;
 import com.google.gwt.inject.client.AsyncProvider;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
@@ -16,12 +16,12 @@ public interface ClientGinjector extends Ginjector {
 
 	PlaceManager getPlaceManager();
 
-//	AsyncProvider<PieChartPresenter> getPieChartPresenter();
-//
-//	AsyncProvider<CanvasChartPresenter> getCanvasChartPresenter();
-//
-//	AsyncProvider<ColumnChartPresenter> getColumnChartPresenter();
+	// AsyncProvider<PieChartPresenter> getPieChartPresenter();
+	//
+	// AsyncProvider<CanvasChartPresenter> getCanvasChartPresenter();
+	//
+	// AsyncProvider<ColumnChartPresenter> getColumnChartPresenter();
 
 	AsyncProvider<MainContentPresenter> getMainContentPresenter();
-	
+
 }
