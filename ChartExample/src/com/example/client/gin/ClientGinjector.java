@@ -10,6 +10,7 @@ import com.google.gwt.inject.client.AsyncProvider;
 import com.example.client.PieChartPresenter;
 import com.example.client.CanvasChartPresenter;
 import com.example.client.ColumnChartPresenter;
+import com.example.client.LineChartPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -23,4 +24,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<CanvasChartPresenter> getCanvasChartPresenter();
 
 	AsyncProvider<ColumnChartPresenter> getColumnChartPresenter();
+
+	AsyncProvider<LineChartPresenter> getLineChartPresenter();
 }

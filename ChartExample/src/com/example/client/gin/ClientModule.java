@@ -11,6 +11,8 @@ import com.example.client.CanvasChartPresenter;
 import com.example.client.CanvasChartView;
 import com.example.client.ColumnChartPresenter;
 import com.example.client.ColumnChartView;
+import com.example.client.LineChartPresenter;
+import com.example.client.LineChartView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -31,5 +33,9 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(ColumnChartPresenter.class,
 				ColumnChartPresenter.MyView.class, ColumnChartView.class,
 				ColumnChartPresenter.MyProxy.class);
+
+		bindPresenter(LineChartPresenter.class,
+				LineChartPresenter.MyView.class, LineChartView.class,
+				LineChartPresenter.MyProxy.class);
 	}
 }
