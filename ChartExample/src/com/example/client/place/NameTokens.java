@@ -6,6 +6,7 @@ public class NameTokens {
 	public static final String canvaschart = "canvaschart";
 	public static final String columnchart = "columnchart";
 	public static final String linechart = "linechart";
+	public static final String barchart = "barchart";
 
 	public static String getPiechart() {
 		return piechart;
@@ -21,5 +22,9 @@ public class NameTokens {
 
 	public static String getLinechart() {
 		return linechart;
+	}
+
+	public static String getBarchart() {
+		return barchart;
 	}
 }

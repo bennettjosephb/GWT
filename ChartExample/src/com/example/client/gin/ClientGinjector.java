@@ -11,6 +11,7 @@ import com.example.client.PieChartPresenter;
 import com.example.client.CanvasChartPresenter;
 import com.example.client.ColumnChartPresenter;
 import com.example.client.LineChartPresenter;
+import com.example.client.BarChartPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -26,4 +27,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<ColumnChartPresenter> getColumnChartPresenter();
 
 	AsyncProvider<LineChartPresenter> getLineChartPresenter();
+
+	AsyncProvider<BarChartPresenter> getBarChartPresenter();
 }
