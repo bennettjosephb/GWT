@@ -2,9 +2,9 @@ package au.com.showcase.application.client.home;
 
 import au.com.showcase.application.client.place.NameTokens;
 
-import com.google.web.bindery.event.shared.EventBus;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
+import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
@@ -36,6 +36,13 @@ public class MainContentPresenter extends
 
 	@ContentSlot
 	public static final Type<RevealContentHandler<?>> HEADER_CONTENT_SLOT = new Type<RevealContentHandler<?>>();
+	
+	@Inject
+    MainMenuPresenter menuPresenter;
+
+//    @Inject
+//    WelcomePresenter welcomePresenter;
+
 
 	@Inject
 	public MainContentPresenter(final EventBus eventBus, final MyView view,
@@ -46,6 +53,7 @@ public class MainContentPresenter extends
 	@Override
 	protected void revealInParent() {
 		RevealRootContentEvent.fire(this, this);
+		setInSlot(MENU_CONTENT_SLOT, menuPresenter);
 	}
 
 	@Override

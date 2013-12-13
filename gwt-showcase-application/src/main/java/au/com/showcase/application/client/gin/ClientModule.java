@@ -8,6 +8,8 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import au.com.showcase.application.client.home.MainContentPresenter;
 import au.com.showcase.application.client.home.MainContentView;
+import au.com.showcase.application.client.home.MainMenuPresenter;
+import au.com.showcase.application.client.home.MainMenuView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -35,5 +37,8 @@ public class ClientModule extends AbstractPresenterModule {
 				MainContentPresenter.MyProxy.class);
 
 		bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);
+
+		bindPresenterWidget(MainMenuPresenter.class,
+				MainMenuPresenter.MyView.class, MainMenuView.class);
 	}
 }
