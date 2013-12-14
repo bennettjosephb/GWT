@@ -1,2 +1,3 @@
 # Module loggingexample
 # RPC service class, partial path of RPC policy file
+com.google.gwt.logging.shared.RemoteLoggingService, BDDD36070B89611EF09C60C5FC84F0DE.gwt.rpc

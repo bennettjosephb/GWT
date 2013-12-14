@@ -42,7 +42,7 @@ public class LoggingPresenter extends
 		RevealRootContentEvent.fire(this, this);
 	}
 
-	Logger logger = Logger.getLogger("NameOfYourLogger");
+	Logger logger = Logger.getLogger("");
 
 	@Override
 	protected void onBind() {
@@ -53,8 +53,8 @@ public class LoggingPresenter extends
 			@Override
 			public void onClick(ClickEvent event) {
 
-				for (int i = 0; i < 10; i++) {
-					logger.log(Level.SEVERE, "this message should get logged" +i);
+				for (int i = 0; i < 2; i++) {
+					logger.log(Level.ALL, "this message should get logged" +i);
 				}
 
 			}
