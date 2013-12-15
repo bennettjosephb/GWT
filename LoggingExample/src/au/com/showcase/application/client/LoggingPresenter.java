@@ -1,11 +1,12 @@
 package au.com.showcase.application.client;
 
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import java.util.logging.Logger;
+//import java.util.logging.Level;
+//import java.util.logging.LogRecord;
+//import java.util.logging.Logger;
 
 import au.com.showcase.application.client.place.NameTokens;
 
+import com.allen_sauer.gwt.log.client.Log;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
@@ -44,8 +45,8 @@ public class LoggingPresenter extends
 		RevealRootContentEvent.fire(this, this);
 	}
 
-	Logger logger = Logger.getLogger("");
-	Logger logger1 = Logger.getLogger(LoggingPresenter.class.getName());
+//	Logger logger = Logger.getLogger("");
+//	Logger logger1 = Logger.getLogger(LoggingPresenter.class.getName());
 	
 	SimpleRemoteLogHandler remoteLog = new SimpleRemoteLogHandler();
 
@@ -59,8 +60,15 @@ public class LoggingPresenter extends
 			public void onClick(ClickEvent event) {
 
 				for (int i = 0; i < 2; i++) {
-					logger1.log(Level.ALL, "this message should get logged" +i);
-					remoteLog.publish(new LogRecord(Level.INFO, "log message"));
+//					logger1.log(Level.ALL, "this message should get logged" +i);
+//					remoteLog.publish(new LogRecord(Level.INFO, "log message"));
+					Log.error("THIS IS ERROR");
+					Log.info("THIS IS INFO");
+					Log.fatal("THIS IS FATAL");
+					Log.warn("THIS IS WARN");
+					Log.debug("THIS IS DEBUG");
+					Log.trace("THIS IS TRACE");
+					
 				}
 
 			}
