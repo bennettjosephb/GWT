@@ -1,0 +1,1422 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2899 units from cache.
+Compiling...
+   Compilation completed in 5.59 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170463342.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170463342.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170463342_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170464160.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170464160.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.ApplicationFormView_BinderImpl_designTime1387170464160_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2896 cached/archived units.  Used 2896 / 2901 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Invalid Unit: au.com.showcase.application.client.ApplicationFormPresenter
+Invalid Unit: au.com.showcase.application.client.HomePresenter
+Invalid Unit: au.com.showcase.application.client.ApplicationForm
+Invalid units found: 3
+Compiling...
+   Compilation completed in 0.01 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817342.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817342.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817342_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817493.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817493.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170817493_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170836965.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170836965.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170836965_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170839579.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170839579.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170839579_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170846243.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170846243.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170846243_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170848314.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170848314.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387170848314_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067142.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067142.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067142_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067293.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067293.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171067293_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123673.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123673.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123673_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123950.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123950.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171123950_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171137158.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171137158.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171137158_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171138069.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171138069.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387171138069_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177482.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177482.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177482_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177590.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177590.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172177590_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703527.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703527.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703527_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703638.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703638.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172703638_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172720037.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172720037.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172720037_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741294.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741294.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741294_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741408.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741408.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387172741408_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147486.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147486.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147486_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147602.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147602.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173147602_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173158637.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173158637.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173158637_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185270.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185270.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185270_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185389.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185389.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173185389_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277002.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277002.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277002_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277144.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277144.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173277144_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918717.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918717.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918717_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918865.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918865.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173918865_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173951100.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173951100.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387173951100_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+         Generating method body for get()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.08 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174865886.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174865886.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174865886_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174866260.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174866260.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174866260_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174879510.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174879510.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387174879510_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457140.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457140.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457140_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457300.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457300.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387176457300_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180136723.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180136723.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180136723_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180137001.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180137001.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180137001_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180146177.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180146177.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180146177_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180200385.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180200385.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180200385_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180221125.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180221125.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180221125_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180234135.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180234135.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180234135_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180237960.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180237960.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180237960_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180247666.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180247666.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180247666_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180254022.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180254022.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180254022_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180261734.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180261734.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180261734_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180282690.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180282690.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180282690_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180285819.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180285819.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180285819_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180289907.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180289907.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180289907_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180295752.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180295752.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180295752_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180300275.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180300275.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180300275_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 94 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 96 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 97 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 98 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 99 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 100 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 101 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 102 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 103 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 104 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 105 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 106 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 107 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 108 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 119 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 121 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 140 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 142 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 143 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 144 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 145 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 146 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 147 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 148 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 149 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 150 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 151 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 152 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 153 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 154 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685255.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685255.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685255_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 94 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 96 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 97 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 98 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 99 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 100 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 101 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 102 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 103 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 104 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 105 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 106 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 107 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 108 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 119 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 121 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 140 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 142 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 143 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 144 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 145 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 146 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 147 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 148 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 149 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 150 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 151 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 152 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 153 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 154 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.06 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685522.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685522.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180685522_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 94 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 96 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 97 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 98 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 99 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 100 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 101 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 102 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 103 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 104 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 105 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 106 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 107 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 108 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 119 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 121 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 140 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 142 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 143 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 144 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 145 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 146 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 147 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 148 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 149 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 150 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 151 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 152 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 153 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 154 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826086.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826086.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826086_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 94 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 96 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 97 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 98 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 99 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 100 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 101 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 102 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 103 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 104 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 105 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 106 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 107 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 108 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 119 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 121 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 140 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+         [WARN] Line 142 column 41: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 143 column 43: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 144 column 46: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 145 column 38: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 146 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 147 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 148 column 31: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 149 column 30: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 150 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 151 column 34: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 152 column 32: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 153 column 40: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+         [WARN] Line 154 column 36: encountered " ". Was expecting one of: ":" <IDENT> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826339.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826339.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387180826339_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.07 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096571.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096571.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096571_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096852.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096852.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182096852_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151321.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151321.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151321_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151528.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151528.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182151528_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170629.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170629.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170629_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170832.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170832.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182170832_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.08 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182210954.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182210954.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182210954_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182211197.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182211197.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182211197_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182253856.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182253856.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182253856_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182254109.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182254109.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387182254109_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 108 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143453.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143453.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143453_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 108 column 33: encountered ":". Was expecting one of: "}" "+" "-" "," ";" "/" <STRING> <IDENT> <NUMBER> <URL> <PERCENTAGE> <PT> <MM> <CM> <PC> <IN> <PX> <EMS> <EXS> <DEG> <RAD> <GRAD> <MS> <SECOND> <HZ> <KHZ> <DIMEN> <HASH> <IMPORTANT_SYM> <UNICODERANGE> <FUNCTION> 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143676.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143676.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.LoginView_BinderImpl_designTime1387183143676_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units

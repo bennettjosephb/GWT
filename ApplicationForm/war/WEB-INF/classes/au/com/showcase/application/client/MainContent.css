@@ -1,0 +1,105 @@
+@CHARSET "ISO-8859-1";
+
+.footer4 {
+	border-top-color: #EBEBEB;
+	border-top-style: solid;
+	border-top-width: 1px;
+	bottom: 0;
+	height: 35px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	margin: -50px auto 0 auto;
+}
+
+.global-footer {
+	border-top-color: #EBEBEB;
+	border-top-style: solid;
+	border-top-width: 1px;
+	bottom: 0;
+	height: 35px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.footer1 {
+	border-top-color: #FFFF00;
+	border-top-style: solid;
+	border-top-width: 1px;
+	bottom: 0;
+	height: 35px;
+	position: absolute;
+	margin: 0;
+	width: 100%;
+}
+
+.footer2 {
+	font-size: 0.85em;
+	line-height: 0;
+	padding-top: 9px;
+	white-space: nowrap;
+}
+
+.footerfooter {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	margin-top: -3em;
+}
+
+.header1 {
+	background-color: #FF0000;
+}
+
+.loginscreen-header {
+	background-color: #F1F1F1;
+	border-bottom-color: #EBEBEB;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.logo-padding {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+}
+
+.logout-button {
+	float: right;
+	right: 0px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+#footer {
+	margin: -100px auto 0;
+	min-width: 1000px;
+	height: 100px;
+	background: #BFF08E;
+	position: relative;
+}
+
+.header {
+	background-color: #F1F1F1;
+}
+
+.container {
+	margin: 5 auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.footer {
+	background-color: #f1f1f1;
+	border-top-color: #E0E0E0;
+	border-top-style: solid;
+	border-top-width: 1px;
+	bottom: 0;
+}
+
+.d {
+	min-height: 100%;
+}
