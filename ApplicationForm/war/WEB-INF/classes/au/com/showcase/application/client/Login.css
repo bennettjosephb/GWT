@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+@def selectionBorderWidth 1px;
+.loginTextBoxError {
+	background-color: #FFFFFF;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-style: solid;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border-width: 1px;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 35px;
+	margin-bottom: 5px;
+	padding: 0 8px;
+	font-size: 15px;
+	border: 1px solid #FF0000;
+}

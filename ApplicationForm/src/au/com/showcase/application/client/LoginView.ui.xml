@@ -88,6 +88,7 @@
 		}
 		
 		.button {
+			outline: 0;
 			font-weight: bold;
 			border: 1px solid #3079ED;
 			color: white;
@@ -105,18 +106,27 @@
 			text-align: center;
 			color: #FFFFFF;
 			background-color: rgba(153, 0, 0, 1);
-			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153, 0, 0, 1)),
-				color-stop(100%, rgba(173, 0, 0, 1)));
-			background-image: -webkit-linear-gradient(top, rgba(153, 0, 0, 1), rgba(173, 0, 0, 1));
-			background-image: -moz-linear-gradient(top, rgba(153, 0, 0, 1), rgba(173, 0, 0, 1));
-			background-image: -ms-linear-gradient(top, rgba(153, 0, 0, 1), rgba(173, 0, 0, 1));
-			background-image: -o-linear-gradient(top, rgba(153, 0, 0, 1), rgba(173, 0, 0, 1));
-			background-image: linear-gradient(top, rgba(153, 0, 0, 1), rgba(173, 0, 0, 1));
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,
+				0, 0, 1)), color-stop(100%, rgba(173, 0, 0, 1)));
+			background-image: -webkit-linear-gradient(top, rgba(153, 0, 0, 1),
+				rgba(173, 0, 0, 1));
+			background-image: -moz-linear-gradient(top, rgba(153, 0, 0, 1),
+				rgba(173, 0, 0, 1));
+			background-image: -ms-linear-gradient(top, rgba(153, 0, 0, 1),
+				rgba(173, 0, 0, 1));
+			background-image: -o-linear-gradient(top, rgba(153, 0, 0, 1),
+				rgba(173, 0, 0, 1));
+			background-image: linear-gradient(top, rgba(153, 0, 0, 1),
+				rgba(173, 0, 0, 1));
 			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
 				startColorstr=rgba(153, 0, 0, 1), endColorstr=rgba(173, 0, 0, 1));
+			-webkit-transition: background-color 500ms ease-out 1s;
+			-moz-transition: background-color 500ms ease-out 1s;
+			transition: background-color 500ms ease-out 1s;
 		}
 		
 		.button:hover {
+			outline: 0;
 			background-image: -webkit-linear-gradient(top, rgba(173, 0, 0, 1) 0%,
 				rgba(153, 0, 0, 1) 100%);
 			background-image: -moz-linear-gradient(top, rgba(173, 0, 0, 1) 0%,
@@ -127,36 +137,42 @@
 				rgba(153, 0, 0, 1) 100%);
 			background-image: linear-gradient(top, rgba(173, 0, 0, 1) 0%,
 				rgba(153, 0, 0, 1) 100%);
-			-webkit-box-shadow: 0px 0px 2px 1px rgba(92, 0, 0, 1) inset;
-			-moz-box-shadow: 0px 0px 2px 1px rgba(92, 0, 0, 1) inset;
-			box-shadow: 0px 0px 2px 1px rgba(92, 0, 0, 1) inset;
-			-webkit-transition: all 0.5s linear;
-			-moz-transition: all 0.5s  linear;
-			transition: all 0.5s linear;
-			-webkit-transform: rotate(2px 2px);
-			-moz-transform: rotate(2px 2px);
-			transform: rotate(2px 2px);
+			border: 0;
 		}
 		
 		.button:active {
-			
+			outline: 0;
+			border: 0;
+		}
+		
+		.button:FOCUS {
+			outline: 0;
+			border: 0;
+		}
+		
+		.errorLabel {
+			color: red;
 		}
 	</ui:style>
 
 	<g:HTMLPanel width="100%" height="100%">
-		<div class="{style.centerLayout}">
+		<div id="loginContainer" class="{style.centerLayout}">
 			<div class="{style.loginUser}">
 				<g:Image url="images/UserGroup.png" height="100px" width="100px" />
 			</div>
-			<g:FormPanel styleName="{style.formElement}">
+			<g:FormPanel styleName="{style.formElement}" ui:field="form">
 				<g:VerticalPanel styleName="{style.formElementAlign}"
 					horizontalAlignment="ALIGN_CENTER" width="300px">
-					<g:TextBox width="90%" styleName="{style.loginTextBox}"></g:TextBox>
-					<g:PasswordTextBox width="90%" styleName="{style.loginTextBox}"></g:PasswordTextBox>
-					<g:SubmitButton width="90%" height="35px" styleName="{style.button}">Sign in</g:SubmitButton>
+					<g:TextBox width="90%" ui:field="username" styleName="{style.loginTextBox}"></g:TextBox>
+					<g:Label width="90%" ui:field="usernameError" styleName="{style.errorLabel}"></g:Label>
+					<g:PasswordTextBox width="90%" ui:field="password"
+						styleName="{style.loginTextBox}"></g:PasswordTextBox>
+					<g:Label width="90%" ui:field="passwordError" styleName="{style.errorLabel}"></g:Label>
+					<g:SubmitButton width="90%" height="35px" styleName="{style.button}"
+						ui:field="submit">Sign
+						in</g:SubmitButton>
 				</g:VerticalPanel>
 			</g:FormPanel>
 		</div>
-
 	</g:HTMLPanel>
 </ui:UiBinder>
