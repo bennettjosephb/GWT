@@ -1,8 +1,19 @@
 Public resources found in...
 Translatable source found in...
-Found 2718 cached/archived units.  Used 2718 / 2896 units from cache.
+Found 0 cached/archived units.  Used 0 / 2898 units from cache.
 Compiling...
-   Compilation completed in 0.53 seconds
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 7.01 seconds
 Removing invalidated units
 Finding entry point classes
 Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
@@ -29,649 +40,117 @@ Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
          Generating method body for zeroDigit()
    Adding '3' new generated units
       Compiling...
-         Compilation completed in 0.03 seconds
+         Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
+Rebinding au.com.showcase.application.client.client.FlipDialogView.Binder
    Adding '2' new generated units
       Compiling...
          Compilation completed in 0.02 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818358797.Template
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280113478.Template
    Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818358797.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818358797_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818361903.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818361903.Template
+      Constructing interface au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280113478.Template
          Generating method body for html1()
    Adding '1' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818361903_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280113478_GenBundle
    Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialogView.Binder
+   Adding '2' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280114034.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280114034.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280114034_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialogView.Binder
    Adding '2' new generated units
       Compiling...
-         Compilation completed in 0.02 seconds
+         Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818375773.Template
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280121530.Template
    Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818375773.Template
+      Constructing interface au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280121530.Template
          Generating method body for html1()
          Generating method body for html2()
    Adding '1' new generated units
       Compiling...
-         Compilation completed in 0.04 seconds
+         Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818375773_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280121530_GenBundle
    Adding '1' new generated units
       Compiling...
-         Compilation completed in 0.01 seconds
+         Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818381709.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818381709.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818381709_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
+Rebinding au.com.showcase.application.client.client.FlipDialogView.Binder
    Adding '2' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818392688.Template
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280139942.Template
    Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818392688.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818392688_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.06 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818396458.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818396458.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818396458_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419916.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419916.Template
+      Constructing interface au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280139942.Template
          Generating method body for html1()
          Generating method body for html2()
    Adding '1' new generated units
       Compiling...
-         Compilation completed in 0.01 seconds
+         Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419916_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280139942_GenBundle
    Adding '1' new generated units
       Compiling...
-         Compilation completed in 0.01 seconds
+         Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
+Rebinding au.com.showcase.application.client.client.FlipDialogView.Binder
    Adding '2' new generated units
       Compiling...
-         Compilation completed in 0.02 seconds
+         Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419995.Template
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280146151.Template
    Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419995.Template
+      Constructing interface au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280146151.Template
          Generating method body for html1()
          Generating method body for html2()
    Adding '1' new generated units
       Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818419995_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818428376.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818428376.Template
-         Generating method body for html1()
-         Generating method body for html2()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.03 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogExampleView_BinderImpl_designTime1358818428376_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.06 seconds
-      Removing invalidated units
-Public resources found in...
-Translatable source found in...
-Found 2893 cached/archived units.  Used 2893 / 2898 units from cache.
-Compiling...
-   Compilation completed in 0.02 seconds
-Removing invalidated units
-Finding entry point classes
-Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
-   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
-      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
-         Generating method body for notANumber()
-         Generating method body for currencyPattern()
-         Generating method body for decimalPattern()
-         Generating method body for decimalSeparator()
-         Generating method body for defCurrencyCode()
-         Generating method body for exponentialSymbol()
-         Generating method body for globalCurrencyPattern()
-         Generating method body for groupingSeparator()
-         Generating method body for infinity()
-         Generating method body for minusSign()
-         Generating method body for monetaryGroupingSeparator()
-         Generating method body for monetarySeparator()
-         Generating method body for percent()
-         Generating method body for percentPattern()
-         Generating method body for perMill()
-         Generating method body for plusSign()
-         Generating method body for scientificPattern()
-         Generating method body for simpleCurrencyPattern()
-         Generating method body for zeroDigit()
-   Adding '3' new generated units
-      Compiling...
          Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818543311_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialogView_BinderImpl_designTime1387280146151_GenBundle
    Adding '1' new generated units
       Compiling...
          Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818543667_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818584178_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818584342_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818591579.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818591579.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818591579_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818622051.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818622051.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818622051_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818627164.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818627164.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818627164_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818639191.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818639191.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818639191_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818653231.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818653231.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818653231_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818751057.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818751057.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818751057_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818759657.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818759657.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818759657_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818779061.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818779061.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818779061_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.03 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818783863.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818783863.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818783863_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818787259.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818787259.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818787259_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818816481.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818816481.Template
-         Generating method body for html1()
-         Generating method body for html2()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818816481_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818818076.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818818076.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818818076_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818833446.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818833446.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818833446_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.08 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.03 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818837438.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818837438.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.03 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818837438_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818848449.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818848449.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818848449_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.08 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818861084.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818861084.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.04 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818861084_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818866113.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818866113.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818866113_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818879996.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818879996.Template
-         Generating method body for html1()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818879996_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.05 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903651.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903651.Template
-         Generating method body for html1()
-         Generating method body for html2()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903651_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.00 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.02 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903830.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903830.Template
-         Generating method body for html1()
-         Generating method body for html2()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818903830_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818908922.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818908922.Template
-         Generating method body for html1()
-         Generating method body for html2()
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358818908922_GenBundle
-   Adding '1' new generated units
-      Compiling...
-         Compilation completed in 0.01 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
-      [ERROR] Unexpected text in element: "This is Heading": <g:CaptionPanel> (:10)
-[ERROR] Deferred binding failed for 'com.gwt.example.dialog.client.DialogWindowView.Binder'; expect subsequent failures
 Public resources found in...
 Translatable source found in...
 Found 0 cached/archived units.  Used 0 / 2898 units from cache.
 Compiling...
-   20% complete (ETR: 13 seconds)
-   20% complete (ETR: 13 seconds)
-   20% complete (ETR: 13 seconds)
-   30% complete (ETR: 12 seconds)
-   40% complete (ETR: 9 seconds)
-   50% complete (ETR: 7 seconds)
-   60% complete (ETR: 6 seconds)
-   70% complete (ETR: 5 seconds)
-   80% complete (ETR: 4 seconds)
-   90% complete (ETR: 2 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   70% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
    100% complete (ETR: 0 seconds)
-   Compilation completed in 20.45 seconds
+   Compilation completed in 7.12 seconds
 Removing invalidated units
 Finding entry point classes
 Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
@@ -698,44 +177,779 @@ Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
          Generating method body for zeroDigit()
    Adding '3' new generated units
       Compiling...
-         Compilation completed in 0.03 seconds
+         Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
-      Compiling...
-         Compilation completed in 0.03 seconds
-      Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819029699.Template
-   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819029699.Template
-         Generating method body for html1()
-         Generating method body for html2()
-         Generating method body for html3()
-   Adding '1' new generated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819029699_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617360.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617360.Template
+         Generating method body for html1()
    Adding '1' new generated units
       Compiling...
          Compilation completed in 0.00 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView.Binder
-   Adding '2' new generated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617360_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819030414.Template
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617772.Template
    Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
-      Constructing interface com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819030414.Template
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617772.Template
          Generating method body for html1()
-         Generating method body for html2()
-         Generating method body for html3()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281617772_GenBundle
    Adding '1' new generated units
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
-Rebinding com.gwt.example.dialog.client.DialogWindowView_BinderImpl_designTime1358819030414_GenBundle
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281778871.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281778871.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281778871_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281785319.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281785319.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387281785319_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.11 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2898 units from cache.
+Compiling...
+   30% complete (ETR: 11 seconds)
+   30% complete (ETR: 11 seconds)
+   30% complete (ETR: 11 seconds)
+   30% complete (ETR: 11 seconds)
+   40% complete (ETR: 9 seconds)
+   50% complete (ETR: 8 seconds)
+   60% complete (ETR: 6 seconds)
+   70% complete (ETR: 5 seconds)
+   80% complete (ETR: 3 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 19.08 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.07 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327776577.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327776577.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327776577_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327780577.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327780577.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327780577_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327791653.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327791653.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327791653_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327799427.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327799427.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327799427_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327801397.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327801397.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327801397_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327803262.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327803262.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327803262_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327804969.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327804969.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327804969_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327806251.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327806251.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327806251_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327807476.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327807476.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327807476_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327823727.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327823727.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327823727_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833107.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833107.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833107_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833245.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833245.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327833245_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327882586.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327882586.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327882586_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327957041.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327957041.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387327957041_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.07 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328436253.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328436253.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328436253_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328438161.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328438161.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328438161_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328439109.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328439109.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328439109_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328448683.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328448683.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328448683_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328541569.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328541569.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328541569_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998703.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998703.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998703_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog.FlipDialogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998839.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998839.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.FlipDialog_FlipDialogUiBinderImpl_designTime1387328998839_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2900 units from cache.
+Compiling...
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 6.40 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692530.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692530.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692530_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692939.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692939.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333692939_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714027.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714027.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714027_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714082.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714082.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333714082_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944572.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944572.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944572_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944622.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944622.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387333944622_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352714.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352714.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352714_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352764.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352764.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334352764_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334359350.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334359350.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334359350_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334368696.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334368696.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334368696_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334374052.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334374052.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387334374052_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207237.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207237.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207237_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207287.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207287.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.client.VerticalFlipDialogView_BinderImpl_designTime1387335207287_GenBundle
    Adding '1' new generated units
       Compiling...
          Compilation completed in 0.00 seconds

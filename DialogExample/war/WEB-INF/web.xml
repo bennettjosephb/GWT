@@ -18,7 +18,7 @@
 		filter(String).through(Class<? extends Filter)
 	-->
 	<listener>
-		<listener-class>com.gwt.example.dialog.server.guice.GuiceServletConfig</listener-class>
+		<listener-class>au.com.showcase.application.client.server.guice.GuiceServletConfig</listener-class>
 	</listener>
 
 	<filter>
