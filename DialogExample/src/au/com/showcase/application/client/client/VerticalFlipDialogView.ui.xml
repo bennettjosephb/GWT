@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.right {
+			float: right;
+			display: block;
+		}
+		
+		.gwtDialogBox {
+			background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+			-moz-box-shadow: 5px 5px 6px -1px #000;
+			-webkit-box-shadow: 5px 5px 6px -1px #000;
+			box-shadow: 5px 5px 6px -1px #0F0F0F;
+			padding: 10px 10px 10px 10px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			cursor: default;
+			background-color: #FFFFFF;
+			border-bottom: 1px solid #bbbbbb;
+		}
+		
+		.md-content {
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			-webkit-transform: rotateX(-70deg);
+			-moz-transform: rotateX(-70deg);
+			-ms-transform: rotateX(-70deg);
+			transform: rotateX(-70deg);
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+			opacity: 0;
+		}
+	</ui:style>
+
+	<g:PopupPanel ui:field="container" height="300px" width="500px"
+		autoHideEnabled="true" glassEnabled="true" styleName="{style.md-content}">
+		<g:HTMLPanel width="595px" height="297px">
+			<g:FlowPanel>
+				<g:Image url="images/close.ico" styleName="{style.right}" />
+			</g:FlowPanel>
+		</g:HTMLPanel>
+	</g:PopupPanel>
+</ui:UiBinder>

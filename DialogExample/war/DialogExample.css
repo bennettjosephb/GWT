@@ -1,0 +1,13 @@
+/* Add css rules here for your application. */
+
+.md-show {
+	visibility: visible;
+}
+
+.md-content {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	opacity: 1;
+}
