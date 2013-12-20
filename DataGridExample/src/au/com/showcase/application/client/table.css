@@ -1,0 +1,180 @@
+@CHARSET "ISO-8859-1";
+
+/*
+ * Copyright 2011 Google Inc.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+@def selectionBorderWidth 2px;
+.dataGridWidget {
+	
+}
+
+.dataGridFirstColumn {
+	
+}
+
+.dataGridLastColumn {
+	
+}
+
+.dataGridFooter {
+	border-top: 2px solid #6f7277;
+	padding: 3px 15px;
+	text-align: left;
+	color: #4b4a4a;
+	text-shadow: #ddf 1px 1px 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dataGridHeader {
+	border-bottom: 2px solid #6f7277;
+	padding: 3px 15px;
+	text-align: left;
+	color: #4b4a4a;
+	text-shadow: #ddf 1px 1px 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dataGridCell {
+	padding: 2px 15px;
+	overflow: hidden;
+}
+
+.dataGridFirstColumnFooter {
+	
+}
+
+.dataGridFirstColumnHeader {
+	
+}
+
+.dataGridLastColumnFooter {
+	
+}
+
+.dataGridLastColumnHeader {
+	
+}
+
+.dataGridSortableHeader {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.dataGridSortableHeader:hover {
+	color: #6c6b6b;
+}
+
+.dataGridSortedHeaderAscending {
+	
+}
+
+.dataGridSortedHeaderDescending {
+	
+}
+
+.dataGridEvenRow {
+	background: #ffffff;
+}
+
+.dataGridEvenRowCell {
+	border: selectionBorderWidth solid #ffffff;
+}
+
+.dataGridOddRow {
+	background: #f3f7fb;
+}
+
+.dataGridOddRowCell {
+	border: selectionBorderWidth solid #f3f7fb;
+}
+
+.dataGridHoveredRow {
+	background: #eee;
+}
+
+.dataGridHoveredRowCell {
+	border: selectionBorderWidth solid #eee;
+}
+
+.dataGridKeyboardSelectedRow {
+	background: #ffc;
+}
+
+.dataGridKeyboardSelectedRowCell {
+	border: selectionBorderWidth solid #ffc;
+}
+
+.dataGridSelectedRow {
+	background: #628cd5;
+	color: white;
+	height: auto;
+	overflow: auto;
+}
+
+.dataGridSelectedRowCell {
+	border: selectionBorderWidth solid #628cd5;
+}
+
+/**
+ * The keyboard selected cell is visible over selection.
+ */
+.dataGridKeyboardSelectedCell {
+	border: selectionBorderWidth solid #d7dde8;
+}
+
+.cellTableCellHigh {
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(222,
+		255, 228)), color-stop(1, rgb(255, 255, 255)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(222, 255, 228) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(222, 255, 228) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(222, 255, 228) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(222, 255, 228) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(222, 255, 228) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	/*	background: #e2f5e2;*/
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.cellTableCellLow {
+	background-image: -webkit-gradient(linear, right bottom, right top, color-stop(0, rgb(191,
+		227, 196)), color-stop(1, rgb(255, 255, 255)),
+		color-stop(1, rgb(255, 255, 255)));
+	background-image: -o-linear-gradient(top, rgb(191, 227, 196) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -moz-linear-gradient(top, rgb(191, 227, 196) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -webkit-linear-gradient(top, rgb(191, 227, 196) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: -ms-linear-gradient(top, rgb(191, 227, 196) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient(to top, rgb(191, 227, 196) 0%,
+		rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+	/*	background: #b6ceb6;*/
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.imgCrop {
+	overflow: hidden;
+}
+
