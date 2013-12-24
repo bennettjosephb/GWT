@@ -7,6 +7,16 @@ import com.google.inject.Inject;
 
 public class TextBoxFocusHandler implements FocusHandler {
 
+	private Boolean hasError;
+
+	public Boolean getHasError() {
+		return hasError;
+	}
+
+	public void setHasError(Boolean hasError) {
+		this.hasError = hasError;
+	}
+
 	@Inject
 	public TextBoxFocusHandler() {
 	}

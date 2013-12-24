@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+.textBoxError {
+	padding-right: 5px;
+	padding-left: 5px;
+	background: url('images/warning.ico');
+	background-position: center right;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	border: 2px solid #6d0019;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 3px inset;
+	outline: none;
+	font-size: medium;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-right: 25px;
+	padding-left: 5px;
+}

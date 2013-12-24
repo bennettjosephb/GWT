@@ -18,7 +18,7 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 
 public class ExtendedTextBoxBase extends TextBox {
-	
+
 	private Boolean isContentValid;
 
 	public Boolean isContentValid() {
@@ -28,7 +28,6 @@ public class ExtendedTextBoxBase extends TextBox {
 	public void isContentValid(Boolean isContentValid) {
 		this.isContentValid = isContentValid;
 	}
-
 
 	public ExtendedTextBoxBase() {
 
@@ -103,11 +102,12 @@ public class ExtendedTextBoxBase extends TextBox {
 		super.addMouseUpHandler(textBoxMouseUpHandler);
 
 		super.addMouseWheelHandler(textBoxMouseWheelHandler);
-		
+
 	}
-	
-	public Boolean hasError(){
-		return  textBoxKeyUpHandler.getHasError();
+
+	public Boolean hasError() {
+		return textBoxKeyUpHandler.getHasError()
+				|| textBoxClickHandler.getHasError();
 	}
 
 	private void addHandlers() {

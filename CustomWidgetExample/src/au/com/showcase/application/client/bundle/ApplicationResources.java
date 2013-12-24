@@ -1,9 +1,15 @@
 package au.com.showcase.application.client.bundle;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface ApplicationResources extends ClientBundle {
+	
+	public static final ApplicationResources INSTANCE = GWT.create(ApplicationResources.class);
+
+	@Source("CustomWidget.css")
+	CustomWidget customWidget();
 
 	@Source("../images/Abort.png")
 	ImageResource abort();

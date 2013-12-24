@@ -7,6 +7,16 @@ import com.google.inject.Inject;
 
 public class TextBoxClickHandler implements ClickHandler {
 
+	private Boolean hasError;
+
+	public Boolean getHasError() {
+		return hasError;
+	}
+
+	public void setHasError(Boolean hasError) {
+		this.hasError = hasError;
+	}
+
 	@Inject
 	public TextBoxClickHandler() {
 	}
@@ -16,12 +26,17 @@ public class TextBoxClickHandler implements ClickHandler {
 		TextBox textBox = (TextBox) event.getSource();
 
 		if (textBox.getText() != null && textBox.getText().trim().equals("")) {
-			if (textBox.getText().matches("[a-zA-Z0-9\\s]+")) {
+			if (!textBox.getText().matches("[a-zA-Z0-9\\s]+")) {
 
 				textBox.addStyleName("");
+
+				setHasError(true);
 
 			} else {
+
 				textBox.addStyleName("");
+				
+				setHasError(false);
 			}
 		}
 

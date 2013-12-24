@@ -2,6 +2,7 @@ package au.com.showcase.application.client.ui;
 
 import com.google.inject.Inject;
 
+import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxClickHandler;
 import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
@@ -17,8 +18,9 @@ import au.com.showcase.application.client.ui.event.TextBoxMouseWheelHandler;
 
 public class ExtendedTextBox extends ExtendedTextBoxBase {
 
-
 	public ExtendedTextBox() {
+
+		ApplicationResources.INSTANCE.customWidget().ensureInjected();
 
 	}
 

@@ -6,6 +6,16 @@ import com.google.inject.Inject;
 
 public class TextBoxBlurHandler implements BlurHandler {
 
+	private Boolean hasError;
+
+	public Boolean getHasError() {
+		return hasError;
+	}
+
+	public void setHasError(Boolean hasError) {
+		this.hasError = hasError;
+	}
+
 	@Inject
 	public TextBoxBlurHandler() {
 	}

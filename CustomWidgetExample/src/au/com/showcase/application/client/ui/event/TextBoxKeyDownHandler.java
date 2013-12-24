@@ -7,6 +7,16 @@ import com.google.inject.Inject;
 
 public class TextBoxKeyDownHandler implements KeyDownHandler {
 
+	private Boolean hasError;
+
+	public Boolean getHasError() {
+		return hasError;
+	}
+
+	public void setHasError(Boolean hasError) {
+		this.hasError = hasError;
+	}
+
 	@Inject
 	public TextBoxKeyDownHandler() {
 	}
