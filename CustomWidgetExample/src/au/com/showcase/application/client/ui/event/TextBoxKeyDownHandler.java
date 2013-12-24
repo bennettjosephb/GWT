@@ -14,7 +14,7 @@ public class TextBoxKeyDownHandler implements KeyDownHandler {
 	@Override
 	public void onKeyDown(KeyDownEvent event) {
 		
-		((TextBox)event.getSource()).get
+		((TextBox)event.getSource()).getSelectedText();
 
 	}
 

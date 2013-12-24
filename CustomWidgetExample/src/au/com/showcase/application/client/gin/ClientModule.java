@@ -16,7 +16,7 @@ public class ClientModule extends AbstractPresenterModule {
 	@Override
 	protected void configure() {
 		install(new DefaultModule(ClientPlaceManager.class));
-
+		
 		bindPresenter(SamplePresenter.class, SamplePresenter.MyView.class,
 				SampleView.class, SamplePresenter.MyProxy.class);
 
