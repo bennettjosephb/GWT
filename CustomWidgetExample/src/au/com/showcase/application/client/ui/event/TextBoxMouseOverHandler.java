@@ -23,7 +23,7 @@ public class TextBoxMouseOverHandler implements MouseOverHandler {
 
 	@Override
 	public void onMouseOver(MouseOverEvent event) {
-		Window.alert("XAY");
+		//Window.alert("XAY");
 	}
 
 }

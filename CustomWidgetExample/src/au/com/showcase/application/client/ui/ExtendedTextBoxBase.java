@@ -14,6 +14,7 @@ import au.com.showcase.application.client.ui.event.TextBoxMouseUpHandler;
 import au.com.showcase.application.client.ui.event.TextBoxMouseWheelHandler;
 
 import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.user.client.ui.DecoratedPopupPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 
@@ -103,6 +104,14 @@ public class ExtendedTextBoxBase extends TextBox {
 
 		super.addMouseWheelHandler(textBoxMouseWheelHandler);
 
+		decoratedPopupPanel = new DecoratedPopupPanel();
+		
+		decoratedPopupPanel.setStyleName("arrow_box");
+
+		textBoxFocusHandler.setDecoratedPopupPanel(decoratedPopupPanel);
+
+		textBoxBlurHandler.setDecoratedPopupPanel(decoratedPopupPanel);
+
 	}
 
 	public Boolean hasError() {
@@ -127,6 +136,8 @@ public class ExtendedTextBoxBase extends TextBox {
 		addMouseOverHandler();
 
 	}
+
+	DecoratedPopupPanel decoratedPopupPanel;
 
 	TextBoxBlurHandler textBoxBlurHandler = new TextBoxBlurHandler();
 
