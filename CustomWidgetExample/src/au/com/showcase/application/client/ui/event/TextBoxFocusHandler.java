@@ -46,7 +46,7 @@ public class TextBoxFocusHandler implements FocusHandler {
 		
 		decoratedPopupPanel.setWidget(new HTML("THIS IS CONSTANT"));
 
-		decoratedPopupPanel.setPopupPosition(textBox.getAbsoluteLeft() + 300,
+		decoratedPopupPanel.setPopupPosition(textBox.getAbsoluteLeft() +300,
 				textBox.getAbsoluteTop());
 
 		decoratedPopupPanel.show();
