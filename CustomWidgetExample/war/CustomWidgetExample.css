@@ -56,9 +56,9 @@
 	background: #F1F1F1;
 	border: 1px solid #B1B1B1;
 	border-radius: 2px;
-	-moz-box-shadow: 3px #ccc;
-	-webkit-box-shadow: 3px #ccc;
-	box-shadow: 3px #ccc;
+	-moz-box-shadow: 3px 3px 5px 6px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .arrow_box:after,.arrow_box:before {
