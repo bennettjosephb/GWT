@@ -33,7 +33,7 @@
 			background-color: #282E5A;
 			box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px
 				rgba(255, 255, 255, .8);
-				border-radius: 8px;
+			border-radius: 8px;
 		}
 		
 		.gwt-RadioButton label:before {
@@ -50,9 +50,17 @@
 	</ui:style>
 
 	<g:HTMLPanel>
-		<g:RadioButton name="new name" text="New RadioButton"
-			/>
-		<g:RadioButton name="new name" text="New RadioButton" />
+		<g:FlowPanel ui:field="radioContainer" width="50px">
+			<g:RadioButton name="new name">A</g:RadioButton>
+			<g:RadioButton name="new name">B</g:RadioButton>
+			<g:RadioButton name="new name">C</g:RadioButton>
+			<g:RadioButton name="new name">D</g:RadioButton>
+			<g:RadioButton name="new name">E</g:RadioButton>
+			<g:RadioButton name="new name">F</g:RadioButton>
+			<g:RadioButton name="new name">G</g:RadioButton>
+			<g:RadioButton name="new name">H</g:RadioButton>
+			<g:RadioButton name="new name">I</g:RadioButton>
+		</g:FlowPanel>
 		<c:ExtendedTextBox />
 		<input type="radio" name="abc" />
 	</g:HTMLPanel>
