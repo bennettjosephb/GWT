@@ -712,3 +712,478 @@ Rebinding au.com.showcase.application.client.SampleView_BinderImpl_designTime138
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2924 units from cache.
+Compiling...
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   60% complete (ETR: 2 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 9.96 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742770810.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742770810.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742770810_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742772143.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742772143.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388742772143_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746051121.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746051121.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746051121_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746052573.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746052573.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746052573_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746053489.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746053489.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746053489_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055065.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055065.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055065_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055960.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055960.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746055960_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746056890.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746056890.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746056890_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746057743.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746057743.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746057743_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746058842.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746058842.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746058842_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746059633.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746059633.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746059633_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746060666.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746060666.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746060666_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746061387.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746061387.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746061387_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746062659.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746062659.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746062659_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128216.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128216.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128216_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128316.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128316.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746128316_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746137831.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746137831.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746137831_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746141262.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746141262.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388746141262_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2924 units from cache.
+Compiling...
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 9.27 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 38 column 24: encountered "color". Was expecting one of: ":" 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747563792.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747563792.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747563792_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 38 column 24: encountered "color". Was expecting one of: ":" 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747564337.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747564337.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747564337_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView.Binder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      The following problems were detected
+         [WARN] Line 38 column 24: encountered "color". Was expecting one of: ":" 
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747672773.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747672773.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding au.com.showcase.application.client.RadioButtonView_BinderImpl_designTime1388747672773_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units

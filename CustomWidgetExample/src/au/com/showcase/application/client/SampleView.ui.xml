@@ -30,10 +30,28 @@
 			position: absolute;
 			left: 0;
 			bottombottom: 1px;
-			background-color: #282E5A;
-			box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px
-				rgba(255, 255, 255, .8);
+			background: #ff0004; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background:
+				url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmYwMDA0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjclIiBzdG9wLWNvbG9yPSIjYTkwMzI5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-radial-gradient(center, ellipse cover, #ff0004 35%, #a90329 67%);
+			/* FF3.6+ */
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%,
+				color-stop(35%, #ff0004), color-stop(67%, #a90329));
+			/* Chrome,Safari4+ */
+			background: -webkit-radial-gradient(center, ellipse cover, #ff0004 35%, #a90329 67%);
+			/* Chrome10+,Safari5.1+ */
+			background: -o-radial-gradient(center, ellipse cover, #ff0004 35%, #a90329 67%);
+			/* Opera 12+ */
+			background: -ms-radial-gradient(center, ellipse cover, #ff0004 35%, #a90329 67%);
+			/* IE10+ */
+			background: radial-gradient(ellipse at center, #ff0004 35%, #a90329 67%);
+			/* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0004',
+				endColorstr='#a90329', GradientType=1);
+			/* IE6-8 fallback on horizontal gradient */
 			border-radius: 8px;
+			/*border-radius:5px 5px 0px 0px;*/
 		}
 		
 		.gwt-RadioButton label:before {

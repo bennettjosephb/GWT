@@ -10,6 +10,8 @@ import au.com.showcase.application.client.place.NameTokens;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
+import au.com.showcase.application.client.RadioButtonPresenter;
+import au.com.showcase.application.client.RadioButtonView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -24,5 +26,9 @@ public class ClientModule extends AbstractPresenterModule {
 				Sample1View.class, Sample1Presenter.MyProxy.class);
 
 		bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.sample1);
+
+		bindPresenter(RadioButtonPresenter.class,
+				RadioButtonPresenter.MyView.class, RadioButtonView.class,
+				RadioButtonPresenter.MyProxy.class);
 	}
 }

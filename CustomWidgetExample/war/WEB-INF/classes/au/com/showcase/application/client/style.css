@@ -1,0 +1,29 @@
+input[type=radio].css-checkbox {
+							display:none;
+						}
+
+						input[type=radio].css-checkbox + label.css-label {
+							padding-left:37px;
+							height:32px; 
+							display:inline-block;
+							line-height:32px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:32px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=radio].css-checkbox:checked + label.css-label {
+							background-position: 0 -32px;
+						}
+						label.css-label {
+				background-image:url(csscheckbox_f2e3bb467e4805c00da9922648868de9.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
