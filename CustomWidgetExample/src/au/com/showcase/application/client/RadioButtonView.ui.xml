@@ -13,16 +13,14 @@
 			padding-left: 35px;
 			margin-right: 15px;
 			font-size: 25px;
-			border-radius: 8px;
 		}
 		
 		input[type=radio] {
 			display: none;
-			border-radius: 8px;
 		}
 		
 		label:before {
-			background-image:url(csscheckbox_f2e3bb467e4805c00da9922648868de9.png);
+			background-image: url(csscheckbox_f2e3bb467e4805c00da9922648868de9.png);
 			content: "";
 			display: inline-block;
 			width: 32px;
@@ -30,26 +28,24 @@
 			margin-right: 10px;
 			position: absolute;
 			left: 0;
-			bottombottom: 1px;
 			/*border-radius:5px 5px 0px 0px;*/
 		}
 		
 		.gwt-RadioButton label:before {
-			border-radius: 8px;
+			background-color: #FF0000;
 		}
 		
 		input[type=radio]:checked+label:before {
-			background-image:url(csscheckbox_f2e3bb467e4805c00da9922648868de9.png);
 			background-position: 0 -32px;
-			background-image
-			color: aqua;
+			background-image color: aqua;
 			font-size: 30px;
 			text-align: center;
 			line-height: 13px;
 		}
 	</ui:style>
 	<g:HTMLPanel>
-		<g:FlowPanel width="292px" ui:field="container">
+		<g:Button ui:field="button">Click This !!!</g:Button>
+		<g:FlowPanel width="584px" ui:field="container">
 			<g:RadioButton name="new name" text="New RadioButton" />
 			<g:RadioButton name="new name" text="New RadioButton" />
 			<g:RadioButton name="new name" text="New RadioButton" />
