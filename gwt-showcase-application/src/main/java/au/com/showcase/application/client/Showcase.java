@@ -12,7 +12,7 @@ import com.gwtplatform.mvp.client.DelayedBindRegistry;
 public class Showcase implements EntryPoint {
 	// private final Messages messages = GWT.create(Messages.class);
 
-	private final ClientGinjector ginjector = GWT.create(ClientGinjector.class);
+	protected final ClientGinjector ginjector = GWT.create(ClientGinjector.class);
 
 	public void onModuleLoad() {
 		// This is required for Gwt-Platform proxy's generator

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-  <!-- Inherit our applications main module.                      -->
-  <inherits name='au.com.showcase.application.Showcase' />
-
-  <!-- Specify the path to any remote services.                   -->
-  <servlet path="/Showcase/greet" class="au.com.showcase.application.server.GreetingServiceImpl" />
-
-</module>

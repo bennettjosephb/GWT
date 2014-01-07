@@ -1,15 +1,21 @@
 package au.com.showcase.application.client;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class DataSet {
-	
+public class DataSet implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6063205451890109020L;
+
 	private String one;
-	
+
 	private Date date;
-	
+
 	private Integer i;
-	
+
 	private Float flfl;
 
 	public String getOne() {
@@ -43,5 +49,5 @@ public class DataSet {
 	public void setFlfl(Float flfl) {
 		this.flfl = flfl;
 	}
-	
+
 }

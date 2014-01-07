@@ -53,11 +53,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.allen-sauer.gwt.log</groupId>
-			<artifactId>gwt-log</artifactId>
-			<version>3.1.6</version>
-		</dependency>
-		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 			<version>1.0.0.GA</version>
@@ -113,6 +108,19 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+			<classifier>sources</classifier>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -339,7 +347,8 @@
 						<goals>
 							<goal>compile</goal>
 							<goal>test</goal>
-							<!-- <goal>i18n</goal> <goal>generateAsync</goal> -->
+							<goal>i18n</goal>
+							<goal>css</goal> <!--<goal>generateAsync</goal> -->
 						</goals>
 					</execution>
 				</executions>
@@ -349,6 +358,9 @@
 					<runTarget>Showcase.html</runTarget>
 					<hostedWebapp>${webappDirectory}</hostedWebapp>
 					<i18nMessagesBundle>au.com.showcase.application.client.Messages</i18nMessagesBundle>
+					<cssFiles>
+						<cssFile>au/com/showcase/application/client/bundle/CustomWidget.css</cssFile>
+					</cssFiles>
 				</configuration>
 			</plugin>
 

@@ -1,8 +1,14 @@
 package au.com.showcase.application.shared;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ResultData {
+public class ResultData implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2243202185343762001L;
 
 	private String name;
 

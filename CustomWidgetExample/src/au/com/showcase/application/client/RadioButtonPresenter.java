@@ -72,7 +72,7 @@ public class RadioButtonPresenter extends
 				GetData getData = new GetData("HAI");
 
 				Window.alert("1");
-				dispatchAsync.execute(getData, getDataResult);
+				dispatchAsync.execute(testingHandler, contactDetailsResult);
 				Window.alert("2");
 
 			}
