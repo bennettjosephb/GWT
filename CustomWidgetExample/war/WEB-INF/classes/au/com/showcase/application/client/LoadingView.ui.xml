@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.gwtDialogBox {
+			background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+			-moz-box-shadow: 5px 5px 6px -1px #000;
+			-webkit-box-shadow: 5px 5px 6px -1px #000;
+			background-color: #FFFFFF;
+		}
+	</ui:style>
+
+	<g:PopupPanel styleName="{style.gwtDialogBox}">
+	<g:HTMLPanel width="158px" height="45px">
+		<g:Image url="103.GIF"/>
+		</g:HTMLPanel>
+	</g:PopupPanel>
+</ui:UiBinder>

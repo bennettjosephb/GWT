@@ -18,6 +18,16 @@ public class DataSet implements Serializable {
 
 	private Float flfl;
 
+	private Boolean bool;
+
+	public Boolean getBool() {
+		return bool;
+	}
+
+	public void setBool(Boolean bool) {
+		this.bool = bool;
+	}
+
 	public String getOne() {
 		return one;
 	}

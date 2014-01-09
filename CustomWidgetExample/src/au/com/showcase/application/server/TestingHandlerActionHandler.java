@@ -20,7 +20,7 @@ public class TestingHandlerActionHandler implements
 	@Override
 	public TestingHandlerResult execute(TestingHandler action,
 			ExecutionContext context) throws ActionException {
-		
+
 		System.out.println(action.getDataset().getOne());
 
 		ResultData resultdate = new ResultData();
@@ -29,6 +29,12 @@ public class TestingHandlerActionHandler implements
 
 		TestingHandlerResult testingHandlerResult = new TestingHandlerResult(
 				resultdate);
+
+		try {
+			Thread.sleep(10000);
+		} catch (Exception e) {
+		}
+
 		return testingHandlerResult;
 	}
 

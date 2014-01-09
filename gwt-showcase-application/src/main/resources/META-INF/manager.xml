@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="controller.xml" />
+
+	<bean id="createITSkillManager"
+		class="au.com.project.sample.services.account.createitskill.CreateITSkillManager">
+	</bean>
+
+	<bean id="deleteITSkillManager"
+		class="au.com.project.sample.services.account.deleteitskill.DeleteITSkillManager">
+	</bean>
+
+	<bean id="updateITSkillManager"
+		class="au.com.project.sample.services.account.updateitskill.UpdateITSkillManager">
+	</bean>
+
+	<!--bean id="getITSkillManager"
+		class="au.com.project.sample.services.account.getitskill.GetITSkillManager">
+	</bean-->
+	
+	<bean id="createCityManager"
+		class="au.com.project.sample.services.admin.createcity.CreateCityManager">
+	</bean>
+
+	<bean id="deleteCityManager"
+		class="au.com.project.sample.services.admin.deletecity.DeleteCityManager">
+	</bean>
+
+	<bean id="updateCityManager"
+		class="au.com.project.sample.services.admin.updatecity.UpdateCityManager">
+	</bean>
+
+	<bean id="getCityManager"
+		class="au.com.project.sample.services.admin.getcity.GetCityManager">
+	</bean>
+
+	<bean id="createCountryManager"
+		class="au.com.project.sample.services.admin.createcountry.CreateCountryManager">
+	</bean>
+
+	<bean id="deleteCountryManager"
+		class="au.com.project.sample.services.admin.deletecountry.DeleteCountryManager">
+	</bean>
+
+	<bean id="updateCountryManager"
+		class="au.com.project.sample.services.admin.updatecountry.UpdateCountryManager">
+	</bean>
+
+	<bean id="getCountryManager"
+		class="au.com.project.sample.services.admin.getcountry.GetCountryManager">
+	</bean>
+
+	<bean id="createStateManager"
+		class="au.com.project.sample.services.admin.createstate.CreateStateManager">
+	</bean>
+
+	<bean id="deleteStateManager"
+		class="au.com.project.sample.services.admin.deletestate.DeleteStateManager">
+	</bean>
+
+	<bean id="updateStateManager"
+		class="au.com.project.sample.services.admin.updatestate.UpdateStateManager">
+	</bean>
+
+	<bean id="getStateManager"
+		class="au.com.project.sample.services.admin.getstate.GetStateManager">
+	</bean>
+
+	<bean id="createEducationSummaryManager"
+		class="au.com.project.sample.services.account.createeducationsummary.CreateEducationSummaryManager">
+	</bean>
+
+	<bean id="createEmploymentSummaryManager"
+		class="au.com.project.sample.services.account.createemploymentsummary.CreateEmploymentSummaryManager">
+	</bean>
+
+	<bean id="updateEmploymentSummaryManager"
+		class="au.com.project.sample.services.account.updateemploymentsummary.UpdateEmploymentSummaryManager">
+	</bean>
+
+	<bean id="deleteEmploymentSummaryManager"
+		class="au.com.project.sample.services.account.deleteemploymentsummary.DeleteEmploymentSummaryManager">
+	</bean>
+
+	<bean id="createSubCategoryManager"
+		class="au.com.project.sample.services.admin.createsubcategory.CreateSubCategoryManager">
+	</bean>
+
+	<bean id="deleteSubCategoryManager"
+		class="au.com.project.sample.services.admin.deletesubcategory.DeleteSubCategoryManager">
+	</bean>
+
+	<bean id="updateSubCategoryManager"
+		class="au.com.project.sample.services.admin.updatesubcategory.UpdateSubCategoryManager">
+	</bean>
+
+	<bean id="getSubCategoryManager"
+		class="au.com.project.sample.services.admin.getsubcategory.GetSubCategoryManager">
+	</bean>
+
+	<bean id="createCategoryManager"
+		class="au.com.project.sample.services.admin.createcategory.CreateCategoryManager">
+	</bean>
+
+	<bean id="deleteCategoryManager"
+		class="au.com.project.sample.services.admin.deletecategory.DeleteCategoryManager">
+	</bean>
+
+	<bean id="updateCategoryManager"
+		class="au.com.project.sample.services.admin.updatecategory.UpdateCategoryManager">
+	</bean>
+
+	<bean id="getCategoryManager"
+		class="au.com.project.sample.services.admin.getcategory.GetCategoryManager">
+	</bean>
+
+	<bean id="createDesignationManager"
+		class="au.com.project.sample.services.admin.createdesignation.CreateDesignationManager">
+	</bean>
+
+	<bean id="deleteDesignationManager"
+		class="au.com.project.sample.services.admin.deletedesignation.DeleteDesignationManager">
+	</bean>
+
+	<bean id="updateDesignationManager"
+		class="au.com.project.sample.services.admin.updatedesignation.UpdateDesignationManager">
+	</bean>
+
+	<bean id="getDesignationManager"
+		class="au.com.project.sample.services.admin.getdesignation.GetDesignationManager">
+	</bean>
+
+	<bean id="createCurrencyManager"
+		class="au.com.project.sample.services.admin.createcurrency.CreateCurrencyManager">
+	</bean>
+
+	<bean id="deleteCurrencyManager"
+		class="au.com.project.sample.services.admin.deletecurrency.DeleteCurrencyManager">
+	</bean>
+
+	<bean id="updateCurrencyManager"
+		class="au.com.project.sample.services.admin.updatecurrency.UpdateCurrencyManager">
+	</bean>
+
+	<bean id="getCurrencyManager"
+		class="au.com.project.sample.services.admin.getcurrency.GetCurrencyManager">
+	</bean>
+
+	<bean id="createRoleManager"
+		class="au.com.project.sample.services.admin.createrole.CreateRoleManager">
+	</bean>
+
+	<bean id="deleteRoleManager"
+		class="au.com.project.sample.services.admin.deleterole.DeleteRoleManager">
+	</bean>
+
+	<bean id="updateRoleManager"
+		class="au.com.project.sample.services.admin.updaterole.UpdateRoleManager">
+	</bean>
+
+	<bean id="getRoleManager"
+		class="au.com.project.sample.services.admin.getrole.GetRoleManager">
+	</bean>
+
+	<bean id="createAccountManager"
+		class="au.com.project.sample.services.account.createaccount.CreateAccountManager">
+	</bean>
+
+	<!--bean id="getCountryManager"
+		class="au.com.project.sample.registration.services.getcountry.GetCountryManager">
+	</bean-->
+
+	<bean id="saveCountryManager"
+		class="au.com.project.sample.registration.services.savecountry.SaveCountryManager">
+	</bean>
+
+	<bean id="saveStateManager"
+		class="au.com.project.sample.registration.services.savestate.SaveStateManager">
+	</bean>
+
+	<bean id="saveCityManager"
+		class="au.com.project.sample.registration.services.savecity.SaveCityManager">
+	</bean>
+
+</beans>

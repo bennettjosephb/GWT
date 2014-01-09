@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="manager.xml" />
+
+	<bean id="createEducationSummary"
+		class="au.com.project.sample.services.account.createeducationsummary.CreateEducationSummaryImpl">
+	</bean>
+
+	<bean id="createEmploymentSummary"
+		class="au.com.project.sample.services.account.createemploymentsummary.CreateEmploymentSummaryImpl">
+	</bean>
+
+	<bean id="updateEmploymentSummary"
+		class="au.com.project.sample.services.account.updateemploymentsummary.UpdateEmploymentSummaryImpl">
+	</bean>
+
+	<bean id="deleteEmploymentSummary"
+		class="au.com.project.sample.services.account.deleteemploymentsummary.DeleteEmploymentSummaryImpl">
+	</bean>
+
+	<bean id="createCategory"
+		class="au.com.project.sample.services.admin.createcategory.CreateCategoryImpl">
+	</bean>
+
+	<bean id="deleteCategory"
+		class="au.com.project.sample.services.admin.deletecategory.DeleteCategoryImpl">
+	</bean>
+
+	<bean id="updateCategory"
+		class="au.com.project.sample.services.admin.updatecategory.UpdateCategoryImpl">
+	</bean>
+
+	<bean id="getCategory"
+		class="au.com.project.sample.services.admin.getcategory.GetCategoryImpl">
+	</bean>
+
+	<bean id="createSubCategory"
+		class="au.com.project.sample.services.admin.createsubcategory.CreateSubCategoryImpl">
+	</bean>	
+	
+	<bean id="deleteSubCategory"
+		class="au.com.project.sample.services.admin.deletesubcategory.DeleteSubCategoryImpl">
+	</bean>
+
+	<bean id="updateSubCategory"
+		class="au.com.project.sample.services.admin.updatesubcategory.UpdateSubCategoryImpl">
+	</bean>
+
+	<bean id="getSubCategory"
+		class="au.com.project.sample.services.admin.getsubcategory.GetSubCategoryImpl">
+	</bean>
+
+	
+
+	<bean id="createDesignation"
+		class="au.com.project.sample.services.admin.createdesignation.CreateDesignationImpl">
+	</bean>
+
+	<bean id="deleteDesignation"
+		class="au.com.project.sample.services.admin.deletedesignation.DeleteDesignationImpl">
+	</bean>
+
+	<bean id="updateDesignation"
+		class="au.com.project.sample.services.admin.updatedesignation.UpdateDesignationImpl">
+	</bean>
+
+	<bean id="getDesignation"
+		class="au.com.project.sample.services.admin.getdesignation.GetDesignationImpl">
+	</bean>
+
+	<bean id="createCurrency"
+		class="au.com.project.sample.services.admin.createcurrency.CreateCurrencyImpl">
+	</bean>
+
+	<bean id="deleteCurrency"
+		class="au.com.project.sample.services.admin.deletecurrency.DeleteCurrencyImpl">
+	</bean>
+
+	<bean id="updateCurrency"
+		class="au.com.project.sample.services.admin.updatecurrency.UpdateCurrencyImpl">
+	</bean>
+
+	<bean id="getCurrency"
+		class="au.com.project.sample.services.admin.getcurrency.GetCurrencyImpl">
+	</bean>
+
+	<bean id="createRole"
+		class="au.com.project.sample.services.admin.createrole.CreateRoleImpl">
+	</bean>
+
+	<bean id="deleteRole"
+		class="au.com.project.sample.services.admin.deleterole.DeleteRoleImpl">
+	</bean>
+
+	<bean id="updateRole"
+		class="au.com.project.sample.services.admin.updaterole.UpdateRoleImpl">
+	</bean>
+
+	<bean id="getRole"
+		class="au.com.project.sample.services.admin.getrole.GetRoleImpl">
+	</bean>
+
+	<bean id="createAccount"
+		class="au.com.project.sample.services.account.createaccount.CreateAccountImpl">
+	</bean>
+
+	<!--bean id="getCountry"
+		class="au.com.project.sample.registration.services.getcountry.GetCountryImplementation">
+	</bean-->
+
+	<bean id="saveCountry"
+		class="au.com.project.sample.registration.services.savecountry.SaveCountryImpl">
+	</bean>
+
+	<bean id="saveState"
+		class="au.com.project.sample.registration.services.savestate.SaveStateImpl">
+	</bean>
+
+	<bean id="saveCity"
+		class="au.com.project.sample.registration.services.savecity.SaveCityImpl">
+	</bean>
+	
+		<bean id="createITSkill"
+			class="au.com.project.sample.services.account.createitskill.CreateITSkillImpl">
+		</bean>
+	
+		<bean id="deleteITSkill"
+			class="au.com.project.sample.services.account.deleteitskill.DeleteITSkillImpl">
+		</bean>
+	
+		<bean id="updateITSkill"
+			class="au.com.project.sample.services.account.updateitskill.UpdateITSkillImpl">
+		</bean>
+	
+		<!--bean id="getITSkill"
+			class="au.com.project.sample.services.account.getitskill.GetITSkillImpl">
+		</bean-->
+
+	<bean id="createCity"
+		class="au.com.project.sample.services.admin.createcity.CreateCityImpl">
+	</bean>
+
+	<bean id="deleteCity"
+		class="au.com.project.sample.services.admin.deletecity.DeleteCityImpl">
+	</bean>
+
+	<bean id="updateCity"
+		class="au.com.project.sample.services.admin.updatecity.UpdateCityImpl">
+	</bean>
+
+	<bean id="getCity"
+		class="au.com.project.sample.services.admin.getcity.GetCityImpl">
+	</bean>
+
+	<bean id="createCountry"
+		class="au.com.project.sample.services.admin.createcountry.CreateCountryImpl">
+	</bean>
+
+	<bean id="deleteCountry"
+		class="au.com.project.sample.services.admin.deletecountry.DeleteCountryImpl">
+	</bean>
+
+	<bean id="updateCountry"
+		class="au.com.project.sample.services.admin.updatecountry.UpdateCountryImpl">
+	</bean>
+
+	<bean id="getCountry"
+		class="au.com.project.sample.services.admin.getcountry.GetCountryImpl">
+	</bean>
+
+	<bean id="createState"
+		class="au.com.project.sample.services.admin.createstate.CreateStateImpl">
+	</bean>
+
+	<bean id="deleteState"
+		class="au.com.project.sample.services.admin.deletestate.DeleteStateImpl">
+	</bean>
+
+	<bean id="updateState"
+		class="au.com.project.sample.services.admin.updatestate.UpdateStateImpl">
+	</bean>
+
+	<bean id="getState"
+		class="au.com.project.sample.services.admin.getstate.GetStateImpl">
+	</bean>
+
+</beans>

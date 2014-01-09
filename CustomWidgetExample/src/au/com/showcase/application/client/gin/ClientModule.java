@@ -12,6 +12,8 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import au.com.showcase.application.client.RadioButtonPresenter;
 import au.com.showcase.application.client.RadioButtonView;
+import au.com.showcase.application.client.LoadingPresenter;
+import au.com.showcase.application.client.LoadingView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -30,5 +32,8 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(RadioButtonPresenter.class,
 				RadioButtonPresenter.MyView.class, RadioButtonView.class,
 				RadioButtonPresenter.MyProxy.class);
+
+		bindSingletonPresenterWidget(LoadingPresenter.class,
+				LoadingPresenter.MyView.class, LoadingView.class);
 	}
 }

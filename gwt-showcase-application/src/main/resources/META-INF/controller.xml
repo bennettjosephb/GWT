@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="dao.xml" />
+	
+	<bean id="itSkillController"
+		class="au.com.project.sample.process.impl.ITSkillControllerImpl">
+	</bean>
+	
+	<bean id="educationSummaryController"
+		class="au.com.project.sample.process.impl.EducationSummaryControllerImpl">
+	</bean>
+	
+	<bean id="employmentSummaryController"
+		class="au.com.project.sample.process.impl.EmploymentSummaryControllerImpl">
+	</bean>
+
+	<bean id="subCategoryController"
+		class="au.com.project.sample.process.impl.SubCategoryControllerImpl">
+	</bean>
+
+	<bean id="categoryController"
+		class="au.com.project.sample.process.impl.CategoryControllerImpl">
+	</bean>
+
+	<bean id="designationController"
+		class="au.com.project.sample.process.impl.DesignationControllerImpl">
+	</bean>
+
+	<bean id="currencyController"
+		class="au.com.project.sample.process.impl.CurrencyControllerImpl">
+	</bean>
+
+	<bean id="authenticationRoleController"
+		class="au.com.project.sample.process.impl.AuthenticationRoleControllerImpl">
+	</bean>
+
+	<bean id="createAccountController"
+		class="au.com.project.sample.process.impl.CreateAccountControllerImpl">
+	</bean>
+
+	<bean id="countryController"
+		class="au.com.project.sample.process.impl.CountryControllerImpl">
+	</bean>
+
+	<bean id="stateController"
+		class="au.com.project.sample.process.impl.StateControllerImpl">
+	</bean>
+
+	<bean id="cityController"
+		class="au.com.project.sample.process.impl.CityControllerImpl">
+	</bean>
+
+</beans>

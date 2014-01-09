@@ -1,6 +1,7 @@
 package au.com.showcase.application.client;
 
 import java.util.Date;
+import java.util.Iterator;
 
 import au.com.showcase.application.client.place.NameTokens;
 
@@ -10,13 +11,16 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.RadioButton;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.dispatch.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
-import com.gwtplatform.mvp.client.proxy.PlaceRequest;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
@@ -27,6 +31,10 @@ public class RadioButtonPresenter extends
 		public Button getButton();
 
 		public void setButton(Button button);
+
+		public FlowPanel getContainer();
+
+		public void setContainer(FlowPanel container);
 	}
 
 	@ProxyCodeSplit
@@ -48,6 +56,9 @@ public class RadioButtonPresenter extends
 	@Inject
 	DispatchAsync dispatchAsync;
 
+	@Inject
+	LoadingPresenter loadingPresenter;
+
 	@Override
 	protected void onBind() {
 		super.onBind();
@@ -57,7 +68,23 @@ public class RadioButtonPresenter extends
 			@Override
 			public void onClick(ClickEvent event) {
 
-				DataSet dataSet = new DataSet();
+				Iterator<Widget> i = ((HasWidgets) getView().getContainer())
+						.iterator();
+
+				final DataSet dataSet = new DataSet();
+
+				while (i.hasNext()) {
+					final RadioButton widget = (RadioButton) i.next();
+
+					if (widget.getValue()) {
+
+						dataSet.setBool(widget.getValue());
+
+						dataSet.setOne(widget.getText());
+
+					}
+
+				}
 
 				dataSet.setDate(new Date());
 
@@ -65,15 +92,14 @@ public class RadioButtonPresenter extends
 
 				dataSet.setI(123);
 
-				dataSet.setOne("One");
-
 				TestingHandler testingHandler = new TestingHandler(dataSet);
-				
+
 				GetData getData = new GetData("HAI");
 
-				Window.alert("1");
+				// Window.alert("1");
+				addToPopupSlot(loadingPresenter);
 				dispatchAsync.execute(testingHandler, contactDetailsResult);
-				Window.alert("2");
+				// Window.alert("2");
 
 			}
 		});
@@ -83,12 +109,14 @@ public class RadioButtonPresenter extends
 
 		@Override
 		public void onSuccess(TestingHandlerResult result) {
-			Window.alert("RESULT" + result.getResultdate().getName());
+			// Window.alert("RESULT" + result.getResultdate().getName());
+			loadingPresenter.getView().hide();
 		}
 
 		@Override
 		public void onFailure(Throwable caught) {
-			Window.alert("PROBLEM" + caught.getMessage());
+			// Window.alert("PROBLEM" + caught.getMessage());
+			loadingPresenter.getView().hide();
 		}
 	};
 
@@ -96,12 +124,12 @@ public class RadioButtonPresenter extends
 
 		@Override
 		public void onSuccess(GetDataResult result) {
-			Window.alert("RESULT" + result.getResult());
+			// Window.alert("RESULT" + result.getResult());
 		}
 
 		@Override
 		public void onFailure(Throwable caught) {
-			Window.alert("PROBLEM" + caught.getMessage());
+			// Window.alert("PROBLEM" + caught.getMessage());
 		}
 	};
 

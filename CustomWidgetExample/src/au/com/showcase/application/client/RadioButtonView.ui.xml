@@ -46,12 +46,14 @@
 	<g:HTMLPanel>
 		<g:Button ui:field="button">Click This !!!</g:Button>
 		<g:FlowPanel width="584px" ui:field="container">
-			<g:RadioButton name="new name" text="New RadioButton" />
-			<g:RadioButton name="new name" text="New RadioButton" />
-			<g:RadioButton name="new name" text="New RadioButton" />
-			<g:RadioButton name="new name" text="New RadioButton" />
-			<g:RadioButton name="new name" text="New RadioButton" />
-			<g:RadioButton name="new name" text="New RadioButton" />
+			<g:RadioButton name="new name">A</g:RadioButton>
+			<g:RadioButton name="new name">B</g:RadioButton>
+			<g:RadioButton name="new name">C</g:RadioButton>
+			<g:RadioButton name="new name">D</g:RadioButton>
+			<g:RadioButton name="new name">E</g:RadioButton>
+			<g:RadioButton name="new name">F</g:RadioButton>
+			<g:RadioButton name="new name">G</g:RadioButton>
+			<g:RadioButton name="new name">H</g:RadioButton>
 		</g:FlowPanel>
 	</g:HTMLPanel>
 </ui:UiBinder>

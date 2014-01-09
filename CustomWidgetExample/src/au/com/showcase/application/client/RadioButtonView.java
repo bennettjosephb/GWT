@@ -6,6 +6,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import com.google.gwt.user.client.ui.FlowPanel;
 
 public class RadioButtonView extends ViewImpl implements
 		RadioButtonPresenter.MyView {
@@ -27,6 +28,17 @@ public class RadioButtonView extends ViewImpl implements
 
 	@UiField
 	Button button;
+	
+	@UiField
+	FlowPanel container;
+
+	public FlowPanel getContainer() {
+		return container;
+	}
+
+	public void setContainer(FlowPanel container) {
+		this.container = container;
+	}
 
 	public Button getButton() {
 		return button;

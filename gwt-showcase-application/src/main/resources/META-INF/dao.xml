@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="classpath:META-INF/datasource.xml" />
+
+	<bean id="applicantDAO"
+		class="au.com.project.sample.persistence.impl.jpa.ApplicantDAOImpl">
+	</bean>
+
+	<bean id="itSkillDAO"
+		class="au.com.project.sample.persistence.impl.jpa.ITSkillDAOImpl">
+	</bean>
+
+	<bean id="employmentSummaryDAO"
+		class="au.com.project.sample.persistence.impl.jpa.EmploymentSummaryDAOImpl">
+	</bean>
+
+	<bean id="educationSummaryDAO"
+		class="au.com.project.sample.persistence.impl.jpa.EducationSummaryDAOImpl">
+	</bean>
+
+	<bean id="designationDAO"
+		class="au.com.project.sample.persistence.impl.jpa.DesignationDAOImpl">
+	</bean>
+
+	<bean id="categoryDAO"
+		class="au.com.project.sample.persistence.impl.jpa.CategoryDAOImpl">
+	</bean>
+
+	<bean id="subCategoryDAO"
+		class="au.com.project.sample.persistence.impl.jpa.SubCategoryDAOImpl">
+	</bean>
+
+	<bean id="currencyDAO"
+		class="au.com.project.sample.persistence.impl.jpa.CurrencyDAOImpl">
+	</bean>
+
+	<bean id="authenticationRoleDAO"
+		class="au.com.project.sample.persistence.impl.jpa.AuthenticationRoleDAOImpl">
+	</bean>
+
+	<bean id="applicationUserDAO"
+		class="au.com.project.sample.persistence.impl.jpa.ApplicationUserDAOImpl">
+	</bean>
+
+	<bean id="countryDAO"
+		class="au.com.project.sample.persistence.impl.jpa.CountryDAOImpl">
+	</bean>
+
+	<bean id="stateDAO"
+		class="au.com.project.sample.persistence.impl.jpa.StateDAOImpl">
+	</bean>
+
+	<bean id="cityDAO"
+		class="au.com.project.sample.persistence.impl.jpa.CityDAOImpl">
+	</bean>
+
+</beans>
