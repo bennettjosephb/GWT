@@ -12,11 +12,16 @@
 			-webkit-box-shadow: 5px 5px 6px -1px #000;
 			background-color: #FFFFFF;
 		}
+		
+		.glassStyle {
+			background-color: transparent;
+		}
 	</ui:style>
 
-	<g:PopupPanel styleName="{style.gwtDialogBox}">
-	<g:HTMLPanel width="158px" height="45px">
-		<g:Image url="103.GIF"/>
+	<g:PopupPanel styleName="{style.gwtDialogBox}"
+		glassEnabled="true" glassStyleName="{style.glassStyle}">
+		<g:HTMLPanel width="158px" height="45px">
+			<g:Image url="103.GIF" />
 		</g:HTMLPanel>
 	</g:PopupPanel>
 </ui:UiBinder>
