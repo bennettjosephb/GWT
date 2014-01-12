@@ -39,7 +39,6 @@ public class SampleReport extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 
 		Connection conn = null;
 		JRExporter exporter = null;
