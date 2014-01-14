@@ -1,15 +1,15 @@
 package au.com.showcase.application.client.login;
 
+import au.com.showcase.application.client.place.NameTokens;
+
+import com.google.gwt.event.shared.EventBus;
+import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
-import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import au.com.showcase.application.client.place.NameTokens;
-import com.gwtplatform.mvp.client.annotations.UseGatekeeper;
-import au.com.showcase.application.client.filter.LoggedInGatekeeper;
+import com.gwtplatform.mvp.client.annotations.NoGatekeeper;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
-import com.google.inject.Inject;
-import com.google.gwt.event.shared.EventBus;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
 public class SignInPagePresenter extends
@@ -20,7 +20,7 @@ public class SignInPagePresenter extends
 
 	@ProxyCodeSplit
 	@NameToken(NameTokens.signin)
-	@UseGatekeeper(LoggedInGatekeeper.class)
+	@NoGatekeeper
 	public interface MyProxy extends ProxyPlace<SignInPagePresenter> {
 	}
 
