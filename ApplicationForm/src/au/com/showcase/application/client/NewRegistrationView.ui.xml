@@ -1,0 +1,117 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+	.loginTextBox {
+		background-color: #FFFFFF;
+		background-position: initial initial;
+		background-repeat: initial initial;
+		border-bottom-left-radius: 1px;
+		border-bottom-right-radius: 1px;
+		border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+		border-style: solid;
+		border-top-left-radius: 1px;
+		border-top-right-radius: 1px;
+		border-width: 1px;
+		box-sizing: border-box;
+		display: inline-block;
+		height: 30px;
+		margin-bottom: 5px;
+		padding: 0 8px;
+		font-size: 15px;
+	}
+	
+	.verti {
+		background-color: #FF0000;
+	}
+	
+	.rightAlign {
+		float: right;
+		background-color: #FFFFFF;
+		width: 400px;
+		height: 100%;
+		padding: 20px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.formLayout {
+		background-color: #E5E5E5;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.bodyLayout {
+		background-color: #A1A1A1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.horiCon {
+		overflow: hidden;
+		width: 350px;
+		height: 200px;
+		background-color: #FF0000;
+		padding: 5px;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.textbox {
+		height: 25px;
+		width: 160px;
+		padding-left:5px;
+		padding-right:5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textbox :focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	</ui:style>
+
+	<g:HTMLPanel width="100%" height="100%" styleName="{style.bodyLayout}">
+		asdf
+		<div class="{style.rightAlign}" id="container">
+			<g:FormPanel styleName="{style.formLayout}">
+				<g:HTMLPanel width="100%" height="100%">
+					<div id="inner" class="{style.horiCon}">
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+					</div>
+				</g:HTMLPanel>
+			</g:FormPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>

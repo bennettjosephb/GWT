@@ -11,6 +11,10 @@ import au.com.showcase.application.client.ApplicationFormPresenter;
 import au.com.showcase.application.client.ApplicationFormView;
 import au.com.showcase.application.client.LoginPresenter;
 import au.com.showcase.application.client.LoginView;
+import au.com.showcase.application.client.NewRegistrationPresenter;
+import au.com.showcase.application.client.NewRegistrationView;
+import au.com.showcase.application.client.NewRegistrationContainerPresenter;
+import au.com.showcase.application.client.NewRegistrationContainerView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -30,5 +34,15 @@ public class ClientModule extends AbstractPresenterModule {
 
 		bindPresenter(LoginPresenter.class, LoginPresenter.MyView.class,
 				LoginView.class, LoginPresenter.MyProxy.class);
+
+		bindPresenter(NewRegistrationPresenter.class,
+				NewRegistrationPresenter.MyView.class,
+				NewRegistrationView.class,
+				NewRegistrationPresenter.MyProxy.class);
+
+		bindPresenter(NewRegistrationContainerPresenter.class,
+				NewRegistrationContainerPresenter.MyView.class,
+				NewRegistrationContainerView.class,
+				NewRegistrationContainerPresenter.MyProxy.class);
 	}
 }

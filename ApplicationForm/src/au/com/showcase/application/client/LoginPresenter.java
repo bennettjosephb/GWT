@@ -27,9 +27,8 @@ public class LoginPresenter extends
 		Presenter<LoginPresenter.MyView, LoginPresenter.MyProxy> {
 
 	private final Messages messages = GWT.create(Messages.class);
-	
+
 	private final Resources cssResources = GWT.create(Resources.class);
-	
 
 	public interface MyView extends View {
 		public TextBox getUsername();
@@ -78,6 +77,11 @@ public class LoginPresenter extends
 	@Override
 	protected void onBind() {
 		super.onBind();
+
+		/*
+		 * Contact server and check for session, If exists then redirect to home
+		 * page. If not to login page.
+		 */
 		getView().getUsername().getElement()
 				.setAttribute("placeholder", "Username");
 		getView().getUsername().getElement().setAttribute("name", "j_username");
@@ -132,13 +136,15 @@ public class LoginPresenter extends
 					getView().getUsernameError().setText(
 							messages.loginEnterUsername());
 					error = true;
-					getView().getUsername().setStyleName(cssResources.INSTANCE.Login().loginTextBoxError());
+					getView().getUsername().setStyleName(
+							cssResources.INSTANCE.Login().loginTextBoxError());
 				}
 				if (password.trim().equals("") || password.trim().length() == 0) {
 					getView().getPasswordError().setVisible(true);
 					getView().getPasswordError().setText(
 							messages.loginEnterPassword());
-					getView().getPassword().setStyleName(cssResources.INSTANCE.Login().loginTextBoxError());
+					getView().getPassword().setStyleName(
+							cssResources.INSTANCE.Login().loginTextBoxError());
 					error = true;
 				}
 

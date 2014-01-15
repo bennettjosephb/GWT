@@ -1,0 +1,63 @@
+function zc(){}
+function Ec(){}
+function Qc(){}
+function Wc(){}
+function Zc(){}
+function Mk(){}
+function $l(){}
+function yt(){}
+function Bt(){}
+function xx(a,b){a.a=b}
+function lz(a,b){a.a=b}
+function Qd(a,b){a.W(b)}
+function $h(a,b){a.src=b}
+function $v(a){this.o=a}
+function Cc(a){this.a=a}
+function Yk(){this.a={}}
+function hy(){hy=pH;_y()}
+function wx(){wx=pH;new XG}
+function $c(){$c=pH;Vc=new Zc}
+function ey(a){this.o=a;new $l}
+function Ex(a,b){this.a=a;this.b=b}
+function Zv(a,b){Uh(a.o,b)}
+function St(a,b){xu();Gu(a,b)}
+function Ut(a){xu();Gu(a,32768)}
+function az(){_y();return Wy}
+function cz(){li.call(this,EJ,0)}
+function ez(){li.call(this,FJ,1)}
+function gz(){li.call(this,GJ,2)}
+function iz(){li.call(this,HJ,3)}
+function Md(a,b){return new sc(a,b)}
+function Nc(){this.g=Sc(new Tc(this))}
+function Lx(a){this.o=a;this.a=new dw(this.o)}
+function dw(a){this.a=a;this.b=_l(a);this.c=this.b}
+function rt(){this.a='images/UserGroup.png'}
+function Lk(){Lk=pH;Kk=new Vk(new Mk)}
+function bi(a,b){a.fireEvent('on'+b.type,b)}
+function sc(a,b){Q.call(this,a,b);Gd((Id(),Ed))}
+function Hx(a,b){!!a.a&&(a.o[CJ]=aI,undefined);$h(a.o,b.a)}
+function kv(a,b,c){return vl(!a.j?(a.j=new xl(a)):a.j,c,b)}
+function ut(){ut=pH;new RegExp('%5B',JI);new RegExp('%5D',JI)}
+function Nx(){Lx.call(this,ai($doc,oI));this.o[dJ]='gwt-Label'}
+function yx(){wx();xx(this,new Ix(this));this.o[dJ]='gwt-Image'}
+function iy(){hy();jy.call(this,Vh($doc,'text'),'gwt-TextBox')}
+function ky(){hy();jy.call(this,Vh($doc,'password'),'gwt-PasswordTextBox')}
+function Vh(a,b){var c=a.createElement('INPUT');c.type=b;return c}
+function cv(a,b){var c=a.parentNode;if(!c){return}c.insertBefore(b,a);c.removeChild(a)}
+function Cx(a,b){var c;c=Sh(b.o,CJ);rD(DJ,c)&&(a.a=new Ex(a,b),jh((ch(),bh),a.a))}
+function Vk(a){Uk.call(this);this.a=a;!Fk&&(Fk=new Yk);Fk.a[BJ]=this;this.b=BJ}
+function mz(){aw.call(this);this.a=(nx(),kx);this.b=(sx(),rx);this.e[pJ]=IJ;this.e[qJ]=IJ}
+function jy(a,b){ey.call(this,a,(!At&&(At=new Bt),!xt&&(xt=new yt)));b!=null&&(this.o[dJ]=b,undefined)}
+function Uy(){$v.call(this,$doc.createElement("<BUTTON type='submit'><\/BUTTON>"));this.o[dJ]='gwt-SubmitButton'}
+function qv(a,b){a.g&&(a.o.__listener=null,undefined);!!a.o&&cv(a.o,b);a.o=b;a.g&&yu(a.o,a)}
+function _y(){_y=pH;Xy=new cz;Yy=new ez;Zy=new gz;$y=new iz;Wy=om(hs,BH,43,[Xy,Yy,Zy,$y])}
+function Ix(a){qv(a,ai($doc,'img'));Ut(a.o);a.i==-1?St(a.o,133398655|(a.o.__eventBits||0)):(a.i|=133398655)}
+function jv(a,b,c){var d;d=wu(c.b);d==-1?a.o:a.i==-1?Fu(a.o,d|(a.o.__eventBits||0)):(a.i|=d);return vl(!a.j?(a.j=new xl(a)):a.j,c,b)}
+function kz(a,b){var c,d,e;d=ai($doc,jJ);c=(e=ai($doc,kJ),e[lJ]=a.a.a,Rt(e,mJ,a.b.a),e);Nh(d,(ly(),my(c)));Nt(a.d,d);Bv(a,b,c)}
+function Tc(a){this.e=a;this.f=(new Wc,$c(),Vc);Yc(this.f);this.a=ei($doc);this.c=ei($doc);this.b=new Et(this.a);this.d=new Et(this.c)}
+function Xd(a){var b;!a.i&&(a.i=(b=Md((!a.p&&(a.p=new Ql),a.p),(!a.j&&(a.j=new Nc(new Qc)),a.j),!a.g&&(a.g=new Gc)),Qd(b,(!a.r&&(a.r=new Vz),a.r)),b));return a.i}
+function _c(a,b){var c;c=new ND;Eh(c.a,tJ);MD(c,pt('GJ-33NUBK'));Eh(c.a,"' id='loginContainer'> <div class='");MD(c,pt('GJ-33NUGK'));Eh(c.a,"'> <span id='");MD(c,pt(a));Eh(c.a,"'><\/span> <\/div> <span id='");MD(c,pt(b));Eh(c.a,vJ);return new at(Gh(c.a))}
+function Gd(a){if(!a.a){a.a=true;jk();Yf(gk,'.GJ-33NUA{background-color:#fff;background-position:initial initial;background-repeat:initial initial;border-bottom-left-radius:1px;border-bottom-right-radius:1px;border-style:solid;border-top-left-radius:1px;border-top-right-radius:1px;border-width:1px;box-sizing:border-box;display:inline-block;height:35px;margin-bottom:5px;padding:0 8px;font-size:15px;border:1px solid #f00;}');lk();return true}return false}
+function Sc(a){var b,c,d,e,f,g,h,i,j,k,l;c=new ix(_c(a.a,a.c).a);c.o.style[eJ]=gJ;c.o.style[fJ]=gJ;b=Gt(c.o);Dt(a.b);Dt(a.d);b.b?Oh(b.b,b.a,b.c):It(b.a);gx(c,(d=new yx,d.o.style[eJ]=xJ,d.o.style[fJ]=xJ,Hx(d,(ut(),new rt)),d),Dt(a.b));gx(c,(e=new Mw,Fw(e,(f=new mz,lz(f,(nx(),jx)),kz(f,(g=new iy,g.o[dJ]=yJ,g.o.style[fJ]=zJ,a.e.e=g,g)),kz(f,(h=new Nx,h.o[dJ]=AJ,h.o.style[fJ]=zJ,a.e.f=h,h)),kz(f,(i=new ky,i.o[dJ]=yJ,i.o.style[fJ]=zJ,a.e.b=i,i)),kz(f,(j=new Nx,j.o[dJ]=AJ,j.o.style[fJ]=zJ,a.e.c=j,j)),kz(f,(k=new Uy,Zv(k,(l=new ND,Eh(l.a,'Sign in'),new at(Gh(l.a))).a),k.o[dJ]='GJ-33NUAK',k.o.style[eJ]='35px',k.o.style[fJ]=zJ,a.e.d=k,k)),f.o[dJ]='GJ-33NUEK',f.o.style[fJ]=iJ,f)),e.o[dJ]='GJ-33NUDK',a.e.a=e,e),Dt(a.d));return c}
+function Yc(a){if(!a.a){a.a=true;jk();Yf(gk,'#divElement{position:absolute;top:30%;left:50%;margin-left:auto;margin-right:auto;width:300px;height:400px;background-color:blue;}.GJ-33NUGK{position:absolute;top:30px;left:100px;}.GJ-33NUDK{position:absolute;top:150px;width:100%;}.GJ-33NUEK{position:absolute;padding-left:0;padding-right:0;margin-bottom:5px;width:90%;}.GJ-33NUFK{background-color:#fff;background-position:initial initial;background-repeat:initial initial;border-bottom-left-radius:1px;border-bottom-right-radius:1px;border-color:#c0c0c0 #d9d9d9 #d9d9d9;border-style:solid;border-top-left-radius:1px;border-top-right-radius:1px;border-width:1px;box-sizing:border-box;display:inline-block;height:35px;margin-bottom:5px;padding:0 8px;font-size:15px;}.GJ-33NUFK:ERROR{-webkit-box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 2px inset;border:1px solid #f00;box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 2px inset;outline:none;}.GJ-33NUFK:FOCUS{-webkit-box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 2px inset;border:1px solid #961b1b;box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 2px inset;outline:none;}.GJ-33NUBK{-moz-border-radius:3px;border-radius:3px;width:300px;height:350px;background-color:#f0f0f0;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;-moz-box-shadow:2px 2px 3px #a0a0a0;-webkit-box-shadow:2px 2px 3px #a0a0a0;box-shadow:2px 2px 3px #a0a0a0;}.GJ-33NUAK{font-family:Arial, Helvetica, sans-serif;font-size:15px;width:280px;color:#fff;padding:8px 20px;background:-moz-linear-gradient(top, #ff9e9e 0, #cc3f3f 50%, #b01111 50%, #fa5f5f 99%, #8a0404);background:-webkit-gradient(linear, left top, left bottom, from(#ff9e9e), color-stop(0.5, #cc3f3f), color-stop(0.5, #b01111), color-stop(0.99, #fa5f5f), to(#8a0404));-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:1px solid #b03d3d;-moz-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);-webkit-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);text-shadow:0 -1px 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(255, 255, 255, 0.2);}.GJ-33NUAK:hover{font-family:Arial, Helvetica, sans-serif;width:280px;font-size:15px;color:#fff;padding:8px 20px;background:-moz-linear-gradient(top, #ff9e9e 0, #ab3232 50%, #b01111 50%, #d44e4e 99%, #8a0404);background:-webkit-gradient(linear, left top, left bottom, from(#ff9e9e), color-stop(0.5, #ab3232), color-stop(0.5, #b01111), color-stop(0.99, #d44e4e), to(#8a0404));-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:1px solid #b03d3d;-moz-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);-webkit-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);text-shadow:0 -1px 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(255, 255, 255, 0.2);}.GJ-33NUAK:active{font-family:Arial, Helvetica, sans-serif;width:280px;font-size:15px;color:#fff;padding:8px 20px;background:-moz-linear-gradient(top, #d44e4e 0, #ab3232 50%, #b01111 50%, #8a0404 99%, #ff9e9e);background:-webkit-gradient(linear, left top, left bottom, from(#d44e4e), color-stop(0.5, #ab3232), color-stop(0.5, #b01111), color-stop(0.99, #8a0404), to(#ff9e9e));-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:1px solid #b03d3d;-moz-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);-webkit-box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);box-shadow:0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);text-shadow:0 -1px 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(255, 255, 255, 0.2);}.GJ-33NUAK:FOCUS{outline:0;border:0;}.GJ-33NUCK{color:red;}');lk();return true}return false}
+var IJ='0',xJ='100px',zJ='90%',AJ='GJ-33NUCK',yJ='GJ-33NUFK',CJ='__gwtLastUnhandledEvent',KJ='com.google.gwt.event.dom.client.',MJ='com.google.gwt.text.shared.testing.',wJ='placeholder';us(32,5,tH,sc);_.X=function tc(){xm(xm(this.f,2),3).e.o.setAttribute(wJ,'Username');xm(xm(this.f,2),3).e.o.setAttribute(nI,'j_username');xm(xm(this.f,2),3).b.o.setAttribute(wJ,'Password');xm(xm(this.f,2),3).b.o.setAttribute(nI,'j_password');xm(xm(this.f,2),3).a.o.action='LoginValidationServlet';xm(xm(this.f,2),3).a.o.method='post';jv(xm(xm(this.f,2),3).d,new zc,(Lk(),Lk(),Kk));kv(xm(xm(this.f,2),3).a,new Cc(this),(!_w&&(_w=new Uk),_w));kv(xm(xm(this.f,2),3).a,new Ec,(!Ww&&(Ww=new Uk),Ww))};_.Y=function uc(){};_.Z=function vc(){};_.$=function wc(){};_._=function xc(){sC();L(this,new uC(this))};us(33,1,{16:1,22:1},zc);us(34,1,{22:1,36:1},Cc);_.a=null;us(35,1,{22:1,35:1},Ec);us(38,14,{2:1,3:1},Nc);_.db=function Oc(){return this.g};_.a=null;_.b=null;_.c=null;_.d=null;_.e=null;_.f=null;_.g=null;us(39,1,{},Qc);us(40,1,{},Tc);_.a=null;_.b=null;_.c=null;_.d=null;_.e=null;_.f=null;us(41,1,{},Wc);var Vc=null;us(42,1,{},Zc);_.a=false;us(66,1,yH);_.gb=function ze(){VA(this.b,Xd(this.a.a))};us(165,166,{});_.qb=function Jk(){return Lk(),Kk};_.a=null;_.b=null;us(164,165,{});us(163,164,{});us(162,163,{},Mk);_.pb=function Nk(a){xm(a,16)};var Kk;us(168,169,{17:1},Vk);_.a=null;_.b=null;us(171,1,{},Yk);_.a=null;us(187,1,MH,$l);us(208,1,{28:1,29:1},rt);_.eQ=function st(a){if(!zm(a,28)){return false}return rD(this.a,xm(xm(a,28),29).a)};_.hC=function tt(){return FD(this.a)};_.a=null;us(210,1,{});us(211,1,{},yt);var xt=null;us(212,210,{},Bt);var At=null;us(243,236,PH);_.zb=function Yv(){var a;mv(this);a=this.o.tabIndex;-1==a&&(this.o.tabIndex=0,undefined)};us(242,243,PH);us(241,242,PH);us(245,1,{},dw);_.a=null;_.b=null;_.c=null;us(260,236,PH,yx);_.tb=function zx(a){wu(a.type)==32768&&!!this.a&&(this.o[CJ]=aI,undefined);nv(this,a)};_.Bb=function Ax(){Cx(this.a,this)};_.a=null;us(261,1,{});_.a=null;us(262,1,{},Ex);_.kb=function Fx(){var a,b;if(this.b.a!=this.a||this!=this.a.a){return}this.a.a=null;if(!this.b.g){this.b.o[CJ]=DJ;return}a=(b=$doc.createEventObject(),b.type=DJ,b);bi(this.b.o,a)};_.a=null;_.b=null;us(263,261,{},Ix);us(265,236,PH);_.a=null;us(264,265,PH,Nx);us(272,243,PH);_.tb=function fy(a){var b;b=wu(a.type);(b&896)!=0?nv(this,a):nv(this,a)};_.Bb=function gy(){};us(271,272,PH);us(270,271,PH,iy);us(269,270,PH,ky);us(281,241,PH,Uy);us(282,129,SH);var Wy,Xy,Yy,Zy,$y;us(283,282,SH,cz);us(284,282,SH,ez);us(285,282,SH,gz);us(286,282,SH,iz);us(287,244,PH,mz);_.Cb=function nz(a){var b,c;c=Zh(a.o);b=Cv(this,a);b&&Ph(this.d,Zh(c));return b};var Ym=QC(NI,'LoginPresenter',32),Tm=QC(NI,'LoginPresenter$1',33),Um=QC(NI,'LoginPresenter$2',34),Vm=QC(NI,'LoginPresenter$3',35),bn=QC(NI,'LoginView',38),Cp=QC(rJ,'FocusWidget',243),lq=QC(rJ,'ValueBoxBase',272),dq=QC(rJ,'TextBoxBase',271),eq=QC(rJ,'TextBox',270),kq=RC(rJ,'ValueBoxBase$TextAlignment',282,az),hs=PC(sJ,'ValueBoxBase$TextAlignment;',392),gq=RC(rJ,'ValueBoxBase$TextAlignment$1',283,null),hq=RC(rJ,'ValueBoxBase$TextAlignment$2',284,null),iq=RC(rJ,'ValueBoxBase$TextAlignment$3',285,null),jq=RC(rJ,'ValueBoxBase$TextAlignment$4',286,null),Uo=QC(JJ,'AutoDirectionHandler',187),Vp=QC(rJ,'PasswordTextBox',269),tp=QC(rJ,'ButtonBase',242),up=QC(rJ,'Button',241),cq=QC(rJ,'SubmitButton',281),Fo=QC(KJ,'DomEvent',165),Go=QC(KJ,'HumanInputEvent',164),Ho=QC(KJ,'MouseEvent',163),Do=QC(KJ,'ClickEvent',162),Eo=QC(KJ,'DomEvent$Type',168),an=QC(NI,'LoginView_BinderImpl',39),Zm=QC(NI,'LoginView_BinderImpl$Widgets',40),Io=QC(KJ,'PrivateMap',171),Op=QC(rJ,'Image',260),Mp=QC(rJ,'Image$State',261),Np=QC(rJ,'Image$UnclippedState',263),Lp=QC(rJ,'Image$State$1',262),_m=QC(NI,'LoginView_BinderImpl_GenBundle_default_InlineClientBundleGenerator',41),$m=QC(NI,'LoginView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1',42),mq=QC(rJ,'VerticalPanel',287),cp=QC(LJ,'SafeUriString',208),Pp=QC(rJ,'LabelBase',265),Qp=QC(rJ,'Label',264),xp=QC(rJ,'DirectionalTextHelper',245),dp=QC('com.google.gwt.text.shared.','AbstractRenderer',210),fp=QC(MJ,'PassthroughRenderer',212),ep=QC(MJ,'PassthroughParser',211);ZH(mg)(4);

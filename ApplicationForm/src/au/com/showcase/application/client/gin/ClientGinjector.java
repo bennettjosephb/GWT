@@ -10,6 +10,8 @@ import com.google.gwt.inject.client.AsyncProvider;
 import au.com.showcase.application.client.HomePresenter;
 import au.com.showcase.application.client.ApplicationFormPresenter;
 import au.com.showcase.application.client.LoginPresenter;
+import au.com.showcase.application.client.NewRegistrationPresenter;
+import au.com.showcase.application.client.NewRegistrationContainerPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -23,4 +25,8 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<ApplicationFormPresenter> getApplicationFormPresenter();
 
 	AsyncProvider<LoginPresenter> getLoginPresenter();
+
+	AsyncProvider<NewRegistrationPresenter> getNewRegistrationPresenter();
+
+	AsyncProvider<NewRegistrationContainerPresenter> getNewRegistrationContainerPresenter();
 }
