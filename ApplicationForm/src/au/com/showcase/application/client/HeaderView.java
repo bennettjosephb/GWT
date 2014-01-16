@@ -23,5 +23,5 @@ public class HeaderView extends ViewImpl implements HeaderPresenter.MyView {
 	public Widget asWidget() {
 		return widget;
 	}
-	@UiField Button signin;
+	//@UiField Button signin;
 }

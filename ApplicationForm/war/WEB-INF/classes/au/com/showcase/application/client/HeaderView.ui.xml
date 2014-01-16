@@ -81,14 +81,10 @@
 			rgba(255, 255, 255, 0.3);
 	}
 	
-	#a
 	</ui:style>
 
 	<g:HTMLPanel>
 		<g:Image url="images/nike_brandbuttons.jpg" styleName="{style.logo}" />
 		<g:Button ui:field="signin" styleName="{style.button}">Sign In</g:Button>
-		<a class="mine-button ui-state-default" href="bla">
-    <img src="/i_common/CD_down_24.gif" border="0" align="absmiddle"/> Free
-</a>
 	</g:HTMLPanel>
 </ui:UiBinder>

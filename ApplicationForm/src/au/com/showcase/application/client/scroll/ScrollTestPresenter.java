@@ -1,14 +1,19 @@
 package au.com.showcase.application.client.scroll;
 
+import au.com.showcase.application.client.FooterPresenter;
+import au.com.showcase.application.client.HeaderPresenter;
 import au.com.showcase.application.client.place.NameTokens;
 
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
+import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
 public class ScrollTestPresenter extends
@@ -16,6 +21,21 @@ public class ScrollTestPresenter extends
 
 	public interface MyView extends View {
 	}
+
+	@ContentSlot
+	public static final Type<RevealContentHandler<?>> MAIN_CONTENT_SLOT = new Type<RevealContentHandler<?>>();
+
+	@ContentSlot
+	public static final Type<RevealContentHandler<?>> FOOTER_CONTENT_SLOT = new Type<RevealContentHandler<?>>();
+
+	@ContentSlot
+	public static final Type<RevealContentHandler<?>> HEADER_CONTENT_SLOT = new Type<RevealContentHandler<?>>();
+
+	@Inject
+	HeaderPresenter headerPresenter;
+
+	@Inject
+	FooterPresenter footerPresenter;
 
 	@ProxyCodeSplit
 	@NameToken(NameTokens.scroll)
@@ -31,6 +51,8 @@ public class ScrollTestPresenter extends
 	@Override
 	protected void revealInParent() {
 		RevealRootContentEvent.fire(this, this);
+		setInSlot(HEADER_CONTENT_SLOT, headerPresenter);
+		setInSlot(FOOTER_CONTENT_SLOT, footerPresenter);
 	}
 
 	@Override

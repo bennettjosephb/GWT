@@ -39,15 +39,103 @@
 			<g:HTMLPanel width="100%" height="70px" ui:field="headerPanel">
 			</g:HTMLPanel>
 		</g:Dock>
-		<g:Dock direction="CENTER" width="100%" height="100%"
-			>
+		<g:Dock direction="CENTER" width="100%" height="100%">
 			<g:HTMLPanel width="1000px" height="100%" ui:field="contentPanel">
-				asked
-				Mr. Salve.</g:HTMLPanel>
+				do not necessarily represent those of the company. PFG Money will
+				not accept any liability in respect of any communication that is
+				contrary to company policy and outside the scope of the employment.
+				This email and any files transmitted with it are confidential and
+				intended solely for the use of the individual or entity to whom they
+				are addressed. If you have received this email in error please
+				notify the system manager. This message contains confidential
+				information and is intended only for the individual named. If you
+				are not the named addressee you should not disseminate, distribute
+				or copy this e-mail. Please notify the sender immediately by e-mail
+				if you have received this e-mail by mistake and delete this e-mail
+				from your system. If you are not the intended recipient you are
+				notified that disclosing, copying, distributing or taking any action
+				in reliance on the contents of this information is strictly
+				prohibited. PFG Money accepts no liability for the content of this
+				email, or for the consequences of any actions taken on the basis of
+				the information provided, unless that information is subsequently
+				confirmed in writing. Any views or opinions presented in this email
+				are solely those of the author and do not necessarily represent
+				those of the company. PFG Money will not accept any liability in
+				respect of any communication that is contrary to company policy and
+				outside the scope of the employment.
+				This email and any files
+				transmitted with it are confidential and intended solely for the use
+				of the individual or entity to whom they are addressed. If you have
+				received this email in error please notify the system manager. This
+				message contains confidential information and is intended only for
+				the individual named. If you are not the named addressee you should
+				not disseminate, distribute or copy this e-mail. Please notify the
+				sender immediately by e-mail if you have received this e-mail by
+				mistake and delete this e-mail from your system. If you are not the
+				intended recipient you are notified that disclosing, copying,
+				distributing or taking any action in reliance on the contents of
+				this information is strictly prohibited. PFG Money accepts no
+				liability for the content of this email, or for the consequences of
+				any actions taken on the basis of the information provided, unless
+				that information is subsequently confirmed in writing. Any views or
+				opinions presented in this email are solely those of the author and
+				do not necessarily represent those of the company. PFG Money will
+				not accept any liability in respect of any communication that is
+				contrary to company policy and outside the scope of the employment.
+				This email and any files transmitted with it are confidential and
+				intended solely for the use of the individual or entity to whom they
+				are addressed. If you have received this email in error please
+				notify the system manager. This message contains confidential
+				information and is intended only for the individual named. If you
+				are not the named addressee you should not disseminate, distribute
+				or copy this e-mail. Please notify the sender immediately by e-mail
+				if you have received this e-mail by mistake and delete this e-mail
+				from your system. If you are not the intended recipient you are
+				notified that disclosing, copying, distributing or taking any action
+				in reliance on the contents of this information is strictly
+				that information is subsequently confirmed in writing. Any views or
+				opinions presented in this email are solely those of the author and
+				do not necessarily represent those of the company. PFG Money will
+				not accept any liability in respect of any communication that is
+				contrary to company policy and outside the scope of the employment.
+				This email and any files transmitted with it are confidential and
+				intended solely for the use of the individual or entity to whom they
+				are addressed. If you have received this email in error please
+				notify the system manager. This message contains confidential
+				information and is intended only for the individual named. If you
+				are not the named addressee you should not disseminate, distribute
+				or copy this e-mail. Please notify the sender immediately by e-mail
+				if you have received this e-mail by mistake and delete this e-mail
+				from your system. If you are not the intended recipient you are
+				notified that disclosing, copying, distributing or taking any action
+				in reliance on the contents of this information is strictly
+				that information is subsequently confirmed in writing. Any views or
+				opinions presented in this email are solely those of the author and
+				do not necessarily represent those of the company. PFG Money will
+				not accept any liability in respect of any communication that is
+				contrary to company policy and outside the scope of the employment.
+				This email and any files transmitted with it are confidential and
+				intended solely for the use of the individual or entity to whom they
+				are addressed. If you have received this email in error please
+				notify the system manager. This message contains confidential
+				information and is intended only for the individual named. If you
+				are not the named addressee you should not disseminate, distribute
+				or copy this e-mail. Please notify the sender immediately by e-mail
+				if you have received this e-mail by mistake and delete this e-mail
+				from your system. If you are not the intended recipient you are
+				notified that disclosing, copying, distributing or taking any action
+				in reliance on the contents of this information is strictly
+				prohibited. PFG Money accepts no liability for the content of this
+				email, or for the consequences of any actions taken on the basis of
+				the information provided, unless that information is subsequently
+				confirmed in writing. Any views or opinions presented in this email
+				are solely those of the author and do not necessarily represent
+				those of the company. PFG Money will not accept any liability in
+				respect of any communication that is contrary to company policy and
+				outside the scope of the employment.</g:HTMLPanel>
 		</g:Dock>
-		<g:Dock direction="SOUTH" width="100%" height="30px">
-			<g:HTMLPanel width="100%" height="30px" ui:field="footerPanel"
-				styleName="{style.footer}">asdf24</g:HTMLPanel>
+		<g:Dock direction="SOUTH" width="100%" height="30px" styleName="{style.footer}">
+			<g:HTMLPanel width="100%" height="30px" ui:field="footerPanel" />
 		</g:Dock>
 	</g:DockPanel>
 </ui:UiBinder>

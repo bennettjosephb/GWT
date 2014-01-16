@@ -1,10 +1,21 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-	xmlns:g='urn:import:com.google.gwt.user.client.ui'
-	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
 	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
 	ui:generateLocales='default'>
+	<ui:style>
+	.footer {
+		height: 29px;
+		background: #f1f1f1;
+		position: absolute;
+		width: inherit;
+		text-align: center;
+		border-top-color: #E0E0E0;
+		border-top-style: solid;
+		border-top-width: 1px;
+	}
+	</ui:style>
 
-	<g:HTMLPanel>footer</g:HTMLPanel>
+	<g:HTMLPanel styleName="{style.footer}">asdf</g:HTMLPanel>
 </ui:UiBinder>
