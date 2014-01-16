@@ -1,0 +1,3 @@
+If there is problem in maven jvm heap size.
+
+delete line no 121 in pom and run mvn install or mvn package.

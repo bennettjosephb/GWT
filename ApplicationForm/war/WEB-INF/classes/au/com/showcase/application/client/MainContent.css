@@ -84,12 +84,15 @@
 
 .header {
 	background-color: #F1F1F1;
+	min-width: 1000px;
+	height: 70px;
+	position: absolute;
 }
 
 .container {
-	margin: 5 auto;
-	background-color: #FFFFFF;
-	padding: 10px;
+	margin: auto;
+	background-color: #00FFFF;
+	min-width: 1000px;
 }
 
 .footer {
@@ -102,4 +105,6 @@
 
 .d {
 	min-height: 100%;
+	overflow: auto;
+	position: relative;
 }

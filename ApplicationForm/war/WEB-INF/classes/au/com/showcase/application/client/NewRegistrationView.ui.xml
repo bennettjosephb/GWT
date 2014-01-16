@@ -67,10 +67,9 @@
 	
 	.horiCon {
 		overflow: hidden;
-		width: 350px;
+		width: 360px;
 		height: 200px;
 		background-color: #FF0000;
-		padding: 5px;
 		position: relative;
 		top: 0;
 		left: 0;
@@ -80,11 +79,15 @@
 	
 	.textbox {
 		height: 25px;
-		width: 160px;
-		padding-left:5px;
-		padding-right:5px;
+		width: 157px;
+		padding-left: 5px;
+		padding-right: 5px;
 		border: solid 1px #E5E5E5;
 		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 2px;
+		margin-bottom: 5px;
 		font: normal 15px/100% Verdana, Tahoma, sans-serif;
 		background: #FFFFFF url('bg_form.png') left top repeat-x;
 		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
@@ -99,6 +102,13 @@
 		border-color: #C9C9C9;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
+	
+	#span {
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 2px;
+		margin-bottom: 5px;
+	}
 	</ui:style>
 
 	<g:HTMLPanel width="100%" height="100%" styleName="{style.bodyLayout}">
@@ -107,8 +117,13 @@
 			<g:FormPanel styleName="{style.formLayout}">
 				<g:HTMLPanel width="100%" height="100%">
 					<div id="inner" class="{style.horiCon}">
+						<span>USER NAME</span>
 						<input type="text" name="name" class="{style.textbox}" />
 						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+					</div>
+					<div id="inner" class="{style.horiCon}">
 					</div>
 				</g:HTMLPanel>
 			</g:FormPanel>

@@ -33,7 +33,7 @@
 		float: right;
 		background-color: #FFFFFF;
 		width: 400px;
-		height: 100%;
+		height: 100%;overflow-y: auto;
 		padding: 20px;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -42,6 +42,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
+		overflow-y:auto;
 	}
 	
 	.formLayout {
@@ -68,7 +69,7 @@
 	.horiCon {
 		overflow: hidden;
 		width: 360px;
-		height: 200px;
+		height: 100%;
 		background-color: #FF0000;
 		position: relative;
 		top: 0;
@@ -110,14 +111,18 @@
 		margin-bottom: 5px;
 	}
 	</ui:style>
-
-	<g:HTMLPanel width="100%" height="100%" styleName="{style.bodyLayout}">
-		asdf
+	<g:HTMLPanel>
 		<div class="{style.rightAlign}" id="container">
 			<g:FormPanel styleName="{style.formLayout}">
 				<g:HTMLPanel width="100%" height="100%">
 					<div id="inner" class="{style.horiCon}">
 						<span>USER NAME</span>
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
 						<input type="text" name="name" class="{style.textbox}" />
 						<input type="text" name="name" class="{style.textbox}" />
 						<input type="text" name="name" class="{style.textbox}" />

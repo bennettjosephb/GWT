@@ -7,6 +7,8 @@ public class NameTokens {
 	public static final String login = "login";
 	public static final String newreg = "newreg";
 	public static final String signup = "signup";
+	public static final String register = "register";
+	public static final String scroll = "scroll";
 
 	public static String getHome() {
 		return home;
@@ -26,5 +28,13 @@ public class NameTokens {
 
 	public static String getSignup() {
 		return signup;
+	}
+
+	public static String getRegister() {
+		return register;
+	}
+
+	public static String getScroll() {
+		return scroll;
 	}
 }
