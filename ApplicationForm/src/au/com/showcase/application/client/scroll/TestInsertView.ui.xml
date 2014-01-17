@@ -84,7 +84,7 @@
 	}
 	
 	.textboxFirstName {
-		height: 25px;
+		height: 30px;
 		width: 160px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -92,7 +92,7 @@
 		outline: 0;
 		margin-left: 5px;
 		margin-top: 5px;
-		margin-right: 0;
+		margin-right: 0px;
 		margin-bottom: 5px;
 		font: normal 15px/100% Verdana, Tahoma, sans-serif;
 		background: #FFFFFF url('bg_form.png') left top repeat-x;
@@ -104,13 +104,13 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	}
 	
-	.textboxFirstName :focus {
+	.textboxFirstName:focus {
 		border-color: #C9C9C9;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 	
 	.textboxLastName {
-		height: 25px;
+		height: 30px;
 		width: 160px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -136,7 +136,7 @@
 	}
 	
 	.textboxChooseUserName {
-		height: 25px;
+		height: 30px;
 		width: 337px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -162,7 +162,7 @@
 	}
 	
 	.textboxDate {
-		height: 25px;
+		height: 30px;
 		width: 92px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -187,7 +187,7 @@
 	}
 	
 	.textboxMobileNumber {
-		height: 25px;
+		height: 30px;
 		width: 337px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -212,7 +212,7 @@
 	}
 	
 	.textboxEmailAddress {
-		height: 25px;
+		height: 30px;
 		width: 337px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -238,7 +238,7 @@
 	}
 	
 	.textbox {
-		height: 25px;
+		height: 30px;
 		width: 157px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -320,14 +320,14 @@
 		width: 120px;
 		border-radius: 1px;
 		overflow: hidden;
-		height: 25px;
+		height: 30px;
 		margin-left: 5px;
 		background: #fafafa url("images/arrow_state_grey_collapsed.png")
 			no-repeat 95% 50%;
 	}
 	
 	.select-style select {
-		padding: 3px 8px;
+		padding: 5px 8px;
 		width: 145px;
 		border: none;
 		box-shadow: none;
@@ -345,14 +345,14 @@
 		width: 345px;
 		border-radius: 1px;
 		overflow: hidden;
-		height: 25px;
+		height: 30px;
 		margin-left: 5px;
 		background: #fafafa url("images/arrow_state_grey_collapsed.png")
 			no-repeat 99% 50%;
 	}
 	
 	.select-styleGender select {
-		padding: 3px 8px;
+		padding: 5px 8px;
 		width: 370px;
 		border: none;
 		box-shadow: none;
@@ -514,7 +514,7 @@
 						<input type="text" id="firstName" name="name" placeholder="FirstName"
 							class="{style.textboxFirstName}" />
 						<input type="text" id="lastName" placeholder="LastName"
-							name="name" class="{style.textbox}" />
+							name="name" class="{style.textboxLastName}" />
 						<div class="{style.label}">Choose your username</div>
 						<input type="text" name="name" class="{style.textboxChooseUserName}" />
 						<div class="{style.label}">Create a password</div>
