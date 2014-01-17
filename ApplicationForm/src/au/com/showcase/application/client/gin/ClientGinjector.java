@@ -14,6 +14,7 @@ import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.gwtplatform.dispatch.client.gin.DispatchAsyncModule;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
+import au.com.showcase.application.client.scroll.TestInsertPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -35,4 +36,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<SignUpPresenter> getSignUpPresenter();
 
 	AsyncProvider<ScrollTestPresenter> getScrollTestPresenter();
+
+	AsyncProvider<TestInsertPresenter> getTestInsertPresenter();
 }

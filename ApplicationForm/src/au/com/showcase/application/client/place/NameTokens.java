@@ -9,6 +9,7 @@ public class NameTokens {
 	public static final String signup = "signup";
 	public static final String register = "register";
 	public static final String scroll = "scroll";
+	public static final String insert = "insert";
 
 	public static String getHome() {
 		return home;
@@ -36,5 +37,9 @@ public class NameTokens {
 
 	public static String getScroll() {
 		return scroll;
+	}
+
+	public static String getInsert() {
+		return insert;
 	}
 }

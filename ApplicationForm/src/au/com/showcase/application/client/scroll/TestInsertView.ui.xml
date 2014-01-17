@@ -6,6 +6,13 @@
 	ui:generateLocales='default'>
 
 	<ui:style>
+	.content1 {
+		width: 1000px;
+		margin: auto;
+		background-color: #FF0000;
+		height: 100%;
+	}
+	
 	.loginTextBox {
 		background-color: #FFFFFF;
 		background-position: initial initial;
@@ -111,7 +118,7 @@
 	}
 	</ui:style>
 
-	<g:HTMLPanel width="100%" height="100%" styleName="{style.bodyLayout}">
+	<g:HTMLPanel styleName="{style.content1}">
 		<div class="{style.rightAlign}" id="container">
 			<g:FormPanel styleName="{style.formLayout}">
 				<g:HTMLPanel width="100%" height="100%">

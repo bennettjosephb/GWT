@@ -24,6 +24,8 @@ import au.com.showcase.application.client.scroll.ScrollTestView;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
+import au.com.showcase.application.client.scroll.TestInsertPresenter;
+import au.com.showcase.application.client.scroll.TestInsertView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -66,5 +68,9 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(ScrollTestPresenter.class,
 				ScrollTestPresenter.MyView.class, ScrollTestView.class,
 				ScrollTestPresenter.MyProxy.class);
+
+		bindPresenter(TestInsertPresenter.class,
+				TestInsertPresenter.MyView.class, TestInsertView.class,
+				TestInsertPresenter.MyProxy.class);
 	}
 }
