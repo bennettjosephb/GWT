@@ -211,6 +211,32 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 	
+	.textboxEmailAddress {
+		height: 25px;
+		width: 337px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 3px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxEmailAddress:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
 	.textbox {
 		height: 25px;
 		width: 157px;
@@ -532,8 +558,12 @@
 						<div class="{style.label}">Mobile Phone</div>
 						<input type="text" id="firstName" name="name"
 							class="{style.textboxMobileNumber}" />
+						<div class="{style.label}">Your email address</div>
 						<input type="text" id="lastName" placeholder="LastName"
-							name="name" class="{style.textbox}" />
+							name="name" class="{style.textboxEmailAddress}" />
+						<div class="{style.label}">Your email address</div>
+						<input type="text" id="lastName" placeholder="LastName"
+							name="name" class="{style.textboxEmailAddress}" />
 						<input type="text" name="name" class="{style.textbox}" />
 						<input type="text" name="name" class="{style.textbox}" />
 					</div>
