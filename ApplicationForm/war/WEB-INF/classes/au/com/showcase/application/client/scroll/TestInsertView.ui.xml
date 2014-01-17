@@ -1,0 +1,576 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+	.content1 {
+		width: 1000px;
+		margin: auto;
+		background-color: #FF0000;
+		height: 100%;
+	}
+	
+	.loginTextBox {
+		background-color: #FFFFFF;
+		background-position: initial initial;
+		background-repeat: initial initial;
+		border-bottom-left-radius: 1px;
+		border-bottom-right-radius: 1px;
+		border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+		border-style: solid;
+		border-top-left-radius: 1px;
+		border-top-right-radius: 1px;
+		border-width: 1px;
+		box-sizing: border-box;
+		display: inline-block;
+		height: 30px;
+		margin-bottom: 5px;
+		padding: 0 8px;
+		font-size: 15px;
+	}
+	
+	.verti {
+		background-color: #FF0000;
+	}
+	
+	.rightAlign {
+		float: right;
+		background-color: #FFFFFF;
+		width: 400px;
+		height: 100%;
+		padding: 20px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.formLayout {
+		background-color: #E5E5E5;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.bodyLayout {
+		background-color: #A1A1A1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.horiCon {
+		overflow: hidden;
+		width: 360px;
+		background-color: #FFF0F0;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.textboxFirstName {
+		height: 30px;
+		width: 160px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 0px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxFirstName:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textboxLastName {
+		height: 30px;
+		width: 160px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 0;
+		margin-top: 5px;
+		margin-right: 2px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxLastName:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textboxChooseUserName {
+		height: 30px;
+		width: 337px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 2px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxChooseUserName:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textboxDate {
+		height: 30px;
+		width: 92px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 0px;
+		margin-right: 2px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxDate:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textboxMobileNumber {
+		height: 30px;
+		width: 337px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 0px;
+		margin-right: 2px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxMobileNumber:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textboxEmailAddress {
+		height: 30px;
+		width: 337px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 3px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxEmailAddress:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	.textbox {
+		height: 30px;
+		width: 157px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 3px;
+		margin-bottom: 5px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textbox:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
+	#span {
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 2px;
+		margin-bottom: 5px;
+	}
+	
+	.label {
+		color: #000000;
+		width: 360px;
+		height: 15px;
+		font-size: 13px;
+		font: arial, helvetica, sans-serif;
+		float: left;
+		padding: 5px;
+	}
+	
+	.dropdown p {
+		display: inline-block;
+		font-weight: bold;
+	}
+	
+	.dropdown select {
+		border: 0 !important; /*Removes border*/
+		-webkit-appearance: none; /*Removes default chrome and safari style*/
+		-moz-appearance: none; /* Removes Default Firefox style*/
+		background: url('dropdown_arrow.png') no-repeat;
+		/*Adds background-image*/
+		background-position: 82px 7px; /*Position of the background-image*/
+		width: 100px;
+		/*Width of select dropdown to give space for arrow image*/
+		text-indent: 0.01px; /* Removes default arrow from firefox*/
+		text-overflow: ""; /*Removes default arrow from firefox*/
+		/*My custom style for fonts*/
+		color: #1455a2;
+	}
+	
+	.select1 {
+		border: 0 !important; /*Removes border*/
+		-webkit-appearance: none; /*Removes default chrome and safari style*/
+		-moz-appearance: none; /* Removes Default Firefox style*/
+		background: url('dropdown_arrow.png') no-repeat;
+		/*Adds background-image*/
+		background-position: 82px 7px; /*Position of the background-image*/
+		width: 100px;
+		/*Width of select dropdown to give space for arrow image*/
+		text-indent: 0.01px; /* Removes default arrow from firefox*/
+		text-overflow: ""; /*Removes default arrow from firefox*/
+		/*My custom style for fonts*/
+		color: #1455a2;
+	}
+	
+	.select-style {
+		border: 1px solid #ccc;
+		width: 120px;
+		border-radius: 1px;
+		overflow: hidden;
+		height: 30px;
+		margin-left: 5px;
+		background: #fafafa url("images/arrow_state_grey_collapsed.png")
+			no-repeat 95% 50%;
+	}
+	
+	.select-style select {
+		padding: 5px 8px;
+		width: 145px;
+		border: none;
+		box-shadow: none;
+		background: transparent;
+		background-image: none;
+		-webkit-appearance: none;
+	}
+	
+	.select-style select:focus {
+		outline: none;
+	}
+	
+	.select-styleGender {
+		border: 1px solid #ccc;
+		width: 345px;
+		border-radius: 1px;
+		overflow: hidden;
+		height: 30px;
+		margin-left: 5px;
+		background: #fafafa url("images/arrow_state_grey_collapsed.png")
+			no-repeat 99% 50%;
+	}
+	
+	.select-styleGender select {
+		padding: 5px 8px;
+		width: 370px;
+		border: none;
+		box-shadow: none;
+		background: transparent;
+		background-image: none;
+		-webkit-appearance: none;
+	}
+	
+	.select-styleGender select:focus {
+		outline: none;
+	}
+	
+	////////////////
+	.dropdown {
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		height: 28px;
+		width: 100px;
+		background: #f2f2f2;
+		border: 5px solid;
+		border-color: white #000000 whitesmoke;
+		border-radius: 3px;
+		background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+		background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+		background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+		background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	}
+	
+	.dropdown:before,.dropdown:after {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 9px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 4px dashed;
+		border-color: #888888 transparent;
+		pointer-events: none;
+	}
+	
+	.dropdown:before {
+		border-bottom-style: solid;
+		border-top: none;
+	}
+	
+	.dropdown:after {
+		margin-top: 7px;
+		border-top-style: solid;
+		border-bottom: none;
+	}
+	
+	.dropdown-select {
+		position: relative;
+		width: 100px;
+		margin: 0;
+		padding: 6px 8px 6px 10px;
+		height: 28px;
+		line-height: 14px;
+		font-size: 12px;
+		color: #62717a;
+		text-shadow: 0 1px white;
+		background: #f2f2f2; /* Fallback for IE 8 */
+		background: rgba(0, 0, 0, 0) !important;
+		/* "transparent" doesn't work with Opera */
+		border: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+	}
+	
+	.dropdown-select:focus {
+		z-index: 3;
+		width: 100px;
+		color: #394349;
+		outline: 2px solid #49aff2;
+		outline: 2px solid -webkit-focus-ring-color;
+		outline-offset: -2px;
+	}
+	
+	.dropdown-select>option {
+		margin: 3px;
+		padding: 6px 8px;
+		text-shadow: none;
+		background: #f2f2f2;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	
+	/* Fix for IE 8 putting the arrows behind the select element. */
+	.lt-ie9 .dropdown {
+		z-index: 1;
+	}
+	
+	.lt-ie9 .dropdown-select {
+		z-index: -1;
+	}
+	
+	.lt-ie9 .dropdown-select:focus {
+		z-index: 3;
+	}
+	
+	/* Dirty fix for Firefox adding padding where it shouldn't. */
+	@
+	-moz-document url-prefix () { .dropdown-select {
+		padding-left: 6px;
+	}
+	
+	}
+	.dropdown-dark {
+		background: #444;
+		border-color: #111111 #0a0a0a black;
+		background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+		background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+		background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+		background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+		-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px
+			rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px
+			rgba(0, 0, 0, 0.2);
+	}
+	
+	.dropdown-dark:before {
+		border-bottom-color: #aaa;
+	}
+	
+	.dropdown-dark:after {
+		border-top-color: #aaa;
+	}
+	
+	.dropdown-dark .dropdown-select {
+		color: #aaa;
+		text-shadow: 0 1px black;
+		background: #444; /* Fallback for IE 8 */
+	}
+	
+	.dropdown-dark .dropdown-select:focus {
+		color: #ccc;
+	}
+	
+	.dropdown-dark .dropdown-select>option {
+		background: #444;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	}
+	
+	.rowDate {
+		display: inline-block;
+	}
+	</ui:style>
+
+	<g:HTMLPanel styleName="{style.content1}">
+		<div class="{style.rightAlign}" id="container">
+			<g:FormPanel styleName="{style.formLayout}">
+				<g:HTMLPanel width="100%" height="100%">
+					<div id="inner" class="{style.horiCon}">
+						<div class="{style.label}">Name</div>
+						<input type="text" id="firstName" name="name" placeholder="FirstName"
+							class="{style.textboxFirstName}" />
+						<input type="text" id="lastName" placeholder="LastName"
+							name="name" class="{style.textboxLastName}" />
+						<div class="{style.label}">Choose your username</div>
+						<input type="text" name="name" class="{style.textboxChooseUserName}" />
+						<div class="{style.label}">Create a password</div>
+						<input type="password" name="name" class="{style.textboxChooseUserName}" />
+						<div class="{style.label}">Confirm your password</div>
+						<input type="password" name="name" class="{style.textboxChooseUserName}" />
+						<div class="{style.label}">Birthday</div>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="{style.select-style}">
+											<select name="one">
+												<option value="">Select...</option>
+												<option value="1">Option #1</option>
+												<option value="2">Option #2</option>
+												<option value="3">Option #3</option>
+											</select>
+										</div>
+									</td>
+									<td>
+										<input type="text" name="name" placeholder="Month"
+											class="{style.textboxDate}" />
+									</td>
+									<td>
+										<input type="text" name="name" placeholder="Year"
+											class="{style.textboxDate}" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="{style.label}">Gender</div>
+						<div class="{style.select-styleGender}">
+							<select name="one">
+								<option value="">Select...</option>
+								<option value="1">Male</option>
+								<option value="2">Female</option>
+								<option value="3">Other</option>
+							</select>
+						</div>
+						<div class="{style.label}">Mobile Phone</div>
+						<input type="text" id="firstName" name="name"
+							class="{style.textboxMobileNumber}" />
+						<div class="{style.label}">Your email address</div>
+						<input type="text" id="lastName" placeholder="LastName"
+							name="name" class="{style.textboxEmailAddress}" />
+						<div class="{style.label}">Your email address</div>
+						<input type="text" id="lastName" placeholder="LastName"
+							name="name" class="{style.textboxEmailAddress}" />
+						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textbox}" />
+					</div>
+					<div id="inner" class="{style.horiCon}">
+					</div>
+				</g:HTMLPanel>
+			</g:FormPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>
