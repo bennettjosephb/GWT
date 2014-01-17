@@ -10,7 +10,6 @@
 		width: 1000px;
 		margin: auto;
 		background-color: #FF0000;
-		height: 100%;
 	}
 	
 	.loginTextBox {
@@ -73,7 +72,6 @@
 	}
 	
 	.horiCon {
-		overflow: hidden;
 		width: 360px;
 		background-color: #FFF0F0;
 		position: relative;

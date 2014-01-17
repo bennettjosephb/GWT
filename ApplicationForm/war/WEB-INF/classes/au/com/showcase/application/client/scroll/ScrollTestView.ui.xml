@@ -41,7 +41,7 @@
 			</g:HTMLPanel>
 		</g:Dock>
 		<g:Dock direction="CENTER" width="100%" height="100%">
-			<g:HTMLPanel width="1000px" height="100%" ui:field="contentPanel"
+			<g:HTMLPanel width="1000px" ui:field="contentPanel"
 				styleName="{style.content}">
 			</g:HTMLPanel>
 		</g:Dock>
