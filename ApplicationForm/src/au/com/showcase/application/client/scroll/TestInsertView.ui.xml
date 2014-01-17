@@ -161,6 +161,31 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 	
+	.textboxDate {
+		height: 25px;
+		width: 92px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 0px;
+		margin-right: 2px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxDate:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
 	.textbox {
 		height: 25px;
 		width: 157px;
@@ -242,12 +267,12 @@
 	.select-style {
 		border: 1px solid #ccc;
 		width: 120px;
-		border-radius: 3px;
+		border-radius: 1px;
 		overflow: hidden;
 		height: 25px;
 		margin-left: 5px;
 		background: #fafafa url("images/arrow_state_grey_collapsed.png")
-			no-repeat 90% 50%;
+			no-repeat 95% 50%;
 	}
 	
 	.select-style select {
@@ -398,6 +423,10 @@
 		background: #444;
 		text-shadow: 0 1px rgba(0, 0, 0, 0.4);
 	}
+	
+	.rowDate {
+		display: inline-block;
+	}
 	</ui:style>
 
 	<g:HTMLPanel styleName="{style.content1}">
@@ -417,15 +446,25 @@
 						<div class="{style.label}">Confirm your password</div>
 						<input type="password" name="name" class="{style.textboxChooseUserName}" />
 						<div class="{style.label}">Birthday</div>
-						<div class="{style.select-style}">
-							<select name="one">
-								<option value="">Select...</option>
-								<option value="1">Option #1</option>
-								<option value="2">Option #2</option>
-								<option value="3">Option #3</option>
-							</select>
-						</div>
-						<input type="text" name="name" class="{style.textbox}" />
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="{style.select-style}">
+											<select name="one">
+												<option value="">Select...</option>
+												<option value="1">Option #1</option>
+												<option value="2">Option #2</option>
+												<option value="3">Option #3</option>
+											</select>
+										</div>
+									</td>
+									<td><input type="text" name="name" value="XCV" class="{style.textboxDate}" /></td>
+									<td><input type="text" name="name" value="XCV" class="{style.textboxDate}" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="text" name="name" value="XCV" class="{style.textboxDate}" />
 						<div class="{style.label}">Name</div>
 						<input type="text" id="firstName" name="name" placeholder="FirstName"
 							class="{style.textboxFirstName}" />
