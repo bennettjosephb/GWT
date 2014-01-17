@@ -1,2 +1,47 @@
 /* Add css rules here for your application. */
+input::-webkit-input-placeholder {
+	color: #e86d6d;
+	/* white color with alpha = 1 (alpha = opacity varies on a scale of 0 to 1 with decimal values in between) */
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding-top:19px;
+	text-align: left;
+	text-decoration: underline;
+	/* blink property doesn't work in chrome right now */
+}
 
+input::-moz-placeholder {
+	color: #e86d6d;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding-top:19px;
+	text-align: left;
+	text-decoration: blink;
+}
+
+input:-moz-placeholder { /* Older versions of Firefox */
+	color: #e86d6d;
+	/* alpha property doesn't properly work Firefox */
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding-top:19px;
+	text-align: left;
+	text-decoration: blink;
+}
+
+input:-ms-input-placeholder {
+	color: #e86d6d;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding-top:19px;
+	text-align: left;
+	text-decoration: blink;
+}
