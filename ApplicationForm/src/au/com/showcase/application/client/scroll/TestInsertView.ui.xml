@@ -501,6 +501,53 @@
 	.rowDate {
 		display: inline-block;
 	}
+	
+	.errorMsgHide {
+		display: none;
+	}
+	
+	.errorMsgShow {
+		color: #DD4B39;
+		display: block;
+		line-height: 17px;
+		margin-left: 6px;
+		margin-right: 3px;
+		margin-bottom: 5px;
+	}
+	
+	.submit {
+		height: 30px;
+		width: 348px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 15px;
+		margin-right: 3px;
+		margin-bottom: 25px;
+		font: normal 12px/100% Verdana, Tahoma, sans-serif;
+		color: #FFFFFF;
+		background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
+		background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+			to(#ab0000));
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		border: 1px solid #7d0000;
+		-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+			rgba(255, 255, 255, 0.7);
+		-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+			2px rgba(255, 255, 255, 0.7);
+		box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+			rgba(255, 255, 255, 0.7);
+		text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+			rgba(255, 255, 255, 0.3);
+	}
+	
+	.label {
+		
+	}
 	</ui:style>
 
 	<g:HTMLPanel styleName="{style.content1}">
@@ -515,19 +562,26 @@
 							class="{style.textboxFirstName}" />
 						<input type="text" id="lastName" placeholder="LastName"
 							name="name" class="{style.textboxLastName}" />
+						<span id="nameError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Choose your username</div>
-						<input type="text" name="name" class="{style.textboxChooseUserName}" />
+						<input id="userName" type="text" name="name"
+							class="{style.textboxChooseUserName}" />
+						<span id="userNameError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Create a password</div>
-						<input type="password" name="name" class="{style.textboxChooseUserName}" />
+						<input id="password" type="password" name="name"
+							class="{style.textboxChooseUserName}" />
+						<span id="passwordError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Confirm your password</div>
-						<input type="password" name="name" class="{style.textboxChooseUserName}" />
+						<input id="confirmPassword" type="password" name="name"
+							class="{style.textboxChooseUserName}" />
+						<span id="passowrdConfirmError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Birthday</div>
 						<table>
 							<tbody>
 								<tr>
 									<td>
 										<div class="{style.select-style}">
-											<select name="one">
+											<select id="dobMonth" name="one">
 												<option value="">Select...</option>
 												<option value="1">Option #1</option>
 												<option value="2">Option #2</option>
@@ -536,18 +590,19 @@
 										</div>
 									</td>
 									<td>
-										<input type="text" name="name" placeholder="Date"
+										<input id="dobDate" type="text" name="name" placeholder="Date"
 											class="{style.textboxDate}" />
 									</td>
 									<td>
-										<input type="text" name="name" placeholder="Year"
+										<input id="dobYear" type="text" name="name" placeholder="Year"
 											class="{style.textboxDate}" />
 									</td>
 								</tr>
 							</tbody>
 						</table>
+						<span id="birhdayError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Gender</div>
-						<div class="{style.select-styleGender}">
+						<div id="gender" class="{style.select-styleGender}">
 							<select name="one">
 								<option value="">Select...</option>
 								<option value="1">Male</option>
@@ -555,17 +610,25 @@
 								<option value="3">Other</option>
 							</select>
 						</div>
+						<span id="genderError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Mobile Phone</div>
-						<input type="text" id="firstName" name="name"
+						<input id="mobileNumber" type="text" name="name"
 							class="{style.textboxMobileNumber}" />
+						<span id="mobileNumberError" class="{style.errorMsgHide}">Error</span>
+						<div class="{style.label}">Your email address</div>
+						<input id="emailAddress" type="text" placeholder="LastName"
+							name="name" class="{style.textboxEmailAddress}" />
+						<span id="emailAddressError" class="{style.errorMsgHide}">Error</span>
 						<div class="{style.label}">Your email address</div>
 						<input type="text" id="lastName" placeholder="LastName"
 							name="name" class="{style.textboxEmailAddress}" />
 						<div class="{style.label}">Your email address</div>
 						<input type="text" id="lastName" placeholder="LastName"
 							name="name" class="{style.textboxEmailAddress}" />
-						<input type="text" name="name" class="{style.textbox}" />
-						<input type="text" name="name" class="{style.textbox}" />
+						<input type="text" name="name" class="{style.textboxMobileNumber}" />
+						<input type="checkbox" name="agreement" />
+						<input id="submit" type="submit" name="submit" value="SUBMIT"
+							class="{style.submit}" />
 					</div>
 					<div id="inner" class="{style.horiCon}">
 					</div>
