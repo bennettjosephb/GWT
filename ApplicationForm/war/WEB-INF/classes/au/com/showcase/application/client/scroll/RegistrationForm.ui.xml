@@ -38,7 +38,7 @@
 		height: 100%;
 		padding: 20px;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other
-				WebKit */
+																																						WebKit */
 		-moz-box-sizing: border-box; /* Firefox, other Gecko */
 		box-sizing: border-box;
 		top: 0;
@@ -80,7 +80,7 @@
 	
 	.textboxFirstName {
 		height: 30px;
-		width: 160px;
+		width: 161px;
 		padding-left: 5px;
 		padding-right: 5px;
 		border: solid 1px #E5E5E5;
@@ -104,9 +104,14 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 	
+	.textboxFirstNameError {
+		border-color: #FF0000;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
 	.textboxLastName {
 		height: 30px;
-		width: 160px;
+		width: 161px;
 		padding-left: 5px;
 		padding-right: 5px;
 		border: solid 1px #E5E5E5;
@@ -232,6 +237,41 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 	
+	.textboxCaptchaText {
+		height: 30px;
+		width: 337px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 3px;
+		margin-bottom: 15px;
+		font: normal 15px/100% Verdana, Tahoma, sans-serif;
+		background: #FFFFFF url('bg_form.png') left top repeat-x;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+	
+	.textboxCaptchaImage {
+		height: 60px;
+		margin-left: 5px;
+		margin-top: 5px;
+		margin-right: 3px;
+		margin-bottom: 15px;
+		width: 347px;
+	}
+	
+	.textboxCaptchaText:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+	
 	.textbox {
 		height: 30px;
 		width: 157px;
@@ -275,6 +315,16 @@
 		padding: 5px;
 	}
 	
+	.labelAgreement {
+		color: #000000;
+		width: 260px;
+		height: 15px;
+		font-size: 13px;
+		font: arial, helvetica, sans-serif;
+		float: left;
+		padding: 5px;
+	}
+	
 	.dropdown p {
 		display: inline-block;
 		font-weight: bold;
@@ -289,10 +339,10 @@
 		background-position: 82px 7px; /*Position of the background-image*/
 		width: 100px;
 		/*Width of select dropdown to give space for arrow
-				image*/
+																																						image*/
 		text-indent: 0.01px; /* Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes default arrow from firefox*/ /*My custom
-				style for fonts*/
+																																						style for fonts*/
 		color: #1455a2;
 	}
 	
@@ -301,18 +351,19 @@
 		-webkit-appearance: none;
 		/*Removes default chrome and safari style*/
 		-moz-appearance: none; /*
-				Removes Default Firefox style*/
+																																						Removes Default Firefox style*/
 		background: url('dropdown_arrow.png') no-repeat;
 		/*Adds background-image*/
 		background-position: 82px 7px;
 		/*Position of the background-image*/
 		width: 100px;
 		/*Width of select
-				dropdown to give space for arrow image*/
+																																						dropdown to give space for arrow image*/
 		text-indent: 0.01px; /*
-				Removes default arrow from firefox*/
+																																						Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes
-				default arrow from firefox*/ /*My custom style for fonts*/
+																																						default arrow from firefox*/
+		/*My custom style for fonts*/
 		color: #1455a2;
 	}
 	
@@ -422,7 +473,7 @@
 		background: #f2f2f2; /* Fallback for IE 8 */
 		background: rgba(0, 0, 0, 0) !important;
 		/* "transparent" doesn't work
-				with Opera */
+																																						with Opera */
 		border: 0;
 		border-radius: 0;
 		-webkit-appearance: none;
@@ -527,7 +578,7 @@
 		border: solid 1px #E5E5E5;
 		outline: 0;
 		margin-left: 5px;
-		margin-top: 15px;
+		margin-top: 25px;
 		margin-right: 3px;
 		margin-bottom: 25px;
 		font: normal 12px/100% Verdana, Tahoma, sans-serif;
@@ -552,6 +603,58 @@
 	.label {
 		
 	}
+	
+	label {
+		display: inline-block;
+		cursor: pointer;
+		position: relative;
+		padding-left: 25px;
+		padding-top: 5px;
+		margin-right: 5px;
+		font-size: 12px;
+	}
+	
+	input[type=checkbox] {
+		display: none;
+		padding-top: 5px;
+	}
+	
+	label:before {
+		background-image: url(images/csscheckbox.png);
+		content: "";
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		/*border-radius:5px 5px 0px 0px;*/
+	}
+	
+	.gwt-RadioButton label:before {
+		background-color: #FF0000;
+		margin-top: 15px;
+	}
+	
+	.gwt-CheckBox {
+		padding-top: 5px;
+	}
+	
+	.gwt-CheckBox label:before {
+		padding-top: 5px;
+	}
+	
+	input[type=checkbox]:checked+label:before {
+		background-position: 0 -22px;
+		background-image color: aqua;
+		font-size: 12px;
+		text-align: center;
+		line-height: 13px;
+	}
+	
+	.agreement {
+		margin-left: 5px;
+	}
 	</ui:style>
 	<g:HTMLPanel>
 		<g:FormPanel styleName="{style.formLayout}" ui:field="formPanel1">
@@ -561,71 +664,79 @@
 						<ui:msg key="name" description="Name of the user">Name</ui:msg>
 					</div>
 					<g:TextBox ui:field="firstName" styleName="{style.textboxFirstName}"></g:TextBox>
-					<g:TextBox ui:field="lastName" styleName="{style.textboxLastName}"></g:TextBox>
+					<g:TextBox ui:field="lastName"
+						styleName="{style.textboxLastName} {style.textboxFirstNameError}"></g:TextBox>
 					<span id="nameError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Choose your username</div>
+					<div class="{style.label}">
+						<ui:msg key="username" description="Choose your username">Choose your username</ui:msg>
+					</div>
 					<g:TextBox ui:field="username" styleName="{style.textboxChooseUserName}"></g:TextBox>
 					<span id="userNameError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Create a password</div>
-					<g:PasswordTextBox ui:field="password" styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
-					<input id="password" type="password" name="name"
-						class="{style.textboxChooseUserName}" />
+					<div class="{style.label}">
+						<ui:msg key="password" description="Create a password">Create a password</ui:msg>
+					</div>
+					<g:PasswordTextBox ui:field="password"
+						styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
 					<span id="passwordError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Confirm your password</div>
-					<g:PasswordTextBox ui:field="confirmPassword" styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
-					<input id="confirmPassword" type="password" name="name"
-						class="{style.textboxChooseUserName}" />
+					<div class="{style.label}">
+						<ui:msg key="confirmPassword" description="Confirm your password">Confirm your
+							password</ui:msg>
+					</div>
+					<g:PasswordTextBox ui:field="confirmPassword"
+						styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
 					<span id="passowrdConfirmError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Birthday</div>
+					<div class="{style.label}">
+						<ui:msg key="birthday" description="Date of birth">Birthday</ui:msg>
+					</div>
 					<table>
 						<tbody>
 							<tr>
 								<td>
 									<div class="{style.select-style}">
-										<g:ListBox></g:ListBox>
+										<g:ListBox ui:field="dobMonth"></g:ListBox>
 									</div>
 								</td>
 								<td>
-									<input id="dobDate" type="text" name="name" placeholder="Date"
-										class="{style.textboxDate}" />
+									<g:TextBox ui:field="dobDate" styleName="{style.textboxDate}"></g:TextBox>
 								</td>
 								<td>
-									<input id="dobYear" type="text" name="name" placeholder="Year"
-										class="{style.textboxDate}" />
+									<g:TextBox ui:field="dobYear" styleName="{style.textboxDate}"></g:TextBox>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 					<span id="birhdayError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Gender</div>
+					<div class="{style.label}">
+						<ui:msg key="gender" description="Gender">Gender</ui:msg>
+					</div>
 					<div id="gender" class="{style.select-styleGender}">
-						<select name="one">
-							<option value="">Select...</option>
-							<option value="1">Male</option>
-							<option value="2">Female</option>
-							<option value="3">Other</option>
-						</select>
+						<g:ListBox ui:field="gender"></g:ListBox>
 					</div>
 					<span id="genderError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Mobile Phone</div>
-					<input id="mobileNumber" type="text" name="name"
-						class="{style.textboxMobileNumber}" />
+					<div class="{style.label}">
+						<ui:msg key="mobile" description="Mobile Phone">Mobile Phone</ui:msg>
+					</div>
+					<g:TextBox ui:field="mobileNumber" styleName="{style.textboxMobileNumber}"></g:TextBox>
 					<span id="mobileNumberError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Your email address</div>
-					<input id="emailAddress" type="text" placeholder="LastName"
-						name="name" class="{style.textboxEmailAddress}" />
+					<div class="{style.label}">
+						<ui:msg key="email" description="Your email address">Your email address</ui:msg>
+					</div>
+					<g:TextBox ui:field="emailAddress" styleName="{style.textboxEmailAddress}"></g:TextBox>
 					<span id="emailAddressError" class="{style.errorMsgHide}">Error</span>
-					<div class="{style.label}">Your email address</div>
-					<input type="text" id="lastName" placeholder="LastName" name="name"
-						class="{style.textboxEmailAddress}" />
-					<div class="{style.label}">Your email address</div>
-					<input type="text" id="lastName" placeholder="LastName" name="name"
-						class="{style.textboxEmailAddress}" />
-					<input type="text" name="name" class="{style.textboxMobileNumber}" />
+					<div class="{style.label}">
+						<ui:msg key="location" description="Location">Location</ui:msg>
+					</div>
+					<div id="gender" class="{style.select-styleGender}">
+						<g:ListBox ui:field="location"></g:ListBox>
+					</div>
+					<div class="{style.label}">Type the character in below textbox</div>
+					<g:Image styleName="{style.textboxCaptchaImage}" url="images/nike_brandbuttons.jpg"></g:Image>
+					<g:TextBox ui:field="captchaText" styleName="{style.textboxCaptchaText}"></g:TextBox>
+					<g:CheckBox ui:field="agreement" styleName="{style.agreement}">
+						<a href="#newreg">Agree the terms and conditions</a>
+					</g:CheckBox>
 					<input type="checkbox" name="agreement" />
-					<input id="submit" type="submit" name="submit" value="SUBMIT"
-						class="{style.submit}" />
-					<g:SubmitButton ui:field="submit" styleName="{style.submit}"></g:SubmitButton>
+					<g:SubmitButton ui:field="submit" styleName="{style.submit}">SUBMIT</g:SubmitButton>
 				</div>
 				<div id="inner" class="{style.horiCon}">
 				</div>

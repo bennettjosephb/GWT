@@ -1,9 +1,12 @@
 package au.com.showcase.application.client.scroll;
 
 import com.google.gwt.dom.client.InputElement;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.DOM;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -24,7 +27,7 @@ public class TestInsertView extends ViewImpl implements
 
 	TextBox firstName;
 
-	//@UiField
+	// @UiField
 	FormPanel formPanel1;
 
 	public FormPanel getFormPanel1() {
@@ -67,8 +70,8 @@ public class TestInsertView extends ViewImpl implements
 	public TestInsertView(final Binder binder) {
 
 		widget = binder.createAndBindUi(this);
-		//firstName = TextBox.wrap(DOM.getElementById("firstName"));
-		
+		// firstName = TextBox.wrap(DOM.getElementById("firstName"));
+
 		// TextBox.wrap(DOM.getElementById("firstName")).addFocusHandler(
 		// new FocusHandler() {
 		// @Override
@@ -76,12 +79,20 @@ public class TestInsertView extends ViewImpl implements
 		// Window.alert("XSDF");
 		// }
 		// });
+
+		getRegistrationForm().getFirstName().addClickHandler(
+				new ClickHandler() {
+					@Override
+					public void onClick(ClickEvent event) {
+						Window.alert("XAI");
+					}
+				});
+
 	}
 
-	
 	@UiField
 	RegistrationForm registrationForm;
-	
+
 	public RegistrationForm getRegistrationForm() {
 		return registrationForm;
 	}
