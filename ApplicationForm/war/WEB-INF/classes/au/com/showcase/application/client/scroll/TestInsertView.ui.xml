@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:c='urn:import:au.com.showcase.application.client.scroll'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
 	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
 	ui:generateLocales='default'>
 
@@ -552,88 +553,7 @@
 
 	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
 		<div class="{style.rightAlign}" id="container">
-			<g:FormPanel styleName="{style.formLayout}" ui:field="formPanel1">
-				<g:HTMLPanel width="100%" height="100%">
-					<div id="inner" class="{style.horiCon}">
-						<div class="{style.label}">
-							<ui:msg key="name" description="Name of the user">Name</ui:msg>
-						</div>
-						<input type="text" id="firstName" name="name"
-							placeholder="FirstName" class="{style.textboxFirstName}" />
-						<input type="text" id="lastName" placeholder="LastName"
-							name="name" class="{style.textboxLastName}" />
-						<span id="nameError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Choose your username</div>
-						<input id="userName" type="text" name="name"
-							class="{style.textboxChooseUserName}" />
-						<span id="userNameError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Create a password</div>
-						<input id="password" type="password" name="name"
-							class="{style.textboxChooseUserName}" />
-						<span id="passwordError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Confirm your password</div>
-						<input id="confirmPassword" type="password" name="name"
-							class="{style.textboxChooseUserName}" />
-						<span id="passowrdConfirmError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Birthday</div>
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="{style.select-style}">
-											<select id="dobMonth" name="one">
-												<option value="">Select...</option>
-												<option value="1">Option #1</option>
-												<option value="2">Option #2</option>
-												<option value="3">Option #3</option>
-											</select>
-										</div>
-									</td>
-									<td>
-										<input id="dobDate" type="text" name="name" placeholder="Date"
-											class="{style.textboxDate}" />
-									</td>
-									<td>
-										<input id="dobYear" type="text" name="name" placeholder="Year"
-											class="{style.textboxDate}" />
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<span id="birhdayError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Gender</div>
-						<div id="gender" class="{style.select-styleGender}">
-							<select name="one">
-								<option value="">Select...</option>
-								<option value="1">Male</option>
-								<option value="2">Female</option>
-								<option value="3">Other</option>
-							</select>
-						</div>
-						<span id="genderError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Mobile Phone</div>
-						<input id="mobileNumber" type="text" name="name"
-							class="{style.textboxMobileNumber}" />
-						<span id="mobileNumberError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Your email address</div>
-						<input id="emailAddress" type="text" placeholder="LastName"
-							name="name" class="{style.textboxEmailAddress}" />
-						<span id="emailAddressError" class="{style.errorMsgHide}">Error</span>
-						<div class="{style.label}">Your email address</div>
-						<input type="text" id="lastName" placeholder="LastName"
-							name="name" class="{style.textboxEmailAddress}" />
-						<div class="{style.label}">Your email address</div>
-						<input type="text" id="lastName" placeholder="LastName"
-							name="name" class="{style.textboxEmailAddress}" />
-						<input type="text" name="name" class="{style.textboxMobileNumber}" />
-						<input type="checkbox" name="agreement" />
-						<input id="submit" type="submit" name="submit" value="SUBMIT"
-							class="{style.submit}" />
-					</div>
-					<div id="inner" class="{style.horiCon}">
-					</div>
-				</g:HTMLPanel>
-			</g:FormPanel>
+			<c:RegistrationForm ui:field="registrationForm"></c:RegistrationForm>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>

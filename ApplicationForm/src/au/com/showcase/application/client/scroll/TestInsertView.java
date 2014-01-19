@@ -24,7 +24,7 @@ public class TestInsertView extends ViewImpl implements
 
 	TextBox firstName;
 
-	@UiField
+	//@UiField
 	FormPanel formPanel1;
 
 	public FormPanel getFormPanel1() {
@@ -76,6 +76,18 @@ public class TestInsertView extends ViewImpl implements
 		// Window.alert("XSDF");
 		// }
 		// });
+	}
+
+	
+	@UiField
+	RegistrationForm registrationForm;
+	
+	public RegistrationForm getRegistrationForm() {
+		return registrationForm;
+	}
+
+	public void setRegistrationForm(RegistrationForm registrationForm) {
+		this.registrationForm = registrationForm;
 	}
 
 	@Override

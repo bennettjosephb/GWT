@@ -40,6 +40,10 @@ public class TestInsertPresenter extends
 		public HTMLPanel getContainerPanel1();
 
 		public void setContainerPanel1(HTMLPanel containerPanel1);
+		
+		public RegistrationForm getRegistrationForm();
+
+		public void setRegistrationForm(RegistrationForm registrationForm);
 
 	}
 
@@ -66,15 +70,15 @@ public class TestInsertPresenter extends
 
 		//RootPanel.get().add(getView().getContainerPanel1());
 
-		Window.alert("" + getView().getContainerPanel1());
-		Window.alert(""
-				+ getView().getContainerPanel1().getElementById("firstName"));
+		//Window.alert("" + getView().getContainerPanel1());
+		//Window.alert(""
+			//	+ getView().getContainerPanel1().getElementById("firstName"));
 
 		//RootPanel.get().add(getView().getContainerPanel1().getElementById("firstName"));
 
 //		TextBox.wrap(getView().getContainerPanel1().getElementById("firstName"));
 
-		Window.alert("" + getView().getFirstName());
+		//Window.alert("" + getView().getFirstName());
 
 		// getView().getFirstName().addClickHandler(new ClickHandler() {
 		// @Override
@@ -83,7 +87,7 @@ public class TestInsertPresenter extends
 		// }
 		// });
 
-		Window.alert("" + DOM.getElementById("firstName"));
+		//Window.alert("" + DOM.getElementById("firstName"));
 		// RootPanel.get().get
 
 		// getView().getFirstName().setValue("XYZ");
@@ -104,7 +108,7 @@ public class TestInsertPresenter extends
 	protected void onReveal() {
 		super.onReveal();
 
-		Window.alert("" + DOM.getElementById("firstName"));
+		//Window.alert("" + DOM.getElementById("firstName"));
 		//
 		// TextBox textBox = TextBox.wrap(DOM.getElementById("firstName"));
 
