@@ -550,16 +550,16 @@
 	}
 	</ui:style>
 
-	<g:HTMLPanel styleName="{style.content1}">
+	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
 		<div class="{style.rightAlign}" id="container">
-			<g:FormPanel styleName="{style.formLayout}">
+			<g:FormPanel styleName="{style.formLayout}" ui:field="formPanel1">
 				<g:HTMLPanel width="100%" height="100%">
 					<div id="inner" class="{style.horiCon}">
 						<div class="{style.label}">
 							<ui:msg key="name" description="Name of the user">Name</ui:msg>
 						</div>
-						<input type="text" id="firstName" name="name" placeholder="FirstName"
-							class="{style.textboxFirstName}" />
+						<input type="text" id="firstName" name="name"
+							placeholder="FirstName" class="{style.textboxFirstName}" />
 						<input type="text" id="lastName" placeholder="LastName"
 							name="name" class="{style.textboxLastName}" />
 						<span id="nameError" class="{style.errorMsgHide}">Error</span>
