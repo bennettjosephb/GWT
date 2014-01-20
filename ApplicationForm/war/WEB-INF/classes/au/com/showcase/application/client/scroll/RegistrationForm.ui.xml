@@ -38,7 +38,7 @@
 		height: 100%;
 		padding: 20px;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other
-																																						WebKit */
+																																								WebKit */
 		-moz-box-sizing: border-box; /* Firefox, other Gecko */
 		box-sizing: border-box;
 		top: 0;
@@ -339,10 +339,10 @@
 		background-position: 82px 7px; /*Position of the background-image*/
 		width: 100px;
 		/*Width of select dropdown to give space for arrow
-																																						image*/
+																																								image*/
 		text-indent: 0.01px; /* Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes default arrow from firefox*/ /*My custom
-																																						style for fonts*/
+																																								style for fonts*/
 		color: #1455a2;
 	}
 	
@@ -351,31 +351,39 @@
 		-webkit-appearance: none;
 		/*Removes default chrome and safari style*/
 		-moz-appearance: none; /*
-																																						Removes Default Firefox style*/
+																																								Removes Default Firefox style*/
 		background: url('dropdown_arrow.png') no-repeat;
 		/*Adds background-image*/
 		background-position: 82px 7px;
 		/*Position of the background-image*/
 		width: 100px;
 		/*Width of select
-																																						dropdown to give space for arrow image*/
+																																								dropdown to give space for arrow image*/
 		text-indent: 0.01px; /*
-																																						Removes default arrow from firefox*/
+																																								Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes
-																																						default arrow from firefox*/
+																																								default arrow from firefox*/
 		/*My custom style for fonts*/
 		color: #1455a2;
 	}
 	
 	.select-style {
-		border: 1px solid #ccc;
+		border: 1px solid #E5E5E5;
 		width: 120px;
 		border-radius: 1px;
 		overflow: hidden;
 		height: 30px;
 		margin-left: 5px;
+		background: #FFFFFF url('images/arrow_state_grey_collapsed.png')
+			no-repeat 95% 50%;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+			color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 		background: #fafafa url("images/arrow_state_grey_collapsed.png")
 			no-repeat 95% 50%;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	}
 	
 	.select-style select {
@@ -390,6 +398,7 @@
 	
 	.select-style select:focus {
 		outline: none;
+		border: 1px solid #CCC;
 	}
 	
 	.select-styleGender {
@@ -473,7 +482,7 @@
 		background: #f2f2f2; /* Fallback for IE 8 */
 		background: rgba(0, 0, 0, 0) !important;
 		/* "transparent" doesn't work
-																																						with Opera */
+																																								with Opera */
 		border: 0;
 		border-radius: 0;
 		-webkit-appearance: none;

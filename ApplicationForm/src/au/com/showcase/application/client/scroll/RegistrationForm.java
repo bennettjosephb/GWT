@@ -1,5 +1,9 @@
 package au.com.showcase.application.client.scroll;
 
+import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
+import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -69,9 +73,81 @@ public class RegistrationForm extends Composite {
 	@UiField
 	SubmitButton submit;
 
+	TextBoxBlurHandler firstNameBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler firstNameFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler lastNameBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler lastNameFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler usernameBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler usernameFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler passwordBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler passwordFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler confirmPasswordBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler confirmPasswordFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler dobBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler dobFocusHandler = new TextBoxFocusHandler();
+
+	DecoratedPopupPanel firstNamePopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel lastNamePopupPanel = new DecoratedPopupPanel(
+			(short) 462, (short) 5);
+
+	DecoratedPopupPanel usernamePopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel passwordPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel confirmPasswordPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel dobPopupPanel = new DecoratedPopupPanel((short) 285,
+			(short) 5);
+
+	DecoratedPopupPanel thirdPopupPanel = new DecoratedPopupPanel((short) 452,
+			(short) 5);
+
 	@Override
 	protected void onLoad() {
 		super.onLoad();
+		
+		firstName.getElement().setAttribute("placeholder", "First");
+		lastName.getElement().setAttribute("placeholder", "Last");
+		dobDate.getElement().setAttribute("placeholder", "Date");
+		dobYear.getElement().setAttribute("placeholder", "Year");
+
+		firstName.addFocusHandler(firstNameFocusHandler);
+		firstName.addBlurHandler(firstNameBlurHandler);
+		lastName.addFocusHandler(lastNameFocusHandler);
+		lastName.addBlurHandler(lastNameBlurHandler);
+		username.addFocusHandler(usernameFocusHandler);
+		username.addBlurHandler(usernameBlurHandler);
+		password.addFocusHandler(passwordFocusHandler);
+		password.addBlurHandler(passwordBlurHandler);
+		confirmPassword.addFocusHandler(confirmPasswordFocusHandler);
+		confirmPassword.addBlurHandler(confirmPasswordBlurHandler);
+
+		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
+		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
+		lastNameFocusHandler.setDecoratedPopupPanel(lastNamePopupPanel);
+		lastNameBlurHandler.setDecoratedPopupPanel(lastNamePopupPanel);
+		usernameFocusHandler.setDecoratedPopupPanel(usernamePopupPanel);
+		usernameBlurHandler.setDecoratedPopupPanel(usernamePopupPanel);
+		passwordFocusHandler.setDecoratedPopupPanel(passwordPopupPanel);
+		passwordBlurHandler.setDecoratedPopupPanel(passwordPopupPanel);
+		confirmPasswordFocusHandler
+				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
+		confirmPasswordBlurHandler
+				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
+		dobFocusHandler.setDecoratedPopupPanel(dobPopupPanel);
+		dobBlurHandler.setDecoratedPopupPanel(dobPopupPanel);
+		firstNamePopupPanel.setMessage("Enter First Name");
+		lastNamePopupPanel.setMessage("Enter Last Name");
+		usernamePopupPanel.setMessage("Choose User Name");
+		passwordPopupPanel.setMessage("Choose Strong Password");
+		confirmPasswordPopupPanel.setMessage("Confirm the Password");
+		dobPopupPanel.setMessage("Date Of Birth");
+
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
 		// TextBox.wrap(Document.get().getElementById("firstName"));

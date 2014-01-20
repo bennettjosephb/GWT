@@ -2,31 +2,72 @@
 ::-webkit-input-placeholder {
 	font-size: 13px;
 	font-weight: normal;
-	margin-top:3px;
-	padding-top:2px;
-   	color: #e89d9d;
+	margin-top: 3px;
+	padding-top: 2px;
+	color: #e89d9d;
 }
 
 :-moz-placeholder { /* Firefox 18- */
 	font-size: 13px;
 	font-weight: normal;
-	margin-top:3px;
-	padding-top:2px;
-   	color: #e86d6d;
+	margin-top: 3px;
+	padding-top: 2px;
+	color: #e86d6d;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder { /* Firefox 19+ */
 	font-size: 13px;
 	font-weight: normal;
-	margin-top:3px;
-	padding-top:2px;
-   	color: #e86d6d;
+	margin-top: 3px;
+	padding-top: 2px;
+	color: #e86d6d;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
 	font-size: 13px;
 	font-weight: normal;
-	margin-top:3px;
-	padding-top:2px;
-   	color: #e86d6d;
+	margin-top: 3px;
+	padding-top: 2px;
+	color: #e86d6d;
+}
+
+.errorInfoBubble 
+{
+position: relative;
+width: 250px;
+height: 20px;
+padding: 12px;
+background: #FFFFFF;
+border: #A1A1A1 solid 1px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.errorInfoBubble:after 
+{
+content: "";
+position: absolute;
+top: 13px;
+right: -7px;
+border-style: solid;
+border-width: 9px 0 9px 7px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+.errorInfoBubble:before 
+{
+content: "";
+position: absolute;
+top: 13px;
+left: 275px;
+border-style: solid;
+border-width: 9px 0 9px 7px;
+border-color: transparent #A1A1A1;
+display: block;
+width: 0;
+z-index: 0;
 }
