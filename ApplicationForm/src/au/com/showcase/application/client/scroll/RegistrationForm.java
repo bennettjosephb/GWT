@@ -125,6 +125,17 @@ public class RegistrationForm extends Composite {
 	ListBoxBlurHandler dobMonthBlurHandler = new ListBoxBlurHandler();
 	ListBoxFocusHandler dobMonthFocusHandler = new ListBoxFocusHandler();
 
+	ListBoxBlurHandler genderBlurHandler = new ListBoxBlurHandler();
+	ListBoxFocusHandler genderFocusHandler = new ListBoxFocusHandler();
+	TextBoxBlurHandler mobileNumberBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler mobileNumberFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler emailAddressBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler emailAddressFocusHandler = new TextBoxFocusHandler();
+	ListBoxBlurHandler locationBlurHandler = new ListBoxBlurHandler();
+	ListBoxFocusHandler locationFocusHandler = new ListBoxFocusHandler();
+	TextBoxBlurHandler captchaTextBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler captchaTextFocusHandler = new TextBoxFocusHandler();
+
 	DecoratedPopupPanel firstNamePopupPanel = new DecoratedPopupPanel(
 			(short) 285, (short) 5);
 
@@ -147,6 +158,21 @@ public class RegistrationForm extends Composite {
 			(short) 285, (short) 5);
 
 	DecoratedPopupPanel dobYearPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel genderPopupPanel = new DecoratedPopupPanel((short) 285,
+			(short) 5);
+
+	DecoratedPopupPanel mobileNumberPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel emailAddressPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel locationPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel captchaTextPopupPanel = new DecoratedPopupPanel(
 			(short) 285, (short) 5);
 
 	DecoratedPopupPanel thirdPopupPanel = new DecoratedPopupPanel((short) 452,
@@ -177,6 +203,16 @@ public class RegistrationForm extends Composite {
 		dobDate.addBlurHandler(dobDateBlurHandler);
 		dobYear.addFocusHandler(dobYearFocusHandler);
 		dobYear.addBlurHandler(dobYearBlurHandler);
+		gender.addFocusHandler(genderFocusHandler);
+		gender.addBlurHandler(genderBlurHandler);
+		mobileNumber.addFocusHandler(mobileNumberFocusHandler);
+		mobileNumber.addBlurHandler(mobileNumberBlurHandler);
+		emailAddress.addFocusHandler(emailAddressFocusHandler);
+		emailAddress.addBlurHandler(emailAddressBlurHandler);
+		location.addFocusHandler(locationFocusHandler);
+		location.addBlurHandler(locationBlurHandler);
+		captchaText.addFocusHandler(captchaTextFocusHandler);
+		captchaText.addBlurHandler(captchaTextBlurHandler);
 
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
@@ -194,6 +230,19 @@ public class RegistrationForm extends Composite {
 		dobDateBlurHandler.setDecoratedPopupPanel(dobDatePopupPanel);
 		dobYearFocusHandler.setDecoratedPopupPanel(dobYearPopupPanel);
 		dobYearBlurHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+		
+		genderFocusHandler.setDecoratedPopupPanel(genderPopupPanel);
+		genderBlurHandler.setDecoratedPopupPanel(genderPopupPanel);
+		mobileNumberFocusHandler.setDecoratedPopupPanel(mobileNumberPopupPanel);
+		mobileNumberBlurHandler.setDecoratedPopupPanel(mobileNumberPopupPanel);
+		emailAddressFocusHandler.setDecoratedPopupPanel(emailAddressPopupPanel);
+		emailAddressBlurHandler.setDecoratedPopupPanel(emailAddressPopupPanel);
+		locationFocusHandler.setDecoratedPopupPanel(locationPopupPanel);
+		locationBlurHandler.setDecoratedPopupPanel(locationPopupPanel);
+		captchaTextFocusHandler.setDecoratedPopupPanel(captchaTextPopupPanel);
+		captchaTextBlurHandler.setDecoratedPopupPanel(captchaTextPopupPanel);
+//		dobYearFocusHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+//		dobYearBlurHandler.setDecoratedPopupPanel(dobYearPopupPanel);
 
 		firstNameFocusHandler.setErrorLabel(nameError);
 		firstNameBlurHandler.setErrorLabel(nameError);
@@ -211,6 +260,17 @@ public class RegistrationForm extends Composite {
 		dobDateBlurHandler.setErrorLabel(dobError);
 		dobYearFocusHandler.setErrorLabel(dobError);
 		dobYearBlurHandler.setErrorLabel(dobError);
+
+		genderFocusHandler.setErrorLabel(genderError);
+		genderBlurHandler.setErrorLabel(genderError);
+		mobileNumberFocusHandler.setErrorLabel(mobileNumberError);
+		mobileNumberBlurHandler.setErrorLabel(mobileNumberError);
+		emailAddressFocusHandler.setErrorLabel(emailAddressError);
+		emailAddressBlurHandler.setErrorLabel(emailAddressError);
+		locationFocusHandler.setErrorLabel(locationError);
+		locationBlurHandler.setErrorLabel(locationError);
+		captchaTextFocusHandler.setErrorLabel(captchaTextError);
+		captchaTextBlurHandler.setErrorLabel(captchaTextError);
 
 		usernameFocusHandler.setDecoratedPopupPanel(usernamePopupPanel);
 		usernameBlurHandler.setDecoratedPopupPanel(usernamePopupPanel);
@@ -235,6 +295,11 @@ public class RegistrationForm extends Composite {
 		dobMonthPopupPanel.setMessage("Date Of Birth");
 		dobDatePopupPanel.setMessage("Date Of Birth");
 		dobYearPopupPanel.setMessage("Date Of Birth");
+		genderPopupPanel.setMessage("Select Your Gender");
+		mobileNumberPopupPanel.setMessage("Enter your mobile number");
+		emailAddressPopupPanel.setMessage("Enter valid email address");
+		locationPopupPanel.setMessage("Select your location");
+		captchaTextPopupPanel.setMessage("Enter the character in the image");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
