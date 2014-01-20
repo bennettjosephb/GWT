@@ -1,6 +1,9 @@
 package au.com.showcase.application.client.scroll;
 
+import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
+import au.com.showcase.application.client.ui.event.ListBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.ListBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
 
@@ -9,6 +12,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.SubmitButton;
@@ -26,6 +30,7 @@ public class RegistrationForm extends Composite {
 
 	public RegistrationForm() {
 		initWidget(uiBinder.createAndBindUi(this));
+		ApplicationResources.INSTANCE.customWidget().ensureInjected();
 	}
 
 	@UiField
@@ -73,6 +78,36 @@ public class RegistrationForm extends Composite {
 	@UiField
 	SubmitButton submit;
 
+	@UiField
+	Label nameError;
+
+	@UiField
+	Label usernameError;
+
+	@UiField
+	Label passwordError;
+
+	@UiField
+	Label confirmPasswordError;
+
+	@UiField
+	Label dobError;
+
+	@UiField
+	Label genderError;
+
+	@UiField
+	Label mobileNumberError;
+
+	@UiField
+	Label emailAddressError;
+
+	@UiField
+	Label locationError;
+
+	@UiField
+	Label captchaTextError;
+
 	TextBoxBlurHandler firstNameBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler firstNameFocusHandler = new TextBoxFocusHandler();
 	TextBoxBlurHandler lastNameBlurHandler = new TextBoxBlurHandler();
@@ -83,8 +118,12 @@ public class RegistrationForm extends Composite {
 	TextBoxFocusHandler passwordFocusHandler = new TextBoxFocusHandler();
 	TextBoxBlurHandler confirmPasswordBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler confirmPasswordFocusHandler = new TextBoxFocusHandler();
-	TextBoxBlurHandler dobBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler dobFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler dobDateBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler dobDateFocusHandler = new TextBoxFocusHandler();
+	TextBoxBlurHandler dobYearBlurHandler = new TextBoxBlurHandler();
+	TextBoxFocusHandler dobYearFocusHandler = new TextBoxFocusHandler();
+	ListBoxBlurHandler dobMonthBlurHandler = new ListBoxBlurHandler();
+	ListBoxFocusHandler dobMonthFocusHandler = new ListBoxFocusHandler();
 
 	DecoratedPopupPanel firstNamePopupPanel = new DecoratedPopupPanel(
 			(short) 285, (short) 5);
@@ -101,8 +140,14 @@ public class RegistrationForm extends Composite {
 	DecoratedPopupPanel confirmPasswordPopupPanel = new DecoratedPopupPanel(
 			(short) 285, (short) 5);
 
-	DecoratedPopupPanel dobPopupPanel = new DecoratedPopupPanel((short) 285,
-			(short) 5);
+	DecoratedPopupPanel dobMonthPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel dobDatePopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
+
+	DecoratedPopupPanel dobYearPopupPanel = new DecoratedPopupPanel(
+			(short) 285, (short) 5);
 
 	DecoratedPopupPanel thirdPopupPanel = new DecoratedPopupPanel((short) 452,
 			(short) 5);
@@ -110,7 +155,7 @@ public class RegistrationForm extends Composite {
 	@Override
 	protected void onLoad() {
 		super.onLoad();
-		
+
 		firstName.getElement().setAttribute("placeholder", "First");
 		lastName.getElement().setAttribute("placeholder", "Last");
 		dobDate.getElement().setAttribute("placeholder", "Date");
@@ -126,6 +171,12 @@ public class RegistrationForm extends Composite {
 		password.addBlurHandler(passwordBlurHandler);
 		confirmPassword.addFocusHandler(confirmPasswordFocusHandler);
 		confirmPassword.addBlurHandler(confirmPasswordBlurHandler);
+		dobMonth.addFocusHandler(dobMonthFocusHandler);
+		dobMonth.addBlurHandler(dobMonthBlurHandler);
+		dobDate.addFocusHandler(dobDateFocusHandler);
+		dobDate.addBlurHandler(dobDateBlurHandler);
+		dobYear.addFocusHandler(dobYearFocusHandler);
+		dobYear.addBlurHandler(dobYearBlurHandler);
 
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
@@ -139,14 +190,51 @@ public class RegistrationForm extends Composite {
 				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
 		confirmPasswordBlurHandler
 				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
-		dobFocusHandler.setDecoratedPopupPanel(dobPopupPanel);
-		dobBlurHandler.setDecoratedPopupPanel(dobPopupPanel);
+		dobDateFocusHandler.setDecoratedPopupPanel(dobDatePopupPanel);
+		dobDateBlurHandler.setDecoratedPopupPanel(dobDatePopupPanel);
+		dobYearFocusHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+		dobYearBlurHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+
+		firstNameFocusHandler.setErrorLabel(nameError);
+		firstNameBlurHandler.setErrorLabel(nameError);
+		lastNameFocusHandler.setErrorLabel(nameError);
+		lastNameBlurHandler.setErrorLabel(nameError);
+		usernameFocusHandler.setErrorLabel(usernameError);
+		usernameBlurHandler.setErrorLabel(usernameError);
+		passwordFocusHandler.setErrorLabel(passwordError);
+		passwordBlurHandler.setErrorLabel(passwordError);
+		confirmPasswordFocusHandler.setErrorLabel(confirmPasswordError);
+		confirmPasswordBlurHandler.setErrorLabel(confirmPasswordError);
+		dobMonthFocusHandler.setErrorLabel(dobError);
+		dobMonthBlurHandler.setErrorLabel(dobError);
+		dobDateFocusHandler.setErrorLabel(dobError);
+		dobDateBlurHandler.setErrorLabel(dobError);
+		dobYearFocusHandler.setErrorLabel(dobError);
+		dobYearBlurHandler.setErrorLabel(dobError);
+
+		usernameFocusHandler.setDecoratedPopupPanel(usernamePopupPanel);
+		usernameBlurHandler.setDecoratedPopupPanel(usernamePopupPanel);
+		passwordFocusHandler.setDecoratedPopupPanel(passwordPopupPanel);
+		passwordBlurHandler.setDecoratedPopupPanel(passwordPopupPanel);
+		confirmPasswordFocusHandler
+				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
+		confirmPasswordBlurHandler
+				.setDecoratedPopupPanel(confirmPasswordPopupPanel);
+		dobMonthFocusHandler.setDecoratedPopupPanel(dobMonthPopupPanel);
+		dobMonthBlurHandler.setDecoratedPopupPanel(dobMonthPopupPanel);
+		dobDateFocusHandler.setDecoratedPopupPanel(dobDatePopupPanel);
+		dobDateBlurHandler.setDecoratedPopupPanel(dobDatePopupPanel);
+		dobYearFocusHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+		dobYearBlurHandler.setDecoratedPopupPanel(dobYearPopupPanel);
+
 		firstNamePopupPanel.setMessage("Enter First Name");
 		lastNamePopupPanel.setMessage("Enter Last Name");
 		usernamePopupPanel.setMessage("Choose User Name");
 		passwordPopupPanel.setMessage("Choose Strong Password");
 		confirmPasswordPopupPanel.setMessage("Confirm the Password");
-		dobPopupPanel.setMessage("Date Of Birth");
+		dobMonthPopupPanel.setMessage("Date Of Birth");
+		dobDatePopupPanel.setMessage("Date Of Birth");
+		dobYearPopupPanel.setMessage("Date Of Birth");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
@@ -272,6 +360,14 @@ public class RegistrationForm extends Composite {
 
 	public void setSubmit(SubmitButton submit) {
 		this.submit = submit;
+	}
+
+	public Label getNameError() {
+		return nameError;
+	}
+
+	public void setNameError(Label nameError) {
+		this.nameError = nameError;
 	}
 
 }

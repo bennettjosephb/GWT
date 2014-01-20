@@ -55,3 +55,11 @@
 	width: 0;
 	z-index: 0;
 }
+
+.textboxFirstNameError {
+	border: solid 1px #FF0000 !important;
+}
+
+.textboxLastNameError {
+	border: solid 1px #FF0000 !important;
+}

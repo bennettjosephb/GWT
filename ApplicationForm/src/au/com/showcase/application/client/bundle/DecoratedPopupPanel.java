@@ -20,9 +20,9 @@ public class DecoratedPopupPanel extends
 
 	}
 
-	private Short left = 0;
+	private Short left = 100;
 
-	private Short top = 0;
+	private Short top = 100;
 
 	private String message;
 

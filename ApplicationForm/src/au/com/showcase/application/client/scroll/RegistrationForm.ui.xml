@@ -38,7 +38,7 @@
 		height: 100%;
 		padding: 20px;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other
-																																								WebKit */
+																																												WebKit */
 		-moz-box-sizing: border-box; /* Firefox, other Gecko */
 		box-sizing: border-box;
 		top: 0;
@@ -339,10 +339,10 @@
 		background-position: 82px 7px; /*Position of the background-image*/
 		width: 100px;
 		/*Width of select dropdown to give space for arrow
-																																								image*/
+																																												image*/
 		text-indent: 0.01px; /* Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes default arrow from firefox*/ /*My custom
-																																								style for fonts*/
+																																												style for fonts*/
 		color: #1455a2;
 	}
 	
@@ -351,18 +351,18 @@
 		-webkit-appearance: none;
 		/*Removes default chrome and safari style*/
 		-moz-appearance: none; /*
-																																								Removes Default Firefox style*/
+																																												Removes Default Firefox style*/
 		background: url('dropdown_arrow.png') no-repeat;
 		/*Adds background-image*/
 		background-position: 82px 7px;
 		/*Position of the background-image*/
 		width: 100px;
 		/*Width of select
-																																								dropdown to give space for arrow image*/
+																																												dropdown to give space for arrow image*/
 		text-indent: 0.01px; /*
-																																								Removes default arrow from firefox*/
+																																												Removes default arrow from firefox*/
 		text-overflow: ""; /*Removes
-																																								default arrow from firefox*/
+																																												default arrow from firefox*/
 		/*My custom style for fonts*/
 		color: #1455a2;
 	}
@@ -482,7 +482,7 @@
 		background: #f2f2f2; /* Fallback for IE 8 */
 		background: rgba(0, 0, 0, 0) !important;
 		/* "transparent" doesn't work
-																																								with Opera */
+																																												with Opera */
 		border: 0;
 		border-radius: 0;
 		-webkit-appearance: none;
@@ -567,10 +567,13 @@
 	}
 	
 	.errorMsgHide {
-		display: none;
+		height: 15px;
+		width: 337px;
 	}
 	
 	.errorMsgShow {
+		height: 15px;
+		width: 337px;
 		color: #DD4B39;
 		display: block;
 		line-height: 17px;
@@ -672,28 +675,43 @@
 					<div class="{style.label}">
 						<ui:msg key="name" description="Name of the user">Name</ui:msg>
 					</div>
-					<g:TextBox ui:field="firstName" styleName="{style.textboxFirstName}"></g:TextBox>
+					<g:TextBox ui:field="firstName" stylePrimaryName="{style.textboxFirstName}"></g:TextBox>
 					<g:TextBox ui:field="lastName"
 						styleName="{style.textboxLastName} {style.textboxFirstNameError}"></g:TextBox>
-					<span id="nameError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="nameError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="nameError" description="Error Message For Name Field">Please enter the name</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="username" description="Choose your username">Choose your username</ui:msg>
 					</div>
 					<g:TextBox ui:field="username" styleName="{style.textboxChooseUserName}"></g:TextBox>
-					<span id="userNameError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="usernameError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="usernameError" description="Error Message For User Name Field">Please enter the
+							valid username</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="password" description="Create a password">Create a password</ui:msg>
 					</div>
 					<g:PasswordTextBox ui:field="password"
 						styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
-					<span id="passwordError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="passwordError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="passwordError" description="Error Message For Password Field">Please enter the
+							password</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="confirmPassword" description="Confirm your password">Confirm your
 							password</ui:msg>
 					</div>
 					<g:PasswordTextBox ui:field="confirmPassword"
 						styleName="{style.textboxChooseUserName}"></g:PasswordTextBox>
-					<span id="passowrdConfirmError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="confirmPasswordError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="confirmPasswordError" description="Error Message For Confirm Password Field">Please enter
+							the password again</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="birthday" description="Date of birth">Birthday</ui:msg>
 					</div>
@@ -714,37 +732,60 @@
 							</tr>
 						</tbody>
 					</table>
-					<span id="birhdayError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="dobError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="dobError" description="Error Message For Date Of Birth">Please enter the DOB</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="gender" description="Gender">Gender</ui:msg>
 					</div>
 					<div id="gender" class="{style.select-styleGender}">
 						<g:ListBox ui:field="gender"></g:ListBox>
 					</div>
-					<span id="genderError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="genderError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="genderError" description="Error Message For Gender">Please select gender</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="mobile" description="Mobile Phone">Mobile Phone</ui:msg>
 					</div>
 					<g:TextBox ui:field="mobileNumber" styleName="{style.textboxMobileNumber}"></g:TextBox>
-					<span id="mobileNumberError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="mobileNumberError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="mobileNumberError" description="Error Message For Mobile Number">Please enter
+							mobile number</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="email" description="Your email address">Your email address</ui:msg>
 					</div>
 					<g:TextBox ui:field="emailAddress" styleName="{style.textboxEmailAddress}"></g:TextBox>
-					<span id="emailAddressError" class="{style.errorMsgHide}">Error</span>
+					<g:Label ui:field="emailAddressError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="emailAddressError" description="Error Message For email address">Please enter
+							email address</ui:msg>
+					</g:Label>
 					<div class="{style.label}">
 						<ui:msg key="location" description="Location">Location</ui:msg>
 					</div>
-					<div id="gender" class="{style.select-styleGender}">
+					<div class="{style.select-styleGender}">
 						<g:ListBox ui:field="location"></g:ListBox>
 					</div>
+					<g:Label ui:field="locationError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="locationError" description="Error Message For Location">Please select
+							location</ui:msg>
+					</g:Label>
 					<div class="{style.label}">Type the character in below textbox</div>
 					<g:Image styleName="{style.textboxCaptchaImage}" url="images/nike_brandbuttons.jpg"></g:Image>
 					<g:TextBox ui:field="captchaText" styleName="{style.textboxCaptchaText}"></g:TextBox>
+					<g:Label ui:field="captchaTextError" visible="false"
+						styleName="{style.errorMsgShow}">
+						<ui:msg key="captchaTextError" description="Error Message For Captcha">Please select
+							character you see in above image</ui:msg>
+					</g:Label>
 					<g:CheckBox ui:field="agreement" styleName="{style.agreement}">
 						<a href="#newreg">Agree the terms and conditions</a>
 					</g:CheckBox>
-					<input type="checkbox" name="agreement" />
 					<g:SubmitButton ui:field="submit" styleName="{style.submit}">SUBMIT</g:SubmitButton>
 				</div>
 				<div id="inner" class="{style.horiCon}">

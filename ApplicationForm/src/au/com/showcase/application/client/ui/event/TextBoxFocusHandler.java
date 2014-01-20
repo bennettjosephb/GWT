@@ -6,6 +6,7 @@ import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
 import com.google.gwt.event.dom.client.FocusEvent;
 import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 
@@ -27,6 +28,16 @@ public class TextBoxFocusHandler implements FocusHandler {
 
 	private DecoratedPopupPanel decoratedPopupPanel;
 
+	private Label errorLabel;
+
+	public Label getErrorLabel() {
+		return errorLabel;
+	}
+
+	public void setErrorLabel(Label errorLabel) {
+		this.errorLabel = errorLabel;
+	}
+
 	public DecoratedPopupPanel getDecoratedPopupPanel() {
 		return decoratedPopupPanel;
 	}
@@ -41,6 +52,15 @@ public class TextBoxFocusHandler implements FocusHandler {
 
 	}
 
+	public TextBoxFocusHandler(DecoratedPopupPanel decoratedPopupPanel,
+			Label errorLabel) {
+
+		this.decoratedPopupPanel = decoratedPopupPanel;
+
+		this.errorLabel = errorLabel;
+
+	}
+
 	@Override
 	public void onFocus(FocusEvent event) {
 
@@ -49,15 +69,21 @@ public class TextBoxFocusHandler implements FocusHandler {
 		decoratedPopupPanel.setStyleName(ApplicationResources.INSTANCE
 				.customWidget().errorInfoBubble());
 
-		decoratedPopupPanel.setWidget(new HTML(decoratedPopupPanel.getMessage()
-				+ ApplicationResources.INSTANCE.customWidget()
-						.errorInfoBubble()));
+		decoratedPopupPanel
+				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
 
 		decoratedPopupPanel.setPopupPosition(textBox.getAbsoluteLeft()
 				- decoratedPopupPanel.getLeft(), textBox.getAbsoluteTop()
 				- decoratedPopupPanel.getTop());
 
 		decoratedPopupPanel.show();
+
+		textBox.removeStyleName(ApplicationResources.INSTANCE.customWidget()
+				.textboxFirstNameError());
+
+		// Window.alert("" + errorLabel);
+
+		errorLabel.setVisible(false);
 
 	}
 
