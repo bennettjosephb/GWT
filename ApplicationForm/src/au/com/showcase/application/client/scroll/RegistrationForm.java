@@ -2,6 +2,8 @@ package au.com.showcase.application.client.scroll;
 
 import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
+import au.com.showcase.application.client.ui.event.AlphabetTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.AlphabetTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.ListBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.ListBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
@@ -108,10 +110,10 @@ public class RegistrationForm extends Composite {
 	@UiField
 	Label captchaTextError;
 
-	TextBoxBlurHandler firstNameBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler firstNameFocusHandler = new TextBoxFocusHandler();
-	TextBoxBlurHandler lastNameBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler lastNameFocusHandler = new TextBoxFocusHandler();
+	AlphabetTextBoxBlurHandler firstNameBlurHandler = new AlphabetTextBoxBlurHandler();
+	AlphabetTextBoxFocusHandler firstNameFocusHandler = new AlphabetTextBoxFocusHandler();
+	AlphabetTextBoxBlurHandler lastNameBlurHandler = new AlphabetTextBoxBlurHandler();
+	AlphabetTextBoxFocusHandler lastNameFocusHandler = new AlphabetTextBoxFocusHandler();
 	TextBoxBlurHandler usernameBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler usernameFocusHandler = new TextBoxFocusHandler();
 	TextBoxBlurHandler passwordBlurHandler = new TextBoxBlurHandler();
