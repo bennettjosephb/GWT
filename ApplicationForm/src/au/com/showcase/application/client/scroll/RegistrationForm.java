@@ -17,6 +17,7 @@ import au.com.showcase.application.client.ui.event.UsernameTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxFocusHandler;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.CheckBox;
@@ -117,6 +118,15 @@ public class RegistrationForm extends Composite {
 	@UiField
 	Label captchaTextError;
 
+	@UiField
+	DivElement dobMonthBlock;
+
+	@UiField
+	DivElement genderBlock;
+
+	@UiField
+	DivElement locationBlock;
+
 	AlphabetTextBoxBlurHandler firstNameBlurHandler = new AlphabetTextBoxBlurHandler();
 	AlphabetTextBoxFocusHandler firstNameFocusHandler = new AlphabetTextBoxFocusHandler();
 	AlphabetTextBoxBlurHandler lastNameBlurHandler = new AlphabetTextBoxBlurHandler();
@@ -191,6 +201,8 @@ public class RegistrationForm extends Composite {
 	@Override
 	protected void onLoad() {
 		super.onLoad();
+		
+		
 
 		firstName.getElement().setAttribute("placeholder", "First");
 		lastName.getElement().setAttribute("placeholder", "Last");
@@ -228,7 +240,13 @@ public class RegistrationForm extends Composite {
 		passwordBlurHandler.setDependentPassword(confirmPassword);
 		confirmPasswordBlurHandler.setDependentPassword(password);
 		passwordKeyPressHandler.setDependentPassword(confirmPassword);
-
+		dobMonthBlurHandler.setContainer(dobMonthBlock);
+		dobMonthFocusHandler.setContainer(dobMonthBlock);
+		genderBlurHandler.setContainer(genderBlock);
+		genderFocusHandler.setContainer(genderBlock);
+		locationBlurHandler.setContainer(locationBlock);
+		locationFocusHandler.setContainer(locationBlock);
+		
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		lastNameFocusHandler.setDecoratedPopupPanel(lastNamePopupPanel);
@@ -453,6 +471,30 @@ public class RegistrationForm extends Composite {
 
 	public Boolean hasErrors() {
 		return firstNameBlurHandler.isError() || lastNameBlurHandler.isError();
+	}
+
+	public DivElement getDobMonthBlock() {
+		return dobMonthBlock;
+	}
+
+	public void setDobMonthBlock(DivElement dobMonthBlock) {
+		this.dobMonthBlock = dobMonthBlock;
+	}
+
+	public DivElement getGenderBlock() {
+		return genderBlock;
+	}
+
+	public void setGenderBlock(DivElement genderBlock) {
+		this.genderBlock = genderBlock;
+	}
+
+	public DivElement getLocationBlock() {
+		return locationBlock;
+	}
+
+	public void setLocationBlock(DivElement locationBlock) {
+		this.locationBlock = locationBlock;
 	}
 
 }

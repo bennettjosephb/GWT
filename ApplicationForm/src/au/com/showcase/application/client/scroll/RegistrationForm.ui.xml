@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<ui:style field="core" src="../bundle/CustomWidget.css"/>
+	<ui:style field="core" src="../bundle/RegistrationFormStyle.css"/>
 	
 	<g:HTMLPanel>
 		<g:FormPanel styleName="{core.formLayout}" ui:field="formPanel1">
@@ -55,7 +55,7 @@
 						<tbody>
 							<tr>
 								<td>
-									<div class="{core.select-style}">
+									<div ui:field="dobMonthBlock" class="{core.select-style}">
 										<g:ListBox ui:field="dobMonth"></g:ListBox>
 									</div>
 								</td>
@@ -75,7 +75,7 @@
 					<div class="{core.label}">
 						<ui:msg key="gender" description="Gender">Gender</ui:msg>
 					</div>
-					<div id="gender" class="{core.select-styleGender}">
+					<div ui:field="genderBlock" class="{core.select-styleGender}">
 						<g:ListBox ui:field="gender"></g:ListBox>
 					</div>
 					<g:Label ui:field="genderError" visible="false"
@@ -103,7 +103,7 @@
 					<div class="{core.label}">
 						<ui:msg key="location" description="Location">Location</ui:msg>
 					</div>
-					<div class="{core.select-styleGender}">
+					<div ui:field="locationBlock" class="{core.select-styleGender}">
 						<g:ListBox ui:field="location"></g:ListBox>
 					</div>
 					<g:Label ui:field="locationError" visible="false"

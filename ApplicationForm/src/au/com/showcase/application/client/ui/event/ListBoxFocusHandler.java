@@ -3,8 +3,11 @@ package au.com.showcase.application.client.ui.event;
 import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
 
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.FocusEvent;
 import com.google.gwt.event.dom.client.FocusHandler;
+import com.google.gwt.user.client.DOM;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
@@ -12,6 +15,18 @@ import com.google.gwt.user.client.ui.ListBox;
 public class ListBoxFocusHandler implements FocusHandler {
 
 	private Boolean hasError;
+	
+	private DivElement container;
+
+	public DivElement getContainer() {
+		return container;
+	}
+
+	public void setContainer(DivElement container) {
+		this.container = container;
+	}
+
+
 
 	public Boolean getHasError() {
 		return hasError;
@@ -63,7 +78,7 @@ public class ListBoxFocusHandler implements FocusHandler {
 	@Override
 	public void onFocus(FocusEvent event) {
 		ListBox textBox = (ListBox) event.getSource();
-
+		
 		decoratedPopupPanel
 				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
 
@@ -79,7 +94,9 @@ public class ListBoxFocusHandler implements FocusHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
-		textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+//		textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+//				.selectStyleError());
+		container.removeClassName(ApplicationResources.INSTANCE.registrationFormStyle()
 				.selectStyleError());
 
 		setHasError(true);

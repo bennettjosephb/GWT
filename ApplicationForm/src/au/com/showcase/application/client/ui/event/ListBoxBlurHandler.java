@@ -2,6 +2,7 @@ package au.com.showcase.application.client.ui.event;
 
 import au.com.showcase.application.client.bundle.ApplicationResources;
 
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.user.client.ui.DecoratedPopupPanel;
@@ -12,6 +13,16 @@ import com.google.inject.Inject;
 public class ListBoxBlurHandler implements BlurHandler {
 
 	private Boolean hasError;
+	
+	private DivElement container;
+
+	public DivElement getContainer() {
+		return container;
+	}
+
+	public void setContainer(DivElement container) {
+		this.container = container;
+	}
 
 	public Boolean getHasError() {
 		return hasError;
@@ -75,7 +86,10 @@ public class ListBoxBlurHandler implements BlurHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.customWidget().ensureInjected();
-		textBox.addStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+//		textBox.addStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+//				.selectStyleError());
+
+		container.addClassName(ApplicationResources.INSTANCE.registrationFormStyle()
 				.selectStyleError());
 
 		setHasError(true);

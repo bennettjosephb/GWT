@@ -431,10 +431,9 @@
 
 .select-style {
 	border: 1px solid #E5E5E5;
-	width: 121px;
+	width: 120px;
 	border-radius: 1px;
 	overflow: hidden;
-	display:inline;
 	height: 30px;
 	margin-left: 5px;
 	background: #FFFFFF url('images/arrow_state_grey_collapsed.png')
@@ -444,14 +443,11 @@
 	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 	background: #fafafa url("images/arrow_state_grey_collapsed.png")
 		no-repeat 95% 50%;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 }
 
 .select-style select {
 	padding: 5px 8px;
-	width: 147px;
+	width: 146px;
 	border: none;
 	box-shadow: none;
 	background: transparent;
@@ -461,15 +457,10 @@
 
 .select-style select:focus {
 	outline: none;
-	width: 150px;
-	border: 1px solid #CCC;
 }
 
 .select-styleError {
 	border: solid 1px #FF0000 !important;
-	width: 147px !important;
-	border-radius: 1px !important;
-	height: 30px !important;
 }
 
 .select-styleGender {
