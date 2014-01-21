@@ -12,19 +12,19 @@ import com.google.inject.Inject;
 
 public class AlphabetTextBoxBlurHandler implements BlurHandler {
 
-	private Boolean hasError;
+	private Boolean error;
 
-	public Boolean getHasError() {
-		return hasError;
+	public Boolean isError() {
+		return error;
 	}
 
-	public void setHasError(Boolean hasError) {
-		this.hasError = hasError;
+	public void setError(Boolean error) {
+		this.error = error;
 	}
 
 	@Inject
 	public AlphabetTextBoxBlurHandler() {
-		ApplicationResources.INSTANCE.customWidget().ensureInjected();
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
 	}
 
 	private DecoratedPopupPanel decoratedPopupPanel;
@@ -69,20 +69,20 @@ public class AlphabetTextBoxBlurHandler implements BlurHandler {
 		if (textBox.getText() != null && !textBox.getText().trim().equals("")) {
 			if (!textBox.getText().matches("[a-zA-Z\\s]+")) {
 				textBox.addStyleName(ApplicationResources.INSTANCE
-						.customWidget().textboxFirstNameError());
-				setHasError(true);
+						.registrationFormStyle().textboxFirstNameError());
+				setError(true);
 				errorLabel.setVisible(true);
 			} else {
 				textBox.removeStyleName(ApplicationResources.INSTANCE
-						.customWidget().textboxFirstNameError());
-				setHasError(false);
+						.registrationFormStyle().textboxFirstNameError());
+				setError(false);
 				errorLabel.setVisible(false);
 			}
 		} else if (textBox.getText() != null
 				&& textBox.getText().trim().equals("")) {
-			textBox.addStyleName(ApplicationResources.INSTANCE.customWidget()
-					.textboxFirstNameError());
-			setHasError(true);
+			textBox.addStyleName(ApplicationResources.INSTANCE
+					.registrationFormStyle().textboxFirstNameError());
+			setError(true);
 			errorLabel.setVisible(true);
 		}
 		decoratedPopupPanel.hide();

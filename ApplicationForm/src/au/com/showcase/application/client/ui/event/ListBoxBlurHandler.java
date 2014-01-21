@@ -75,8 +75,8 @@ public class ListBoxBlurHandler implements BlurHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.customWidget().ensureInjected();
-		textBox.addStyleName(ApplicationResources.INSTANCE.customWidget()
-				.textboxFirstNameError());
+		textBox.addStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+				.selectStyleError());
 
 		setHasError(true);
 

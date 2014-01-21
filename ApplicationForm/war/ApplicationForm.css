@@ -1,4 +1,12 @@
 /* Add css rules here for your application. */
+body .gwt-ListBox {
+	color: green !important;
+}
+
+.gwt-ListBox {
+	color: red !important;
+}
+
 ::-webkit-input-placeholder {
 	font-size: 13px;
 	font-weight: normal;

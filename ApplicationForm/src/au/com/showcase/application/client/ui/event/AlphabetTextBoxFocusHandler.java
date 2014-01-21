@@ -13,7 +13,7 @@ import com.google.inject.Inject;
 
 public class AlphabetTextBoxFocusHandler implements FocusHandler {
 
-	private Boolean hasError;
+	private Boolean hasError = false;
 
 	public Boolean getHasError() {
 		return hasError;
@@ -68,7 +68,7 @@ public class AlphabetTextBoxFocusHandler implements FocusHandler {
 		TextBox textBox = ((TextBox) event.getSource());
 
 		decoratedPopupPanel.setStyleName(ApplicationResources.INSTANCE
-				.customWidget().errorInfoBubble());
+				.registrationFormStyle().errorInfoBubble());
 
 		decoratedPopupPanel
 				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
@@ -79,10 +79,8 @@ public class AlphabetTextBoxFocusHandler implements FocusHandler {
 
 		decoratedPopupPanel.show();
 
-		textBox.removeStyleName(ApplicationResources.INSTANCE.customWidget()
-				.textboxFirstNameError());
-
-		//Window.alert("" + errorLabel.isVisible());
+		textBox.removeStyleName(ApplicationResources.INSTANCE
+				.registrationFormStyle().textboxFirstNameError());
 
 		if (errorLabel.isVisible()) {
 			errorLabel.setVisible(true);

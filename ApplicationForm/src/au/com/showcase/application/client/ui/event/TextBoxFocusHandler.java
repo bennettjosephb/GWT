@@ -24,6 +24,8 @@ public class TextBoxFocusHandler implements FocusHandler {
 
 	@Inject
 	public TextBoxFocusHandler() {
+		ApplicationResources.INSTANCE
+		.registrationFormStyle().ensureInjected();
 	}
 
 	private DecoratedPopupPanel decoratedPopupPanel;
@@ -66,8 +68,8 @@ public class TextBoxFocusHandler implements FocusHandler {
 
 		TextBox textBox = ((TextBox) event.getSource());
 
-		decoratedPopupPanel.setStyleName(ApplicationResources.INSTANCE
-				.customWidget().errorInfoBubble());
+		textBox.removeStyleName(ApplicationResources.INSTANCE
+				.registrationFormStyle().textboxFirstNameError());
 
 		decoratedPopupPanel
 				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
@@ -77,9 +79,6 @@ public class TextBoxFocusHandler implements FocusHandler {
 				- decoratedPopupPanel.getTop());
 
 		decoratedPopupPanel.show();
-
-		textBox.removeStyleName(ApplicationResources.INSTANCE.customWidget()
-				.textboxFirstNameError());
 
 		// Window.alert("" + errorLabel);
 

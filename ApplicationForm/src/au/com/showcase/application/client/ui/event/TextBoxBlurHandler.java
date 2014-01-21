@@ -23,7 +23,7 @@ public class TextBoxBlurHandler implements BlurHandler {
 
 	@Inject
 	public TextBoxBlurHandler() {
-		ApplicationResources.INSTANCE.customWidget().ensureInjected();
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
 	}
 
 	private DecoratedPopupPanel decoratedPopupPanel;
@@ -74,8 +74,8 @@ public class TextBoxBlurHandler implements BlurHandler {
 
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
-		ApplicationResources.INSTANCE.customWidget().ensureInjected();
-		textBox.addStyleName(ApplicationResources.INSTANCE.customWidget()
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
+		textBox.addStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
 				.textboxFirstNameError());
 
 		setHasError(true);

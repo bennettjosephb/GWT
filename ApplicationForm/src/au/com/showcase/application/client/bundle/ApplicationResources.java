@@ -11,6 +11,9 @@ public interface ApplicationResources extends ClientBundle {
 	@Source("CustomWidget.css")
 	CustomWidget customWidget();
 
+	@Source("RegistrationFormStyle.css")
+	RegistrationFormStyle registrationFormStyle();
+
 	@Source("../images/Abort.png")
 	ImageResource abort();
 

@@ -51,7 +51,6 @@ public class TestInsertView extends ViewImpl implements
 	HTMLPanel containerPanel1;
 
 	public TextBox getFirstName() {
-		// return TextBox.wrap(DOM.getElementById("firstName"));
 		return firstName;
 	}
 
@@ -59,61 +58,10 @@ public class TestInsertView extends ViewImpl implements
 		this.firstName = firstName;
 	}
 
-	// public InputElement getFirstName() {
-	// return firstName;
-	// }
-	//
-	// public void setFirstName(InputElement firstName) {
-	// this.firstName = firstName;
-	// }
-
 	@Inject
 	public TestInsertView(final Binder binder) {
 
 		widget = binder.createAndBindUi(this);
-		// firstName = TextBox.wrap(DOM.getElementById("firstName"));
-
-		// TextBox.wrap(DOM.getElementById("firstName")).addFocusHandler(
-		// new FocusHandler() {
-		// @Override
-		// public void onFocus(FocusEvent event) {
-		// Window.alert("XSDF");
-		// }
-		// });
-
-//		getRegistrationForm().getFirstName().addClickHandler(
-//				firstNameClickHandler);
-//		getRegistrationForm().getLastName().addClickHandler(
-//				lastNameClickHandler);
-//		getRegistrationForm().getFirstName().addBlurHandler(
-//				firstNameBlurHandler);
-//		getRegistrationForm().getFirstName().addFocusHandler(
-//				firstNameFocusHandler);
-//		getRegistrationForm().getLastName().addBlurHandler(lastNameBlurHandler);
-//		getRegistrationForm().getLastName().addFocusHandler(
-//				lastNameFocusHandler);
-//		decoratedPopupPanelFirstName = new DecoratedPopupPanel((short) 275,
-//				(short) 5);
-//		decoratedPopupPanelLastName = new DecoratedPopupPanel((short) 452,
-//				(short) 5);
-//
-//		// decoratedPopupPanel.setStyleName("arrow_box");
-//
-//		firstNameBlurHandler
-//				.setDecoratedPopupPanel(decoratedPopupPanelFirstName);
-//
-//		firstNameFocusHandler
-//				.setDecoratedPopupPanel(decoratedPopupPanelFirstName);
-//
-//		decoratedPopupPanelFirstName.setMessage("Enter Valid First Name");
-//
-//		decoratedPopupPanelLastName.setMessage("Enter Valid Last Name");
-//
-//		lastNameBlurHandler.setDecoratedPopupPanel(decoratedPopupPanelLastName);
-//
-//		lastNameFocusHandler
-//				.setDecoratedPopupPanel(decoratedPopupPanelLastName);
-//
 	}
 
 	DecoratedPopupPanel decoratedPopupPanelFirstName;
@@ -121,9 +69,6 @@ public class TestInsertView extends ViewImpl implements
 	DecoratedPopupPanel decoratedPopupPanelLastName;
 
 	TextBoxClickHandler firstNameClickHandler = new TextBoxClickHandler();
-//	TextBoxFocusAndBlurHandler firstNameHandler = new TextBoxFocusAndBlurHandler();
-//	TextBoxFocusAndBlurHandler lastNameHandler = new TextBoxFocusAndBlurHandler();
-	
 	TextBoxClickHandler lastNameClickHandler = new TextBoxClickHandler();
 	TextBoxBlurHandler firstNameBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler firstNameFocusHandler = new TextBoxFocusHandler();

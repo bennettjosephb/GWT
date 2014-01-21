@@ -78,9 +78,9 @@ public class ListBoxFocusHandler implements FocusHandler {
 
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
-		ApplicationResources.INSTANCE.customWidget().ensureInjected();
-		textBox.addStyleName(ApplicationResources.INSTANCE.customWidget()
-				.textboxFirstNameError());
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
+		textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+				.selectStyleError());
 
 		setHasError(true);
 
