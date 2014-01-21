@@ -119,6 +119,9 @@ public class RegistrationForm extends Composite {
 	Label captchaTextError;
 
 	@UiField
+	Label agreementError;
+
+	@UiField
 	DivElement dobMonthBlock;
 
 	@UiField
@@ -201,8 +204,6 @@ public class RegistrationForm extends Composite {
 	@Override
 	protected void onLoad() {
 		super.onLoad();
-		
-		
 
 		firstName.getElement().setAttribute("placeholder", "First");
 		lastName.getElement().setAttribute("placeholder", "Last");
@@ -246,7 +247,7 @@ public class RegistrationForm extends Composite {
 		genderFocusHandler.setContainer(genderBlock);
 		locationBlurHandler.setContainer(locationBlock);
 		locationFocusHandler.setContainer(locationBlock);
-		
+
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		lastNameFocusHandler.setDecoratedPopupPanel(lastNamePopupPanel);

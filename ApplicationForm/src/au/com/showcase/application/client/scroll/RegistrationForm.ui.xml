@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<ui:style field="core" src="../bundle/RegistrationFormStyle.css"/>
+	<ui:style field="core" src="../bundle/RegistrationFormStyle.css" />
 	
 	<g:HTMLPanel>
 		<g:FormPanel styleName="{core.formLayout}" ui:field="formPanel1">
@@ -12,10 +12,8 @@
 						<ui:msg key="name" description="Name of the user">Name</ui:msg>
 					</div>
 					<g:TextBox ui:field="firstName" stylePrimaryName="{core.textboxFirstName}"></g:TextBox>
-					<g:TextBox ui:field="lastName"
-						styleName="{core.textboxLastName}"></g:TextBox>
-					<g:Label ui:field="nameError" visible="false"
-						styleName="{core.errorMsgShow}">
+					<g:TextBox ui:field="lastName" styleName="{core.textboxLastName}"></g:TextBox>
+					<g:Label ui:field="nameError" visible="false" styleName="{core.errorMsgShow}">
 						<ui:msg key="nameError" description="Error Message For Name Field">Please enter the name</ui:msg>
 					</g:Label>
 					<div class="{core.label}">
@@ -68,8 +66,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<g:Label ui:field="dobError" visible="false"
-						styleName="{core.errorMsgShow}">
+					<g:Label ui:field="dobError" visible="false" styleName="{core.errorMsgShow}">
 						<ui:msg key="dobError" description="Error Message For Date Of Birth">Please enter the DOB</ui:msg>
 					</g:Label>
 					<div class="{core.label}">
@@ -122,6 +119,11 @@
 					<g:CheckBox ui:field="agreement" styleName="{core.agreement}">
 						<a href="#newreg">Agree the terms and conditions</a>
 					</g:CheckBox>
+					<g:Label ui:field="agreementError" visible="false"
+						styleName="{core.errorMsgShow}">
+						<ui:msg key="agreementError" description="Error Message For agreement">You have to accept
+							the terms and condition for creating account</ui:msg>
+					</g:Label>
 					<g:SubmitButton ui:field="submit" styleName="{core.submit}">SUBMIT</g:SubmitButton>
 				</div>
 				<div id="inner" class="{core.horiCon}">
