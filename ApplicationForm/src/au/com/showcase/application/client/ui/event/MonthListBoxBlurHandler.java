@@ -8,6 +8,7 @@ import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.user.client.ui.DecoratedPopupPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 
 public class MonthListBoxBlurHandler implements BlurHandler {
@@ -15,6 +16,26 @@ public class MonthListBoxBlurHandler implements BlurHandler {
 	private Boolean hasError;
 
 	private DivElement container;
+	
+	private TextBox dateTextBox;
+	
+	private TextBox yearTextBox;
+
+	public TextBox getDateTextBox() {
+		return dateTextBox;
+	}
+
+	public void setDateTextBox(TextBox dateTextBox) {
+		this.dateTextBox = dateTextBox;
+	}
+
+	public TextBox getYearTextBox() {
+		return yearTextBox;
+	}
+
+	public void setYearTextBox(TextBox yearTextBox) {
+		this.yearTextBox = yearTextBox;
+	}
 
 	public DivElement getContainer() {
 		return container;
@@ -76,16 +97,15 @@ public class MonthListBoxBlurHandler implements BlurHandler {
 	public void onBlur(BlurEvent event) {
 		ListBox textBox = (ListBox) event.getSource();
 
-		if (textBox.getSelectedIndex() == 0) {
-			ApplicationResources.INSTANCE.customWidget().ensureInjected();
-			container.addClassName(ApplicationResources.INSTANCE
-					.registrationFormStyle().selectStyleError());
-			setHasError(true);
-			errorLabel.setVisible(true);
-		}
-		else {
-			
-		}
+//		if (textBox.getSelectedIndex() == 0) {
+//			ApplicationResources.INSTANCE.customWidget().ensureInjected();
+//			container.addClassName(ApplicationResources.INSTANCE
+//					.registrationFormStyle().selectStyleError());
+//			setHasError(true);
+//			errorLabel.setVisible(true);
+//		} else {
+//
+//		}
 		decoratedPopupPanel.hide();
 	}
 

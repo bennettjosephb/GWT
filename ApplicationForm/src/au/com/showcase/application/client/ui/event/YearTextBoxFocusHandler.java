@@ -69,6 +69,8 @@ public class YearTextBoxFocusHandler implements FocusHandler {
 	public void onFocus(FocusEvent event) {
 
 		TextBox textBox = ((TextBox) event.getSource());
+		
+		FOCUSED = true;
 
 		textBox.removeStyleName(ApplicationResources.INSTANCE
 				.registrationFormStyle().textboxFirstNameError());

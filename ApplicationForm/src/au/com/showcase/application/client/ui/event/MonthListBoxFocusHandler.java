@@ -15,9 +15,9 @@ import com.google.gwt.user.client.ui.ListBox;
 public class MonthListBoxFocusHandler implements FocusHandler {
 
 	private Boolean hasError;
-	
+
 	private DivElement container;
-	
+
 	public static Boolean FOCUSED = false;
 
 	public DivElement getContainer() {
@@ -27,8 +27,6 @@ public class MonthListBoxFocusHandler implements FocusHandler {
 	public void setContainer(DivElement container) {
 		this.container = container;
 	}
-
-
 
 	public Boolean getHasError() {
 		return hasError;
@@ -80,7 +78,12 @@ public class MonthListBoxFocusHandler implements FocusHandler {
 	@Override
 	public void onFocus(FocusEvent event) {
 		ListBox textBox = (ListBox) event.getSource();
-		
+
+		if (!FOCUSED) {
+			FOCUSED = true;
+			textBox.removeItem(0);
+		}
+
 		decoratedPopupPanel
 				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
 
@@ -96,10 +99,10 @@ public class MonthListBoxFocusHandler implements FocusHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
-//		textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
-//				.selectStyleError());
-		container.removeClassName(ApplicationResources.INSTANCE.registrationFormStyle()
-				.selectStyleError());
+		// textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+		// .selectStyleError());
+		container.removeClassName(ApplicationResources.INSTANCE
+				.registrationFormStyle().selectStyleError());
 
 		setHasError(true);
 

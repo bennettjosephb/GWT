@@ -96,190 +96,20 @@ public class YearTextBoxBlurHandler implements BlurHandler {
 			try {
 				year = Integer.parseInt(textBox.getText());
 				noOfDays = Integer.parseInt(dateBox.getText());
-				if(MonthListBoxFocusHandler.FOCUSED){
-					if (year < 1850 || year > (1900 +date.getYear())) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("1 : " +date.getYear());
-					} else {
-						setError(false);
-						errorLabel.setVisible(false);
-					}
-				}
-				else if (!MonthListBoxFocusHandler.FOCUSED){
-					if (year < 1850 || year > (1900 +date.getYear())) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("1 : " +date.getYear());
-					}
-				}
-				
-				if(DateTextBoxFocusHandler.FOCUSED){
-					if (year < 1850 || year > (1900 +date.getYear())) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("1 : " +date.getYear());
-					} else if (monthList.getSelectedIndex() == 0) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("2");
-					} else if (monthList.getSelectedIndex() != 0) {
-						int monthIndex = monthList.getSelectedIndex();
-						if (monthIndex == 1 || monthIndex == 3 || monthIndex == 5
-								|| monthIndex == 7 || monthIndex == 8
-								|| monthIndex == 10 || monthIndex == 12) {
-							if (noOfDays < 1 || noOfDays > 31) {
-								setError(true);
-								errorLabel.setVisible(true);
-								textBox.addStyleName(ApplicationResources.INSTANCE
-										.registrationFormStyle().textboxFirstNameError());
-								Window.alert("3");
-							}
-							else {
-								setError(false);
-								errorLabel.setVisible(false);
-								Window.alert("4");
-							}
-						} else if (monthIndex == 4 || monthIndex == 6
-								|| monthIndex == 9 || monthIndex == 11) {
-							if (noOfDays < 1 || noOfDays > 30) {
-								setError(true);
-								errorLabel.setVisible(true);
-								textBox.addStyleName(ApplicationResources.INSTANCE
-										.registrationFormStyle().textboxFirstNameError());
-								Window.alert("5");
-							}
-							else {
-								setError(false);
-								errorLabel.setVisible(false);
-								Window.alert("6");
-							}
-						} else if (monthIndex == 2) {
-							if ((year % 4 == 0) && (year % 100 != 0)
-									|| (year % 400 == 0) || year == -1) {
-								if (noOfDays < 1 || noOfDays > 29) {
-									setError(true);
-									errorLabel.setVisible(true);
-									textBox.addStyleName(ApplicationResources.INSTANCE
-											.registrationFormStyle().textboxFirstNameError());
-									Window.alert("7");
-								}
-								else {
-									setError(false);
-									errorLabel.setVisible(false);
-									Window.alert("8");
-								}
-
-							} else {
-								if (noOfDays < 1 || noOfDays > 28) {
-									setError(true);
-									errorLabel.setVisible(true);
-									textBox.addStyleName(ApplicationResources.INSTANCE
-											.registrationFormStyle().textboxFirstNameError());
-									Window.alert("9");
-								}
-								else {
-									setError(false);
-									errorLabel.setVisible(false);
-									Window.alert("10");
-								}
-							}
-						}
-					}
-				} else if (!DateTextBoxFocusHandler.FOCUSED){
-					if (year < 1850 || year > (1900 +date.getYear())) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("1 : " +date.getYear());
-					} else if (monthList.getSelectedIndex() == 0) {
-						setError(true);
-						errorLabel.setVisible(true);
-						textBox.addStyleName(ApplicationResources.INSTANCE
-								.registrationFormStyle().textboxFirstNameError());
-						Window.alert("2");
-					} else if (monthList.getSelectedIndex() != 0) {
-						int monthIndex = monthList.getSelectedIndex();
-						if (monthIndex == 1 || monthIndex == 3 || monthIndex == 5
-								|| monthIndex == 7 || monthIndex == 8
-								|| monthIndex == 10 || monthIndex == 12) {
-							if (noOfDays < 1 || noOfDays > 31) {
-								setError(true);
-								errorLabel.setVisible(true);
-								textBox.addStyleName(ApplicationResources.INSTANCE
-										.registrationFormStyle().textboxFirstNameError());
-								Window.alert("3");
-							}
-							else {
-								setError(false);
-								errorLabel.setVisible(false);
-								Window.alert("4");
-							}
-						} else if (monthIndex == 4 || monthIndex == 6
-								|| monthIndex == 9 || monthIndex == 11) {
-							if (noOfDays < 1 || noOfDays > 30) {
-								setError(true);
-								errorLabel.setVisible(true);
-								textBox.addStyleName(ApplicationResources.INSTANCE
-										.registrationFormStyle().textboxFirstNameError());
-								Window.alert("5");
-							}
-							else {
-								setError(false);
-								errorLabel.setVisible(false);
-								Window.alert("6");
-							}
-						} else if (monthIndex == 2) {
-							if ((year % 4 == 0) && (year % 100 != 0)
-									|| (year % 400 == 0) || year == -1) {
-								if (noOfDays < 1 || noOfDays > 29) {
-									setError(true);
-									errorLabel.setVisible(true);
-									textBox.addStyleName(ApplicationResources.INSTANCE
-											.registrationFormStyle().textboxFirstNameError());
-									Window.alert("7");
-								}
-								else {
-									setError(false);
-									errorLabel.setVisible(false);
-									Window.alert("8");
-								}
-
-							} else {
-								if (noOfDays < 1 || noOfDays > 28) {
-									setError(true);
-									errorLabel.setVisible(true);
-									textBox.addStyleName(ApplicationResources.INSTANCE
-											.registrationFormStyle().textboxFirstNameError());
-									Window.alert("9");
-								}
-								else {
-									setError(false);
-									errorLabel.setVisible(false);
-									Window.alert("10");
-								}
-							}
-						}
-					}
+				if (year < 1850 || year > (1900 + date.getYear())) {
+					setError(true);
+				} else {
+					setError(false);
 				}
 			} catch (NumberFormatException nfe) {
 				setError(true);
-				errorLabel.setVisible(true);
-				textBox.addStyleName(ApplicationResources.INSTANCE
-						.registrationFormStyle().textboxFirstNameError());
 			}
 		} else if (textBox.getText() != null
 				&& textBox.getText().trim().equals("")) {
 			setError(true);
+		}
+
+		if (error) {
 			errorLabel.setVisible(true);
 			textBox.addStyleName(ApplicationResources.INSTANCE
 					.registrationFormStyle().textboxFirstNameError());

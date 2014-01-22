@@ -13,7 +13,7 @@ import com.google.inject.Inject;
 public class DateTextBoxFocusHandler implements FocusHandler {
 
 	private Boolean hasError;
-	
+
 	public static Boolean FOCUSED = false;
 
 	public Boolean getHasError() {
@@ -26,8 +26,7 @@ public class DateTextBoxFocusHandler implements FocusHandler {
 
 	@Inject
 	public DateTextBoxFocusHandler() {
-		ApplicationResources.INSTANCE
-		.registrationFormStyle().ensureInjected();
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
 	}
 
 	private DecoratedPopupPanel decoratedPopupPanel;
@@ -69,6 +68,8 @@ public class DateTextBoxFocusHandler implements FocusHandler {
 	public void onFocus(FocusEvent event) {
 
 		TextBox textBox = ((TextBox) event.getSource());
+	
+		FOCUSED = true;
 
 		textBox.removeStyleName(ApplicationResources.INSTANCE
 				.registrationFormStyle().textboxFirstNameError());
