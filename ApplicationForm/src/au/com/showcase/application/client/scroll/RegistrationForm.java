@@ -6,6 +6,8 @@ import au.com.showcase.application.client.ui.event.AlphabetTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.AlphabetTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.ConfirmPasswordTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.ConfirmPasswordTextBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.DateTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.DateTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.ListBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.ListBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxBlurHandler;
@@ -15,9 +17,12 @@ import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.YearTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.YearTextBoxFocusHandler;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.i18n.client.constants.DateTimeConstantsImpl;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.CheckBox;
@@ -38,10 +43,15 @@ public class RegistrationForm extends Composite {
 			UiBinder<Widget, RegistrationForm> {
 	}
 
-	public RegistrationForm() {
+	public RegistrationForm(DateTimeConstantsImpl dateTimeConstantsImpl) {
 		initWidget(uiBinder.createAndBindUi(this));
+
 		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
+
+		this.dateTimeConstantsImpl = dateTimeConstantsImpl;
 	}
+
+	DateTimeConstantsImpl dateTimeConstantsImpl;
 
 	@UiField
 	TextBox firstName;
@@ -141,10 +151,10 @@ public class RegistrationForm extends Composite {
 	PasswordTextBoxKeyPressHandler passwordKeyPressHandler = new PasswordTextBoxKeyPressHandler();
 	ConfirmPasswordTextBoxBlurHandler confirmPasswordBlurHandler = new ConfirmPasswordTextBoxBlurHandler();
 	ConfirmPasswordTextBoxFocusHandler confirmPasswordFocusHandler = new ConfirmPasswordTextBoxFocusHandler();
-	TextBoxBlurHandler dobDateBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler dobDateFocusHandler = new TextBoxFocusHandler();
-	TextBoxBlurHandler dobYearBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler dobYearFocusHandler = new TextBoxFocusHandler();
+	DateTextBoxBlurHandler dobDateBlurHandler = new DateTextBoxBlurHandler();
+	DateTextBoxFocusHandler dobDateFocusHandler = new DateTextBoxFocusHandler();
+	YearTextBoxBlurHandler dobYearBlurHandler = new YearTextBoxBlurHandler();
+	YearTextBoxFocusHandler dobYearFocusHandler = new YearTextBoxFocusHandler();
 	ListBoxBlurHandler dobMonthBlurHandler = new ListBoxBlurHandler();
 	ListBoxFocusHandler dobMonthFocusHandler = new ListBoxFocusHandler();
 
@@ -210,6 +220,18 @@ public class RegistrationForm extends Composite {
 		dobDate.getElement().setAttribute("placeholder", "Date");
 		dobYear.getElement().setAttribute("placeholder", "Year");
 
+		String months[] = dateTimeConstantsImpl.months();
+		
+		dobMonth.addItem("Month", "-1");
+		for (Integer i = 1; i <= months.length; i++) {
+			dobMonth.addItem(months[i-1].toString(), i.toString());
+		}
+
+		gender.addItem("Gender", "-1");
+		gender.addItem("Male", "1");
+		gender.addItem("Female", "2");
+		gender.addItem("Other", "3");
+
 		firstName.addFocusHandler(firstNameFocusHandler);
 		firstName.addBlurHandler(firstNameBlurHandler);
 		lastName.addFocusHandler(lastNameFocusHandler);
@@ -247,6 +269,9 @@ public class RegistrationForm extends Composite {
 		genderFocusHandler.setContainer(genderBlock);
 		locationBlurHandler.setContainer(locationBlock);
 		locationFocusHandler.setContainer(locationBlock);
+		dobDateBlurHandler.setMonthList(dobMonth);
+		dobYearBlurHandler.setMonthList(dobMonth);
+		dobYearBlurHandler.setDateBox(dobDate);
 
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);

@@ -3,9 +3,9 @@ package au.com.showcase.application.client.scroll;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
 import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxClickHandler;
-import au.com.showcase.application.client.ui.event.TextBoxFocusAndBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
 
+import com.google.gwt.i18n.client.constants.DateTimeConstantsImpl;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.FormPanel;
@@ -59,9 +59,12 @@ public class TestInsertView extends ViewImpl implements
 	}
 
 	@Inject
-	public TestInsertView(final Binder binder) {
+	public TestInsertView(final Binder binder,
+			DateTimeConstantsImpl dateTimeConstantsImpl) {
 
+		registrationForm = new RegistrationForm(dateTimeConstantsImpl);
 		widget = binder.createAndBindUi(this);
+
 	}
 
 	DecoratedPopupPanel decoratedPopupPanelFirstName;
@@ -75,7 +78,7 @@ public class TestInsertView extends ViewImpl implements
 	TextBoxBlurHandler lastNameBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler lastNameFocusHandler = new TextBoxFocusHandler();
 
-	@UiField
+	@UiField(provided = true)
 	RegistrationForm registrationForm;
 
 	public RegistrationForm getRegistrationForm() {

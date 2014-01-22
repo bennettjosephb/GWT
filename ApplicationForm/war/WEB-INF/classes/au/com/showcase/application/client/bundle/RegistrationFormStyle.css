@@ -446,7 +446,7 @@
 }
 
 .select-style select {
-	padding: 5px 8px;
+	padding: 3px 8px;
 	width: 146px;
 	border: none;
 	box-shadow: none;
@@ -475,7 +475,7 @@
 }
 
 .select-styleGender select {
-	padding: 5px 8px;
+	padding: 3px 8px;
 	width: 370px;
 	border: none;
 	box-shadow: none;

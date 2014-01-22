@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.inject.Inject;
 
-public class ListBoxBlurHandler implements BlurHandler {
+public class MonthListBoxBlurHandler implements BlurHandler {
 
 	private Boolean hasError;
 
@@ -33,7 +33,7 @@ public class ListBoxBlurHandler implements BlurHandler {
 	}
 
 	@Inject
-	public ListBoxBlurHandler() {
+	public MonthListBoxBlurHandler() {
 		ApplicationResources.INSTANCE.customWidget().ensureInjected();
 	}
 
@@ -57,13 +57,13 @@ public class ListBoxBlurHandler implements BlurHandler {
 		this.decoratedPopupPanel = decoratedPopupPanel;
 	}
 
-	public ListBoxBlurHandler(DecoratedPopupPanel decoratedPopupPanel) {
+	public MonthListBoxBlurHandler(DecoratedPopupPanel decoratedPopupPanel) {
 
 		this.decoratedPopupPanel = decoratedPopupPanel;
 
 	}
 
-	public ListBoxBlurHandler(DecoratedPopupPanel decoratedPopupPanel,
+	public MonthListBoxBlurHandler(DecoratedPopupPanel decoratedPopupPanel,
 			Label errorLabel) {
 
 		this.decoratedPopupPanel = decoratedPopupPanel;
