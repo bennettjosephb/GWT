@@ -4,7 +4,9 @@ import java.util.Date;
 
 import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
+import au.com.showcase.application.client.util.NumberUtil;
 
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.i18n.client.DateTimeFormat;
@@ -20,7 +22,61 @@ public class DateTextBoxBlurHandler implements BlurHandler {
 
 	private ListBox monthList;
 
+	private DivElement monthContainer;
+
+	public DivElement getMonthContainer() {
+		return monthContainer;
+	}
+
+	public void setMonthContainer(DivElement monthContainer) {
+		this.monthContainer = monthContainer;
+	}
+
 	private TextBox yearTextBox;
+
+	private YearTextBoxBlurHandler yearBlurHandler;
+
+	private MonthListBoxBlurHandler monthBlurHandler;
+
+	private Label monthError;
+
+	private Label yearError;
+
+	public Label getMonthError() {
+		return monthError;
+	}
+
+	public void setMonthError(Label monthError) {
+		this.monthError = monthError;
+	}
+
+	public Label getYearError() {
+		return yearError;
+	}
+
+	public void setYearError(Label yearError) {
+		this.yearError = yearError;
+	}
+
+	public YearTextBoxBlurHandler getYearBlurHandler() {
+		return yearBlurHandler;
+	}
+
+	public void setYearBlurHandler(YearTextBoxBlurHandler yearBlurHandler) {
+		this.yearBlurHandler = yearBlurHandler;
+	}
+
+	public MonthListBoxBlurHandler getMonthBlurHandler() {
+		return monthBlurHandler;
+	}
+
+	public void setMonthBlurHandler(MonthListBoxBlurHandler monthBlurHandler) {
+		this.monthBlurHandler = monthBlurHandler;
+	}
+
+	public Boolean getError() {
+		return error;
+	}
 
 	public TextBox getYearTextBox() {
 		return yearTextBox;
@@ -89,99 +145,59 @@ public class DateTextBoxBlurHandler implements BlurHandler {
 	@Override
 	public void onBlur(BlurEvent event) {
 		TextBox textBox = (TextBox) event.getSource();
-		Integer noOfDays = 0;
-		Integer year = Integer.parseInt(yearTextBox.getText());
-		Date date = new Date(2014, 1, 22);
-
-		// Window.alert(""+DateTimeFormat.getShortDateFormat().format(date));
-
 		DateTimeFormat myDateTimeFormat = DateTimeFormat.getFormat("ddMMyyyy");
-		 Window.alert("asdf" + myDateTimeFormat.parseStrict("29021996"));
 
 		if (textBox.getText() != null && !textBox.getText().trim().equals("")) {
 			try {
-				noOfDays = Integer.parseInt(textBox.getText());
-				if (!MonthListBoxFocusHandler.FOCUSED) {
-					if (noOfDays < 1 || noOfDays > 31) {
+				Integer date = Integer.parseInt(textBox.getText());
+				if (MonthListBoxFocusHandler.FOCUSED
+						&& YearTextBoxFocusHandler.FOCUSED) {
+					try {
+						Integer year = Integer.parseInt(yearTextBox.getText());
+						Integer month = monthList.getSelectedIndex();
+						String formattedDate = NumberUtil.format('0', 2,
+								date.intValue());
+						String formattedMonth = NumberUtil.format('0', 2,
+								month.intValue() + 1);
+						String formattedYear = NumberUtil.format('0', 4,
+								year.intValue());
+						myDateTimeFormat.parseStrict(formattedDate
+								+ formattedMonth + formattedYear);
+						yearBlurHandler.setError(false);
+						monthBlurHandler.setError(false);
+						yearTextBox
+								.removeStyleName(ApplicationResources.INSTANCE
+										.registrationFormStyle()
+										.textboxFirstNameError());
+						Window.alert(""
+								+ ApplicationResources.INSTANCE
+										.registrationFormStyle()
+										.selectStyleError());
+						monthContainer.removeClassName(ApplicationResources.INSTANCE
+								.registrationFormStyle().selectStyleError());
+						setError(false);
+						errorLabel.setVisible(false);
+					} catch (IllegalArgumentException iae) {
+						setError(true);
+						errorLabel.setVisible(true);
+						textBox.addStyleName(ApplicationResources.INSTANCE
+								.registrationFormStyle()
+								.textboxFirstNameError());
+					} catch (RuntimeException e) {
 						setError(true);
 						errorLabel.setVisible(true);
 						textBox.addStyleName(ApplicationResources.INSTANCE
 								.registrationFormStyle()
 								.textboxFirstNameError());
 					}
-				} else if (MonthListBoxFocusHandler.FOCUSED) {
-					int monthIndex = monthList.getSelectedIndex();
-					if (monthIndex == 0 || monthIndex == 2 || monthIndex == 4
-							|| monthIndex == 6 || monthIndex == 7
-							|| monthIndex == 9 || monthIndex == 11) {
-						if (noOfDays < 1 || noOfDays > 31) {
-							setError(true);
-							errorLabel.setVisible(true);
-							textBox.addStyleName(ApplicationResources.INSTANCE
-									.registrationFormStyle()
-									.textboxFirstNameError());
-							Window.alert("3");
-						} else {
-							setError(false);
-							errorLabel.setVisible(false);
-							Window.alert("4");
-						}
-					} else if (monthIndex == 4 || monthIndex == 6
-							|| monthIndex == 9 || monthIndex == 11) {
-						if (noOfDays < 1 || noOfDays > 30) {
-							setError(true);
-							errorLabel.setVisible(true);
-							textBox.addStyleName(ApplicationResources.INSTANCE
-									.registrationFormStyle()
-									.textboxFirstNameError());
-							Window.alert("5");
-						} else {
-							setError(false);
-							errorLabel.setVisible(false);
-							Window.alert("6");
-						}
-					} else if (monthIndex == 2) {
-						
-						if(!YearTextBoxFocusHandler.FOCUSED){
-							if (noOfDays < 1 || noOfDays > 29) {
-								setError(true);
-								errorLabel.setVisible(true);
-								textBox.addStyleName(ApplicationResources.INSTANCE
-										.registrationFormStyle()
-										.textboxFirstNameError());
-								Window.alert("7");
-							} else {
-								setError(false);
-								errorLabel.setVisible(false);
-								Window.alert("8");
-							}
-						}
-						else if (YearTextBoxFocusHandler.FOCUSED){
-							if (((year % 4 == 0) && (year % 100 != 0))
-									|| (year % 400 == 0)) {	
-								if (noOfDays < 1 || noOfDays > 29) {
-									setError(true);
-									errorLabel.setVisible(true);
-									textBox.addStyleName(ApplicationResources.INSTANCE
-											.registrationFormStyle()
-											.textboxFirstNameError());
-									Window.alert("7");
-								} else {
-									setError(false);
-									errorLabel.setVisible(false);
-									Window.alert("8");
-								}
-								
-							}
-						}
+				} else {
+					if (date < 1 || date > 31) {
+						setError(true);
+						errorLabel.setVisible(true);
+						textBox.addStyleName(ApplicationResources.INSTANCE
+								.registrationFormStyle()
+								.textboxFirstNameError());
 					}
-				} 
-				
-				if (!YearTextBoxFocusHandler.FOCUSED) {
-					
-
-				} else if (YearTextBoxFocusHandler.FOCUSED) {
-					
 				}
 			} catch (NumberFormatException nfe) {
 				setError(true);

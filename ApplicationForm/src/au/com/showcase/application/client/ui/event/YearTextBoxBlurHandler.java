@@ -5,6 +5,7 @@ import java.util.Date;
 import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
 
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.user.client.Window;
@@ -19,7 +20,61 @@ public class YearTextBoxBlurHandler implements BlurHandler {
 
 	private ListBox monthList;
 
+	private DivElement monthContainer;
+
+	public DivElement getMonthContainer() {
+		return monthContainer;
+	}
+
+	public void setMonthContainer(DivElement monthContainer) {
+		this.monthContainer = monthContainer;
+	}
+
 	private TextBox dateBox;
+
+	private MonthListBoxBlurHandler monthBlurHandler;
+
+	private DateTextBoxBlurHandler dateBlurHandler;
+
+	private Label monthError;
+
+	private Label dateError;
+
+	public Label getMonthError() {
+		return monthError;
+	}
+
+	public void setMonthError(Label monthError) {
+		this.monthError = monthError;
+	}
+
+	public Label getDateError() {
+		return dateError;
+	}
+
+	public void setDateError(Label dateError) {
+		this.dateError = dateError;
+	}
+
+	public MonthListBoxBlurHandler getMonthBlurHandler() {
+		return monthBlurHandler;
+	}
+
+	public void setMonthBlurHandler(MonthListBoxBlurHandler monthBlurHandler) {
+		this.monthBlurHandler = monthBlurHandler;
+	}
+
+	public DateTextBoxBlurHandler getDateBlurHandler() {
+		return dateBlurHandler;
+	}
+
+	public void setDateBlurHandler(DateTextBoxBlurHandler dateBlurHandler) {
+		this.dateBlurHandler = dateBlurHandler;
+	}
+
+	public Boolean getError() {
+		return error;
+	}
 
 	public TextBox getDateBox() {
 		return dateBox;
@@ -100,6 +155,13 @@ public class YearTextBoxBlurHandler implements BlurHandler {
 					setError(true);
 				} else {
 					setError(false);
+					dateBlurHandler.setError(false);
+					dateBox.removeStyleName(ApplicationResources.INSTANCE
+							.registrationFormStyle().textboxFirstNameError());
+					monthContainer.removeClassName(ApplicationResources.INSTANCE
+							.registrationFormStyle().selectStyleError());
+					monthBlurHandler.setError(false);
+					errorLabel.setVisible(false);
 				}
 			} catch (NumberFormatException nfe) {
 				setError(true);

@@ -276,12 +276,24 @@ public class RegistrationForm extends Composite {
 		genderFocusHandler.setContainer(genderBlock);
 		locationBlurHandler.setContainer(locationBlock);
 		locationFocusHandler.setContainer(locationBlock);
+		
 		dobDateBlurHandler.setMonthList(dobMonth);
 		dobDateBlurHandler.setYearTextBox(dobYear);
+		dobDateBlurHandler.setYearBlurHandler(dobYearBlurHandler);
+		dobDateBlurHandler.setMonthBlurHandler(dobMonthBlurHandler);
+		dobDateBlurHandler.setMonthContainer(dobMonthBlock);
+
 		dobYearBlurHandler.setMonthList(dobMonth);
 		dobYearBlurHandler.setDateBox(dobDate);
+		dobYearBlurHandler.setDateBlurHandler(dobDateBlurHandler);
+		dobYearBlurHandler.setMonthBlurHandler(dobMonthBlurHandler);
+		dobYearBlurHandler.setMonthContainer(dobMonthBlock);
+		
 		dobMonthBlurHandler.setYearTextBox(dobYear);
 		dobMonthBlurHandler.setDateTextBox(dobDate);
+		dobMonthBlurHandler.setDateBlurHandler(dobDateBlurHandler);
+		dobMonthBlurHandler.setYearBlurHandler(dobYearBlurHandler);
+		
 
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);

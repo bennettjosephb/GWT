@@ -104,9 +104,9 @@ public class MonthListBoxFocusHandler implements FocusHandler {
 		container.removeClassName(ApplicationResources.INSTANCE
 				.registrationFormStyle().selectStyleError());
 
-		setHasError(true);
+		//setHasError(true);
 
-		errorLabel.setVisible(false);
+		//errorLabel.setVisible(false);
 
 		// Window.alert(textBox.getStyleName());
 
