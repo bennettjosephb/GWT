@@ -1,0 +1,2 @@
+serviceClass: com.javacodegeeks.captcha.client.SignupService
+path: A93DDBEE43DA17ABDC1AE9324F2B7BBE.gwt.rpc

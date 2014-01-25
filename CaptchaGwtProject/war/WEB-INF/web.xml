@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>CaptchaGwtProject.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>signupServlet</servlet-name>
+    <servlet-class>com.javacodegeeks.captcha.server.SignupServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>signupServlet</servlet-name>
+    <url-pattern>/captchagwtproject/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SimpleCaptcha</servlet-name>
+    <servlet-class>com.javacodegeeks.captcha.server.servlet.ExtendedCaptchaServlet</servlet-class>
+    <init-param>
+        <param-name>width</param-name>
+        <param-value>200</param-value>
+    </init-param>
+    <init-param>
+        <param-name>height</param-name>
+        <param-value>50</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SimpleCaptcha</servlet-name>
+    <url-pattern>/SimpleCaptcha.jpg</url-pattern>
+  </servlet-mapping>
+
+</web-app>
