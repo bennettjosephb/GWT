@@ -82,8 +82,9 @@ public class CaptchaExamplePresenter
 		@Override
 		public void onSuccess(ImageActionResult result) {
 			// getView().getImageRes().setUrl("images/icon.jpg");
-			getView().getRoot().add(new Image(result.getImage()));
-			//RootPanel.get().add(new Image(result.getImage()));
+			// getView().getRoot().add(new Image(result.getImage()));
+			getView().getImageRes().setUrl(result.getImage());
+			// RootPanel.get().add(new Image(result.getImage()));
 		}
 
 	};

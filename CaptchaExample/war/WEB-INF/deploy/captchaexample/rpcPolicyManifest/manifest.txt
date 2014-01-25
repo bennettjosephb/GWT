@@ -1,2 +1,3 @@
 # Module captchaexample
 # RPC service class, partial path of RPC policy file
+com.gwtplatform.dispatch.shared.DispatchService, 9182703D3FB292ECF7B4D37FC614219C.gwt.rpc
