@@ -29,6 +29,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.PasswordTextBox;
@@ -93,6 +94,17 @@ public class RegistrationForm extends Composite {
 
 	@UiField
 	ListBox location;
+
+	@UiField
+	Image captchaImage;
+
+	public Image getCaptchaImage() {
+		return captchaImage;
+	}
+
+	public void setCaptchaImage(Image captchaImage) {
+		this.captchaImage = captchaImage;
+	}
 
 	@UiField
 	CheckBox agreement;
@@ -382,6 +394,9 @@ public class RegistrationForm extends Composite {
 		emailAddressPopupPanel.setMessage("Enter valid email address");
 		locationPopupPanel.setMessage("Select your location");
 		captchaTextPopupPanel.setMessage("Enter the character in the image");
+		
+		
+		captchaImage.setUrl("/SimpleCaptcha.jpg");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));

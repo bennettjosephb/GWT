@@ -109,7 +109,8 @@
 							location</ui:msg>
 					</g:Label>
 					<div class="{core.label}">Type the character in below textbox</div>
-					<g:Image styleName="{core.textboxCaptchaImage}" url="images/nike_brandbuttons.jpg"></g:Image>
+					<g:Image ui:field="captchaImage" styleName="{core.textboxCaptchaImage}"
+	url="images/nike_brandbuttons.jpg"></g:Image>
 					<g:TextBox ui:field="captchaText" styleName="{core.textboxCaptchaText}"></g:TextBox>
 					<g:Label ui:field="captchaTextError" visible="false"
 						styleName="{core.errorMsgShow}">

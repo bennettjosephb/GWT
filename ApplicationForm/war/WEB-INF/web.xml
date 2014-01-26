@@ -29,6 +29,26 @@
 	</filter-mapping>
 
 	<servlet>
+		<servlet-name>SimpleCaptcha</servlet-name>
+		<servlet-class>com.javacodegeeks.captcha.server.servlet.ExtendedCaptchaServlet</servlet-class>
+		<init-param>
+			<param-name>width</param-name>
+			<param-value>200</param-value>
+		</init-param>
+		<init-param>
+			<param-name>height</param-name>
+			<param-value>50</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SimpleCaptcha</servlet-name>
+		<url-pattern>/SimpleCaptcha.jpg</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
 		<description>LoginValidationServlet</description>
 		<display-name>LoginValidationServlet</display-name>
 		<servlet-name>LoginValidationServlet</servlet-name>
