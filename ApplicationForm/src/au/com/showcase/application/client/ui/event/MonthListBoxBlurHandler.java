@@ -1,7 +1,7 @@
 package au.com.showcase.application.client.ui.event;
 
 import au.com.showcase.application.client.bundle.ApplicationResources;
-import au.com.showcase.application.client.util.NumberUtil;
+import au.com.showcase.application.shared.util.NumberUtil;
 
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.BlurEvent;

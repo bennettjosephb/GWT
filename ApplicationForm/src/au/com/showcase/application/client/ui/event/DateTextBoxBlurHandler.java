@@ -1,10 +1,8 @@
 package au.com.showcase.application.client.ui.event;
 
-import java.util.Date;
-
 import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
-import au.com.showcase.application.client.util.NumberUtil;
+import au.com.showcase.application.shared.util.NumberUtil;
 
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.BlurEvent;
@@ -173,8 +171,10 @@ public class DateTextBoxBlurHandler implements BlurHandler {
 								+ ApplicationResources.INSTANCE
 										.registrationFormStyle()
 										.selectStyleError());
-						monthContainer.removeClassName(ApplicationResources.INSTANCE
-								.registrationFormStyle().selectStyleError());
+						monthContainer
+								.removeClassName(ApplicationResources.INSTANCE
+										.registrationFormStyle()
+										.selectStyleError());
 						setError(false);
 						errorLabel.setVisible(false);
 					} catch (IllegalArgumentException iae) {

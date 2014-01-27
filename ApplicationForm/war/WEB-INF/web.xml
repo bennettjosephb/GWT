@@ -33,11 +33,11 @@
 		<servlet-class>com.javacodegeeks.captcha.server.servlet.ExtendedCaptchaServlet</servlet-class>
 		<init-param>
 			<param-name>width</param-name>
-			<param-value>200</param-value>
+			<param-value>347</param-value>
 		</init-param>
 		<init-param>
 			<param-name>height</param-name>
-			<param-value>50</param-value>
+			<param-value>60</param-value>
 		</init-param>
 	</servlet>
 

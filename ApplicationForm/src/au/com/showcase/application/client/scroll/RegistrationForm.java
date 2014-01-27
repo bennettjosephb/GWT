@@ -15,6 +15,7 @@ import au.com.showcase.application.client.ui.event.MonthListBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxKeyPressHandler;
+import au.com.showcase.application.client.ui.event.RegenerateCaptchaClickHandler;
 import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxBlurHandler;
@@ -27,6 +28,8 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.i18n.client.constants.DateTimeConstantsImpl;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Image;
@@ -98,13 +101,8 @@ public class RegistrationForm extends Composite {
 	@UiField
 	Image captchaImage;
 
-	public Image getCaptchaImage() {
-		return captchaImage;
-	}
-
-	public void setCaptchaImage(Image captchaImage) {
-		this.captchaImage = captchaImage;
-	}
+	@UiField
+	Button regenerateCaptcha;
 
 	@UiField
 	CheckBox agreement;
@@ -183,6 +181,8 @@ public class RegistrationForm extends Composite {
 	TextBoxBlurHandler captchaTextBlurHandler = new TextBoxBlurHandler();
 	TextBoxFocusHandler captchaTextFocusHandler = new TextBoxFocusHandler();
 
+	RegenerateCaptchaClickHandler captchaButtonClickHandler = new RegenerateCaptchaClickHandler();
+
 	DecoratedPopupPanel firstNamePopupPanel = new DecoratedPopupPanel(
 			(short) 285, (short) 5);
 
@@ -235,19 +235,19 @@ public class RegistrationForm extends Composite {
 		dobYear.getElement().setAttribute("placeholder", "Year");
 
 		String months[] = dateTimeConstantsImpl.months();
-		
+
 		dobMonth.addItem("Month", "-1");
 		for (Integer i = 1; i <= months.length; i++) {
-			dobMonth.addItem(months[i-1].toString(), i.toString());
+			dobMonth.addItem(months[i - 1].toString(), i.toString());
 		}
 
 		gender.addItem("Gender", "-1");
 		gender.addItem("Male", "1");
 		gender.addItem("Female", "2");
 		gender.addItem("Other", "3");
-		
+
 		location.addItem("Country", "-1");
-		for (Integer i = 52; i <= 52+26; i++) {
+		for (Integer i = 52; i <= 52 + 26; i++) {
 			location.addItem(i.toString(), i.toString());
 		}
 
@@ -279,6 +279,9 @@ public class RegistrationForm extends Composite {
 		captchaText.addFocusHandler(captchaTextFocusHandler);
 		captchaText.addBlurHandler(captchaTextBlurHandler);
 
+		regenerateCaptcha.addClickHandler(captchaButtonClickHandler);
+		captchaButtonClickHandler.setImageSource(captchaImage);
+
 		passwordBlurHandler.setDependentPassword(confirmPassword);
 		confirmPasswordBlurHandler.setDependentPassword(password);
 		passwordKeyPressHandler.setDependentPassword(confirmPassword);
@@ -288,7 +291,7 @@ public class RegistrationForm extends Composite {
 		genderFocusHandler.setContainer(genderBlock);
 		locationBlurHandler.setContainer(locationBlock);
 		locationFocusHandler.setContainer(locationBlock);
-		
+
 		dobDateBlurHandler.setMonthList(dobMonth);
 		dobDateBlurHandler.setYearTextBox(dobYear);
 		dobDateBlurHandler.setYearBlurHandler(dobYearBlurHandler);
@@ -300,12 +303,11 @@ public class RegistrationForm extends Composite {
 		dobYearBlurHandler.setDateBlurHandler(dobDateBlurHandler);
 		dobYearBlurHandler.setMonthBlurHandler(dobMonthBlurHandler);
 		dobYearBlurHandler.setMonthContainer(dobMonthBlock);
-		
+
 		dobMonthBlurHandler.setYearTextBox(dobYear);
 		dobMonthBlurHandler.setDateTextBox(dobDate);
 		dobMonthBlurHandler.setDateBlurHandler(dobDateBlurHandler);
 		dobMonthBlurHandler.setYearBlurHandler(dobYearBlurHandler);
-		
 
 		firstNameFocusHandler.setDecoratedPopupPanel(firstNamePopupPanel);
 		firstNameBlurHandler.setDecoratedPopupPanel(firstNamePopupPanel);
@@ -394,9 +396,12 @@ public class RegistrationForm extends Composite {
 		emailAddressPopupPanel.setMessage("Enter valid email address");
 		locationPopupPanel.setMessage("Select your location");
 		captchaTextPopupPanel.setMessage("Enter the character in the image");
-		
-		
-		captchaImage.setUrl("/SimpleCaptcha.jpg");
+
+//		Window.alert(GWT.getHostPageBaseURL());
+//		Window.alert(GWT.getModuleBaseURL());
+//		Window.alert(GWT.getModuleName());
+
+		captchaImage.setUrl(GWT.getHostPageBaseURL()+"SimpleCaptcha.jpg");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
@@ -558,6 +563,22 @@ public class RegistrationForm extends Composite {
 
 	public void setLocationBlock(DivElement locationBlock) {
 		this.locationBlock = locationBlock;
+	}
+
+	public Image getCaptchaImage() {
+		return captchaImage;
+	}
+
+	public void setCaptchaImage(Image captchaImage) {
+		this.captchaImage = captchaImage;
+	}
+
+	public Button getRegenerateCaptcha() {
+		return regenerateCaptcha;
+	}
+
+	public void setRegenerateCaptcha(Button regenerateCaptcha) {
+		this.regenerateCaptcha = regenerateCaptcha;
 	}
 
 }
