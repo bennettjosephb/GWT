@@ -52,19 +52,19 @@ public class RegenerateCaptchaActionHandler implements
 
 		HttpSession httpSession = httpServletRequest.getSession();
 
-		System.out.println("" + httpSession.getId());
+		//System.out.println("" + httpSession.getId());
 
-		Captcha captcha = new Captcha.Builder(347, 60)
-				.addText(new DefaultTextProducer(9))
-				.addBackground(new GradiatedBackgroundProducer())
-				.gimp(new DropShadowGimpyRenderer()).addNoise().addBorder()
-				.build();
-
-		System.out.println("Executed");
-		httpSession.setAttribute(NAME, captcha);
-		System.out.println("Executed");
-		// CaptchaServletUtil.writeImage(resp, captcha.getImage());
-
+//		Captcha captcha = new Captcha.Builder(347, 60)
+//				.addText(new DefaultTextProducer(9))
+//				.addBackground(new GradiatedBackgroundProducer())
+//				.gimp(new DropShadowGimpyRenderer()).addNoise().addBorder()
+//				.build();
+//
+//		System.out.println("Executed");
+//		httpSession.setAttribute(NAME, captcha);
+//		System.out.println("Executed");
+//		// CaptchaServletUtil.writeImage(resp, captcha.getImage());
+//
 		RegenerateCaptchaResult regenerateCaptchaResult = new RegenerateCaptchaResult(
 				encodeasBase64());
 

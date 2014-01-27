@@ -4,9 +4,11 @@ import au.com.showcase.application.client.account.RegenerateCaptcha;
 import au.com.showcase.application.client.account.RegenerateCaptchaResult;
 import au.com.showcase.application.client.place.NameTokens;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.FormPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
@@ -120,6 +122,8 @@ public class TestInsertPresenter extends
 
 		@Override
 		public void onSuccess(RegenerateCaptchaResult result) {
+			// Window.alert(GWT.getHostPageBaseURL());
+			// Window.alert(result.getImageSource());
 
 			getView().getRegistrationForm().getCaptchaImage()
 					.setUrl(result.getImageSource());
