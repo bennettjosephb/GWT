@@ -12,7 +12,15 @@ import com.google.inject.Inject;
 
 public class GenderListBoxBlurHandler implements BlurHandler {
 
-	private Boolean hasError;
+	private Boolean error;
+
+	public Boolean isError() {
+		return error;
+	}
+
+	public void setError(Boolean error) {
+		this.error = error;
+	}
 
 	private DivElement container;
 
@@ -22,14 +30,6 @@ public class GenderListBoxBlurHandler implements BlurHandler {
 
 	public void setContainer(DivElement container) {
 		this.container = container;
-	}
-
-	public Boolean getHasError() {
-		return hasError;
-	}
-
-	public void setHasError(Boolean hasError) {
-		this.hasError = hasError;
 	}
 
 	@Inject
@@ -80,11 +80,10 @@ public class GenderListBoxBlurHandler implements BlurHandler {
 			ApplicationResources.INSTANCE.customWidget().ensureInjected();
 			container.addClassName(ApplicationResources.INSTANCE
 					.registrationFormStyle().selectStyleError());
-			setHasError(true);
+			setError(true);
 			errorLabel.setVisible(true);
-		}
-		else {
-			
+		} else {
+
 		}
 		decoratedPopupPanel.hide();
 	}

@@ -14,8 +14,16 @@ import com.google.gwt.user.client.ui.ListBox;
 
 public class GenderListBoxFocusHandler implements FocusHandler {
 
-	private Boolean hasError;
-	
+	private Boolean error;
+
+	public Boolean isError() {
+		return error;
+	}
+
+	public void setError(Boolean error) {
+		this.error = error;
+	}
+
 	private DivElement container;
 
 	public DivElement getContainer() {
@@ -24,16 +32,6 @@ public class GenderListBoxFocusHandler implements FocusHandler {
 
 	public void setContainer(DivElement container) {
 		this.container = container;
-	}
-
-
-
-	public Boolean getHasError() {
-		return hasError;
-	}
-
-	public void setHasError(Boolean hasError) {
-		this.hasError = hasError;
 	}
 
 	private DecoratedPopupPanel decoratedPopupPanel;
@@ -78,7 +76,7 @@ public class GenderListBoxFocusHandler implements FocusHandler {
 	@Override
 	public void onFocus(FocusEvent event) {
 		ListBox textBox = (ListBox) event.getSource();
-		
+
 		decoratedPopupPanel
 				.setWidget(new HTML(decoratedPopupPanel.getMessage()));
 
@@ -94,12 +92,12 @@ public class GenderListBoxFocusHandler implements FocusHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
-//		textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
-//				.selectStyleError());
-		container.removeClassName(ApplicationResources.INSTANCE.registrationFormStyle()
-				.selectStyleError());
+		// textBox.removeStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
+		// .selectStyleError());
+		container.removeClassName(ApplicationResources.INSTANCE
+				.registrationFormStyle().selectStyleError());
 
-		setHasError(true);
+		setError(true);
 
 		errorLabel.setVisible(false);
 

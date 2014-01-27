@@ -4,11 +4,9 @@ import au.com.showcase.application.client.account.RegenerateCaptcha;
 import au.com.showcase.application.client.account.RegenerateCaptchaResult;
 import au.com.showcase.application.client.place.NameTokens;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.FormPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
@@ -83,9 +81,23 @@ public class TestInsertPresenter extends
 
 						dispatchAsync.execute(regenerateCaptcha,
 								contactDetailsResult);
+						getView().getRegistrationForm()
+								.getRegenerateCaptchaButton().setEnabled(false);
+
+						
 
 					}
 				});
+		
+		getView().getRegistrationForm().getSubmit().addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				
+			}
+		});
+		
+		getView().getRegistrationForm().hasErrors();
 
 		// RootPanel.get().add(getView().getContainerPanel1());
 
@@ -117,7 +129,8 @@ public class TestInsertPresenter extends
 
 		@Override
 		public void onFailure(Throwable caught) {
-
+			getView().getRegistrationForm().getRegenerateCaptchaButton()
+					.setEnabled(true);
 		}
 
 		@Override
@@ -127,6 +140,8 @@ public class TestInsertPresenter extends
 
 			getView().getRegistrationForm().getCaptchaImage()
 					.setUrl(result.getImageSource());
+			getView().getRegistrationForm().getRegenerateCaptchaButton()
+					.setEnabled(true);
 
 		}
 

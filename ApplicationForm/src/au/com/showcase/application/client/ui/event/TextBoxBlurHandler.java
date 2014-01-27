@@ -11,14 +11,14 @@ import com.google.inject.Inject;
 
 public class TextBoxBlurHandler implements BlurHandler {
 
-	private Boolean hasError;
+	private Boolean error;
 
-	public Boolean getHasError() {
-		return hasError;
+	public Boolean isError() {
+		return error;
 	}
 
-	public void setHasError(Boolean hasError) {
-		this.hasError = hasError;
+	public void setError(Boolean error) {
+		this.error = error;
 	}
 
 	@Inject
@@ -75,10 +75,10 @@ public class TextBoxBlurHandler implements BlurHandler {
 		// Window.alert("" +
 		// ApplicationResources.INSTANCE.customWidget().textboxFirstNameError());
 		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
-		textBox.addStyleName(ApplicationResources.INSTANCE.registrationFormStyle()
-				.textboxFirstNameError());
+		textBox.addStyleName(ApplicationResources.INSTANCE
+				.registrationFormStyle().textboxFirstNameError());
 
-		setHasError(true);
+		setError(true);
 
 		errorLabel.setVisible(true);
 

@@ -4,20 +4,26 @@ import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.client.bundle.DecoratedPopupPanel;
 import au.com.showcase.application.client.ui.event.AlphabetTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.AlphabetTextBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.CaptchaTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.CaptchaTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.ConfirmPasswordTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.ConfirmPasswordTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.DateTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.DateTextBoxFocusHandler;
-import au.com.showcase.application.client.ui.event.ListBoxBlurHandler;
-import au.com.showcase.application.client.ui.event.ListBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.EmailAddressTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.EmailAddressTextBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.GenderListBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.GenderListBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.LocationListBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.LocationListBoxFocusHandler;
+import au.com.showcase.application.client.ui.event.MobileNumberTextBoxBlurHandler;
+import au.com.showcase.application.client.ui.event.MobileNumberTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.MonthListBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.MonthListBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.PasswordTextBoxKeyPressHandler;
 import au.com.showcase.application.client.ui.event.RegenerateCaptchaClickHandler;
-import au.com.showcase.application.client.ui.event.TextBoxBlurHandler;
-import au.com.showcase.application.client.ui.event.TextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxBlurHandler;
 import au.com.showcase.application.client.ui.event.UsernameTextBoxFocusHandler;
 import au.com.showcase.application.client.ui.event.YearTextBoxBlurHandler;
@@ -28,7 +34,6 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.i18n.client.constants.DateTimeConstantsImpl;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
@@ -170,16 +175,16 @@ public class RegistrationForm extends Composite {
 	MonthListBoxBlurHandler dobMonthBlurHandler = new MonthListBoxBlurHandler();
 	MonthListBoxFocusHandler dobMonthFocusHandler = new MonthListBoxFocusHandler();
 
-	ListBoxBlurHandler genderBlurHandler = new ListBoxBlurHandler();
-	ListBoxFocusHandler genderFocusHandler = new ListBoxFocusHandler();
-	TextBoxBlurHandler mobileNumberBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler mobileNumberFocusHandler = new TextBoxFocusHandler();
-	TextBoxBlurHandler emailAddressBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler emailAddressFocusHandler = new TextBoxFocusHandler();
-	ListBoxBlurHandler locationBlurHandler = new ListBoxBlurHandler();
-	ListBoxFocusHandler locationFocusHandler = new ListBoxFocusHandler();
-	TextBoxBlurHandler captchaTextBlurHandler = new TextBoxBlurHandler();
-	TextBoxFocusHandler captchaTextFocusHandler = new TextBoxFocusHandler();
+	GenderListBoxBlurHandler genderBlurHandler = new GenderListBoxBlurHandler();
+	GenderListBoxFocusHandler genderFocusHandler = new GenderListBoxFocusHandler();
+	MobileNumberTextBoxBlurHandler mobileNumberBlurHandler = new MobileNumberTextBoxBlurHandler();
+	MobileNumberTextBoxFocusHandler mobileNumberFocusHandler = new MobileNumberTextBoxFocusHandler();
+	EmailAddressTextBoxBlurHandler emailAddressBlurHandler = new EmailAddressTextBoxBlurHandler();
+	EmailAddressTextBoxFocusHandler emailAddressFocusHandler = new EmailAddressTextBoxFocusHandler();
+	LocationListBoxBlurHandler locationBlurHandler = new LocationListBoxBlurHandler();
+	LocationListBoxFocusHandler locationFocusHandler = new LocationListBoxFocusHandler();
+	CaptchaTextBoxBlurHandler captchaTextBlurHandler = new CaptchaTextBoxBlurHandler();
+	CaptchaTextBoxFocusHandler captchaTextFocusHandler = new CaptchaTextBoxFocusHandler();
 
 	RegenerateCaptchaClickHandler captchaButtonClickHandler = new RegenerateCaptchaClickHandler();
 
@@ -538,7 +543,17 @@ public class RegistrationForm extends Composite {
 	}
 
 	public Boolean hasErrors() {
-		return firstNameBlurHandler.isError() || lastNameBlurHandler.isError();
+		return firstNameBlurHandler.isError() || lastNameBlurHandler.isError()
+				|| usernameBlurHandler.isError()
+				|| passwordBlurHandler.isError()
+				|| confirmPasswordBlurHandler.isError()
+				|| dobMonthBlurHandler.isError()
+				|| dobDateBlurHandler.isError() || dobYearBlurHandler.isError()
+				|| genderBlurHandler.isError()
+				|| mobileNumberBlurHandler.isError()
+				|| emailAddressBlurHandler.isError()
+				|| locationBlurHandler.isError()
+				|| captchaTextBlurHandler.isError() || agreement.getValue();
 	}
 
 	public DivElement getDobMonthBlock() {
