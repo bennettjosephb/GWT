@@ -1,19 +1,18 @@
 package au.com.showcase.application.client.scroll;
 
+import au.com.showcase.application.client.account.RegenerateCaptcha;
+import au.com.showcase.application.client.account.RegenerateCaptchaResult;
 import au.com.showcase.application.client.place.NameTokens;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.InputElement;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.FormPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
+import com.gwtplatform.dispatch.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
@@ -40,7 +39,7 @@ public class TestInsertPresenter extends
 		public HTMLPanel getContainerPanel1();
 
 		public void setContainerPanel1(HTMLPanel containerPanel1);
-		
+
 		public RegistrationForm getRegistrationForm();
 
 		public void setRegistrationForm(RegistrationForm registrationForm);
@@ -64,21 +63,39 @@ public class TestInsertPresenter extends
 				this);
 	}
 
+	@Inject
+	DispatchAsync dispatchAsync;
+
 	@Override
 	protected void onBind() {
 		super.onBind();
 
-		//RootPanel.get().add(getView().getContainerPanel1());
+		getView().getRegistrationForm().getRegenerateCaptchaButton()
+				.addClickHandler(new ClickHandler() {
 
-		//Window.alert("" + getView().getContainerPanel1());
-		//Window.alert(""
-			//	+ getView().getContainerPanel1().getElementById("firstName"));
+					@Override
+					public void onClick(ClickEvent event) {
 
-		//RootPanel.get().add(getView().getContainerPanel1().getElementById("firstName"));
+						RegenerateCaptcha regenerateCaptcha = new RegenerateCaptcha(
+								"Hai");
 
-//		TextBox.wrap(getView().getContainerPanel1().getElementById("firstName"));
+						dispatchAsync.execute(regenerateCaptcha,
+								contactDetailsResult);
 
-		//Window.alert("" + getView().getFirstName());
+					}
+				});
+
+		// RootPanel.get().add(getView().getContainerPanel1());
+
+		// Window.alert("" + getView().getContainerPanel1());
+		// Window.alert(""
+		// + getView().getContainerPanel1().getElementById("firstName"));
+
+		// RootPanel.get().add(getView().getContainerPanel1().getElementById("firstName"));
+
+		// TextBox.wrap(getView().getContainerPanel1().getElementById("firstName"));
+
+		// Window.alert("" + getView().getFirstName());
 
 		// getView().getFirstName().addClickHandler(new ClickHandler() {
 		// @Override
@@ -87,12 +104,29 @@ public class TestInsertPresenter extends
 		// }
 		// });
 
-		//Window.alert("" + DOM.getElementById("firstName"));
+		// Window.alert("" + DOM.getElementById("firstName"));
 		// RootPanel.get().get
 
 		// getView().getFirstName().setValue("XYZ");
 		// Window.alert(""+TextBox.wrap(getView().getFirstName()));
 	}
+
+	private final AsyncCallback<RegenerateCaptchaResult> contactDetailsResult = new AsyncCallback<RegenerateCaptchaResult>() {
+
+		@Override
+		public void onFailure(Throwable caught) {
+
+		}
+
+		@Override
+		public void onSuccess(RegenerateCaptchaResult result) {
+
+			getView().getRegistrationForm().getCaptchaImage()
+					.setUrl(result.getImageSource());
+
+		}
+
+	};
 
 	@Override
 	protected void onHide() {
@@ -108,7 +142,7 @@ public class TestInsertPresenter extends
 	protected void onReveal() {
 		super.onReveal();
 
-		//Window.alert("" + DOM.getElementById("firstName"));
+		// Window.alert("" + DOM.getElementById("firstName"));
 		//
 		// TextBox textBox = TextBox.wrap(DOM.getElementById("firstName"));
 

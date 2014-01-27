@@ -111,7 +111,7 @@
 					<div class="{core.label}">Type the character in below textbox</div>
 					<g:Image ui:field="captchaImage" styleName="{core.textboxCaptchaImage}"
 						url="images/nike_brandbuttons.jpg"></g:Image>
-					<g:Button ui:field="regenerateCaptcha" styleName="{core.regenerateCaptcha}">Refresh Image</g:Button>
+					<g:Button ui:field="regenerateCaptchaButton" styleName="{core.regenerateCaptcha}">Refresh Image</g:Button>
 					<g:TextBox ui:field="captchaText" styleName="{core.textboxCaptchaText}"></g:TextBox>
 					<g:Label ui:field="captchaTextError" visible="false"
 						styleName="{core.errorMsgShow}">

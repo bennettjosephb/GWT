@@ -102,7 +102,7 @@ public class RegistrationForm extends Composite {
 	Image captchaImage;
 
 	@UiField
-	Button regenerateCaptcha;
+	Button regenerateCaptchaButton;
 
 	@UiField
 	CheckBox agreement;
@@ -279,7 +279,7 @@ public class RegistrationForm extends Composite {
 		captchaText.addFocusHandler(captchaTextFocusHandler);
 		captchaText.addBlurHandler(captchaTextBlurHandler);
 
-		regenerateCaptcha.addClickHandler(captchaButtonClickHandler);
+		regenerateCaptchaButton.addClickHandler(captchaButtonClickHandler);
 		captchaButtonClickHandler.setImageSource(captchaImage);
 
 		passwordBlurHandler.setDependentPassword(confirmPassword);
@@ -397,11 +397,11 @@ public class RegistrationForm extends Composite {
 		locationPopupPanel.setMessage("Select your location");
 		captchaTextPopupPanel.setMessage("Enter the character in the image");
 
-//		Window.alert(GWT.getHostPageBaseURL());
-//		Window.alert(GWT.getModuleBaseURL());
-//		Window.alert(GWT.getModuleName());
+		// Window.alert(GWT.getHostPageBaseURL());
+		// Window.alert(GWT.getModuleBaseURL());
+		// Window.alert(GWT.getModuleName());
 
-		captchaImage.setUrl(GWT.getHostPageBaseURL()+"SimpleCaptcha.jpg");
+		captchaImage.setUrl(GWT.getHostPageBaseURL() + "SimpleCaptcha.jpg");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
@@ -573,12 +573,12 @@ public class RegistrationForm extends Composite {
 		this.captchaImage = captchaImage;
 	}
 
-	public Button getRegenerateCaptcha() {
-		return regenerateCaptcha;
+	public Button getRegenerateCaptchaButton() {
+		return regenerateCaptchaButton;
 	}
 
-	public void setRegenerateCaptcha(Button regenerateCaptcha) {
-		this.regenerateCaptcha = regenerateCaptcha;
+	public void setRegenerateCaptchaButton(Button regenerateCaptchaButton) {
+		this.regenerateCaptchaButton = regenerateCaptchaButton;
 	}
 
 }
