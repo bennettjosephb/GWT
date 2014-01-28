@@ -1,8 +1,8 @@
 package au.com.showcase.application.client.scroll;
 
-import au.com.showcase.application.client.account.RegenerateCaptcha;
-import au.com.showcase.application.client.account.RegenerateCaptchaResult;
 import au.com.showcase.application.client.place.NameTokens;
+import au.com.showcase.application.shared.account.RegenerateCaptcha;
+import au.com.showcase.application.shared.account.RegenerateCaptchaResult;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -97,7 +97,7 @@ public class TestInsertPresenter extends
 			}
 		});
 		
-		getView().getRegistrationForm().hasErrors();
+		//getView().getRegistrationForm().hasErrors();
 
 		// RootPanel.get().add(getView().getContainerPanel1());
 

@@ -4,22 +4,21 @@ import static nl.captcha.Captcha.NAME;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.apache.commons.codec.binary.Base64;
-
 import nl.captcha.Captcha;
 import nl.captcha.backgrounds.GradiatedBackgroundProducer;
 import nl.captcha.gimpy.DropShadowGimpyRenderer;
-import nl.captcha.servlet.CaptchaServletUtil;
 import nl.captcha.text.producer.DefaultTextProducer;
-import au.com.showcase.application.client.account.RegenerateCaptcha;
-import au.com.showcase.application.client.account.RegenerateCaptchaResult;
+
+import org.apache.commons.codec.binary.Base64;
+
+import au.com.showcase.application.shared.account.RegenerateCaptcha;
+import au.com.showcase.application.shared.account.RegenerateCaptchaResult;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
@@ -36,6 +35,8 @@ public class RegenerateCaptchaActionHandler implements
 
 	private HttpServletRequest httpServletRequest;
 
+	private HttpSession httpSession = null;
+
 	@Inject
 	public RegenerateCaptchaActionHandler(
 			Provider<HttpServletRequest> requestProvider,
@@ -44,39 +45,46 @@ public class RegenerateCaptchaActionHandler implements
 		this.requestProvider = requestProvider;
 		this.servletContext = servletContext;
 		this.httpServletRequest = httpServletRequest;
+		httpSession = httpServletRequest.getSession();
 	}
 
 	@Override
 	public RegenerateCaptchaResult execute(RegenerateCaptcha action,
 			ExecutionContext context) throws ActionException {
 
-		HttpSession httpSession = httpServletRequest.getSession();
+		// System.out.println("" + httpSession.getId());
 
-		//System.out.println("" + httpSession.getId());
+		// Captcha captcha = new Captcha.Builder(347, 60)
+		// .addText(new DefaultTextProducer(9))
+		// .addBackground(new GradiatedBackgroundProducer())
+		// .gimp(new DropShadowGimpyRenderer()).addNoise().addBorder()
+		// .build();
+		//
+		// System.out.println("Executed");
+		// httpSession.setAttribute(NAME, captcha);
+		// System.out.println("Executed");
+		// // CaptchaServletUtil.writeImage(resp, captcha.getImage());
+		//
 
-//		Captcha captcha = new Captcha.Builder(347, 60)
-//				.addText(new DefaultTextProducer(9))
-//				.addBackground(new GradiatedBackgroundProducer())
-//				.gimp(new DropShadowGimpyRenderer()).addNoise().addBorder()
-//				.build();
-//
-//		System.out.println("Executed");
-//		httpSession.setAttribute(NAME, captcha);
-//		System.out.println("Executed");
-//		// CaptchaServletUtil.writeImage(resp, captcha.getImage());
-//
-		RegenerateCaptchaResult regenerateCaptchaResult = new RegenerateCaptchaResult(
-				encodeasBase64());
-
+		RegenerateCaptchaResult regenerateCaptchaResult = null;
+		try {
+			regenerateCaptchaResult = new RegenerateCaptchaResult(
+					encodeasBase64(httpSession));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return regenerateCaptchaResult;
 	}
 
-	public String encodeasBase64() {
+	public String encodeasBase64(HttpSession httpSession) {
 		Captcha captcha = new Captcha.Builder(347, 60)
 				.addText(new DefaultTextProducer(9))
 				.addBackground(new GradiatedBackgroundProducer())
 				.gimp(new DropShadowGimpyRenderer()).addNoise().addBorder()
 				.build();
+
+		httpSession.setAttribute(NAME, captcha);
+
 		byte[] res = null;
 		try {
 			BufferedImage image = captcha.getImage();

@@ -1,10 +1,14 @@
 package au.com.showcase.application.client.ui.event;
 
+import au.com.showcase.application.client.scroll.RegistrationForm;
+
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.CheckBox;
 
 public class SubmitButtonClickHandler implements ClickHandler {
+
+	private RegistrationForm registrationForm;
 
 	private AlphabetTextBoxBlurHandler firstNameBlurHandler;
 
@@ -68,6 +72,12 @@ public class SubmitButtonClickHandler implements ClickHandler {
 
 	@Override
 	public void onClick(ClickEvent event) {
+
+		if (!registrationForm.hasErrors()) {
+			// Submit to server
+		} else {
+			// Still error persists, inform to user
+		}
 
 	}
 
@@ -195,6 +205,14 @@ public class SubmitButtonClickHandler implements ClickHandler {
 
 	public void setAgreement(CheckBox agreement) {
 		this.agreement = agreement;
+	}
+
+	public RegistrationForm getRegistrationForm() {
+		return registrationForm;
+	}
+
+	public void setRegistrationForm(RegistrationForm registrationForm) {
+		this.registrationForm = registrationForm;
 	}
 
 }
