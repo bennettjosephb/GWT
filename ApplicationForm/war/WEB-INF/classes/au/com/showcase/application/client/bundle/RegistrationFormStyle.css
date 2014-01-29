@@ -725,12 +725,13 @@ label {
 
 input[type=checkbox] {
 	display: none;
-	padding-top: 5px;
+	padding-top: -5px;
 }
 
 label:before {
 	background-image: url(images/csscheckbox.png);
 	content: "";
+	vertical-align: middle;
 	display: inline-block;
 	width: 22px;
 	height: 22px;
@@ -743,24 +744,24 @@ label:before {
 .gwt-RadioButton label:before {
 	background-color: #FF0000;
 	margin-top: 15px;
+	vertical-align: middle;
 }
 
 .gwt-CheckBox {
-	padding-top: 5px;
+	padding-top: -5px;
 }
 
 .gwt-CheckBox label:before {
-	padding-top: 5px;
+	padding-top: -5px;
 }
 
 input[type=checkbox]:checked+label:before {
 	background-position: 0 -22px;
-	background-image color: aqua;
 	font-size: 12px;
 	text-align: center;
-	line-height: 13px;
 }
 
 .agreement {
 	margin-left: 5px;
+	margin-top: 10px;
 }

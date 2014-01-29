@@ -105,6 +105,8 @@ public class RegenerateCaptchaActionHandler implements
 		imageDataAsbase64String.append("data:image/jpg;base64,");
 
 		imageDataAsbase64String.append(encodedString);
+		
+		System.out.println("IMAGE GENERATED....");
 
 		return imageDataAsbase64String.toString();
 	}

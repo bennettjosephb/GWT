@@ -406,7 +406,7 @@ public class RegistrationForm extends Composite {
 		// Window.alert(GWT.getModuleBaseURL());
 		// Window.alert(GWT.getModuleName());
 
-		captchaImage.setUrl(GWT.getHostPageBaseURL() + "SimpleCaptcha.jpg");
+		//captchaImage.setUrl(GWT.getHostPageBaseURL() + "SimpleCaptcha.jpg");
 
 		// Window.alert("Before Wrap" +
 		// Document.get().getElementById("firstName"));
