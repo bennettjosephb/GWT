@@ -1,3 +1,0 @@
-# Module showcase
-# RPC service class, partial path of RPC policy file
-com.gwtplatform.dispatch.shared.DispatchService, 26C66386C2D3B2FCA6A17449E5F354BB.gwt.rpc
