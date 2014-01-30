@@ -1,0 +1,26 @@
+/**the panel itself**/
+.gwt-TabLayoutPanel {
+    border: thick;
+}
+/**the tab bar element**/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+    background-color: #F4F4F4 !important;
+}
+/**an individual tab**/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+    background-color: #6F6F6E !important;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+    background-color: white !important;
+}
+/**an element nested in each tab (useful for styling)**/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner {
+	font-family: Arial !important;
+}
+
+/**applied to all child content widgets**/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+    border: none;
+    overflow: hidden;
+}

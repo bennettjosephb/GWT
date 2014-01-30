@@ -1,0 +1,89 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+	.gwt-TabLayoutPanel {
+		height: 300px;
+	}
+	
+	.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+		
+	}
+	
+	.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+		border-color: #e6e7e8;
+		border-style: solid;
+		border-width: 3px 2px 2px;
+		overflow: hidden;
+		padding: 6px;
+		background: #FFFFFF;
+	}
+	
+	.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+		margin-left: 6px;
+		padding: 3px 8px 3px 8px;
+		cursor: pointer;
+		cursor: hand;
+		color: black;
+		font-size: 1.2em;
+		color: #8bc53d;
+		text-align: center;
+		background: #458818;
+	}
+	
+	.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+		cursor: default;
+		background: #8bc53d;
+		font-size: 1.2em;
+		color: #FFFFFF;
+	}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<g:TabLayoutPanel ui:field="programsTabPanel"
+			barHeight="2" barUnit="EM">
+			<g:tab>
+				<g:header>Available</g:header>
+				<g:HorizontalPanel >
+					<g:cell width="35%">
+
+						<g:HTMLPanel></g:HTMLPanel>
+					</g:cell>
+					<g:cell width='65%'>
+
+						<g:HTMLPanel></g:HTMLPanel>
+					</g:cell>
+				</g:HorizontalPanel>
+			</g:tab>
+			<g:tab>
+				<g:header>Demand Response</g:header>
+				<g:HorizontalPanel>
+					<g:cell width="35%">
+						<g:HTMLPanel></g:HTMLPanel>
+
+					</g:cell>
+					<g:cell width='65%'>
+
+						<g:HTMLPanel></g:HTMLPanel>
+					</g:cell>
+				</g:HorizontalPanel>
+			</g:tab>
+			<g:tab>
+				<g:header>Energy Efficiency</g:header>
+				<g:HorizontalPanel >
+					<g:cell width="35%">
+						<g:HTMLPanel></g:HTMLPanel>
+
+					</g:cell>
+					<g:cell width='65%'>
+						<g:HTMLPanel></g:HTMLPanel>
+					</g:cell>
+				</g:HorizontalPanel>
+			</g:tab>
+		</g:TabLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>
