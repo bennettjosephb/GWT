@@ -5,6 +5,7 @@ public class NameTokens {
 	public static final String sample = "sample";
 	public static final String sample1 = "sample1";
 	public static final String radio = "radio";
+	public static final String checkstyle = "checkstyle";
 
 	public static String getSample() {
 		return sample;
@@ -16,5 +17,9 @@ public class NameTokens {
 
 	public static String getRadio() {
 		return radio;
+	}
+
+	public static String getCheckstyle() {
+		return checkstyle;
 	}
 }

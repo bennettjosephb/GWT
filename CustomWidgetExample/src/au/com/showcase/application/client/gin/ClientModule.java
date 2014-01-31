@@ -14,6 +14,8 @@ import au.com.showcase.application.client.RadioButtonPresenter;
 import au.com.showcase.application.client.RadioButtonView;
 import au.com.showcase.application.client.LoadingPresenter;
 import au.com.showcase.application.client.LoadingView;
+import au.com.showcase.application.client.CheckboxPresenter;
+import au.com.showcase.application.client.CheckboxView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -35,5 +37,8 @@ public class ClientModule extends AbstractPresenterModule {
 
 		bindSingletonPresenterWidget(LoadingPresenter.class,
 				LoadingPresenter.MyView.class, LoadingView.class);
+
+		bindPresenter(CheckboxPresenter.class, CheckboxPresenter.MyView.class,
+				CheckboxView.class, CheckboxPresenter.MyProxy.class);
 	}
 }

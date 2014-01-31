@@ -13,6 +13,7 @@
 			padding-left: 35px;
 			margin-right: 15px;
 			font-size: 25px;
+			vertical-align: middle;
 		}
 		
 		input[type=radio] {

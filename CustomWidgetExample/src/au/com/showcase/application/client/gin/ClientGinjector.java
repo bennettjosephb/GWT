@@ -10,6 +10,7 @@ import com.google.gwt.inject.client.AsyncProvider;
 import au.com.showcase.application.client.SamplePresenter;
 import au.com.showcase.application.client.Sample1Presenter;
 import au.com.showcase.application.client.RadioButtonPresenter;
+import au.com.showcase.application.client.CheckboxPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -23,4 +24,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<Sample1Presenter> getSample1Presenter();
 
 	AsyncProvider<RadioButtonPresenter> getRadioButtonPresenter();
+
+	AsyncProvider<CheckboxPresenter> getCheckboxPresenter();
 }
