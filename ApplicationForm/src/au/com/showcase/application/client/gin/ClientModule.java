@@ -26,6 +26,8 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import au.com.showcase.application.client.scroll.TestInsertPresenter;
 import au.com.showcase.application.client.scroll.TestInsertView;
+import au.com.showcase.application.client.ui.process.CustomerDetailPresenter;
+import au.com.showcase.application.client.ui.process.CustomerDetailView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -72,5 +74,9 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(TestInsertPresenter.class,
 				TestInsertPresenter.MyView.class, TestInsertView.class,
 				TestInsertPresenter.MyProxy.class);
+
+		bindPresenter(CustomerDetailPresenter.class,
+				CustomerDetailPresenter.MyView.class, CustomerDetailView.class,
+				CustomerDetailPresenter.MyProxy.class);
 	}
 }

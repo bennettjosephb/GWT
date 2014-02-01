@@ -358,6 +358,43 @@
 		rgba(255, 255, 255, 0.3);
 }
 
+.regenerateCaptcha:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.regenerateCaptcha:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
 .textboxCaptchaText:focus {
 	border-color: #C9C9C9;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
@@ -709,6 +746,43 @@
 		rgba(255, 255, 255, 0.3);
 }
 
+.submit:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.submit:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
 .label {
 	
 }
@@ -721,6 +795,7 @@ label {
 	padding-top: 5px;
 	margin-right: 5px;
 	font-size: 12px;
+	vertical-align: text-bottom;
 }
 
 input[type=checkbox] {
@@ -731,7 +806,7 @@ input[type=checkbox] {
 label:before {
 	background-image: url(images/csscheckbox.png);
 	content: "";
-	vertical-align: middle;
+	vertical-align: bottom;
 	display: inline-block;
 	width: 22px;
 	height: 22px;
@@ -744,7 +819,7 @@ label:before {
 .gwt-RadioButton label:before {
 	background-color: #FF0000;
 	margin-top: 15px;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .gwt-CheckBox {
@@ -753,15 +828,18 @@ label:before {
 
 .gwt-CheckBox label:before {
 	padding-top: -5px;
+	vertical-align: bottom;
 }
 
 input[type=checkbox]:checked+label:before {
 	background-position: 0 -22px;
-	font-size: 12px;
+	font-size: 25px;
 	text-align: center;
+	vertical-align: baseline;
 }
 
 .agreement {
 	margin-left: 5px;
 	margin-top: 10px;
+	vertical-align: bottom;
 }

@@ -1,0 +1,69 @@
+@CHARSET "ISO-8859-1";
+
+.textboxFirstName {
+	height: 30px;
+	width: 175px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+		color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+.textboxFirstName:focus {
+	border-color: #C9C9C9;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.pageTitle {
+	font: normal 25px/100% Verdana, Tahoma, sans-serif;
+	padding-bottom: 10px;
+	width: 980px;
+	text-align: center;
+}
+
+.addressContainer1 {
+	margin: 5px;
+	outline: 1px solid #FF0000;
+	outline-offset: 5px;
+	display: table;
+	height: 50px;
+}
+
+.addressContainer2 {
+	height: 50px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top:30px;
+	padding-right:6px;
+	outline: 1px solid #00FF00;
+	outline-offset: 5px;
+	position: relative;
+	display: table;
+}
+
+.addressTitle {
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	background-color: #FFBFBF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 980px;
+	text-align: left;
+}
+
+.label {
+	width: 108px;
+	display: inline-block;
+	text-align: right;
+}
