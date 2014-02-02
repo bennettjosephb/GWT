@@ -1,0 +1,15 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default' xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+
+	<g:HTMLPanel>
+		<g:HorizontalPanel>
+			<p1:DateBox/>
+			<p1:DatePicker width="116px" height="44px"/>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>
