@@ -8,10 +8,11 @@
 	<ui:style>
 	.gwt-TabLayoutPanel {
 		height: 300px;
+		padding-top: 15px;
 	}
 	
 	.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
-		
+		padding-top: 15px;
 	}
 	
 	.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
@@ -41,14 +42,18 @@
 		font-size: 1.2em;
 		color: #FFFFFF;
 	}
+	
+	.rootPadding {
+		padding-top: 15px;
+	}
 	</ui:style>
 
-	<g:HTMLPanel>
+	<g:HTMLPanel styleName="{style.rootPadding}">
 		<g:TabLayoutPanel ui:field="programsTabPanel"
-			barHeight="2" barUnit="EM">
+			barHeight="30" barUnit="PX">
 			<g:tab>
 				<g:header>Available</g:header>
-				<g:HorizontalPanel >
+				<g:HorizontalPanel>
 					<g:cell width="35%">
 
 						<g:HTMLPanel></g:HTMLPanel>
@@ -74,7 +79,7 @@
 			</g:tab>
 			<g:tab>
 				<g:header>Energy Efficiency</g:header>
-				<g:HorizontalPanel >
+				<g:HorizontalPanel>
 					<g:cell width="35%">
 						<g:HTMLPanel></g:HTMLPanel>
 

@@ -7,6 +7,8 @@ import au.com.showcase.application.client.TabPresenter;
 import au.com.showcase.application.client.TabView;
 import au.com.showcase.application.client.place.DefaultPlace;
 import au.com.showcase.application.client.place.NameTokens;
+import au.com.showcase.application.client.TabPanelPresenter;
+import au.com.showcase.application.client.TabPanelView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -18,5 +20,8 @@ public class ClientModule extends AbstractPresenterModule {
 				TabView.class, TabPresenter.MyProxy.class);
 
 		bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);
+
+		bindPresenter(TabPanelPresenter.class, TabPanelPresenter.MyView.class,
+				TabPanelView.class, TabPanelPresenter.MyProxy.class);
 	}
 }

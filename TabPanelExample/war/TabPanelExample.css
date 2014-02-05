@@ -1,26 +1,72 @@
 /**the panel itself**/
 .gwt-TabLayoutPanel {
-    border: thick;
+	border: thick;
 }
 /**the tab bar element**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
-    background-color: #F4F4F4 !important;
+	background-color: #F4F4F4 !important;
 }
 /**an individual tab**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
-    background-color: #6F6F6E !important;
+	background-color: #6F6F6E !important;
 }
 
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
-    background-color: white !important;
+	background-color: white !important;
+	padding-top: 15px;
+	font-size: 25px;
 }
 /**an element nested in each tab (useful for styling)**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner {
+	padding-top: 15px;
 	font-family: Arial !important;
 }
 
 /**applied to all child content widgets**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
-    border: none;
-    overflow: hidden;
+	border: none;
+	overflow: hidden;
+}
+
+.gwt-TabLayoutPanelTab .gwt-Label {
+	color: red;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab {
+	margin-left: 4px;
+	padding: 6px 10px;
+	cursor: pointer;
+	cursor: hand;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: #e3e9ff;
+}
+
+.gwt-TabLayoutPanelTabs .gwt-Tab {
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	float: left;
+	margin: 0 4px;
+	padding: 2px 8px;
+	cursor: pointer;
+}
+
+.gwt-TabLayoutPanelTabs .gwt-Tab-selected {
+	background-color: #bcf;
+	cursor: default;
+}
+
+.gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-disabled {
+	cursor: default;
+	color: #999999;
+}
+
+.gwt-TabLayoutPanelTabs .gwt-TabInner {
+	color: black;
+	font-weight: bold;
+	text-align: center;
 }
