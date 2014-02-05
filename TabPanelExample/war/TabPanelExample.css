@@ -14,7 +14,6 @@
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
 	background-color: white !important;
 	padding-top: 15px;
-	font-size: 25px;
 }
 /**an element nested in each tab (useful for styling)**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner {

@@ -48,7 +48,7 @@
 	}
 	</ui:style>
 
-	<g:HTMLPanel styleName="{style.rootPadding}">
+	<g:HTMLPanel>
 		<g:TabLayoutPanel ui:field="programsTabPanel"
 			barHeight="30" barUnit="PX">
 			<g:tab>
