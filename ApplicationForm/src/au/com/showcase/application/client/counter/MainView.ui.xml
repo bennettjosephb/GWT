@@ -7,5 +7,6 @@
 
 	<g:HTMLPanel>
 		<p1:DataGrid width="100%" height="200px" ui:field="pendingTransaction"/>
+		<g:Button ui:field="button" text="Click This!!!"/>
 	</g:HTMLPanel>
 </ui:UiBinder>
