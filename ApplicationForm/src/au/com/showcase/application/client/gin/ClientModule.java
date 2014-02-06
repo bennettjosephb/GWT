@@ -28,6 +28,8 @@ import au.com.showcase.application.client.scroll.TestInsertPresenter;
 import au.com.showcase.application.client.scroll.TestInsertView;
 import au.com.showcase.application.client.ui.process.CustomerDetailPresenter;
 import au.com.showcase.application.client.ui.process.CustomerDetailView;
+import au.com.showcase.application.client.counter.MainPresenter;
+import au.com.showcase.application.client.counter.MainView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -78,5 +80,8 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenter(CustomerDetailPresenter.class,
 				CustomerDetailPresenter.MyView.class, CustomerDetailView.class,
 				CustomerDetailPresenter.MyProxy.class);
+
+		bindPresenter(MainPresenter.class, MainPresenter.MyView.class,
+				MainView.class, MainPresenter.MyProxy.class);
 	}
 }

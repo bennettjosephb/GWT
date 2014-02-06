@@ -11,6 +11,7 @@ public class NameTokens {
 	public static final String scroll = "scroll";
 	public static final String insert = "insert";
 	public static final String custdetail1 = "custdetail1";
+	public static final String counter = "counter";
 
 	public static String getHome() {
 		return home;
@@ -46,5 +47,9 @@ public class NameTokens {
 
 	public static String getCustdetail1() {
 		return custdetail1;
+	}
+
+	public static String getCounter() {
+		return counter;
 	}
 }

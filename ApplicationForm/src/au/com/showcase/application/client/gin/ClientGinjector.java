@@ -16,6 +16,7 @@ import com.gwtplatform.dispatch.client.gin.DispatchAsyncModule;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import au.com.showcase.application.client.scroll.TestInsertPresenter;
 import au.com.showcase.application.client.ui.process.CustomerDetailPresenter;
+import au.com.showcase.application.client.counter.MainPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -41,4 +42,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<TestInsertPresenter> getTestInsertPresenter();
 
 	AsyncProvider<CustomerDetailPresenter> getCustomerDetailPresenter();
+
+	AsyncProvider<MainPresenter> getMainPresenter();
 }
