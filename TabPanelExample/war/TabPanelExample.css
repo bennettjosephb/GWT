@@ -9,6 +9,7 @@
 /**an individual tab**/
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
 	background-color: #6F6F6E !important;
+	height: 100%;
 }
 
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
@@ -25,6 +26,7 @@
 .gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
 	border: none;
 	overflow: hidden;
+	height: 100%;
 }
 
 .gwt-TabLayoutPanelTab .gwt-Label {

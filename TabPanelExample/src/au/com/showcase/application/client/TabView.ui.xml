@@ -46,47 +46,31 @@
 	.rootPadding {
 		padding-top: 15px;
 	}
+	
+	.borderStyle {
+		border-width: 0;
+	}
 	</ui:style>
 
 	<g:HTMLPanel>
 		<g:TabLayoutPanel ui:field="programsTabPanel"
 			barHeight="30" barUnit="PX">
-			<g:tab>
+			<g:tab styleName="{style.borderStyle}">
 				<g:header>Available</g:header>
-				<g:HorizontalPanel>
-					<g:cell width="35%">
-
-						<g:HTMLPanel></g:HTMLPanel>
-					</g:cell>
-					<g:cell width='65%'>
-
-						<g:HTMLPanel></g:HTMLPanel>
-					</g:cell>
+				<g:HorizontalPanel >
+					<g:HTMLPanel>asdf</g:HTMLPanel>
 				</g:HorizontalPanel>
 			</g:tab>
 			<g:tab>
 				<g:header>Demand Response</g:header>
 				<g:HorizontalPanel>
-					<g:cell width="35%">
-						<g:HTMLPanel></g:HTMLPanel>
-
-					</g:cell>
-					<g:cell width='65%'>
-
-						<g:HTMLPanel></g:HTMLPanel>
-					</g:cell>
+					<g:HTMLPanel>Bennet</g:HTMLPanel>
 				</g:HorizontalPanel>
 			</g:tab>
 			<g:tab>
 				<g:header>Energy Efficiency</g:header>
 				<g:HorizontalPanel>
-					<g:cell width="35%">
-						<g:HTMLPanel></g:HTMLPanel>
-
-					</g:cell>
-					<g:cell width='65%'>
-						<g:HTMLPanel></g:HTMLPanel>
-					</g:cell>
+					<g:HTMLPanel>Xavier</g:HTMLPanel>
 				</g:HorizontalPanel>
 			</g:tab>
 		</g:TabLayoutPanel>
