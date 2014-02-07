@@ -191,52 +191,79 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 		public void onSuccess(GetPendingTransactionResult result) {
 			int counter = 1;
 
-//			HashSet<Date> transactionTimeSet = new HashSet<Date>();
-//			Set<String> usernameSet = new HashSet<String>();
-//			Set<String> counterRefNoSet = new HashSet<String>();
-//			Set<String> transactionRefNoSet = new HashSet<String>();
-//			Set<String> transactionTypeSet = new HashSet<String>();
-//			Set<Float> totalAmountSet = new HashSet<Float>();
-//			Set<Float> pendingAmountSet = new HashSet<Float>();
-//			Set<Float> balanceAmountSet = new HashSet<Float>();
+			// HashSet<Date> transactionTimeSet = new HashSet<Date>();
+			// Set<String> usernameSet = new HashSet<String>();
+			// Set<String> counterRefNoSet = new HashSet<String>();
+			// Set<String> transactionRefNoSet = new HashSet<String>();
+			// Set<String> transactionTypeSet = new HashSet<String>();
+			// Set<Float> totalAmountSet = new HashSet<Float>();
+			// Set<Float> pendingAmountSet = new HashSet<Float>();
+			// Set<Float> balanceAmountSet = new HashSet<Float>();
 
-			for (Iterator<PendingTransaction> iterator = result
-					.getPendingTransactions().iterator(); iterator.hasNext();) {
-				PendingTransaction pendingTransaction = (PendingTransaction) iterator
-						.next();
-//				if (!transactionTimeSet.contains(pendingTransaction
-//						.getTransactionTime())) {
-//					dateList.addItem(""
-//							+ dateFormat.format(pendingTransaction
-//									.getTransactionTime()));
-//					transactionTimeSet.add(pendingTransaction
-//							.getTransactionTime());
-//				}
-//				
-//				if (!transactionRefNoSet.contains(pendingTransaction
-//						.getTransactionRefNo())) {
-//					transactionRefNoList.addItem(""
-//							+ pendingTransaction
-//									.getTransactionRefNo());
-//					transactionRefNoSet.add(pendingTransaction
-//							.getTransactionRefNo());
-//				}
-				
-				balanceAmountList.addItem("" + pendingTransaction.getBalance());
+			for (int i = 1; i <= result.getPendingTransactions().size(); i++) {
+				// PendingTransaction pendingTransaction = (PendingTransaction)
+				// iterator
+				// .next();
+
 				serialNoList.addItem("" + counter++);
-				usernameList.addItem("" + pendingTransaction.getUsername());
-				counterRefNoList.addItem(""
-						+ pendingTransaction.getCounterRefNo());
-				transactionRefNoList.addItem(""
-						+ pendingTransaction.getTransactionRefNo());
-				transactionTypeList.addItem(""
-						+ pendingTransaction.getTransactionType());
-				totalAmountList.addItem(""
-						+ pendingTransaction.getTotalAmount());
-				pendingAmountList.addItem(""
-						+ pendingTransaction.getPendingAmount());
-				balanceAmountList.addItem("" + pendingTransaction.getBalance());
+				// usernameList.addItem("" + pendingTransaction.getUsername());
+				// counterRefNoList.addItem(""
+				// + pendingTransaction.getCounterRefNo());
+				// transactionRefNoList.addItem(""
+				// + pendingTransaction.getTransactionRefNo());
+				// transactionTypeList.addItem(""
+				// + pendingTransaction.getTransactionType());
+				// totalAmountList.addItem(""
+				// + pendingTransaction.getTotalAmount());
+				// pendingAmountList.addItem(""
+				// + pendingTransaction.getPendingAmount());
+				// balanceAmountList.addItem("" +
+				// pendingTransaction.getBalance());
 			}
+
+			 for (Iterator<Date> iterator2 = result.getDate().iterator();
+			 iterator2
+			 .hasNext();) {
+			 dateList.addItem(dateFormat.format(iterator2.next()));
+			 }
+			
+			 for (Iterator<String> iterator2 =
+			 result.getUsername().iterator(); iterator2
+			 .hasNext();) {
+			 usernameList.addItem(iterator2.next());
+			 }
+			
+			 for (Iterator<String> iterator2 = result.getCounterRefno()
+			 .iterator(); iterator2.hasNext();) {
+			 counterRefNoList.addItem(iterator2.next());
+			 }
+			
+			 for (Iterator<String> iterator2 = result.getTransactionRefNo()
+			 .iterator(); iterator2.hasNext();) {
+			 transactionRefNoList.addItem(iterator2.next());
+			 }
+			
+			 for (Iterator<String> iterator2 = result.getTransactionType()
+			 .iterator(); iterator2.hasNext();) {
+			 transactionTypeList.addItem(iterator2.next());
+			 }
+			
+			 for (Iterator<Float> iterator2 =
+			 result.getTotalAmount().iterator(); iterator2
+			 .hasNext();) {
+			 totalAmountList.addItem("" + iterator2.next());
+			 }
+			
+			 for (Iterator<Float> iterator2 = result.getPendingAmount()
+			 .iterator(); iterator2.hasNext();) {
+			 pendingAmountList.addItem("" + iterator2.next());
+			 }
+			
+			 for (Iterator<Float> iterator2 = result.getBalanceAmount()
+			 .iterator(); iterator2.hasNext();) {
+			 balanceAmountList.addItem("" + iterator2.next());
+			 }
+
 			dataProvider.getList().addAll(result.getPendingTransactions());
 			dataProvider.addDataDisplay(pendingTransaction);
 			pendingTransaction.redraw();
