@@ -3,6 +3,77 @@ body .gwt-ListBox {
 	font-size: 15px;
 }
 
+th {
+	white-space: normal !important;
+	text-align: center !important;
+}
+
+.buttonCellStyle .gwt-Button {
+	height: 25px;
+	width: 75px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-right: 3px;
+	margin-bottom: 25px;
+	font: normal 12px/100% Verdana, Tahoma, sans-serif;
+	color: #FFFFFF;
+	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+		to(#ab0000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.buttonCellStyle:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.buttonCellStyle:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
 
 ::-webkit-input-placeholder {
 	font-size: 13px;

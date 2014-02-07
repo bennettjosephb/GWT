@@ -90,4 +90,6 @@ public interface RegistrationFormStyle extends CssResource {
 	String textboxMobileNumber();
 
 	String verti();
+
+	String buttonCellStyle();
 }

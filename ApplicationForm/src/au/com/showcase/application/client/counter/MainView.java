@@ -1,5 +1,10 @@
 package au.com.showcase.application.client.counter;
 
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
+import au.com.showcase.application.client.bundle.ApplicationResources;
 import au.com.showcase.application.shared.counter.PendingTransaction;
 import au.com.showcase.application.shared.counter.action.GetPendingTransaction;
 import au.com.showcase.application.shared.counter.action.GetPendingTransactionResult;
@@ -7,6 +12,7 @@ import au.com.showcase.application.shared.counter.action.GetPendingTransactionRe
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
+import com.google.gwt.dev.util.collect.HashSet;
 import com.google.gwt.i18n.shared.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -14,6 +20,7 @@ import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.DataGrid;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.inject.Inject;
@@ -108,7 +115,8 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 				new ButtonCell()) {
 			@Override
 			public String getValue(PendingTransaction object) {
-				return object.getTransactionRefNo();
+
+				return "Collection";
 			}
 		};
 
@@ -116,7 +124,7 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 				new ButtonCell()) {
 			@Override
 			public String getValue(PendingTransaction object) {
-				return object.getUsername();
+				return "Payment";
 			}
 		};
 
@@ -133,8 +141,22 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 		pendingTransaction.addColumn(collectionColumn, "Collection");
 		pendingTransaction.addColumn(paymentColumn, "Payment");
 
-		pendingTransaction.setColumnWidth(serialNoColumn, "70px");
-		pendingTransaction.setColumnWidth(transactionDateTime, "150px");
+		pendingTransaction.setColumnWidth(serialNoColumn, "20px");
+		pendingTransaction.setColumnWidth(transactionDateTime, "75px");
+		pendingTransaction.setColumnWidth(usernameColumn, "65px");
+		pendingTransaction.setColumnWidth(counterRefNoColumn, "75px");
+		pendingTransaction.setColumnWidth(transactionRefNoColumn, "80px");
+		pendingTransaction.setColumnWidth(transactionTypeColumn, "50px");
+		pendingTransaction.setColumnWidth(totalAmountColumn, "50px");
+		pendingTransaction.setColumnWidth(pendingAmountColumn, "50px");
+		pendingTransaction.setColumnWidth(balanceAmountColumn, "50px");
+		pendingTransaction.setColumnWidth(collectionColumn, "45px");
+		pendingTransaction.setColumnWidth(paymentColumn, "75px");
+
+		ApplicationResources.INSTANCE.registrationFormStyle().ensureInjected();
+
+		collectionColumn.setCellStyleNames(ApplicationResources.INSTANCE
+				.registrationFormStyle().buttonCellStyle());
 
 		// pendingTransaction.setVisible(false);
 
@@ -167,11 +189,62 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 
 		@Override
 		public void onSuccess(GetPendingTransactionResult result) {
+			int counter = 1;
+
+//			HashSet<Date> transactionTimeSet = new HashSet<Date>();
+//			Set<String> usernameSet = new HashSet<String>();
+//			Set<String> counterRefNoSet = new HashSet<String>();
+//			Set<String> transactionRefNoSet = new HashSet<String>();
+//			Set<String> transactionTypeSet = new HashSet<String>();
+//			Set<Float> totalAmountSet = new HashSet<Float>();
+//			Set<Float> pendingAmountSet = new HashSet<Float>();
+//			Set<Float> balanceAmountSet = new HashSet<Float>();
+
+			for (Iterator<PendingTransaction> iterator = result
+					.getPendingTransactions().iterator(); iterator.hasNext();) {
+				PendingTransaction pendingTransaction = (PendingTransaction) iterator
+						.next();
+//				if (!transactionTimeSet.contains(pendingTransaction
+//						.getTransactionTime())) {
+//					dateList.addItem(""
+//							+ dateFormat.format(pendingTransaction
+//									.getTransactionTime()));
+//					transactionTimeSet.add(pendingTransaction
+//							.getTransactionTime());
+//				}
+//				
+//				if (!transactionRefNoSet.contains(pendingTransaction
+//						.getTransactionRefNo())) {
+//					transactionRefNoList.addItem(""
+//							+ pendingTransaction
+//									.getTransactionRefNo());
+//					transactionRefNoSet.add(pendingTransaction
+//							.getTransactionRefNo());
+//				}
+				
+				balanceAmountList.addItem("" + pendingTransaction.getBalance());
+				serialNoList.addItem("" + counter++);
+				usernameList.addItem("" + pendingTransaction.getUsername());
+				counterRefNoList.addItem(""
+						+ pendingTransaction.getCounterRefNo());
+				transactionRefNoList.addItem(""
+						+ pendingTransaction.getTransactionRefNo());
+				transactionTypeList.addItem(""
+						+ pendingTransaction.getTransactionType());
+				totalAmountList.addItem(""
+						+ pendingTransaction.getTotalAmount());
+				pendingAmountList.addItem(""
+						+ pendingTransaction.getPendingAmount());
+				balanceAmountList.addItem("" + pendingTransaction.getBalance());
+			}
 			dataProvider.getList().addAll(result.getPendingTransactions());
 			dataProvider.addDataDisplay(pendingTransaction);
 			pendingTransaction.redraw();
 		}
 	};
+
+	final DateTimeFormat dateFormat = DateTimeFormat
+			.getFormat("dd-MM-yy hh:mm aaa");
 
 	@Override
 	public Widget asWidget() {
@@ -184,6 +257,39 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 
 	@UiField
 	Button button;
+
+	@UiField
+	ListBox serialNoList;
+
+	@UiField
+	ListBox dateList;
+
+	@UiField
+	ListBox usernameList;
+
+	@UiField
+	ListBox counterRefNoList;
+
+	@UiField
+	ListBox transactionRefNoList;
+
+	@UiField
+	ListBox transactionTypeList;
+
+	@UiField
+	ListBox totalAmountList;
+
+	@UiField
+	ListBox pendingAmountList;
+
+	@UiField
+	ListBox balanceAmountList;
+
+	@UiField
+	ListBox collectionList;
+
+	@UiField
+	ListBox paymentList;
 
 	public DataGrid<PendingTransaction> getPendingTransaction() {
 		return pendingTransaction;
@@ -206,6 +312,94 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 
 	public ListDataProvider<PendingTransaction> getDataProvider() {
 		return dataProvider;
+	}
+
+	public ListBox getSerialNoList() {
+		return serialNoList;
+	}
+
+	public void setSerialNoList(ListBox serialNoList) {
+		this.serialNoList = serialNoList;
+	}
+
+	public ListBox getDateList() {
+		return dateList;
+	}
+
+	public void setDateList(ListBox dateList) {
+		this.dateList = dateList;
+	}
+
+	public ListBox getUsernameList() {
+		return usernameList;
+	}
+
+	public void setUsernameList(ListBox usernameList) {
+		this.usernameList = usernameList;
+	}
+
+	public ListBox getCounterRefNoList() {
+		return counterRefNoList;
+	}
+
+	public void setCounterRefNoList(ListBox counterRefNoList) {
+		this.counterRefNoList = counterRefNoList;
+	}
+
+	public ListBox getTransactionRefNoList() {
+		return transactionRefNoList;
+	}
+
+	public void setTransactionRefNoList(ListBox transactionRefNoList) {
+		this.transactionRefNoList = transactionRefNoList;
+	}
+
+	public ListBox getTransactionTypeList() {
+		return transactionTypeList;
+	}
+
+	public void setTransactionTypeList(ListBox transactionTypeList) {
+		this.transactionTypeList = transactionTypeList;
+	}
+
+	public ListBox getTotalAmountList() {
+		return totalAmountList;
+	}
+
+	public void setTotalAmountList(ListBox totalAmountList) {
+		this.totalAmountList = totalAmountList;
+	}
+
+	public ListBox getPendingAmountList() {
+		return pendingAmountList;
+	}
+
+	public void setPendingAmountList(ListBox pendingAmountList) {
+		this.pendingAmountList = pendingAmountList;
+	}
+
+	public ListBox getBalanceAmountList() {
+		return balanceAmountList;
+	}
+
+	public void setBalanceAmountList(ListBox balanceAmountList) {
+		this.balanceAmountList = balanceAmountList;
+	}
+
+	public ListBox getCollectionList() {
+		return collectionList;
+	}
+
+	public void setCollectionList(ListBox collectionList) {
+		this.collectionList = collectionList;
+	}
+
+	public ListBox getPaymentList() {
+		return paymentList;
+	}
+
+	public void setPaymentList(ListBox paymentList) {
+		this.paymentList = paymentList;
 	}
 
 }

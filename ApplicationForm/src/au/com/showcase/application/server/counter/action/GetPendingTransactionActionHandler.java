@@ -32,7 +32,7 @@ public class GetPendingTransactionActionHandler implements
 			pendingTransaction.setBalance(new Random().nextFloat());
 			pendingTransaction.setPendingAmount(new Random().nextFloat());
 			pendingTransaction.setTotalAmount(new Random().nextFloat());
-			pendingTransaction.setTransactionRefNo("" + new Random().nextFloat());
+			pendingTransaction.setTransactionRefNo("2141970206151904");
 			pendingTransaction.setTransactionTime(new Date());
 			pendingTransaction.setTransactionType("MG");
 			pendingTransaction.setUsername("benben");
