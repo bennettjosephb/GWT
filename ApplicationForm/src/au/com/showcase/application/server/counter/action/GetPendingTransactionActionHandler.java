@@ -46,7 +46,6 @@ public class GetPendingTransactionActionHandler implements
 
 		for (int i = 0; i < 7; i++) {
 			PendingTransaction pendingTransaction = new PendingTransaction();
-			System.out.println(i + ":" + pendingTransaction);
 			pendingTransaction.setBalance(new Random().nextFloat());
 			pendingTransaction.setPendingAmount(new Random().nextFloat());
 			pendingTransaction.setTotalAmount(new Random().nextFloat());
