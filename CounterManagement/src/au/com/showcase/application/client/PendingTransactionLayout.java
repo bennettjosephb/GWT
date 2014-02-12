@@ -7,8 +7,10 @@ import au.com.showcase.application.shared.counter.PendingTransaction;
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
+import com.google.gwt.cell.client.Cell.Context;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.i18n.shared.DateTimeFormat;
+import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.Column;
@@ -117,6 +119,14 @@ public class PendingTransactionLayout extends Composite {
 			public String getValue(PendingTransaction object) {
 				return "Payment";
 			}
+
+			@Override
+			public void render(Context context, PendingTransaction object,
+					SafeHtmlBuilder sb) {
+				if (!(object.getBalance() > 0.5f)) {
+					super.render(context, object, sb);
+				}
+			}
 		};
 
 		pendingTransaction.addColumn(serialNoColumn, "S/N");
@@ -147,7 +157,11 @@ public class PendingTransactionLayout extends Composite {
 		for (int i = 0; i < 10; i++) {
 			PendingTransaction pendingTransaction = new PendingTransaction();
 
+			if(i%2 ==0){
 			pendingTransaction.setBalance(1.1f);
+			} else {
+				pendingTransaction.setBalance(0.1f);
+			}
 			pendingTransaction.setTransactionTime(new Date());
 
 			dataProvider.getList().add(pendingTransaction);
