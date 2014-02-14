@@ -44,7 +44,7 @@
 	</ui:style>
 
 	<g:HTMLPanel>
-		<nav id="main-menu">
+		<nav id="main-menu" >
 			<ul class="nav-bar">
 				<li class="nav-button-home">
 					<a href="#">Home</a>

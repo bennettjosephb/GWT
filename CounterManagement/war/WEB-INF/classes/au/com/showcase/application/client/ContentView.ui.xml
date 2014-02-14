@@ -18,6 +18,7 @@
 	</ui:style>
 
 	<g:HTMLPanel>
+		<app:MenuCounter />
 		<app:PendingTransactionLayout ui:field="pendingTransactions" />
 	</g:HTMLPanel>
 </ui:UiBinder>

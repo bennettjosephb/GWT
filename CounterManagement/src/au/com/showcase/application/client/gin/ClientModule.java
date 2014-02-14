@@ -12,8 +12,6 @@ import au.com.showcase.application.client.HeaderPresenter;
 import au.com.showcase.application.client.HeaderView;
 import au.com.showcase.application.client.HomePresenter;
 import au.com.showcase.application.client.HomeView;
-import au.com.showcase.application.client.MenuPresenter;
-import au.com.showcase.application.client.MenuView;
 import au.com.showcase.application.client.place.ClientPlaceManager;
 import au.com.showcase.application.client.place.DefaultPlace;
 import au.com.showcase.application.client.place.NameTokens;
@@ -45,9 +43,6 @@ public class ClientModule extends AbstractPresenterModule {
 
 		bindPresenterWidget(FooterPresenter.class,
 				FooterPresenter.MyView.class, FooterView.class);
-
-		bindPresenterWidget(MenuPresenter.class, MenuPresenter.MyView.class,
-				MenuView.class);
 
 		bindPresenter(ContentPresenter.class, ContentPresenter.MyView.class,
 				ContentView.class, ContentPresenter.MyProxy.class);
