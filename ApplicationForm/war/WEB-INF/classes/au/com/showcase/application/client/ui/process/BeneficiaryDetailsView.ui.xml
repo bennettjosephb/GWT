@@ -7,45 +7,48 @@
 	ui:generateLocales='default'>
 
 	<ui:style src="../../bundle/CustomerDetails1.css" field="c" />
-	
+
 	<ui:style>
-	html {
+		html {
 		height: 100%;
-	}
-	
-	.container {
+		}
+
+		.container {
 		width: 100%;
 		overflow: hidden;
-	}
-	
-	.left {
+		}
+
+		.left {
 		float: left;
 		padding: 0px 10px 0px 0px;
 		width: 100px;
 		background: red;
 		height: inherit;
 		position: absolute;
-	}
-	
-	.middle {
+		}
+
+		.middle {
 		position: absolute;
 		overflow: hidden;
 		margin-left: 100px;
-		margin-right: 100px;
+		margin-right:
+		100px;
 		background: green;
 		width: 800px;
 		height: inherit;
-	}
-	
-	.right {
-		float: right;
+		}
+
+		.right {
+		float:
+		right;
 		background: blue;
 		height: inherit;
-		padding: 0px 10px 0px 10px;
+		padding: 0px 10px 0px
+		10px;
 		width: 100px;
-	}
-	
-	.content1 {
+		}
+
+		.content1 {
 		width: auto;
 		float: left;
 		padding: 10px;
@@ -53,31 +56,35 @@
 		background-color: #FFF0F0;
 		height: 100%;
 		position: inherit;
-		overflow: auto;
-	}
-	
-	.contentcontent {
+		overflow:
+		auto;
+		}
+
+		.contentcontent {
 		background-color: pink;
 		width: 400px;
 		padding: 25px 30px 25px 30px;
 		position: absolute;
 		bottom: 30px;
-		top: 70px;
+		top:
+		70px;
 		margin-left: 100px;
-	}
-	
-	.pageTitle {
+		}
+
+		.pageTitle {
 		font-size: 25px;
-		font: normal 25px/100% Verdana, Tahoma, sans-serif;
+		font: normal
+		25px/100% Verdana, Tahoma, sans-serif;
 		padding-bottom: 10px;
-		width: 980px;
+		width:
+		980px;
 		text-align: center;
-	}
-	​
+		}
+		​
 	</ui:style>
 	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
 
-		<div class="{c.pageTitle}">Customer Details</div>
+		<div class="{c.pageTitle}">Beneficiary Details</div>
 
 		<span class="{c.label}">First Name :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
@@ -85,33 +92,33 @@
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
 		<span class="{c.label}">Last Name :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 1 :</span>
+		<span class="{c.label}">Address Line :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 2 :</span>
+		<span class="{c.label}">Location :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Post Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Suburb :</span>
+		<span class="{c.label}">District :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
 		<span class="{c.label}">State :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<span class="{c.label}">Tel Number :</span>
+		<span class="{c.label}">Pin/Zip Code :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Mobile Number :</span>
+		<br />
+		<span class="{c.label}">Country :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">Contact Number :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
 		<span class="{c.label}">Email Id :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Date Of Birth :</span>
-		<d:DateBox styleName="{c.textboxFirstName}"></d:DateBox>
-		<span class="{c.label}">Nationality :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Occupation :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Purpose :</span>
-		<g:ListBox styleName="{c.textboxFirstName}"></g:ListBox>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
 		<br />
 		<g:Button styleName="{c.nextButton}">Next</g:Button>
+		<g:Button styleName="{c.backButton}">Back</g:Button>
 		<g:Button styleName="{c.cancelButton}">Cancel</g:Button>
 	</g:HTMLPanel>
 </ui:UiBinder>

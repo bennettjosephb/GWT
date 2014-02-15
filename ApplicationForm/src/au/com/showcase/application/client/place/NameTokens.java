@@ -12,6 +12,9 @@ public class NameTokens {
 	public static final String insert = "insert";
 	public static final String custdetail1 = "custdetail1";
 	public static final String counter = "counter";
+	public static final String idproof = "idproof";
+	public static final String beneficiary = "beneficiary";
+	public static final String bankdetails = "bankdetails";
 
 	public static String getHome() {
 		return home;
@@ -51,5 +54,17 @@ public class NameTokens {
 
 	public static String getCounter() {
 		return counter;
+	}
+
+	public static String getIdproof() {
+		return idproof;
+	}
+
+	public static String getBeneficiary() {
+		return beneficiary;
+	}
+
+	public static String getBankdetails() {
+		return bankdetails;
 	}
 }

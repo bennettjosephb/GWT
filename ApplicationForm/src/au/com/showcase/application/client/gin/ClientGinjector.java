@@ -17,6 +17,9 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import au.com.showcase.application.client.scroll.TestInsertPresenter;
 import au.com.showcase.application.client.ui.process.CustomerDetailPresenter;
 import au.com.showcase.application.client.counter.MainPresenter;
+import au.com.showcase.application.client.ui.process.CustomerIDProofSavePresenter;
+import au.com.showcase.application.client.ui.process.BeneficiaryDetailsPresenter;
+import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -44,4 +47,10 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<CustomerDetailPresenter> getCustomerDetailPresenter();
 
 	AsyncProvider<MainPresenter> getMainPresenter();
+
+	AsyncProvider<CustomerIDProofSavePresenter> getCustomerIDProofSavePresenter();
+
+	AsyncProvider<BeneficiaryDetailsPresenter> getBeneficiaryDetailsPresenter();
+
+	AsyncProvider<BeneficiaryBankDetailsPresenter> getBeneficiaryBankDetailsPresenter();
 }

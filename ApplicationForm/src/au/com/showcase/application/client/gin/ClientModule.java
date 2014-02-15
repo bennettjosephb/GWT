@@ -30,6 +30,12 @@ import au.com.showcase.application.client.ui.process.CustomerDetailPresenter;
 import au.com.showcase.application.client.ui.process.CustomerDetailView;
 import au.com.showcase.application.client.counter.MainPresenter;
 import au.com.showcase.application.client.counter.MainView;
+import au.com.showcase.application.client.ui.process.CustomerIDProofSavePresenter;
+import au.com.showcase.application.client.ui.process.CustomerIDProofSaveView;
+import au.com.showcase.application.client.ui.process.BeneficiaryDetailsPresenter;
+import au.com.showcase.application.client.ui.process.BeneficiaryDetailsView;
+import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsPresenter;
+import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -83,5 +89,20 @@ public class ClientModule extends AbstractPresenterModule {
 
 		bindPresenter(MainPresenter.class, MainPresenter.MyView.class,
 				MainView.class, MainPresenter.MyProxy.class);
+
+		bindPresenter(CustomerIDProofSavePresenter.class,
+				CustomerIDProofSavePresenter.MyView.class,
+				CustomerIDProofSaveView.class,
+				CustomerIDProofSavePresenter.MyProxy.class);
+
+		bindPresenter(BeneficiaryDetailsPresenter.class,
+				BeneficiaryDetailsPresenter.MyView.class,
+				BeneficiaryDetailsView.class,
+				BeneficiaryDetailsPresenter.MyProxy.class);
+
+		bindPresenter(BeneficiaryBankDetailsPresenter.class,
+				BeneficiaryBankDetailsPresenter.MyView.class,
+				BeneficiaryBankDetailsView.class,
+				BeneficiaryBankDetailsPresenter.MyProxy.class);
 	}
 }

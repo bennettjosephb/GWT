@@ -24,6 +24,14 @@
 .textboxFirstName:focus {
 	border-color: #C9C9C9;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	background-image: url('Warning.png');
+	background-position: center right;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF url('bg_form.png') left top repeat-x;
+	background-color: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+		color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background-color: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 }
 
 .pageTitle {
@@ -45,8 +53,8 @@
 	height: 50px;
 	margin-right: 5px;
 	margin-left: 5px;
-	margin-top:30px;
-	padding-right:6px;
+	margin-top: 30px;
+	padding-right: 6px;
 	outline: 1px solid #00FF00;
 	outline-offset: 5px;
 	position: relative;
@@ -66,4 +74,208 @@
 	width: 108px;
 	display: inline-block;
 	text-align: right;
+}
+
+.cancelButton {
+	height: 30px;
+	width: 150px;
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-right: 3px;
+	margin-bottom: 25px;
+	font: normal 12px/100% Verdana, Tahoma, sans-serif;
+	color: #FFFFFF;
+	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+		to(#ab0000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.cancelButton:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.cancelButton:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.nextButton {
+	height: 30px;
+	width: 150px;
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-right: 30px;
+	margin-bottom: 25px;
+	font: normal 12px/100% Verdana, Tahoma, sans-serif;
+	color: #FFFFFF;
+	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+		to(#ab0000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.nextButton:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.nextButton:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.backButton {
+	height: 30px;
+	width: 150px;
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-right: 3px;
+	margin-bottom: 25px;
+	font: normal 12px/100% Verdana, Tahoma, sans-serif;
+	color: #FFFFFF;
+	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+		to(#ab0000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.backButton:HOVER {
+	background: -moz-linear-gradient(top, #ff0d00 0%, #960000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0d00),
+		to(#960000));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
+}
+
+.backButton:ACTIVE {
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #f20c00 0%, #8f0202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f20c00),
+		to(#8f0202));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #7d0000;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px
+		2px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px
+		rgba(255, 255, 255, 0.7);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.3);
 }

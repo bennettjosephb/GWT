@@ -1,3 +1,2 @@
 # Module applicationform
 # RPC service class, partial path of RPC policy file
-com.gwtplatform.dispatch.shared.DispatchService, 87BF7910D940E18E4CB98698ECA679CA.gwt.rpc

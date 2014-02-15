@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:d='urn:import:com.google.gwt.user.datepicker.client'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
 	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
 	ui:generateLocales='default'>
 
@@ -46,7 +47,7 @@
 	
 	.content1 {
 		width: auto;
-		float:left;
+		float: left;
 		padding: 10px;
 		margin: auto;
 		background-color: #FFF0F0;
@@ -90,29 +91,27 @@
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
 		<span class="{c.label}">Post Code :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 1 :</span>
+		<span class="{c.label}">Suburb :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 2 :</span>
+		<span class="{c.label}">State :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Post Code :</span>
+		<br />
+		<span class="{c.label}">Tel Number :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 1 :</span>
+		<span class="{c.label}">Mobile Number :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 2 :</span>
+		<span class="{c.label}">Email Id :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Post Code :</span>
+		<span class="{c.label}">Date Of Birth :</span>
+		<d:DateBox styleName="{c.textboxFirstName}"></d:DateBox>
+		<span class="{c.label}">Nationality :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 1 :</span>
+		<span class="{c.label}">Occupation :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 2 :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Post Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 1 :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Address Line 2 :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Post Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">Purpose :</span>
+		<g:ListBox styleName="{c.textboxFirstName}"></g:ListBox>
+		<br />
+		<g:Button styleName="{c.nextButton}">Next</g:Button>
+		<g:Button styleName="{c.cancelButton}">Cancel</g:Button>
 	</g:HTMLPanel>
 </ui:UiBinder>
