@@ -12,7 +12,7 @@
 	margin-bottom: 15px;
 	margin-right: 10px;
 	font: normal 15px/100% Verdana, Tahoma, sans-serif;
-	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: #FFFFFF left top repeat-x;
 	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
 		color-stop(4%, #EEEEEE), to(#FFFFFF));
 	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
@@ -28,10 +28,6 @@
 	background-position: center right;
 	background-size: 25px 25px;
 	background-repeat: no-repeat;
-	background-color: #FFFFFF url('bg_form.png') left top repeat-x;
-	background-color: -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
-		color-stop(4%, #EEEEEE), to(#FFFFFF));
-	background-color: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 }
 
 .pageTitle {
@@ -93,6 +89,13 @@
 	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
 	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
 		to(#ab0000));
+	background: url('cancel.png'),
+		-moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: url('cancel.png'),
+		-webkit-gradient(linear, left top, left bottom, from(#ff2819),
+		to(#ab0000));
+	background-position: center left;
+	background-repeat: no-repeat;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
@@ -158,9 +161,13 @@
 	margin-bottom: 25px;
 	font: normal 12px/100% Verdana, Tahoma, sans-serif;
 	color: #FFFFFF;
-	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
-	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+	background: url('next.png'),
+		-moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: url('next.png'),
+		-webkit-gradient(linear, left top, left bottom, from(#ff2819),
 		to(#ab0000));
+	background-position: center right;
+	background-repeat: no-repeat;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
@@ -226,9 +233,13 @@
 	margin-bottom: 25px;
 	font: normal 12px/100% Verdana, Tahoma, sans-serif;
 	color: #FFFFFF;
-	background: -moz-linear-gradient(top, #ff2819 0%, #ab0000);
-	background: -webkit-gradient(linear, left top, left bottom, from(#ff2819),
+	background: url('previous.png'),
+		-moz-linear-gradient(top, #ff2819 0%, #ab0000);
+	background: url('previous.png'),
+		-webkit-gradient(linear, left top, left bottom, from(#ff2819),
 		to(#ab0000));
+	background-position: center left;
+	background-repeat: no-repeat;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
