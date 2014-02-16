@@ -9,6 +9,7 @@ import au.com.showcase.application.client.ui.process.event.CustomerIDProofEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.Button;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
@@ -64,7 +65,6 @@ public class CustomerIDProofSavePresenter
 		super.onBind();
 		addRegisteredHandler(CustomerDetailsEvent.getType(), this);
 		getView().getNext().addClickHandler(new ClickHandler() {
-
 			@Override
 			public void onClick(ClickEvent event) {
 				CustomerIDProofEvent customerIDProofEvent = new CustomerIDProofEvent();
@@ -72,6 +72,13 @@ public class CustomerIDProofSavePresenter
 						.fireEvent(customerIDProofEvent);
 			}
 		});
+		getView().getBack().addClickHandler(new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event) {
+				History.back();
+			}
+		});
+
 	}
 
 	@Override

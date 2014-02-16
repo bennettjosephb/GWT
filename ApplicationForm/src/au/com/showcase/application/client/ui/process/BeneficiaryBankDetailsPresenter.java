@@ -9,6 +9,7 @@ import au.com.showcase.application.client.ui.process.event.BeneficiaryDetailsEve
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.Button;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
@@ -72,6 +73,13 @@ public class BeneficiaryBankDetailsPresenter
 						.fireEvent(beneficiaryBankDetailsEvent);
 			}
 		});
+		getView().getBack().addClickHandler(new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event) {
+				History.back();
+			}
+		});
+
 	}
 
 	@Override

@@ -15,6 +15,7 @@ public class NameTokens {
 	public static final String idproof = "idproof";
 	public static final String beneficiary = "beneficiary";
 	public static final String bankdetails = "bankdetails";
+	public static final String processsum = "processsum";
 
 	public static String getHome() {
 		return home;
@@ -66,5 +67,9 @@ public class NameTokens {
 
 	public static String getBankdetails() {
 		return bankdetails;
+	}
+
+	public static String getProcesssum() {
+		return processsum;
 	}
 }

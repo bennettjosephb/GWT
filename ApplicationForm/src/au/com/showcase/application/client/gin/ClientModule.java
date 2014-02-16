@@ -36,6 +36,8 @@ import au.com.showcase.application.client.ui.process.BeneficiaryDetailsPresenter
 import au.com.showcase.application.client.ui.process.BeneficiaryDetailsView;
 import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsPresenter;
 import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsView;
+import au.com.showcase.application.client.ui.process.ProcessSummaryPresenter;
+import au.com.showcase.application.client.ui.process.ProcessSummaryView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -104,5 +106,9 @@ public class ClientModule extends AbstractPresenterModule {
 				BeneficiaryBankDetailsPresenter.MyView.class,
 				BeneficiaryBankDetailsView.class,
 				BeneficiaryBankDetailsPresenter.MyProxy.class);
+
+		bindPresenter(ProcessSummaryPresenter.class,
+				ProcessSummaryPresenter.MyView.class, ProcessSummaryView.class,
+				ProcessSummaryPresenter.MyProxy.class);
 	}
 }
