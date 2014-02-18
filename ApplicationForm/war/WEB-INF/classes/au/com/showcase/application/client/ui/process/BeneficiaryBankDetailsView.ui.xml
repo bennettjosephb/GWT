@@ -53,7 +53,7 @@
 		float: left;
 		padding: 10px;
 		margin: auto;
-		background-color: #FFF0FF;
+		background-color: #FFF0F0;
 		height: 100%;
 		position: inherit;
 		overflow:
