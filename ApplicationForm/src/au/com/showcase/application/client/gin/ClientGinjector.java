@@ -21,6 +21,7 @@ import au.com.showcase.application.client.ui.process.CustomerIDProofSavePresente
 import au.com.showcase.application.client.ui.process.BeneficiaryDetailsPresenter;
 import au.com.showcase.application.client.ui.process.BeneficiaryBankDetailsPresenter;
 import au.com.showcase.application.client.ui.process.ProcessSummaryPresenter;
+import au.com.showcase.application.client.ui.process.DealReceiptPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -56,4 +57,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<BeneficiaryBankDetailsPresenter> getBeneficiaryBankDetailsPresenter();
 
 	AsyncProvider<ProcessSummaryPresenter> getProcessSummaryPresenter();
+
+	AsyncProvider<DealReceiptPresenter> getDealReceiptPresenter();
 }
