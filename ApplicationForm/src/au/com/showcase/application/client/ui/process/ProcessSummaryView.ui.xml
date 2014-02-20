@@ -84,7 +84,7 @@
 	</ui:style>
 	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
 
-		<div class="{c.pageTitle}">Beneficiary Bank Details</div>
+		<div class="{c.pageTitle}">Summary</div>
 
 		<span class="{c.label}">Bank Name :</span>
 		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
@@ -112,7 +112,7 @@
 		<br />
 		<br />
 		<br />
-		<g:Button styleName="{c.nextButton}" ui:field="next">&#x2082;Next</g:Button>
+		<g:Button styleName="{c.nextButton}" ui:field="next">Submit</g:Button>
 		<g:Button styleName="{c.backButton}" ui:field="back">Back</g:Button>
 		<g:Button styleName="{c.cancelButton}" ui:field="cancel">Cancel</g:Button>
 	</g:HTMLPanel>

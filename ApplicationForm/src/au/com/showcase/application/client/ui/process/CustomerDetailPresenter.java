@@ -4,18 +4,18 @@ import au.com.showcase.application.client.place.NameTokens;
 import au.com.showcase.application.client.scroll.ScrollTestPresenter;
 import au.com.showcase.application.client.ui.process.event.CustomerDetailsEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
-import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
+import com.google.gwt.user.datepicker.client.DateBox.Format;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -129,6 +129,12 @@ public class CustomerDetailPresenter
 	protected void onBind() {
 		super.onBind();
 		addRegisteredHandler(DealFinishEvent.getType(), this);
+		getView().getDateOfBirth().getDatePicker()
+		.setYearAndMonthDropdownVisible(true);
+		getView().getDateOfBirth().getDatePicker()
+		.setYearArrowsVisible(true);
+		getView().getDateOfBirth().setFormat(new DateBox.DefaultFormat
+				(DateTimeFormat.getFormat("dd-MM-yyyy")));
 		getView().getNext().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {

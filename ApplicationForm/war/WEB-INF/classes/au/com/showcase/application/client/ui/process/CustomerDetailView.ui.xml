@@ -7,6 +7,7 @@
 	ui:generateLocales='default'>
 
 	<ui:style src="../../bundle/CustomerDetails1.css" field="c" />
+	<ui:style field="core" src="../../bundle/RegistrationFormStyle.css" />
 	
 	<ui:style>
 	html {
@@ -109,7 +110,7 @@
 		<span class="{c.label}">Occupation :</span>
 		<g:TextBox styleName="{c.textboxFirstName}" ui:field="occupation"></g:TextBox>
 		<span class="{c.label}">Purpose :</span>
-		<g:ListBox styleName="{c.textboxFirstName}" ui:field="purpose"></g:ListBox>
+			<g:ListBox styleName="{c.listboxPurpose}" ui:field="purpose"></g:ListBox>
 		<br />
 		<g:Button styleName="{c.nextButton}" ui:field="next">Next</g:Button>
 		<g:Button styleName="{c.cancelButton}" ui:field="cancel">Cancel</g:Button>
