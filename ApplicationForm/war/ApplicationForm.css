@@ -209,7 +209,7 @@ th {
 }
 
 .datePickerWeekdayLabel,.datePickerWeekendLabel {
-	background: #fff;
+	background: #ffadad;
 	padding: 0px 4px 2px;
 	cursor: default;
 	color: #666;
@@ -224,7 +224,7 @@ th {
 }
 
 .datePickerDayIsWeekend {
-	background: #f7f7f7;
+	background: #ffadad;
 }
 
 .datePickerDayIsFiller {

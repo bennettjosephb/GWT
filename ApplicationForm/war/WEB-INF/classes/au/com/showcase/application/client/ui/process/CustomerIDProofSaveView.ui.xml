@@ -7,48 +7,45 @@
 	ui:generateLocales='default'>
 
 	<ui:style src="../../bundle/CustomerDetails1.css" field="c" />
-
+	
 	<ui:style>
-		html {
+	html {
 		height: 100%;
-		}
-
-		.container {
+	}
+	
+	.container {
 		width: 100%;
 		overflow: hidden;
-		}
-
-		.left {
+	}
+	
+	.left {
 		float: left;
 		padding: 0px 10px 0px 0px;
 		width: 100px;
 		background: red;
 		height: inherit;
 		position: absolute;
-		}
-
-		.middle {
+	}
+	
+	.middle {
 		position: absolute;
 		overflow: hidden;
 		margin-left: 100px;
-		margin-right:
-		100px;
+		margin-right: 100px;
 		background: green;
 		width: 800px;
 		height: inherit;
-		}
-
-		.right {
-		float:
-		right;
+	}
+	
+	.right {
+		float: right;
 		background: blue;
 		height: inherit;
-		padding: 0px 10px 0px
-		10px;
+		padding: 0px 10px 0px 10px;
 		width: 100px;
-		}
-
-		.content1 {
+	}
+	
+	.content1 {
 		width: auto;
 		float: left;
 		padding: 10px;
@@ -56,53 +53,49 @@
 		background-color: #FFF0F0;
 		height: 100%;
 		position: inherit;
-		overflow:
-		auto;
-		}
-
-		.contentcontent {
+		overflow: auto;
+	}
+	
+	.contentcontent {
 		background-color: pink;
 		width: 400px;
 		padding: 25px 30px 25px 30px;
 		position: absolute;
 		bottom: 30px;
-		top:
-		70px;
+		top: 70px;
 		margin-left: 100px;
-		}
-
-		.pageTitle {
+	}
+	
+	.pageTitle {
 		font-size: 25px;
-		font: normal
-		25px/100% Verdana, Tahoma, sans-serif;
+		font: normal 25px/100% Verdana, Tahoma, sans-serif;
 		padding-bottom: 10px;
-		width:
-		980px;
+		width: 980px;
 		text-align: center;
-		}
-		​
+	}
+	​
 	</ui:style>
 	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
 
 		<div class="{c.pageTitle}">Customer ID Details</div>
 
 		<span class="{c.label}">ID Type :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="idType"></g:TextBox>
 		<span class="{c.label}">ID No :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="idNo"></g:TextBox>
 		<br />
 		<span class="{c.label}">Issued by :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="issuedBy"></g:TextBox>
 		<span class="{c.label}">Issued at :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="issuedAt"></g:TextBox>
 		<br />
 		<span class="{c.label}">Issued Date :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<d:DateBox styleName="{c.textboxFirstName}" ui:field="issuedDate"></d:DateBox>
 		<span class="{c.label}">Expiry Date :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<d:DateBox styleName="{c.textboxFirstName}" ui:field="expiryDate"></d:DateBox>
 		<br />
 		<span class="{c.label}">Verified by :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="verifiedBy"></g:TextBox>
 		<br />
 		<br />
 		<br />

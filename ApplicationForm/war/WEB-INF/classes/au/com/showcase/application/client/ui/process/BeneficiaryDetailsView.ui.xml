@@ -87,28 +87,28 @@
 		<div class="{c.pageTitle}">Beneficiary Details</div>
 
 		<span class="{c.label}">First Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="firstName"></g:TextBox>
 		<span class="{c.label}">Middle Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="middleName"></g:TextBox>
 		<span class="{c.label}">Last Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="lastName"></g:TextBox>
 		<span class="{c.label}">Address Line :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="addressLine"></g:TextBox>
 		<span class="{c.label}">Location :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="location"></g:TextBox>
 		<span class="{c.label}">District :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="district"></g:TextBox>
 		<span class="{c.label}">State :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="state"></g:TextBox>
 		<span class="{c.label}">Pin/Zip Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="postCode"></g:TextBox>
 		<br />
 		<span class="{c.label}">Country :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="country"></g:TextBox>
 		<span class="{c.label}">Contact Number :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="contactNumber"></g:TextBox>
 		<span class="{c.label}">Email Id :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="emailId"></g:TextBox>
 		<br />
 		<br />
 		<br />
