@@ -112,7 +112,7 @@
 		<br />
 		<br />
 		<br />
-		<g:Button styleName="{c.nextButton}" ui:field="next">Next</g:Button>
+		<g:Button styleName="{c.nextButton}" ui:field="next">&#x2082;Next</g:Button>
 		<g:Button styleName="{c.backButton}" ui:field="back">Back</g:Button>
 		<g:Button styleName="{c.cancelButton}" ui:field="cancel">Cancel</g:Button>
 	</g:HTMLPanel>

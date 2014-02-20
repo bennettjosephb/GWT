@@ -24,9 +24,10 @@
 .textboxFirstName:focus {
 	border-color: #C9C9C9;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
-	background-image: url('Warning.png');
+	background: url('Warning.png'), -webkit-gradient(linear, left top, left 25, from(#FFFFFF),
+		color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: url('Warning.png'), -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 	background-position: center right;
-	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
 

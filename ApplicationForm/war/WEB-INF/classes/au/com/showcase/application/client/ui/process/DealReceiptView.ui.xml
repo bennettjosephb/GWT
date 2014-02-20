@@ -1,10 +1,117 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:d='urn:import:com.google.gwt.user.datepicker.client'
 	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
 	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
 	ui:generateLocales='default'>
 
-	<g:HTMLPanel/>
+	<ui:style src="../../bundle/CustomerDetails1.css" field="c" />
+
+	<ui:style>
+		html {
+		height: 100%;
+		}
+
+		.container {
+		width: 100%;
+		overflow: hidden;
+		}
+
+		.left {
+		float: left;
+		padding: 0px 10px 0px 0px;
+		width: 100px;
+		background: red;
+		height: inherit;
+		position: absolute;
+		}
+
+		.middle {
+		position: absolute;
+		overflow: hidden;
+		margin-left: 100px;
+		margin-right:
+		100px;
+		background: green;
+		width: 800px;
+		height: inherit;
+		}
+
+		.right {
+		float:
+		right;
+		background: blue;
+		height: inherit;
+		padding: 0px 10px 0px
+		10px;
+		width: 100px;
+		}
+
+		.content1 {
+		width: auto;
+		float: left;
+		padding: 10px;
+		margin: auto;
+		background-color: #FFF0F0;
+		height: 100%;
+		position: inherit;
+		overflow:
+		auto;
+		}
+
+		.contentcontent {
+		background-color: pink;
+		width: 400px;
+		padding: 25px 30px 25px 30px;
+		position: absolute;
+		bottom: 30px;
+		top:
+		70px;
+		margin-left: 100px;
+		}
+
+		.pageTitle {
+		font-size: 25px;
+		font: normal
+		25px/100% Verdana, Tahoma, sans-serif;
+		padding-bottom: 10px;
+		width:
+		980px;
+		text-align: center;
+		}
+		​
+	</ui:style>
+	<g:HTMLPanel styleName="{style.content1}" ui:field="containerPanel1">
+
+		<div class="{c.pageTitle}">Beneficiary Bank Details</div>
+
+		<span class="{c.label}">Bank Name :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<br />
+		<span class="{c.label}">Address Line :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">City :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<br />
+		<span class="{c.label}">District :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">State :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<br />
+		<span class="{c.label}">Account Type :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">Account Name :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<br />
+		<span class="{c.label}">BIC/IFSC/BSB :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<span class="{c.label}">SWIFT Code :</span>
+		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<br />
+		<br />
+		<br />
+		<br />
+		<g:Button styleName="{c.nextButton}" ui:field="finish">Finish</g:Button>
+	</g:HTMLPanel>
 </ui:UiBinder>

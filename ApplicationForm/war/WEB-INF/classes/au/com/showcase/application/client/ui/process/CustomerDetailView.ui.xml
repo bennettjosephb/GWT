@@ -80,36 +80,36 @@
 		<div class="{c.pageTitle}">Customer Details</div>
 
 		<span class="{c.label}">First Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="firstName"></g:TextBox>
 		<span class="{c.label}">Middle Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="middleName"></g:TextBox>
 		<span class="{c.label}">Last Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="lastName"></g:TextBox>
 		<span class="{c.label}">Address Line 1 :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="addressLine1"></g:TextBox>
 		<span class="{c.label}">Address Line 2 :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="addressLine2"></g:TextBox>
 		<span class="{c.label}">Post Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="postCode"></g:TextBox>
 		<span class="{c.label}">Suburb :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="suburb"></g:TextBox>
 		<span class="{c.label}">State :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="state"></g:TextBox>
 		<br />
 		<span class="{c.label}">Tel Number :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="telephoneNumber"></g:TextBox>
 		<span class="{c.label}">Mobile Number :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="mobileNumber"></g:TextBox>
 		<span class="{c.label}">Email Id :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="emailId"></g:TextBox>
 		<span class="{c.label}">Date Of Birth :</span>
-		<d:DateBox styleName="{c.textboxFirstName}"></d:DateBox>
+		<d:DateBox styleName="{c.textboxFirstName}" ui:field="dateOfBirth"></d:DateBox>
 		<span class="{c.label}">Nationality :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="nationality"></g:TextBox>
 		<span class="{c.label}">Occupation :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
+		<g:TextBox styleName="{c.textboxFirstName}" ui:field="occupation"></g:TextBox>
 		<span class="{c.label}">Purpose :</span>
-		<g:ListBox styleName="{c.textboxFirstName}"></g:ListBox>
+		<g:ListBox styleName="{c.textboxFirstName}" ui:field="purpose"></g:ListBox>
 		<br />
 		<g:Button styleName="{c.nextButton}" ui:field="next">Next</g:Button>
 		<g:Button styleName="{c.cancelButton}" ui:field="cancel">Cancel</g:Button>
