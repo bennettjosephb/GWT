@@ -1012,7 +1012,7 @@ a, a:visited, a:hover {
 }
 
 .gwt-DatePicker {
-  border: 1px solid #ff9494;
+  border: 1px solid #A2BBDD;
   cursor: default;
 }
 .gwt-DatePicker td,
@@ -1033,9 +1033,7 @@ a, a:visited, a:hover {
 }
 .datePickerWeekdayLabel,
 .datePickerWeekendLabel {
-  background: #ff9494;
-  color:#FFFFFF;
-  font-weight:bold;
+  background: #C3D9FF;
   padding: 0px 4px 2px;
   cursor: default;
 }
@@ -1043,14 +1041,13 @@ a, a:visited, a:hover {
   padding: 4px;
   cursor: hand;
   cursor: pointer;
-  font-size: 15px;
 }
 .datePickerDayIsToday {
   border: 1px solid black;
   padding: 3px;
 }
 .datePickerDayIsWeekend {
-  background: #ffadad;
+  background: #EEEEEE;
 }
 .datePickerDayIsFiller {
   color: #888888;
@@ -1063,13 +1060,13 @@ a, a:visited, a:hover {
   font-style: italic;
 }
 .datePickerDayIsHighlighted {
-  background: #ff4f4f;
+  background: #F0E68C;
 }
 .datePickerDayIsValueAndHighlighted {
   background: #bbddd9;
 }
 .datePickerMonthSelector {
-  background: #ff9494;
+  background: #C3D9FF;
   width: 100%;
 }
 td.datePickerMonth,
@@ -1085,9 +1082,9 @@ td.datePickerYear {
 .datePickerNextButton,
 .datePickerPreviousYearButton,
 .datePickerNextYearButton {
-  font-size: 150%;
+  font-size: 120%;
   line-height: 1em;
-  color: #FF0000;
+  color: blue;
   cursor: hand;
   cursor: pointer;
   padding: 0px 4px;

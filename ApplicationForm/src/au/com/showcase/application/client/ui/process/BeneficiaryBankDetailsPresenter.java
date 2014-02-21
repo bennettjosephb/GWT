@@ -5,13 +5,16 @@ import au.com.showcase.application.client.scroll.ScrollTestPresenter;
 import au.com.showcase.application.client.ui.process.event.BeneficiaryBankDetailsEvent;
 import au.com.showcase.application.client.ui.process.event.BeneficiaryDetailsEvent;
 import au.com.showcase.application.client.ui.process.event.BeneficiaryDetailsEvent.BeneficiaryDetailsHandler;
+import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
+import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -26,7 +29,7 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class BeneficiaryBankDetailsPresenter
 		extends
 		Presenter<BeneficiaryBankDetailsPresenter.MyView, BeneficiaryBankDetailsPresenter.MyProxy>
-		implements BeneficiaryDetailsHandler {
+		implements BeneficiaryDetailsHandler, DealFinishHandler {
 
 	public interface MyView extends View {
 		public Button getNext();
@@ -40,6 +43,43 @@ public class BeneficiaryBankDetailsPresenter
 		public Button getBack();
 
 		public void setBack(Button back);
+
+		public TextBox getBankName();
+
+		public void setBankName(TextBox bankName);
+
+		public TextBox getAddressLine();
+
+		public void setAddressLine(TextBox addressLine);
+
+		public TextBox getCity();
+
+		public void setCity(TextBox city);
+
+		public TextBox getDistrict();
+
+		public void setDistrict(TextBox district);
+
+		public TextBox getState();
+
+		public void setState(TextBox state);
+
+		public ListBox getAccountType();
+
+		public void setAccountType(ListBox accountType);
+
+		public TextBox getAccountName();
+
+		public void setAccountName(TextBox accountName);
+
+		public TextBox getBsbCode();
+
+		public void setBsbCode(TextBox bsbCode);
+
+		public TextBox getSwiftCode();
+
+		public void setSwiftCode(TextBox swiftCode);
+
 	}
 
 	@ProxyCodeSplit
@@ -111,4 +151,29 @@ public class BeneficiaryBankDetailsPresenter
 
 	final private PlaceManager placeManager;
 
+	@ProxyEvent
+	@Override
+	public void onDealFinish(DealFinishEvent event) {
+		clearForm();
+	}
+
+	private void clearForm() {
+		getView().getBankName().setText("");
+
+		getView().getAddressLine().setText("");
+
+		getView().getCity().setText("");
+
+		getView().getDistrict().setText("");
+
+		getView().getState().setText("");
+
+		getView().getAccountType();
+
+		getView().getAccountName().setText("");
+
+		getView().getBsbCode().setText("");
+
+		getView().getSwiftCode().setText("");
+	}
 }

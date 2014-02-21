@@ -86,31 +86,8 @@
 
 		<div class="{c.pageTitle}">Receipt</div>
 
-		<span class="{c.label}">Bank Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<span class="{c.label}">Address Line :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">City :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<span class="{c.label}">District :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">State :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<span class="{c.label}">Account Type :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">Account Name :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<span class="{c.label}">BIC/IFSC/BSB :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<span class="{c.label}">SWIFT Code :</span>
-		<g:TextBox styleName="{c.textboxFirstName}"></g:TextBox>
-		<br />
-		<br />
-		<br />
+		<g:Frame ui:field="url" url="http://localhost:8080/war/SampleReport" width="970px"
+			height="400px" />
 		<br />
 		<g:Button styleName="{c.nextButton}" ui:field="finish">Finish</g:Button>
 	</g:HTMLPanel>
