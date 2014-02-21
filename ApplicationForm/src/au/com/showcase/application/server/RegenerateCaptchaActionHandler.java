@@ -51,6 +51,9 @@ public class RegenerateCaptchaActionHandler implements
 	@Override
 	public RegenerateCaptchaResult execute(RegenerateCaptcha action,
 			ExecutionContext context) throws ActionException {
+		HttpSession httpSession = requestProvider.get().getSession();
+
+		System.out.println(httpSession);
 
 		// System.out.println("" + httpSession.getId());
 
@@ -68,8 +71,8 @@ public class RegenerateCaptchaActionHandler implements
 
 		RegenerateCaptchaResult regenerateCaptchaResult = null;
 		try {
-			regenerateCaptchaResult = new RegenerateCaptchaResult(
-					encodeasBase64(httpSession));
+			String temp = encodeasBase64(httpSession);
+			regenerateCaptchaResult = new RegenerateCaptchaResult(temp);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -105,7 +108,7 @@ public class RegenerateCaptchaActionHandler implements
 		imageDataAsbase64String.append("data:image/jpg;base64,");
 
 		imageDataAsbase64String.append(encodedString);
-		
+
 		System.out.println("IMAGE GENERATED....");
 
 		return imageDataAsbase64String.toString();
