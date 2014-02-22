@@ -1026,7 +1026,7 @@ a, a:visited, a:hover {
 .datePickerDay,
 .datePickerWeekdayLabel,
 .datePickerWeekendLabel {
-  font-size: 75%;
+  font-size: 15px;
   text-align: center;
   padding: 4px;
   outline: none;
@@ -1036,6 +1036,7 @@ a, a:visited, a:hover {
   background: #C3D9FF;
   padding: 0px 4px 2px;
   cursor: default;
+  font-weight: bold;
 }
 .datePickerDay {
   padding: 4px;
@@ -1060,7 +1061,7 @@ a, a:visited, a:hover {
   font-style: italic;
 }
 .datePickerDayIsHighlighted {
-  background: #F0E68C;
+  background: #000000;
 }
 .datePickerDayIsValueAndHighlighted {
   background: #bbddd9;

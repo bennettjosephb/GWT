@@ -135,6 +135,7 @@ public class CustomerDetailPresenter
 		.setYearArrowsVisible(true);
 		getView().getDateOfBirth().setFormat(new DateBox.DefaultFormat
 				(DateTimeFormat.getFormat("dd-MM-yyyy")));
+		//getView().getDateOfBirth().getDatePicker().
 		getView().getNext().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {

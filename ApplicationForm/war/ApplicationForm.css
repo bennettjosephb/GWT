@@ -335,7 +335,7 @@ td.datePickerMonth,td.datePickerYear {
 
 .datePickerDayIsHighlighted {
 	color: #FFFFFF;
-	background: #F0E68C;
+	background: #000000;
 }
 
 .datePickerDayIsValueAndHighlighted {
