@@ -7,6 +7,8 @@ import au.com.showcase.application.client.JSNIExamplePresenter;
 import au.com.showcase.application.client.JSNIExampleView;
 import au.com.showcase.application.client.place.DefaultPlace;
 import au.com.showcase.application.client.place.NameTokens;
+import au.com.showcase.application.client.SamplePresenter;
+import au.com.showcase.application.client.SampleView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -19,5 +21,8 @@ public class ClientModule extends AbstractPresenterModule {
 				JSNIExamplePresenter.MyProxy.class);
 
 		bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);
+
+		bindPresenter(SamplePresenter.class, SamplePresenter.MyView.class,
+				SampleView.class, SamplePresenter.MyProxy.class);
 	}
 }

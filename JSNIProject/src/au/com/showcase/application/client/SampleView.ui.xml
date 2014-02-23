@@ -5,21 +5,9 @@
 	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
 	ui:generateLocales='default'>
 
-	<ui:style>
-	.borderZero {
-		border: 0px;
-		overflow: hidden;
-	}
-	</ui:style>
-
 	<g:HTMLPanel>
-		<g:Button text="Click This !!!" ui:field="clickThis" />
-
-		<g:Frame ui:field="url" url="http://127.0.0.1:8888/NewFile.jsp"
-			styleName="{style.borderZero}" width="98%" height="500px" />
-
-		<g:HTML ui:field="htmlContainer"></g:HTML>
-
+		ASDF
 		<div id="example1" style="width: 900px; height: 180px;"></div>
+		ASDF
 	</g:HTMLPanel>
 </ui:UiBinder>
