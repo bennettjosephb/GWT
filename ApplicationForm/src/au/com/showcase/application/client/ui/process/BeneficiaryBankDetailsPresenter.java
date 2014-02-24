@@ -7,6 +7,8 @@ import au.com.showcase.application.client.ui.process.event.BeneficiaryDetailsEve
 import au.com.showcase.application.client.ui.process.event.BeneficiaryDetailsEvent.BeneficiaryDetailsHandler;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent.ProcessingSummaryHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -29,7 +31,8 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class BeneficiaryBankDetailsPresenter
 		extends
 		Presenter<BeneficiaryBankDetailsPresenter.MyView, BeneficiaryBankDetailsPresenter.MyProxy>
-		implements BeneficiaryDetailsHandler, DealFinishHandler {
+		implements BeneficiaryDetailsHandler, DealFinishHandler,
+		ProcessingSummaryHandler {
 
 	public interface MyView extends View {
 		public Button getNext();
@@ -105,6 +108,7 @@ public class BeneficiaryBankDetailsPresenter
 	protected void onBind() {
 		super.onBind();
 		addRegisteredHandler(BeneficiaryDetailsEvent.getType(), this);
+		addRegisteredHandler(ProcessingSummaryEvent.getType(), this);
 		getView().getNext().addClickHandler(new ClickHandler() {
 
 			@Override
@@ -154,7 +158,7 @@ public class BeneficiaryBankDetailsPresenter
 	@ProxyEvent
 	@Override
 	public void onDealFinish(DealFinishEvent event) {
-		clearForm();
+		// clearForm();
 	}
 
 	private void clearForm() {
@@ -175,5 +179,11 @@ public class BeneficiaryBankDetailsPresenter
 		getView().getBsbCode().setText("");
 
 		getView().getSwiftCode().setText("");
+	}
+
+	@ProxyEvent
+	@Override
+	public void onProcessingSummary(ProcessingSummaryEvent event) {
+		clearForm();
 	}
 }

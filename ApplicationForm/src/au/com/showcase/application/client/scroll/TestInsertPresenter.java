@@ -7,6 +7,8 @@ import au.com.showcase.application.shared.account.RegenerateCaptchaResult;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.safehtml.shared.SafeUri;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.FormPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
@@ -81,23 +83,25 @@ public class TestInsertPresenter extends
 
 						dispatchAsync.execute(regenerateCaptcha,
 								contactDetailsResult);
+						SafeUri safeUri = null;
+						getView().getRegistrationForm().getCaptchaImage()
+								.setUrl(safeUri);
 						getView().getRegistrationForm()
 								.getRegenerateCaptchaButton().setEnabled(false);
 
-						
+					}
+				});
+
+		getView().getRegistrationForm().getSubmit()
+				.addClickHandler(new ClickHandler() {
+
+					@Override
+					public void onClick(ClickEvent event) {
 
 					}
 				});
-		
-		getView().getRegistrationForm().getSubmit().addClickHandler(new ClickHandler() {
-			
-			@Override
-			public void onClick(ClickEvent event) {
-				
-			}
-		});
-		
-		//getView().getRegistrationForm().hasErrors();
+
+		// getView().getRegistrationForm().hasErrors();
 
 		// RootPanel.get().add(getView().getContainerPanel1());
 
@@ -136,7 +140,7 @@ public class TestInsertPresenter extends
 		@Override
 		public void onSuccess(RegenerateCaptchaResult result) {
 			// Window.alert(GWT.getHostPageBaseURL());
-			// Window.alert(result.getImageSource());
+			Window.alert("" + result.getImageSource());
 
 			getView().getRegistrationForm().getCaptchaImage()
 					.setUrl(result.getImageSource());

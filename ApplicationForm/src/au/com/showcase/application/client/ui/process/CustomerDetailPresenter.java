@@ -5,6 +5,8 @@ import au.com.showcase.application.client.scroll.ScrollTestPresenter;
 import au.com.showcase.application.client.ui.process.event.CustomerDetailsEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent.ProcessingSummaryHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -15,7 +17,6 @@ import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
-import com.google.gwt.user.datepicker.client.DateBox.Format;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -30,7 +31,7 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class CustomerDetailPresenter
 		extends
 		Presenter<CustomerDetailPresenter.MyView, CustomerDetailPresenter.MyProxy>
-		implements DealFinishHandler {
+		implements DealFinishHandler, ProcessingSummaryHandler {
 
 	public interface MyView extends View {
 		public Button getNext();
@@ -129,13 +130,14 @@ public class CustomerDetailPresenter
 	protected void onBind() {
 		super.onBind();
 		addRegisteredHandler(DealFinishEvent.getType(), this);
+		addRegisteredHandler(ProcessingSummaryEvent.getType(), this);
 		getView().getDateOfBirth().getDatePicker()
-		.setYearAndMonthDropdownVisible(true);
-		getView().getDateOfBirth().getDatePicker()
-		.setYearArrowsVisible(true);
-		getView().getDateOfBirth().setFormat(new DateBox.DefaultFormat
-				(DateTimeFormat.getFormat("dd-MM-yyyy")));
-		//getView().getDateOfBirth().getDatePicker().
+				.setYearAndMonthDropdownVisible(true);
+		getView().getDateOfBirth().getDatePicker().setYearArrowsVisible(true);
+		getView().getDateOfBirth().setFormat(
+				new DateBox.DefaultFormat(DateTimeFormat
+						.getFormat("dd-MM-yyyy")));
+		// getView().getDateOfBirth().getDatePicker().
 		getView().getNext().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
@@ -169,7 +171,7 @@ public class CustomerDetailPresenter
 	@ProxyEvent
 	@Override
 	public void onDealFinish(DealFinishEvent event) {
-		clearForm();
+		// clearForm();
 		placeManager.revealPlace(new PlaceRequest(NameTokens.custdetail1));
 	}
 
@@ -191,5 +193,11 @@ public class CustomerDetailPresenter
 		getView().getNationality().setText("");
 		getView().getOccupation().setText("");
 		// getView().getPurpose().setText("");
+	}
+
+	@ProxyEvent
+	@Override
+	public void onProcessingSummary(ProcessingSummaryEvent event) {
+		clearForm();
 	}
 }

@@ -7,6 +7,8 @@ import au.com.showcase.application.client.ui.process.event.CustomerDetailsEvent.
 import au.com.showcase.application.client.ui.process.event.CustomerIDProofEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent.ProcessingSummaryHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -29,7 +31,8 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class CustomerIDProofSavePresenter
 		extends
 		Presenter<CustomerIDProofSavePresenter.MyView, CustomerIDProofSavePresenter.MyProxy>
-		implements CustomerDetailsHandler, DealFinishHandler {
+		implements CustomerDetailsHandler, DealFinishHandler,
+		ProcessingSummaryHandler {
 
 	public interface MyView extends View {
 		public Button getNext();
@@ -97,6 +100,7 @@ public class CustomerIDProofSavePresenter
 		super.onBind();
 		addRegisteredHandler(CustomerDetailsEvent.getType(), this);
 		addRegisteredHandler(DealFinishEvent.getType(), this);
+		addRegisteredHandler(ProcessingSummaryEvent.getType(), this);
 		getView().getNext().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
@@ -145,7 +149,7 @@ public class CustomerIDProofSavePresenter
 	@ProxyEvent
 	@Override
 	public void onDealFinish(DealFinishEvent event) {
-		clearForm();
+		// clearForm();
 	}
 
 	private void clearForm() {
@@ -157,4 +161,11 @@ public class CustomerIDProofSavePresenter
 		getView().getExpiryDate().setValue(null);
 		getView().getVerifiedBy().setText("");
 	}
+
+	@ProxyEvent
+	@Override
+	public void onProcessingSummary(ProcessingSummaryEvent event) {
+		clearForm();
+	}
+
 }

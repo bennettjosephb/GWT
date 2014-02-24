@@ -7,6 +7,8 @@ import au.com.showcase.application.client.ui.process.event.CustomerIDProofEvent;
 import au.com.showcase.application.client.ui.process.event.CustomerIDProofEvent.CustomerIDProofHandler;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent;
 import au.com.showcase.application.client.ui.process.event.DealFinishEvent.DealFinishHandler;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent;
+import au.com.showcase.application.client.ui.process.event.ProcessingSummaryEvent.ProcessingSummaryHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -28,7 +30,8 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class BeneficiaryDetailsPresenter
 		extends
 		Presenter<BeneficiaryDetailsPresenter.MyView, BeneficiaryDetailsPresenter.MyProxy>
-		implements CustomerIDProofHandler, DealFinishHandler {
+		implements CustomerIDProofHandler, DealFinishHandler,
+		ProcessingSummaryHandler {
 
 	public interface MyView extends View {
 		public Button getNext();
@@ -114,6 +117,8 @@ public class BeneficiaryDetailsPresenter
 		super.onBind();
 		addRegisteredHandler(CustomerIDProofEvent.getType(), this);
 		addRegisteredHandler(DealFinishEvent.getType(), this);
+		addRegisteredHandler(ProcessingSummaryEvent.getType(), this);
+
 		getView().getNext().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
@@ -162,6 +167,12 @@ public class BeneficiaryDetailsPresenter
 	@ProxyEvent
 	@Override
 	public void onDealFinish(DealFinishEvent event) {
+//		clearForm();
+	}
+
+	@ProxyEvent
+	@Override
+	public void onProcessingSummary(ProcessingSummaryEvent event) {
 		clearForm();
 	}
 
