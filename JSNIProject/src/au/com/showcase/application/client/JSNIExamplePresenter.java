@@ -61,7 +61,7 @@ public class JSNIExamplePresenter extends
 	}-*/;
 
 	public static native void alert(String msg) /*-{
-		$wnd.alert(msg);
+		$wnd.drawChart(msg);
 	}-*/;
 
 	@Override

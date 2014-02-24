@@ -15,8 +15,8 @@
 	<g:HTMLPanel>
 		<g:Button text="Click This !!!" ui:field="clickThis" />
 
-		<g:Frame ui:field="url" url="http://127.0.0.1:8888/NewFile.jsp"
-			styleName="{style.borderZero}" width="98%" height="500px" />
+		<g:Frame ui:field="url" url="/NewFile.jsp" styleName="{style.borderZero}"
+			width="98%" height="1500px" />
 
 		<g:HTML ui:field="htmlContainer"></g:HTML>
 
